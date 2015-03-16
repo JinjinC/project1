@@ -1,0 +1,13 @@
+{
+  "name": "oneapm-com",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.2",
+    "modernizr": "~2.8.2",
+    "jquery": "1.11.2",
+    "html5shiv": "~3.7.2",
+    "ExplorerCanvas": "*",
+    "es5-shim": "~4.1.0",
+    "css3-mediaqueries-js": "~1.0.0"
+  }
+}
