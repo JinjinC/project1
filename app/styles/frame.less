@@ -3442,12 +3442,42 @@ select {
   color: #006ec3;
 }
 
+.agent-counting {
+  background: #e9e9e9;
+}
+
+
 .agent-counting table {
   text-align: center;
 }
 
 .agent-counting table th {
   text-align: center;
+}
+
+.agent-counting table tr {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.agent-counting table tr:hover {
+  background: rgba(0, 110, 195, 0.2);
+}
+
+.agent-counting .table>thead>tr>th{
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.agent-counting table td {
+  border-right: 10px solid #e9e9e9;
+  background: #f3f3f3;
+  padding: 10px;
+}
+.agent-counting table td.col1 {
+  border-right: none;
+  background: none;
+  padding-left: 0;
+  text-align: left;
 }
 
 .agent-counting .btn-cta-secondary {
@@ -3463,32 +3493,82 @@ select {
 
 .function {
   display: none;
+  background: #e9e9e9;
 }
 
-.function .fa-minus-square {
-  display: none;
-}
-
-.function .fa {
+.function .fa-check {
   cursor: pointer;
+  color: #78a300;
 }
 
 .function table {
   text-align: center;
 }
 
-.function table th {
-  text-align: center;
+.function table tr {
+  border-bottom: 1px solid #e3e3e3;
 }
 
-.collapsed-row {
-  display: none;
+.function .table>thead>tr>th{
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+  border-right: 10px solid #e9e9e9;
+  background: #fff;
 }
+
+.function .table>thead>tr>th.col {
+  background: none;
+  border-right: none;
+}
+
+.function table td {
+  border-right: 10px solid #e9e9e9;
+  background: #f3f3f3;
+  padding: 10px;
+  width: 160px;
+}
+
+.function table tr:hover td {
+  background: rgba(0, 110, 195, 0.2);
+}
+
+.function table td.col1 {
+  border-right: none;
+  background: none;
+  padding-left: 0;
+  text-align: left;
+  color: rgba(0,0,0,0.5);
+  width: auto;
+}
+
+.function table tr:hover td.col1 {
+  background: none;
+}
+
+.function table td.col-subtitle {
+  color: #000;
+}
+
+
 
 .btn-span {
   padding: 20px;
 }
 
+.tr-fixed {
+  position: fixed;
+  top: 80px;
+  margin-left:270px;
+}
+
+.th-fixed {
+  width: 160px;
+  background: #fff;
+}
+
+.col.th-fixed {
+  display: none;
+}
 
 
 /*.collapsing-row {
