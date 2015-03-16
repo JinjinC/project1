@@ -26,6 +26,8 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css">
+
     <!-- endbuild -->
 
     <!-- build:css(.tmp) styles/frame.css -->
@@ -58,8 +60,9 @@
     <![endif]-->
     <div id="root">
       {% block header %}
-      <header>I'm a header</header>
+      {% include "_header.html" %}
       {% endblock %}
+
       {% block content %}
       <p>This is just an awesome page.</p>
       {% endblock %}
@@ -71,6 +74,7 @@
     {% block scripts %}
     <!-- build:js(.) scripts/vendors.js -->
     <script src="/vendors/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/vendors/jquery-migrate/jquery-migrate.min.js"></script>
     <script src="/vendors/bootstrap/js/affix.js"></script>
     <script src="/vendors/bootstrap/js/alert.js"></script>
     <script src="/vendors/bootstrap/js/dropdown.js"></script>
@@ -85,12 +89,12 @@
     <script src="/vendors/bootstrap/js/tab.js"></script>
     <!-- endbuild -->
 
-
     {% if pageName %}
     <!-- build:js({app,.tmp}) scripts/{{pageName}}.js -->
     <script src="/scripts/{{pageName}}.js"></script>
     <!-- endbuild -->
     {% endif %}
+
     {% endblock %}
     {% if env === 'production' %}
     <script>
