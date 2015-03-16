@@ -20,3 +20,17 @@ oneapm-com
 参考_layout
 
 [swig模板文档](http://paularmstrong.github.io/swig/)
+
+# Installing ImageMagick:
+
+on Mac:
+
+`brew install imagemagick`
+
+on Linux:
+
+`apt-get install imagemagick`
+
+On Windows:
+
+`cinst imagemagick.app`
