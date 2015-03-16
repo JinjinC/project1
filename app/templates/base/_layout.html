@@ -60,7 +60,7 @@
     <![endif]-->
     <div id="root">
       {% block header %}
-      {% include "_header.html" %}
+        {% include "_header.html" %}
       {% endblock %}
 
       {% block content %}
@@ -68,7 +68,7 @@
       {% endblock %}
     </div>
     {% block footer %}
-    <div id="footer"></div>
+      {% include "_footer.html" %}
     {% endblock %}
 
     {% block scripts %}
