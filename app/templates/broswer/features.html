@@ -1,4 +1,166 @@
 {% extends '../base/_layout.html' %}
+
 {% block content %}
+<section class="features-video section section-on-bg">
+    <div class="container text-center">          
+        <h2 class="title">让 OneAPM 为 你的 HTML5 应用增色</h2>
+        <p class="intro text-center">OneAPM 从页面加载、Ajax 加载，页面 Trace、地理位置等多个角度，度量 HTML 5 应用性能。<br/>更全面，更科学。</p>
+        <div class="video-container">
+            <img src="/images/bro-features.png" style="width:100%">
+        </div>
+    </div>
+</section>
+
+<div class="sections-wrapper">   
+    <!-- ******Why Section****** -->
+    <section id="why" class="section why">
+        <div class="container">
+            <div class="row item">
+                <div class="content col-md-4 col-sm-12 col-xs-12">
+                    <h3 class="title">围绕用户体验的性能度量</h3>
+                    <div class="desc">
+                        <p>OneAPM 从地理位置、浏览器类型、设备类型 3 个类别，来划分真实用户体验； 方便你从不同角度查看应用的性能表现</p>
+                        <p>OneAPM 划分出性能表现差的具体范围，指导性能修复工作，从而减少工作量并提高效率。</p>
+                    </div>
+                </div><!--//content-->
+                <figure class="figure col-md-7 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+                    <!-- Tab panes -->
+                     <ul class="nav nav-tabs text-center" role="tablist" style="width:300px;">
+                        <li class="active feature-img">
+                            <a href="#feature-1" role="tab" data-toggle="tab" class="img-title">
+                                <span>地理位置</span>
+                            </a>
+                        </li>
+                        <li class="feature-img">
+                            <a href="#feature-2" role="tab" data-toggle="tab" class="img-title">
+                                <span>浏览器类型</span>
+                            </a>
+                        </li>
+                        <li class="feature-img">
+                            <a href="#feature-3" role="tab" data-toggle="tab" class="img-title">
+                                <span>设备类型</span>
+                            </a>
+                        </li>
+                    </ul><!--//nav-tabs-->
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="feature-1">
+                            <figure class="figure text-center">
+                                <img class="img-responsive" src="/images/location.png" alt="" />
+                            </figure>
+                        </div><!--//tab-pane-->
+
+                        <div class="tab-pane" id="feature-2">
+                            <figure class="figure text-center">
+                                <img class="img-responsive" src="/images/broswer.png" alt="" />
+                            </figure>
+                        </div><!--//tab-pane-->
+
+                        <div class="tab-pane" id="feature-3">
+                            <figure class="figure text-center">
+                                <img class="img-responsive" src="/images/device.png" alt="" />
+                            </figure>
+                        </div><!--//tab-pane-->
+                    </div><!--//tab-content-->                 
+                </figure>
+            </div><!--//item-->
+            
+            <div class="row item">
+                <div class="content col-md-4 col-sm-12 col-xs-12 col-md-push-8 col-sm-push-0 col-xs-push-0">
+                    <h3 class="title">页面 Trace 给予你更广视野</h3>
+                    <div class="desc">
+                        <p>针对不同 URL 建立页面的 Trace，记录 TCP、DNS、DOM 加载、渲染等时间， 让你能够了解整个加载过程。</p>
+                        <p>页面 Trace 就是一次前端页面加载的快照，快照信息具体到：浏览器类型、IP 地址等，并包括 TCP 传输性能和 DNS 时间。</p>
+                        <p><i class="fa fa-download"></i> <a href="download.html">Download mobile versions</a></p>
+                    </div>
+                </div><!--//content-->
+                <figure class="figure col-md-7 col-sm-12 col-xs-12 col-md-pull-4 col-sm-pull-0 col-xs-pull-0">
+                    <ul class="nav nav-tabs text-center" role="tablist" style="width:300px;">
+                        <li class="active feature-img">
+                            <a href="#location" role="tab" data-toggle="tab" class="img-title">
+                                <span>事务总览</span>
+                            </a>
+                        </li>
+                        <li class="feature-img">
+                            <a href="#broswer" role="tab" data-toggle="tab" class="img-title">
+                                <span>Trace 详情</span>
+                            </a>
+                        </li>
+                    </ul><!--//nav-tabs-->
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="location">
+                            <figure class="figure text-center">
+                                <img class="img-responsive" src="/images/trace-page1.png" alt="" />
+                            </figure>
+                        </div><!--//tab-pane-->
+
+                        <div class="tab-pane" id="broswer">
+                            <figure class="figure text-center">
+                                <img class="img-responsive" src="/images/trace-page2.png" alt="" />
+                            </figure>
+                        </div><!--//tab-pane-->
+                    </div><!--//tab-content-->                        
+                </figure>
+            </div><!--//item-->
+            
+            <div class="row item ">
+                <div class="content col-md-4 col-sm-12 col-xs-12">
+                    <h3 class="title">归类错误</h3>
+                    <div class="desc">
+                        <p>从错误类型、URL、浏览器 3 个角度，归类错误的发生。</p>
+                        <p>OneAPM 统计错误发生的次数，并可以跟踪到单次错误的 URL、发生时间，和与之关联的浏览器类型；以及更为底层的信息：错误信息、相关参数和 Stack Trace。</p>
+                    </div>
+                </div><!--//content-->
+                <figure class="figure col-md-7 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+                    <ul class="nav nav-tabs text-center" role="tablist" style="width:300px;">
+                        <li class="active feature-img">
+                            <a href="#error1" role="tab" data-toggle="tab" class="img-title">
+                                <span>错误总览</span>
+                            </a>
+                        </li>
+                        <li class="feature-img">
+                            <a href="#error2" role="tab" data-toggle="tab" class="img-title">
+                                <span>错误详情</span>
+                            </a>
+                        </li>
+                    </ul><!--//nav-tabs-->
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="error1">
+                            <figure class="figure text-center">
+                                <img class="img-responsive" src="/images/error1.png" alt="" />
+                            </figure>
+                        </div><!--//tab-pane-->
+
+                        <div class="tab-pane" id="error2">
+                            <figure class="figure text-center">
+                                <img class="img-responsive" src="/images/error2.png" alt="" />
+                            </figure>
+                        </div><!--//tab-pane-->
+                    </div><!--//tab-content-->  
+                </figure>
+            </div><!--//item-->
+            
+            <div class="row item last-item">
+                <div class="content col-md-4 col-sm-12 col-xs-12 col-md-push-8 col-sm-push-0 col-xs-push-0">
+                    <h3 class="title">深入到 Ajax 的性能监控</h3>
+                    <div class="desc">
+                        <p>单页面 Web 应用往往通过 Ajax 进行前后端交互，所以「页面 trace」不再适用于 Ajax 性能监控。</p>
+                        <p>OneAPM 针对 Ajax 性能，特别增设响应时间、数据请求和接收、HTTP 状态的性能监控，完善 Browser Insight 功能。</p>
+                    </div>
+                </div><!--//content-->
+                <figure class="figure col-md-7 col-sm-12 col-xs-12 col-md-pull-4 col-sm-pull-0 col-xs-pull-0">
+                    <img class="img-responsive" src="/images/ajax.png" alt="" />
+                </figure>
+            </div><!--//item-->
+	            <div class="feature-lead text-center">
+                <h4 class="title">Want to discover all the features?</h4>
+                <p><a class="btn btn-cta btn-cta-secondary" href="#">Take a Tour</a></p>
+            </div>
+        </div><!--//container-->
+    </section><!--//why-->  
+    
+</div><!--//section-wrapper-->
 
 {% endblock %}
