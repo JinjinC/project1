@@ -1,17 +1,24 @@
-{% extends '../base/_layout.html' %}
+{% extends 'base/_layout.html' %}
+
+{% block header %}
+<p>1</p>
+{% endblock %}
+
+
 {% block content %}
 <div class="container">
   <div class="header">
     <ul class="nav nav-pills pull-right">
-      <li><a href="#">Home</a></li>
-      <li class="active"><a href="#">Price</a></li>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="/price">price</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
     <h3 class="text-muted">oneapm com</h3>
   </div>
 
   <div class="jumbotron">
-    <h1>{{pageTitle}}</h1>
+    <h1>{{deep.lvla.lvlb}}</h1>
+    <p>aaaa</p>
     <p class="lead">Always a pleasure scaffolding your apps.</p>
     <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
   </div>
