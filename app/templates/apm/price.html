@@ -1,6 +1,7 @@
 {% extends '../base/_layout.html' %}
 
 
+
 {% block content %}
 <section class="pricing section section-on-bg">
         <div class="container">
@@ -124,7 +125,12 @@
                     </table>
                 </div>
             </div>
-            <p class="text-center" style="margin-top: 60px;">
+        </div>
+    </section>
+
+    <section class="section btn-section has-bg-color">
+        <div class="container">
+            <p class="text-center">
                 <a href="#" class="btn btn-cta btn-cta-secondary btn-knowmore">了解更多</a>
                 <span class="btn-span">or</span>
                 <a href="signup.html" class="btn btn-cta btn-cta-secondary">立即注册</a>
@@ -142,10 +148,25 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th class="col"></th>
-                                <th>免费版</th>
-                                <th>专业版</th>
-                                <th>企业版</th>
+                                <th class="col empty-th"></th>
+                                <th>
+                                    <div class="table-title">
+                                        <h4>免费版</h4>
+                                        <a href="#" class="btn">立即注册</a>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-title">
+                                        <h4>专业版</h4>
+                                        <a href="#" class="btn">立即注册</a>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-title">
+                                        <h4>企业版</h4>
+                                        <a href="#" class="btn">立即注册</a>
+                                    </div>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -437,8 +458,8 @@
                 <div class="col-md-4 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
                     <div class="panel">
                         <div class="panel-heading">
-                            <h4 class="panel-title"><a data-parent="#accordion"
-                            data-toggle="collapse" class="panel-toggle" href="#faq1"><i class="fa fa-plus-square"></i>如何收费</a></h4>
+                            <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq1">
+                            <h4 class="panel-title"><i class="fa fa-plus-square"></i><p>如何收费</h4></a>
                         </div>
                         <div class="panel-collapse collapse" id="faq1">
                             <div class="panel-body">
@@ -453,7 +474,7 @@
                   <div class="panel">
                         <div class="panel-heading">
                             <h4 class="panel-title"><a data-parent="#accordion"
-                            data-toggle="collapse" class="panel-toggle" href="#faq2"><i class="fa fa-plus-square"></i>是否可以进行试用？</a></h4>
+                            data-toggle="collapse" class="panel-toggle" href="#faq2"><i class="fa fa-plus-square"></i><p>是否可以进行试用？</p></a></h4>
                         </div>
             
                         <div class="panel-collapse collapse" id="faq2">
@@ -470,7 +491,7 @@
                   <div class="panel">
                         <div class="panel-heading">
                             <h4 class="panel-title"><a data-parent="#accordion"
-                            data-toggle="collapse" class="panel-toggle" href="#faq3"><i class="fa fa-plus-square"></i>如何停止服务？</a></h4>
+                            data-toggle="collapse" class="panel-toggle" href="#faq3"><i class="fa fa-plus-square"></i><p>如何停止服务？</p></a></h4>
                         </div>
             
                         <div class="panel-collapse collapse" id="faq3">
@@ -485,7 +506,7 @@
                   <div class="panel">
                       <div class="panel-heading">
                           <h4 class="panel-title"><a data-parent="#accordion"
-                          data-toggle="collapse" class="panel-toggle" href="#faq4"><i class="fa fa-plus-square"></i>是否存在优惠政策？</a></h4>
+                          data-toggle="collapse" class="panel-toggle" href="#faq4"><i class="fa fa-plus-square"></i><p>是否存在优惠政策？</p></a></h4>
                       </div>
           
                       <div class="panel-collapse collapse" id="faq4">
@@ -504,7 +525,7 @@
                 <div class="panel">
                       <div class="panel-heading">
                           <h4 class="panel-title"><a data-parent="#accordion"
-                          data-toggle="collapse" class="panel-toggle" href="#faq5"><i class="fa fa-plus-square"></i>专业版和企业版的差别在哪？</a></h4>
+                          data-toggle="collapse" class="panel-toggle" href="#faq5"><i class="fa fa-plus-square"></i><p>专业版和企业版的差别在哪？</p></a></h4>
                       </div>
           
                       <div class="panel-collapse collapse" id="faq5">
@@ -520,7 +541,7 @@
                 <div class="panel">
                       <div class="panel-heading">
                           <h4 class="panel-title"><a data-parent="#accordion"
-                          data-toggle="collapse" class="panel-toggle" href="#faq6"><i class="fa fa-plus-square"></i>其他问题？</a></h4>
+                          data-toggle="collapse" class="panel-toggle" href="#faq6"><i class="fa fa-plus-square"></i><p>其他问题？</p></a></h4>
                       </div>
           
                       <div class="panel-collapse collapse" id="faq6">

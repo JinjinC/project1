@@ -34,12 +34,17 @@
     <link rel="stylesheet" href="/styles/frame.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/table.css" />
     <!-- endbuild -->
     {% if pageName %}
     <!-- build:css(.tmp) styles/{{pageName}}.css -->
     <link rel="stylesheet" href="/styles/{{pageName}}.css" />
     <!-- endbuild -->
     {% endif %}
+
+<!--     {% if pageName =="price" %}
+    <link rel="stylesheet" href="/styles/table.css" />
+    {% endif %} -->
     <!-- build:css(.tmp) styles/ie.css -->
     <!--[if IE]>
       <link rel="stylesheet" href="/styles/ie.css" type="text/css" />
