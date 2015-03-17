@@ -1,47 +1,24 @@
 {% extends 'base/_layout.html' %}
 
-{% block header %}
-<p>1</p>
-{% endblock %}
-
 
 {% block content %}
-<div class="container">
-  <div class="header">
-    <ul class="nav nav-pills pull-right">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="/price">price</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <h3 class="text-muted">oneapm com</h3>
+<div class="bg-slider-wrapper">
+  <div class="flexslider bg-slider">
+      <ul class="slides">
+          <li class="slide slide-1"></li>
+          <li class="slide slide-2"></li>
+          <li class="slide slide-3"></li>
+      </ul>
   </div>
-
-  <div class="jumbotron">
-    <h1>{{deep.lvla.lvlb}}</h1>
-    <p>aaaa</p>
-    <p class="lead">Always a pleasure scaffolding your apps.</p>
-    <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-  </div>
-
-  <div class="row marketing">
-    <div class="col-lg-6">
-      <h4>HTML5 Boilerplate</h4>
-      <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-
-
-      <h4>Bootstrap</h4>
-      <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-      <h4>Modernizr</h4>
-      <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
-    </div>
-  </div>
-
-  <div class="footer">
-    <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-  </div>
-
-</div>
+</div><!--//bg-slider-wrapper-->        
+    
+<section class="promo section section-on-bg">
+    <div class="container text-center">                
+        <h2 class="title">Let's get your product online fast<br />and get attention right away!</h2>
+        <p class="intro">Velocity is a mobile-friendly HTML5 template designed to help you <br /> promote your product effectively to your target users</p>
+        <p><a class="btn btn-cta btn-cta-primary" href="signup.html">Try Velocity Free</a></p>   
+        <button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" ><i class="fa fa-youtube-play"></i> Watch the video</button>
+    </div><!--//container-->
+</section><!--//promo-->
+    
 {% endblock %}
