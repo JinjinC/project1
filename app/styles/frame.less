@@ -52,16 +52,23 @@ a.btn-cta,
 
 a.btn-cta-download,
 .btn-cta-download {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+a.btn-cta-download:hover,
+.btn-cta-download:hover {
   background: #fff;
   border: 2px solid #fff;
   color: #006ec3;
 }
-a.btn-cta-download:hover,
-.btn-cta-download:hover {
-  background: #005FA8;
-  border: 2px solid #005FA8;
-  color: #fff;
+a.btn-cta-download:focus,
+.btn-cta-download:focus {
+  background: #fff;
+  border: 2px solid #fff;
+  color: #006ec3;
 }
+
 
 a.btn-cta-primary,
 .btn-cta-primary {
@@ -95,7 +102,7 @@ a.btn-cta-secondary:focus,
 }
 a.btn-ghost,
 .btn-ghost {
-  background: none;
+  background: #4D5057;
   border: 1px solid #fff;
   color: #fff !important;
   padding: 8px 20px;
@@ -496,10 +503,11 @@ select {
   background-image: url('../images/background/bg-footer-3.jpg');
 }
 .cta-section .title {
-  font-size: 36px;
-  font-weight: 300;
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 35px;
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .cta-section .btn-cta {
   font-size: 20px;
@@ -1642,31 +1650,7 @@ select {
   color: #a6a6a6;
 }
 
-@font-face {
-  font-family: 'iconfont';
-    src: url('iconfont.eot'); /* IE9*/
-    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
-    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
-}
-.iconfont{
-    font-family:"iconfont" !important;
-    font-size:75px;
-    font-style:normal;
-    -webkit-text-stroke-width: 0.4px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-.iconLogo{
-  color: #fff;
-  font-weight: normal;
-}
-
-.header.navbar-fixed-top h1.logo .iconLogo{
-  color: #006ec3;
-}
 
 // broswer-feature 页面
 .feature-img{
@@ -1685,25 +1669,31 @@ select {
   background: #fff;
   padding-bottom: 60px;
 }
-.btn-section .btn-sign {
+
+.btn-sign {
   color: #fff;
   background: #006ec3;
   border: 1px solid #006ec3;
   padding: 8px 10px;
 }
-.btn-section .btn-sign:hover {
+.btn-sign:hover {
+  color: #fff;
   background: rgba(0, 110, 195, 0.8);
   border-color: rgba(0, 110, 195, 0.8);
 }
-
-.btn-section  .btn-knowmore {
+.btn-sign-big {
+  font-size: 18px;
+  margin-left: 15px;
+  padding: 8px 15px;
+}
+.btn-section .btn-knowmore {
   color: #006ec3;
   background: #fff;
   border: 1px solid #006ec3;
   padding: 8px 10px;
 }
 
-.btn-section  .btn-knowmore:hover {
+.btn-section .btn-knowmore:hover {
   color: #fff;
   background: #006ec3;
 }
