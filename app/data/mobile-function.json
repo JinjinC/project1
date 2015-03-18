@@ -1,0 +1,206 @@
+[
+	{
+		"title": "性能指标",
+		"free": "",
+		"pro": "",
+		"epr": ""
+	},
+	{
+		"title": "日活跃会话",
+		"free": 1,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "执行时间",
+		"free": 1,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "响应时间",
+		"free": 1,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "错误率",
+		"free": 1,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "网络故障率",
+		"free": 1,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "访问次数",
+		"free": 1,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "吞吐量",
+		"free": 1,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "用户体验监控监控",
+		"free": "",
+		"pro": "",
+		"epr": ""
+	},
+	{
+		"title": "设备类型统计分析",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "操作系统统计分析",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "地理位置统计分析",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "运营商统计分析",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "应用版本统计分析",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "App 统计分析",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "自定义 Dashboard",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "Crash分析",
+		"free": "",
+		"pro": "",
+		"epr": ""
+	},
+	{
+		"title": "Crash 次数统计",
+		"free": 1,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "影响范围分析",
+		"free": 1,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "Crash 智能归类",
+		"free": 1,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "Crash 轨迹抓取",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "详细信息捕获",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "Interaction 监控",
+		"free": "",
+		"pro": "",
+		"epr": ""
+	},
+	{
+		"title": "Interaction Tracing",
+		"free": 1,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "性能消耗热点的分析",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "Thread Breakdown 分析",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "Web Views 性能监控",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "网络监控",
+		"free": "",
+		"pro": "",
+		"epr": ""
+	},
+	{
+		"title": "应用外部服务拓扑",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "外部请求性能监控",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "定位至单个元素加载",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "HTTP 错误分析",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "错误信息统计",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	},
+	{
+		"title": "Stack Trace 信息抓取",
+		"free": 0,
+		"pro": 1,
+		"epr": 1
+	}
+]

@@ -77,11 +77,11 @@
     </section><!--//pricing-->
     <section class="agent-counting section has-bg-color">
         <div class="container">
-            <h2 class="title text-center" style="margin-bottom: 30px;font-size: 32px;">Agent 计算</h2>
+            <h2 class="title text-center">Agent 计算</h2>
             
             <div class="row">
                 <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                <p style="margin-bottom: 40px;font-size: 16px;">在不同语言中，Agent 计算方式不一样。一个 Agent 等于，在基数范围内的度量依据的个数。如：Java 中，一个 Agent 数量等于一个 JVM 数量。</p>
+                <p>在不同语言中，Agent 计算方式不一样。一个 Agent 等于，在基数范围内的度量依据的个数。如：Java 中，一个 Agent 数量等于一个 JVM 数量。</p>
                     <table class="table">
                         <thead>
                             <tr>
@@ -131,7 +131,7 @@
     <section class="section btn-section has-bg-color">
         <div class="container">
             <p class="text-center">
-                <a href="#" class="btn btn-knowmore">功能对比</a>
+                <a href="#" class="btn btn-knowmore">查看功能对比</a>
                 <span class="btn-span">or</span>
                 <a href="signup.html" class="btn btn-sign">立即注册</a>
             </p>
@@ -141,8 +141,7 @@
     <!-- ***** Function Table Section***** -->
     <section class="function section has-bg-color">
         <div class="container">
-            <h2 class="title text-center" style="font-size: 32px;margin-bottom: 20px;margin-top: 40px;">功能</h2>
-            <h3 class="title text-center title-margin" style="margin-bottom: 20px;font-weight: normal;">免费版，永久免费。新注册用户，免费试用专业版 15 天。</h3>
+            <h2 class="title text-center">功能对比</h2>
             <div class="row">
                 <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
                     <table class="table">
@@ -152,19 +151,16 @@
                                 <th>
                                     <div class="table-title">
                                         <h4>免费版</h4>
-                                        <a href="#" class="btn">立即注册</a>
                                     </div>
                                 </th>
                                 <th>
                                     <div class="table-title">
                                         <h4>专业版</h4>
-                                        <a href="#" class="btn">立即注册</a>
                                     </div>
                                 </th>
                                 <th>
                                     <div class="table-title">
                                         <h4>企业版</h4>
-                                        <a href="#" class="btn">立即注册</a>
                                     </div>
                                 </th>
                             </tr>
@@ -458,8 +454,8 @@
                 <div class="col-lg-5 col-lg-offset-1 col-md-5 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
                     <div class="panel">
                         <div class="panel-heading">
-                            <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq1">
-                            <h4 class="panel-title"><i class="fa fa-plus-square"></i><p>如何收费</h4></a>
+                            <h4 class="panel-title"><a data-parent="#accordion"
+                            data-toggle="collapse" class="panel-toggle" href="#faq1"><i class="fa fa-plus-square"></i><p>如何收费？</p></a></h4>
                         </div>
                         <div class="panel-collapse collapse" id="faq1">
                             <div class="panel-body">
@@ -563,9 +559,9 @@
     <!-- ******CTA Section****** -->
     <section id="cta-section" class="section cta-section text-center pricing-cta-section">
         <div class="container">
-           <h2 class="title">More than 300,000 users are using Velocity</h2>
-           <p class="intro">What are you waiting for?</p>
-           <p><a class="btn btn-cta btn-cta-download" href="#" target="_blank">Get Velocity Now</a></p>
+           <h2 class="title">超过2000+用户 100000全球开发者<br/>选择了OneAPM</h2>
+           <p class="intro">你还在等什么！</p>
+           <p><a class="btn btn-cta btn-cta-download" href="#" target="_blank">立即注册</a></p>
         </div><!--//container-->
     </section><!--//cta-section-->
     <!-- ******FOOTER****** --> 
@@ -575,12 +571,13 @@
 {% block scripts %}
 
     {% parent %}
-    <!-- build:js(.) scripts/price.js -->
+    <!-- build:js(.) scripts/apm-price.js -->
     <script type="text/javascript" src="/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     <script type="text/javascript" src="/vendors/back-to-top.js"></script>
     <script type="text/javascript" src="/vendors/jquery.placeholder/jquery.placeholder.min.js"></script>
     <script type="text/javascript" src="../../scripts/main.js"></script>
     <script type="text/javascript" src="../../scripts/show-function.js"></script>
+    <script type="text/javascript" src="../../scripts/data-comparing.js"></script>
     <!-- endbuild -->
    
 {% endblock %}

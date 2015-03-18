@@ -78,11 +78,11 @@
     </section><!--//pricing-->
     <section class="agent-counting section has-bg-color">
         <div class="container">
-            <h2 class="title text-center" style="font-szie:32px;margin-bottom:20px;">优惠&amp;限制</h2>
+            <h2 class="title text-center col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">优惠&amp;限制</h2>
             
             <div class="row">
                 <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                <p style="font-size:16px;margin-bottom: 20px;">OneAPM 通过「月活跃用户数」，对专业版进行计费；若全年费用一次性缴纳，会有相应折扣。</p>
+                <p>OneAPM 通过「月活跃用户数」，对专业版进行计费；若全年费用一次性缴纳，会有相应折扣。</p>
                     <table class="table">
                         <thead>
                             <tr>
@@ -118,9 +118,9 @@
     <section class="section btn-section has-bg-color">
         <div class="container">
             <p class="text-center">
-                <a href="#" class="btn btn-cta btn-cta-secondary btn-knowmore">功能对比</a>
+                <a href="#" class="btn btn-knowmore">查看功能对比</a>
                 <span class="btn-span">or</span>
-                <a href="signup.html" class="btn btn-cta btn-cta-secondary">立即注册</a>
+                <a href="signup.html" class="btn btn-sign">立即注册</a>
             </p>
         </div>
     </section>
@@ -128,7 +128,7 @@
     <!-- ***** Function Table Section***** -->
     <section class="function section has-bg-color">
         <div class="container">
-            <h2 class="title text-center">功能</h2>
+            <h2 class="title text-center">功能对比</h2>
             <h3 class="title text-center">免费版，永久免费。新注册用户，免费试用专业版 15 天。</h3>
             <div class="row">
                 <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
@@ -139,19 +139,16 @@
                                 <th>
                                     <div class="table-title">
                                         <h4>免费版</h4>
-                                        <a href="#" class="btn">立即注册</a>
                                     </div>
                                 </th>
                                 <th>
                                     <div class="table-title">
                                         <h4>专业版</h4>
-                                        <a href="#" class="btn">立即注册</a>
                                     </div>
                                 </th>
                                 <th>
                                     <div class="table-title">
                                         <h4>企业版</h4>
-                                        <a href="#" class="btn">立即注册</a>
                                     </div>
                                 </th>
                             </tr>
@@ -347,7 +344,7 @@
                                 <td><i class="fa fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td class="col1">外部请求性能监控/td>
+                                <td class="col1">外部请求性能监控</td>
                                 <td></td>
                                 <td><i class="fa fa-check"></i></td>
                                 <td><i class="fa fa-check"></i></td>
@@ -521,30 +518,26 @@
                   </div><!--//panel-->
               </div>
             </div>
-            <div class="contact-lead text-center">
-                <h4 class="title">还有其他问题？</h4>
-                <a class="btn btn-cta btn-cta-secondary" href="contact.html">Get in touch</a>
-            </div>
         </div><!--//container-->        
     </section><!--//faq-->
 
     
     <!-- ******CTA Section****** -->
-    <section id="cta-section" class="section cta-section text-center pricing-cta-section">
-        <div class="container">
-           <h2 class="title">More than 300,000 users are using Velocity</h2>
-           <p class="intro">What are you waiting for?</p>
-           <p><a class="btn btn-cta btn-cta-primary" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank">Get Velocity Now</a></p>
-        </div><!--//container-->
-    </section><!--//cta-section-->
-    <!-- ******FOOTER****** --> 
+       <section id="cta-section" class="section cta-section text-center pricing-cta-section">
+           <div class="container">
+              <h2 class="title">超过2000+用户 100000全球开发者<br/>选择了OneAPM</h2>
+              <p class="intro">你还在等什么！</p>
+              <p><a class="btn btn-cta btn-cta-download" href="#" target="_blank">立即注册</a></p>
+           </div><!--//container-->
+       </section><!--//cta-section-->
+    <!-- ******FOOTER****** -->  
     
 {% endblock %}
 
 {% block scripts %}
 
     {% parent %}
-    <!-- build:js(.) scripts/price.js -->
+    <!-- build:js(.) scripts/mobile-price.js -->
     <script type="text/javascript" src="/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     <script type="text/javascript" src="/vendors/back-to-top.js"></script>
     <script type="text/javascript" src="/vendors/jquery.placeholder/jquery.placeholder.min.js"></script>
