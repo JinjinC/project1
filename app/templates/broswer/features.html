@@ -3,8 +3,8 @@
 {% block content %}
 <section class="features-video section section-on-bg">
     <div class="container text-center">          
-        <h2 class="title">让 OneAPM 为 你的 HTML5 应用增色</h2>
-        <p class="intro text-center">OneAPM 从页面加载、Ajax 加载，页面 Trace、地理位置等多个角度，度量 HTML 5 应用性能。<br/>更全面，更科学。</p>
+        <h2 class="title">让 OneAPM 为你的 HTML5 应用增色</h2>
+        <p class="intro text-center">OneAPM 从页面加载、AJAX 加载，页面 Trace、地理位置等多个角度，度量 HTML 5 应用性能。<br/>更全面，更科学。</p>
         <div class="video-container">
             <img src="/images/bro-features.png" style="width:100%">
         </div>
@@ -15,11 +15,12 @@
     <!-- ******Why Section****** -->
     <section id="why" class="section why">
         <div class="container">
-            <h2 class="title text-center">How Can Velocity Help You?</h2>
-            <p class="intro text-center">We take care of the UX and front-end design so you can save time building your site</p>
-
+            <p class="intro text-center">
+                <span>现在注册，即可免费试用企业版 15 天</span> 
+             <a href="signup.html" class="btn btn-sign btn-sign-big">立即注册</a>
+         </p>
             <div class="row item" style="border-top:1px solid #eeeeee">
-                <div class="content col-md-4 col-sm-12 col-xs-12" style="padding-top: 47px;">
+                <div class="content col-md-4 col-sm-12 col-xs-12" style="margin-top: 4%;">
                     <h3 class="title">围绕用户体验</h3>
                     <div class="desc">
                         <p>OneAPM 从地理位置、浏览器类型、设备类型 3 个类别，来划分真实用户体验； 方便你从不同角度查看应用的性能表现</p>
@@ -69,7 +70,7 @@
             </div><!--//item-->
             
             <div class="row item">
-                <div class="content col-md-4 col-sm-12 col-xs-12 col-md-push-8 col-sm-push-0 col-xs-push-0" style="padding-top: 100px;">
+                <div class="content col-md-4 col-sm-12 col-xs-12 col-md-push-8 col-sm-push-0 col-xs-push-0" style="margin-top: 7%;">
                     <h3 class="title">更广视野</h3>
                     <div class="desc">
                         <p>页面 Trace 给你更广视野，针对不同 URL 建立页面的 Trace，记录 TCP、DNS、DOM 加载、渲染等时间， 让你能够了解整个加载过程。</p>
@@ -107,7 +108,7 @@
             </div><!--//item-->
             
             <div class="row item ">
-                <div class="content col-md-4 col-sm-12 col-xs-12" style="padding-top: 73px;">
+                <div class="content col-md-4 col-sm-12 col-xs-12" style="margin-top: 6%;">
                     <h3 class="title">归类错误</h3>
                     <div class="desc">
                         <p>从错误类型、URL、浏览器 3 个角度，归类错误的发生。</p>
@@ -145,10 +146,10 @@
             </div><!--//item-->
             
             <div class="row item last-item">
-                <div class="content col-md-4 col-sm-12 col-xs-12 col-md-push-8 col-sm-push-0 col-xs-push-0" style="padding-top: 66px;">
+                <div class="content col-md-4 col-sm-12 col-xs-12 col-md-push-8 col-sm-push-0 col-xs-push-0" style="margin-top: 5%">
                     <h3 class="title">深入至 AJAX</h3>
                     <div class="desc">
-                        <p>单页面 Web 应用往往通过 AJAX 进行前后端交互，所以「页面 trace」不再适用于 AJAX 性能监控。</p>
+                        <p>单页面 Web 应用往往通过 AJAX 进行前后端交互，所以「页面 Trace」不再适用于 AJAX 性能监控。</p>
                         <p>OneAPM 针对 AJAX 性能，特别增设响应时间、数据请求和接收、HTTP 状态的性能监控，完善 Browser Insight 功能。</p>
                     </div>
                 </div><!--//content-->
@@ -156,12 +157,64 @@
                     <img class="img-responsive" src="/images/ajax.png" alt="" />
                 </figure>
             </div><!--//item-->
-	            <div class="feature-lead text-center">
-                <h4 class="title">Want to discover all the features?</h4>
-                <p><a class="btn btn-cta btn-cta-secondary" href="#">Take a Tour</a></p>
-            </div>
+
         </div><!--//container-->
-    </section><!--//why-->  
+    </section><!--//why--> 
+     
+    <!-- ******CTA Section****** -->
+    <section id="cta-section" class="section cta-section text-center pricing-cta-section">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-7 col-sm-10 col-xs-12 col-md-offset-0 col-sm-offset-1">
+                    <table class="table table-basic">
+                        <thead>
+                            <tr>
+                                <th width="50%">功能特性</th>
+                                <th>是否支持</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: rgba(0, 0, 0, 0.04);">
+                                <td>地理位置名称</td>
+                                <td><i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>浏览器类型监控</td>
+                                <td><i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr style="background-color: rgba(0, 0, 0, 0.04);">
+                                <td>设备类型监控</td>
+                                <td><i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>错误分析</td>
+                                <td><i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr style="background-color: rgba(0, 0, 0, 0.04);">
+                                <td>页面 Trace</td>
+                                <td><i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>AJAX 监控</td>
+                                <td><i class="fa fa-check"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-5 col-sm-10 col-xs-12 col-md-offset-0 col-sm-offset-1">
+                    <div style="margin-top: 35px; margin-bottom: 60px;">
+                        <h2 class="title">超过 10 万全球开发者选择 OneAPM！</h2>
+                        <p class="intro">现在注册，即可免费试用企业版 15 天</p>
+                        <p>
+                            <a class="btn btn-cta btn-cta-download" href="#" target="_blank">立即注册</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+        </div><!--//container-->
+    </section><!--//cta-section-->
     
 </div><!--//section-wrapper-->
 
@@ -173,6 +226,9 @@
     <!-- build:js(.) scripts/broswer-feature.js -->
     <script type="text/javascript" src="/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     <script type="text/javascript" src="/vendors/back-to-top.js"></script>
+    <script type="text/javascript" src="/vendors/jquery.placeholder/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../scripts/main.js"></script>
+    <script type="text/javascript" src="../../scripts/show-function.js"></script>
     <!-- endbuild -->
    
 {% endblock %}
