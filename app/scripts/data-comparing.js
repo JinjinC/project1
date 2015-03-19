@@ -6,12 +6,12 @@ $(document).ready(function  () {
 		$.each(data, function(index, item){
 			html += '<tr>';
 			if (item.epr == ""){
-				html += '<td class="col1 col-subtitle">' + item.title + "</td>";
+				html += '<td class="">' + item.title + "</td>";
 				html += '<td></td>';
 				html += '<td></td>';
 				html += '<td></td>';
 			} else{
-				html += '<td class="col1">' + item.title + "</td>";
+				html += '<td class="">' + item.title + "</td>";
 				if (item.free == 1){
 					html += '<td>' + '<i class="fa fa-check"></i>' + '</td>';
 				}
