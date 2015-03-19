@@ -1,6 +1,6 @@
 $(function(){
-
-	$('table').each(function() {
+	$.fn.stickyheader = function(options){
+		return this.each(function() {
 		if($(this).find('thead').length > 0 && $(this).find('th').length > 0) {
 			// Clone <thead>
 			var $w	   = $(window),
@@ -147,5 +147,5 @@ $(function(){
 			.scroll($.throttle(250, repositionStickyHead));
 		}
 	});
-	
+	}
 });
