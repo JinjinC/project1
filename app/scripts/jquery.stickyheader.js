@@ -132,19 +132,23 @@ $(function(){
 
 			setWidths();
 
-			$t.parent('.sticky-wrap').scroll($.throttle(250, function() {
+			$t.parent('.sticky-wrap').scroll( function() {
 				repositionStickyHead();
 				repositionStickyCol();
-			}));
+			});
 
 			$w
 			.load(setWidths)
-			.resize($.debounce(250, function () {
+			.resize(function () {
 				setWidths();
 				repositionStickyHead();
 				repositionStickyCol();
-			}))
-			.scroll($.throttle(250, repositionStickyHead));
+			})
+			.scroll(
+				function  () {
+					repositionStickyHead();
+				}
+			 );
 		}
 	});
 	}
