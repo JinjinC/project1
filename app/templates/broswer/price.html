@@ -92,7 +92,35 @@
                                 </th>
                             </tr>
                         </thead>
-                        <tbody data-source="broswer-function.json"></tbody>
+                        <tbody>
+                            {% for row in broswer_price %}
+                            <tr>
+                                {% if row.epr === "" %}
+                                    <td class="title">{{row.title}}</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                {% else %}
+                                    <td>{{row.title}}</td>
+                                    {% if row.free %}
+                                        <td><i class="fa fa-check"></i></td>
+                                    {% else %}
+                                        <td></td>
+                                    {% endif %}
+                                    {% if row.pro %}
+                                        <td><i class="fa fa-check"></i></td>
+                                    {% else %}
+                                        <td></td>
+                                    {% endif %} 
+                                    {% if row.epr %}
+                                        <td><i class="fa fa-check"></i></td>
+                                    {% else %}
+                                        <td></td>
+                                    {% endif %} 
+                                {% endif %}   
+                            </tr>
+                            {% endfor %}
+                        </tbody>
                     </table>
 
                 </div>
@@ -245,7 +273,6 @@
     <!-- build:js(.) scripts/broswer-price.js -->
     <script type="text/javascript" src="../../scripts/main.js"></script>
     <script type="text/javascript" src="../../scripts/show-function.js"></script>
-    <script type="text/javascript" src="../../scripts/data-comparing.js"></script>
     <script type="text/javascript" src="../../scripts/jquery.stickyheader.js"></script>
     <!-- endbuild -->
    

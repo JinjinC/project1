@@ -6,39 +6,39 @@
 		"epr": ""
 	}, {
 		"title": "Apdex",
-		"free": 1,
-		"pro": 1,
+		"free": true,
+		"pro": true,
 		"epr": true
 	}, {
 		"title": "吞吐量",
-		"free": 1,
-		"pro": 1,
-		"epr": 1
+		"free": true,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "响应时间",
-		"free": 1,
-		"pro": 1,
-		"epr": 1
+		"free": true,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "执行时间",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "时间占比",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "组件调用次数",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "错误率",
-		"free": 1,
-		"pro": 1,
-		"epr": 1
+		"free": true,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "应用程序监控",
 		"free": "",
@@ -46,84 +46,84 @@
 		"epr": ""
 	}, {
 		"title": "端到端的性能总览",
-		"free": 1,
-		"pro": 1,
-		"epr": 1
+		"free": true,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "最慢事务的抓取",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "事务 Tracing",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "事务路径的自动捕获",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "堆栈信息的抓取",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "相关参数的抓取",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "相关 SQL 的分析",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "依赖包信息获取",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "错误信息的自动捕获",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "Stack Trace 信息抓取",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "Thread Profiler",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "外部服务性能监控",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "关键事务深度监控",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "后台任务性能监控",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "企业级应用组件支持",
-		"free": 0,
-		"pro": 0,
-		"epr": 1
+		"free": false,
+		"pro": false,
+		"epr": true
 	}, {
 		"title": "企业级应用框架支持",
-		"free": 0,
-		"pro": 0,
-		"epr": 1
+		"free": false,
+		"pro": false,
+		"epr": true
 	}, {
 		"title": "数据库监控",
 		"free": "",
@@ -131,39 +131,39 @@
 		"epr": ""
 	}, {
 		"title": "SQL 语句分类",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "SQL 语句性能",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "最慢 SQL 性能分析",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "数据库请求的负载与耗时",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "执行时间和次数",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "执行计划捕获",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "相关事务分析",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "服务器监控",
 		"free": "",
@@ -171,14 +171,14 @@
 		"epr": ""
 	}, {
 		"title": "CPU / 内存监控",
-		"free": 1,
-		"pro": 1,
-		"epr": 1
+		"free": true,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "JVM 性能监控",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "报警 & 报表",
 		"free": "",
@@ -186,43 +186,43 @@
 		"epr": ""
 	}, {
 		"title": "电子邮件 & 短信通知",
-		"free": 1,
-		"pro": 1,
-		"epr": 1
+		"free": true,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "宕机自动检测",
-		"free": 1,
-		"pro": 1,
-		"epr": 1
+		"free": true,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "Apdex & 吞吐量双向报警",
-		"free": 1,
-		"pro": 1,
-		"epr": 1
+		"free": true,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "持续时长设定",
-		"free": 1,
-		"pro": 1,
-		"epr": 1
+		"free": true,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "Web 事务报表",
-		"free": 1,
-		"pro": 1,
-		"epr": 1
+		"free": true,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "SQL 报表",
-		"free": 1,
-		"pro": 1,
-		"epr": 1
+		"free": true,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "报表导出",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}, {
 		"title": "数据对比",
-		"free": 0,
-		"pro": 1,
-		"epr": 1
+		"free": false,
+		"pro": true,
+		"epr": true
 	}]
 }
