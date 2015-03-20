@@ -9,7 +9,7 @@
                 <a class="btn btn-cta btn-cta-download" href="#" target="_blank">立即注册</a>
             </p>
             <p>
-            	<span>新特性</span>
+            	<span style="font-weight:600;">新特性</span>
             	<span>Crash分析功能</span>
             	<a href="#">查看详情</a>
             </p>
@@ -47,8 +47,10 @@
 <!-- ********* pic-tabs Section *********** -->
 <section class="features-tabbed section">
 	<div class="container">
+		<h3 class="title text-center">以真实用户使用感受为度量标准</h3>
+		<p class="text-center">Xcode中的profiling工具，虽说可以查看应用的资源消耗情况；<br/>但是，用户在使用App时的响应时间，应用在不同设备的崩溃次数，这些数据都可借助OneAPM来获取。</p>
 		<div class="row">
-			<figure class="figure col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+			<figure class="figure col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-0 col-xs-offset-0" style="margin-top: 70px;">
 				<ul class="nav nav-tabs text-center" role="tablist">
 					<li class="active feature-img">
 						<a href="#feature-1" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
@@ -99,7 +101,7 @@
 					</div><!--//tab-pane-->
 					<div class="tab-pane" id="feature-4">
 					    <figure class="figure text-center">
-					        <img class="img-responsive" src="/images/mobile-imgs/all-device.png" alt="" />
+					        <img class="img-responsive" src="/images/mobile-imgs/arc-map.png" alt="" />
 					    </figure>
 					</div><!--//tab-pane-->
 					<div class="tab-pane" id="feature-5">
@@ -122,7 +124,7 @@
 <section class="ca section">
 	<div class="container">
 		<div class="row">
-			<h2>
+			<h2 style="margin-left: 15px;margin-bottom: 30px;">
 				<span>新特性</span>
 				<span>Crash分析</span>
 			</h2>
@@ -130,7 +132,7 @@
 				<figure class="figure">
 					<p>识别崩溃是否发生，采集崩溃相关信息，是Crash分析的基本功能。而对crash进行统计分析，才是我们的特色。OneAPM根据操作系统类型、设备型号、崩溃状态、崩溃路径、崩溃根源进行统计；让您更直观地管理所有Crash</p>
 					<img src="/images/mobile-imgs/6feature.png" alt="">
-					<p>除以上的特色功能，Crash分析作为一款更智能的崩溃分析工具，所有特性指标和logging信息，都一应俱全</p>
+					<p style="margin-top:25px;">除以上的特色功能，Crash分析作为一款更智能的崩溃分析工具，所有特性指标和logging信息，都一应俱全</p>
 				</figure>
 				<p class="text-center btn-part">
 					<a href="signup.html" class="btn btn-sign">立即注册</a>
@@ -153,13 +155,13 @@
 		<div class="row">
 			<h2 class="title text-center">有些问题很难预料</h2>
 			<div class="step text-center col-md-4 col-sm-4 col-xs-12">
-			    <h3 class="title"><span class="number">1</span><br /><span class="text">运营商不给力</span></h3>
+			    <h3 class="title"><span class="icon"><i class="fa fa-thumbs-o-down"></i></span><br /><span class="text">运营商不给力</span></h3>
 			</div><!--//step-->
 			<div class="step text-center col-md-4 col-sm-4 col-xs-12">
-			    <h3 class="title"><span class="number">2</span><br /><span class="text">HTTP404</span></h3>
+			    <h3 class="title"><span class="icon"><i class="fa fa-thumbs-o-down"></i></span><br /><span class="text">HTTP404</span></h3>
 			</div><!--//step-->
 			<div class="step text-center col-md-4 col-sm-4 col-xs-12">
-			    <h3 class="title"><span class="number">3</span><br /><span class="text">外部调用失效了</span></h3>
+			    <h3 class="title"><span class="icon"><i class="fa fa-thumbs-o-down"></i></span><br /><span class="text">外部调用失效了</span></h3>
 			</div><!--//step-->
 		</div>
 		<div class="row">
@@ -269,10 +271,7 @@
 {% block scripts %}
 
     {% parent %}
-    <!-- build:js(.) scripts/broswer-feature.js -->
-    <script type="text/javascript" src="/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
-    <script type="text/javascript" src="/vendors/back-to-top.js"></script>
-    <script type="text/javascript" src="/vendors/jquery.placeholder/jquery.placeholder.min.js"></script>
+    <!-- build:js(.) scripts/mo/mobile-feature.js -->
     <script type="text/javascript" src="../../scripts/main.js"></script>
     <!-- endbuild -->
    
