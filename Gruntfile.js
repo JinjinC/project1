@@ -75,7 +75,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/styles/',
-          dest: '<%= config.dist %>/styles/',
+          dest: '.tmp/styles/',
           src: ['**/*.less'],
           ext: '.css'
         }]
@@ -215,7 +215,7 @@ module.exports = function(grunt) {
             '<%= config.dist %>/scripts/{,*/}*.js',
             '<%= config.dist %>/styles/{,*/}*.css',
             '<%= config.dist %>/images/{,*/}*.*',
-            '<%= config.dist %>/styles/fonts/{,*/}*.*'
+            '<%= config.dist %>/fonts/{,*/}*.*'
             // ,
             // '<%= config.dist %>/*.{ico,png}'
           ]
@@ -302,15 +302,25 @@ module.exports = function(grunt) {
           src: [
             './*.{ico,png,txt}'
           ]
-        }
-        // , {
-        //   expand: true,
-        //   dot: true,
-        //   cwd: 'bower_components/bootstrap/dist',
-        //   src: 'fonts/*',
-        //   dest: '<%= config.dist %>'
-        // }
-        ]
+        }, {
+          expand: true,
+          dot: true,
+          cwd: 'vendors/bootstrap/dist',
+          src: 'fonts/*',
+          dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          dot: true,
+          cwd: 'vendors/font-awesome',
+          src: 'fonts/*',
+          dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>',
+          src: 'fonts/*',
+          dest: '<%= config.dist %>'
+        }]
       }
     },
     cdnify: {
@@ -359,8 +369,13 @@ module.exports = function(grunt) {
   grunt.registerTask('test'
   , 'test dist sitefiles '
   , [
-  'build',
-  'connect:dist'
+    'clean:dist',
+    'clean:server',
+    'swigstatic:test',
+    'less:dist',
+    'favicons:dist',
+    'static-min:dist',
+    'connect:dist'
   ]);
 
   grunt.task.loadTasks('tasks');

@@ -8,12 +8,18 @@ $(document).ready(function() {
     
     /* ======= Fixed header when scrolled ======= */    
     $(window).bind('scroll', function() {
+
+        var header = $('#header');
+        var header_height = header.height();
+        var section = header.parent().find('section').first();
          
          if ($(window).scrollTop() > 0) {
              $('#header').addClass('navbar-fixed-top');
+             section.css('margin-top',header_height);
          }
          else {
              $('#header').removeClass('navbar-fixed-top');
+             section.css('margin-top',0);
              
          }
     });
