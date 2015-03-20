@@ -62,7 +62,7 @@
                                     <li>面向企业级技术框架</li>
                                     <li>技术支持团队协助</li>
                                     <li>实现产品最佳实践</li>
-                                    <li>7 x 24 小时<br/>电话 & 邮件 & 远程支持 & 现场服务</li>          
+                                    <li>7 x 24 小时<br/>电话 &amp; 邮件 & 远程支持 & 现场服务</li>          
                                 </ul>
                                 <a class="btn btn-cta btn-cta-primary" href="signup.html">400-659-1230</a>
                                 
@@ -153,7 +153,12 @@
                             </tr>
                         </thead>
                         <tbody data-source="apm-function.json">
-                            <!-- apm-comparing.json-->
+                            {% for row in function%}
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
 
