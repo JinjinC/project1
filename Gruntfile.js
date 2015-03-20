@@ -102,7 +102,7 @@ module.exports = function(grunt) {
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       html:{
-        files: ['<%= config.app %>/templates/{,*/}*.html','config/{,*/}*.json'],
+        files: ['<%= config.app %>/templates/{,*/}*.{html,json}','config/{,*/}*.json'],
         tasks: ['swigstatic:dev']
       },
       js: {
