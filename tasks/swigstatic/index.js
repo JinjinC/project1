@@ -52,7 +52,7 @@ module.exports = function(grunt) {
           }
           var relativePath = filepath.replace(root,'./').replace(/\.(md|markdown)/,'.html')
           var relativeDir = path.dirname(relativePath)
-          grunt.file.expand([path.join(root,relativeDir,'./*'),'!'+path.join(root,relativeDir,'./*.{md,markdown}')]).forEach(function(otherPath){
+          grunt.file.expand([path.join(root,relativeDir,'./**'),'!'+path.join(root,relativeDir,'./*.{md,markdown}')]).forEach(function(otherPath){
             grunt.file.copy(otherPath,path.join(destDir,otherPath.replace(root,'./')))
           });
           renderFile(path.join(destDir,relativePath), i, _.assign({},refs,{
