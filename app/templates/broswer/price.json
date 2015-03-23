@@ -1,0 +1,191 @@
+{
+	"broswer_price":[
+		{
+			"title": "性能指标",
+			"free": "",
+			"pro": "",
+			"epr": ""
+		},
+		{
+			"title": "页面加载时间",
+			"free": 1,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "页面吞吐量",
+			"free": 1,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "Ajax 响应时间",
+			"free": 1,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "Ajax 吞吐量",
+			"free": 1,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "JS 错误率",
+			"free": 1,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "浏览器响应时间",
+			"free": 1,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "时间占比",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "Page Views",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "用户体验监控",
+			"free": "",
+			"pro": "",
+			"epr": ""
+		},
+		{
+			"title": "Apdex",
+			"free": 1,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "浏览器性能",
+			"free": 1,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "设备性能",
+			"free": 1,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "地理位置信息",
+			"free": 1,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "页面加载监控",
+			"free": "",
+			"pro": "",
+			"epr": ""
+		},
+		{
+			"title": "页面加载全过程监控",
+			"free": 1,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "页面加载 Tracing",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "按地理位置进行分类",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "关联错误分析",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "Ajax 监控",
+			"free": "",
+			"pro": "",
+			"epr": ""
+		},
+		{
+			"title": "响应时间",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "吞吐量",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "错误统计",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "调用统计",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "错误分析",
+			"free": "",
+			"pro": "",
+			"epr": ""
+		},
+		{
+			"title": "错误分类",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "关联浏览器",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "关联页面加载",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "详细错误信息",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "相关参数抓取",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		},
+		{
+			"title": "Stack Trace 信息抓取",
+			"free": 0,
+			"pro": 1,
+			"epr": 1
+		}
+
+	]
+}
