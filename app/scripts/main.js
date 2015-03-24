@@ -19,8 +19,7 @@ $(document).ready(function() {
          }
          else {
              $('#header').removeClass('navbar-fixed-top');
-             section.css('margin-top',0);
-             
+             section.css('margin-top',0);         
          }
     });
     
@@ -105,6 +104,32 @@ $(document).ready(function() {
         var offset_top = $('section.ca').offset().top;
         $('body').animate({scrollTop:offset_top},600);
     });
+
+    //客户案例翻页
+    $('.mail-box .next').click(function  () {
+        var mailbox = $('.mail-box.active');
+        mailbox.removeClass("active");
+        if (mailbox.hasClass("last")) {
+            mailbox.siblings().first().addClass("active"); 
+        }
+        else{
+            mailbox.next().addClass("active"); 
+        }
+        
+    });
+
+    $('.mail-box .prev').click(function  () {
+        var mailbox = $('.mail-box.active');
+        mailbox.removeClass("active");
+        if (mailbox.hasClass("first")) {
+            mailbox.siblings().last().addClass("active"); 
+        }
+        else{
+            mailbox.prev().addClass("active"); 
+        }
+        
+    });
+
 
 
 });

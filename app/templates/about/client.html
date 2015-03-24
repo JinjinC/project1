@@ -1,6 +1,165 @@
 {% extends '../base/_layout.html' %}
 {% block content %}
-<div class="headline-bg pricing-headline-bg"></div><!-- headline-bg -->
 
+<div class="headline-bg pricing-headline-bg"></div><!-- headline-bg -->
+<section class="features-video section section-on-bg">
+	<h2 class="title text-center">客户</h2>
+	<div class="mail-container container">
+		<div class="mail-box first active">
+			<div class="mail-header">
+				<h3 class="mail-title text-center">HandKa - Java on Play<span>&nbsp;——&nbsp;收件箱&nbsp;(1/5)</span></h3>
+				<p class="page-btn"><i class="fa fa-chevron-circle-left prev"></i>&nbsp;<i class="fa fa-chevron-circle-right next"></i></p>
+			</div>
+			<div class="mail-body">
+				<div class="mail-info">
+					<img src="/images/about/hankalogo.png">
+					<p>From: ybak &lt;ybak@sina.com&gt;</p>
+					<p>To: OneAPM 客服 &lt;support@oneapm.com&gt;</p>
+					<p>Subject: OneAPM 使用感受</p>	
+				</div>
+				<div class="mail-text">
+					<p>我们 handka.com 的研发团队是个 5 人小团队，其中 3 人前端，2 人后端，没有专职的运维，我们在服务监控上较为薄弱。</p>
+					<p>虽然我们之前在服务器上服务器上安装了 ganglia 来监控基本的 CPU，磁盘 IO 和网络流量。而我们采用了 Play 1 的技术栈，JVM 和 API，SQL 层的监控上一直是空白.</p>
+					<p>最近业务量的上涨带来了服务器 Load Average 的增加，为了进一步了解 Play Server 的内部的运行情况。我们希望使用更为详尽的监控系统.</p>
+					<p>试用了 OneAPM 几天后，发现 OneAPM 的优点相当明显：</p>
+					<p>面响应速度快，相对于国外的监控服务，OneAPM 地理上的优势不言而喻。</p>
+					<p>OneAPM 的服务相当稳定。</p>
+					<p>在集成 OneAPM 后, 服务器的 LoadAverage 曲线和之前一样：说明它占用的资源完全可以忽略。</p>
+					<p>如果只是监控 HTTP, SQL, JVM 的状态，OneAPM 完全够用，免去了使用 Java 的 Metric 类库手动编码和集成的复杂工作。</p>
+					<p class="text-right">Handka 技术负责人 余冰</p>
+				</div>
+			</div>
+		</div>
+		<div class="mail-box">
+			<div class="mail-header">
+				<h3 class="mail-title text-center">独立开发者 - Java<span>&nbsp;——&nbsp;收件箱&nbsp;(2/5)</span></h3>
+				<p class="page-btn"><i class="fa fa-chevron-circle-left prev"></i>&nbsp;<i class="fa fa-chevron-circle-right next"></i></p>
+			</div>
+			<div class="mail-body">
+				<div class="mail-info">
+					<p>From: jiaoqsh &lt;jiaosqh@126.com&gt;</p>
+					<p>To: OneAPM 客服 &lt;support@oneapm.com&gt;</p>
+					<p>Subject: OneAPM 体验反馈</p>	
+				</div>
+				<div class="mail-text">
+					<p>今天部署体验了 OneAPM。项目为Java Web应用，Web 容器为 Tomcat。</p>
+					<p>使用后第一感觉就是功能比较全面，提供了一站式的服务。以前我们项目做监控，服务器和应用程序: Tomcat、MySQL、Memcached 等，都是采用 Nagiso 及相应插件做的，程序代码调优是使用的 JavaSimon。</p>
+					<p>尤其监控 Tomcat 时为了灵活处理需要将 Tomcat 提供的 JMX 服务信息，JVM、线程、会话,解析发布服务然后集成在Nagios 中，有了 OneAPM 可以很方便并且全面的解决这些问题。</p>
+					<p>最后，能看到这样的一款产品我和我同事体验后都感觉很棒。希望你们的产品越做越好！我们也会在第一时间体验新功能。</p>
+				</div>
+			</div>
+		</div>
+		<div class="mail-box">
+			<div class="mail-header">
+				<h3 class="mail-title text-center">广州天拓网络技术有限公司 - PHP<span>&nbsp;——&nbsp;收件箱&nbsp;(3/5)</span></h3>
+				<p class="page-btn"><i class="fa fa-chevron-circle-left prev"></i>&nbsp;<i class="fa fa-chevron-circle-right next"></i></p>
+			</div>
+			<div class="mail-body">
+				<div class="mail-info">
+					<img src="/images/about/teamtoplogo.png">
+					<p>From: 监控 &lt;monitor@teamtop.com&gt;</p>
+					<p>To: OneAPM 客服 &lt;support@oneapm.com&gt;</p>
+					<p>Subject: 使用 OneAPM 感受及建议</p>	
+				</div>
+				<div class="mail-text">
+					<p>广州天拓网络技术有限公司，做的是：在线广告管理分析平台。公司位于广州，有两个网站：Va.cn & Ztou.com.cn。项目主要使用 PHP，少部分使用了 Java。</p>
+					<p>目前国内来看很少有能像 OneAPM 一样对应用如此细粒度的监控，无论对于运维还是开发在应用性能的提升和排错上有很大的帮助。值得使用的亮点：</p>
+					<p>1）JVM的内存分配、线程及会话的监控。</p>
+					<p>2）事务的监控。 由此监控可以得知事务的执行过程：所花费的时间，时间都花在了哪里，都调用了什么方法，方法被调用了几次，及都有哪些与此相关的数据库操作等，都能从监控上及时获得数据，对于优化代码性能有很大的帮助。</p>
+					<p>3）错误信息。 能及时获取程序运行过程中出现的错误信息及涉及到的 SQ L操作；这样出现问题时可以开发人员开通一个 OneAPM 的管理帐号就能去查看解决相关的程序错误，不必开通操作系统的管理权限，确实很方便</p>
+					<p>4）SQL分析。 这个功能个人感觉有点类似 MySQL 里面 SCHEMA 使用情况和慢日志的统计，可以容易的看到 SQL 操作的时间、响应时间、执行次数及吞吐量。</p>
+					<p class="text-right">广州天拓网络技术有限公司 监控团队</p>
+				</div>
+			</div>
+		</div>
+		<div class="mail-box">
+			<div class="mail-header">
+				<h3 class="mail-title text-center">独立开发者 - Node.js<span>&nbsp;——&nbsp;收件箱&nbsp;(4/5)</span></h3>
+				<p class="page-btn"><i class="fa fa-chevron-circle-left prev"></i>&nbsp;<i class="fa fa-chevron-circle-right next"></i></p>
+			</div>
+			<div class="mail-body">
+				<div class="mail-info">
+					<img src="/images/about/teamtoplogo.png">
+					<p>From: Chang Liang &lt;bigbrightf@gmail.com&gt;</p>
+					<p>To: OneAPM 客服 &lt;support@oneapm.com&gt;</p>
+					<p>Subject: OneAPM 使用感受</p>	
+				</div>
+				<div class="mail-text">
+					<p>我是一名典型的家用游戏宅，自学过一点日语，加入了民间的游戏中文化社区和同好的基友们做一些老游戏的汉化工作：Game Hack & Localization。</p>
+					<p>在游戏中文化的活动中，我为汉化小组做了一个简单的汇总游戏专有名词译名的站点，使用的是 Node.js，并把站点部署到了 AppFog 上。</p>
+					<p>虽然现在的站点功能极为简单，但在可预见的将来，随着新功能：编辑，展示等功能的不断加入，系统出现问题的机率会越来越大，从码农周刊知道了 OneAPM，并且得知有 T-Shirt 拿......咳咳，并且知道 OneAPM 是一套非常实用的应用性能监控工具，于是便按照教学成功安装并更新了站点，部署过程十分简单，操作教学也简单明了。</p>
+					<p>作为站点管理方面的外​行，仅仅从感性方面来讲，OneAPM 服务提供的性能监控数据可以说相当舒服，并且方便浏览。响应时间、吞吐量等指标还可以浏览详细信息。现在站点还没加入数据库，加入之后，准备进一步观察一下数据库操作的监控数据</p>
+				</div>
+			</div>
+		</div>
+		<div class="mail-box last">
+			<div class="mail-header">
+				<h3 class="mail-title text-center">上海演绎科技有限公司 - .NET <span>&nbsp;——&nbsp;收件箱&nbsp;(5/5)</span></h3>
+				<p class="page-btn"><i class="fa fa-chevron-circle-left prev"></i>&nbsp;<i class="fa fa-chevron-circle-right next last"></i></p>
+			</div>
+			<div class="mail-body">
+				<div class="mail-info">
+					<img src="/images/about/topbitlogo.gif">
+					<p>From: Wenhua Zhang &lt;shiziwen@gmail.com&gt;</p>
+					<p>To: OneAPM 客服 &lt;support@oneapm.com&gt;</p>
+					<p>Subject:  OneAPM 使用感受，求机械键盘~</p>	
+				</div>
+				<div class="mail-text">
+					<p>尝试了 Linux 平台下的 Django 以及 Windows 下的 .Net，现在我也总结一下自己的使用感受。</p>
+					<p>首先，确实没有想到 OneAPM 的功能这么强大，每个请求都可以监控到，各项指标一目了然，几乎是一个 HTTP 请求的整个过程的每个细节都可以看到，这样就可以很方便的进行监控和性能调试了。这也验证了官网的那句【实现代码级应用性能可视化】。</p>
+					<p>在 .Net 下的安装部署较为简单，按照官网的步骤，很快就部署成功了，选择语言、获取授权、下载并安装程序、重启 IIS服务器，然后就是链接应用程序，简单的 5 个步骤，不需要修改任何的代码。</p>
+					<p>作为一名系统工程师，让我最为惊讶的是 OneAPM 探针的监控粒度，运行的每项服务都可以监控到，简单明了</p>
+					<p>服务器的每项性能指标都能清楚显示出来，图文并茂。也可以显示服务的拓扑图，这样就可以很容易看到性能的瓶颈出在哪里。每个事务的性能分析也一目了然。甚至细化到了每次 SQL 语句，这样优化数据库的时候，就非常方便，能更好的和同事沟通。</p>
+					<p>还有专门的性能分析，来单独分析每一项服务。其中的报表功能，方便我们看到每一次优化后的具体参数的变化。目前 .Net 的监控是在在测试服务器上进行了相关部署，使用一段时间之后，会申请部署到线上服务器。</p>
+					<p>希望我的使用感受能起到一定作用~</p>
+					<p>感谢贵公司开发出来这样优秀的产品。</p>
+					<p>另外就是希望能得到机械键盘，这样，老板就知道我工作有多努力了~多谢。</p>
+					<p class="text-right">上海演绎科技有限公司 张纹华</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="client section">
+	<h2 class="title text-center" >客户案例</h2>
+	<div class="client-container container">
+		<div class="row">
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+				<div class="case" style="padding-left: 30px;">
+					<a href="http://oneapm.com/downfiles/CaseStudy-21cp.pdf">
+						<img src="/images/about/case1.png">
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+				<div class="case" style="padding-right: 30px;">
+					<a href="http://oneapm.com/downfiles/CaseStudy-v2ex.pdf">
+						<img src="/images/about/case2.png">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ******CTA Section****** -->
+<section id="cta-section" class="section cta-section text-center pricing-cta-section" style="padding-top:110px;">
+    <div class="container">
+        <h2 class="title">超过 10 万全球开发者选择 OneAPM！</h2>
+        <p class="intro">现在注册，即可免费试用专业版 15 天</p>
+        <p>
+            <a class="btn btn-cta btn-cta-download" href="#" target="_blank">立即注册</a>
+        </p>
+    </div><!--//container-->
+</section><!--//cta-section-->
+   <!-- ******FOOTER****** --> 
+{% endblock %}
+
+{% block scripts %}
+
+    {% parent %}
+    <!-- build:js(.) /scripts/apm-price.js -->
+    <script type="text/javascript" src="../../scripts/main.js"></script>
+    <!-- endbuild -->
+>>>>>>> b4a28d58a301af0498a79b2ac0e1dfe3a1709ea4
 
 {% endblock %}

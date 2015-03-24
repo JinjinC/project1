@@ -107,7 +107,7 @@ section.about-us {
 	max-width: 800px;
 	margin: 30px auto;
 
-	article {
+	.article {
 		background: #fff;
 		padding: 40px 50px 30px;
 		border: 1px solid #eeeeee;
@@ -179,5 +179,136 @@ section.jobs {
 		color: #fff;
 	}
 
+}
+
+section.joblist {
+	margin-top: 90px;
+	.panel {
+		background: #f5f5f5;		
+		.panel-title {
+			font-weight: normal;
+			color: #666;
+			i.fa {
+				color: #D5D5D5;
+			}
+	 	}
+	 	.panel-title:hover {
+	 		i.fa {
+				color: #337ab7;
+			}
+	 	}
+		.subtitle {
+			font-size: 14px;
+			font-weight: bolder;
+		}
+		ul li{
+	 		font-size: 14px;
+	 	}
+	 	.panel-small {
+	 		color: #B8B8B8;
+	 		font-size: 14PX;
+	 	}
+	}
+
+	.contents {
+		margin-top: 40px;
+	}
+
+	p.job-name {
+		display: inline-block;
+		font-size: 16px;
+		width: 92%;
+		margin-bottom: 0;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+/**** mail part section ******/
+
+.mail-container {
+	max-width: 700px;
+	margin: 30px auto;
+}
+
+.mail-box {
+	background: #fff;
+	border-radius: 6px;
+	border: 1px solid #eeeeee;
+	border-top-color: #dfdfdf;
+	box-shadow: 0 4px 1px rgba(0, 0, 0, 0.05);
+	text-align: left;
+	display: none;
+}
+.mail-box.active {
+	display: block;
+}
+.mail-header{
+	background: url('../images/about/mail-head.png') #dfdfdf 0 0 no-repeat;
+	height: 70px;
+}
+.mail-title {
+	margin: 0;
+	font-size: 14px;
+	font-weight: bolder;
+	line-height: 2.2;
+	color: #aaa;
+}
+.mail-info {
+	position: relative;
+	color: #B8B8B8;
+	border-bottom: 1px solid #dfdfdf;
+	padding: 10px 0;
+	p {
+		margin-bottom: 0;
+		text-align: left;
+		padding: 0 20px;
+		line-height: 1.5;
+		font-size: 12px;
+	}
+	img {
+		position: absolute;
+		top: 20px;
+		right: 15px;
+	}
+}
+.mail-text {
+	padding: 30px 0;
+	p {
+		padding: 0 20px;
+		line-height: 1.5;
+		margin-bottom: 10px;
+	}
+}
+.page-btn {
+	font-size: 30px;
+	color: #fff;
+	text-align: right;
+	padding-right: 10px;
+	line-height: 1;
+	i:hover {
+		cursor: pointer;
+		color: rgba(255,255,255,0.5);
+	}
+}
+
+section.client {
+	padding-top: 20px;
+	padding-bottom: 60px;
+
+	.client-container {
+		margin: 10px auto 0;
+		text-align: center;
+		max-width: 920px;
+	}
+
+	.case{
+		padding: 20px 30px;
+	}
+	h2.title {
+		font-size: 29px;
+		font-weight: normal;
+	}
 }
 
