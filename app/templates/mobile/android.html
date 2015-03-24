@@ -1,4 +1,172 @@
 {% extends '../base/_layout.html' %}
+
 {% block content %}
+<section class="features-video section section-on-bg">
+    <div class="container text-center">
+        <h2 class="title">OneAPM for Android</h2>
+        <div class="text-container">
+            <div class="about">
+            	<div class="row">
+            		<div class="col-md-4 col-sm-4 col-xs-12">
+            			<div class="lang-logo">
+							<img src="/images/lang/logo_android.png" alt="android">
+						</div>
+            		</div>
+            		<div class="col-md-8 col-sm-8 col-xs-12">
+            			<p>O实时性能数据，健全的适配性，只在 OneAPM !</p>
+                		<div class="lang-button">
+							<a href="signup.html" class="btn btn-knowmore" style="width:20%">安装指南</a>
+						</div>
+            		</div>
+            	</div>
+            </div><!--//about-->
+        </div>
+    </div>
+</section>
+
+<div class="sections-wrapper">
+    <!-- ******Why Section****** -->
+    <section class="section why">
+    	<div class="container">
+    		<div class="row">
+	        	<div class="lang-content col-md-8 col-sm-8 col-xs-12">
+	        		<div class="row item" style="padding-top:40px;">
+	        			<div class="col-md-12 col-sm-12 col-xs-12">
+		                    <h3 class="title">全面优化 Android App 性能</h3>
+		                    <div class="row desc">
+		                        <div class="col-md-6 col-sm-6 col-xs-12">
+		                        	<p>用户的所有交互，每一次会话，甚至是划屏解锁，OneAPM 都能实时监控其性能表现。而这一切，都是为了确保你的 Android App 能够给予用户最棒的性能体验。</p>
+		                        	<p>OneAPM 详悉 Android Apps 性能信息，协助你快速定位性能瓶颈，旨在帮助你创造最伟大的 Android App。</p>
+		                        	<p>快速捕捉性能表现差的应用代码，发现错误并随时向你发送警报，这一切只需下载并安装 OneAPM Android SDK，然后更新你的应用。OneAPM 保证这一切只需 3 分钟！</p>
+		                        	<p>*目前 OneAPM Android SDK 支持 2 种 IDE：Eclipse、Ant、Gradle，随后会支持 Maven 等等。</p>
+		                        </div>
+		                        <div class="col-md-6 col-sm-6 col-xs-12">
+		                        	<ul>
+		                        		<li class="first-li">追踪响应时间，优化产品性能</li>
+										<li>详悉错误信息，轻松定位根源问题</li>
+										<li>建立业务和性能的联系，方便感知业务增幅</li>
+										<li>以单个设备为单位度量应用性能</li>
+		                        		<li>以数据库、CPU、内存性能度量设备性能表现 (in Beta)</li>
+										<li>端到端的交互甘特图，给予各个事件的性能可见性 (in Beta)</li>
+										<li>不同事件的性能区隔，方便快速定位性能优化点</li>
+										<li>识别设备类型（手机/平板、操作系统版本），分类设备性能</li>
+										<li>OneAPM Android SDK* 3 分钟快速部署，应用性能管理从未如此简单</li>
+			                        </ul>
+		                        </div>
+		                    </div>
+		                </div>
+	        		</div>
+	        		
+	        		<div class="row item last-item">
+	        			<div class="col-md-12 col-sm-12 col-xs-12">
+		                    <h3 class="title">如何安装 OneAPM ？</h3>
+		                    <div class="row desc">
+		                    	<div class="col-md-12 col-sm-12 col-xs-12">
+		                    		<p>很开心听到这个问题！<br/>以下是 Android Agent 安装指南。具体安装过程可能会因为 IDE 环境不同而有所偏差。</p>
+		                    		<div class="setup-box">
+			                        	<h2>1. <a href="">创建 OneAPM 账号</a></h2>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>2. 点击 Android 按钮，然后为你的应用命名 </h2>
+			                        	<div class="command-box">
+			                        		A CHEESY NAME
+			                        	</div>
+			                        	<p>不喜欢？没关系，你随时都可以修改</p>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>3. 选择开发环境</h2>
+			                        	<div class="setup-content">
+			                        		<h4>Eclipse</h4>
+				                        	<p>安装 OneAPM Eclipse 插件</p>
+				                        	<p>打开 ADT 或 Eclipse，点击 "Help" 菜单中的 "Install New Software..."，并复制以下链接至 "Select All" 按钮上方的输入框中：</p>
+				                        	<div class="command-box">
+				                        		https://download.oneapm.com/android_agent/eclipse
+				                        	</div>
+				                        	<p>点击 "Select All"，取消 "Contact all update sites" 勾选，点击 "Next>"，跟随剩下的步骤并重启 Eclipse。</p>
+				                        	<p>加载 OneAPM 至应用程序</p>
+				                        	<p>在你的应用程序上方，点击鼠标右键，并选择 "Install OneAPM"。</p>
+
+				                        	<h4>Ant</h4>
+				                        	<p>下载并解压 OneAPM Ant SDK</p>
+				                        	<div class="command-box">
+				                        		OneAPM_Android_Agent_1.0.5.zip
+				                        	</div>
+				                        	<p>添加 OneAPM 至你的 App</p>
+				                        	<p>复制文件 lib/oneapm.agent.jar 到你的App 目录 libs 下。</p>
+				                        	<p>更改 ANT_OPTS</p>
+				                        	<p>通过更改 ANT_OPTS 环境变量，将 OneAPM 添加至 Ant 加载选项中。</p>
+				                        	<div class="command-box" style="margin-top:10px">
+				                        		export ANT_OPTS="-javaagent:/path/to/oneapm-android-1.0.5/lib/class.rewriter.jar"
+				                        	</div>
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>4. 配置授权信息</h2>
+			                        	<p>确保应用程序的 AndroidManifest.xml 配置文件中，引入了 INTERNET 和 ACCESS_NETWORK_STATE 两个授权请求</p>
+			                        	<div class="command-box">
+			                        		<pre><code><uses-permission android:name="android.permission.INTERNET" /></code></pre>
+			                        	</div>
+			                        	<div class="command-box">
+			                        		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>5. 启动Agent</h2>
+			                        	<p>在默认 Activity 中import OneAPM 类中引入</p>
+			                        	<div class="command-box">
+			                        		import com.blueware.agent.android.BlueWare;
+			                        	</div>
+			                        	<p>在 onCreate() 方法中加入如下 call 来初始化 OneAPM</p>
+			                        	<div class="command-box">
+			                        		BlueWare.withApplicationToken("<generate app token by creating a name above>").start(this.getApplication());
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>6. 启动应用程序</h2>
+			                        	<p>清除 Project，并重新在模拟器或设备中启动应用程序，开始应用性能管理</p>
+			                        	<p>几分钟后，你的应用就会开始向 OneAPM 发送数据。<br/>我们收到数据后，你的应用就会列在 OneAPM 应用列表中。</p>
+			                        </div>
+			                    </div>
+		                    </div>
+		                </div>
+	        		</div>
+	        	</div>
+	        	<div class="content col-md-4 col-sm-4 col-xs-12">
+        			<div class="col-md-12 col-sm-12 col-xs-12">
+        				<h4 class="frame-title">关键优势</h4>
+		        		<div class="key-advan">
+		        			<ul>
+								<li>交互甘特图</li>
+								<li>Web Service 监控</li>
+								<li>API Calls 监控</li>
+								<li>错误信息抓取和分析</li>
+								<li>设备级别的深度监控</li>
+								<li>自定义 Metrics</li>
+								<li>操作系统 &amp; 设备类型分析</li>
+								<li>版本性能分析</li>
+								<li>报警机制</li>
+								<li>地理信息抓取和分析</li>
+							</ul>
+		        		</div>
+        			</div>
+	        	</div>
+	        </div>
+    	</div>
+ 
+    </section><!--//why-->
+</div><!--//section-wrapper-->
+
+{% endblock %}
+
+{% block scripts %}
+
+    {% parent %}
+    <!-- build:js(.) /scripts/apm-feature.js -->
+    <script type="text/javascript" src="/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="/vendors/back-to-top.js"></script>
+    <script type="text/javascript" src="/vendors/jquery.placeholder/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+    <script type="text/javascript" src="/scripts/show-function.js"></script>
+    <!-- endbuild -->
 
 {% endblock %}

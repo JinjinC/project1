@@ -26,7 +26,6 @@ module.exports = function(grunt) {
       tagControls: options.tagControls,
       cmtControls: options.cmtControls
     });
-    console.log(this.files)
     handleFiles(this.files);
     if(options.contents){
       generateContent(options.contents,this.data.files[0].dest)

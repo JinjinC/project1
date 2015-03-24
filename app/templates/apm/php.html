@@ -1,4 +1,222 @@
 {% extends '../base/_layout.html' %}
+
 {% block content %}
+<section class="features-video section section-on-bg">
+    <div class="container text-center">
+        <h2 class="title">OneAPM for PHP</h2>
+        <div class="text-container">
+            <div class="about">
+            	<div class="row">
+            		<div class="col-md-4 col-sm-4 col-xs-12">
+            			<div class="lang-logo">
+							<img src="/images/lang/logo_php.png" alt="java">
+						</div>
+            		</div>
+            		<div class="col-md-8 col-sm-8 col-xs-12">
+            			<p>OneAPM for PHP 能够深入到所有 PHP 应用内部完成应用性能管理和监控，包括代码级别性能问题的可见性、性能瓶颈的快速识别与追溯、真实用户体验监控、服务器监控和端到端的应用性能管理。</p> 
+                		<p>OneAPM 可以追溯性能问题至各个环节，包括：性能表现差的 SQL 语句 Traces 记录、性能表现差的第三方 API、Web 服务、Cache 等等。</p>
+                		<div class="lang-button">
+							<a href="signup.html" class="btn btn-knowmore" style="width:20%">安装指南</a>
+						</div>
+            		</div>
+            	</div>
+            </div><!--//about-->
+        </div>
+    </div>
+</section>
+
+<div class="sections-wrapper">
+    <!-- ******Why Section****** -->
+    <section class="section why">
+    	<div class="container">
+    		<div class="row">
+	        	<div class="lang-content col-md-8 col-sm-8 col-xs-12">
+	        		<div class="row item" style="padding-top:40px;">
+	        			<div class="col-md-12 col-sm-12 col-xs-12">
+		                    <h3 class="title">总览全局性能</h3>
+		                    <div class="row desc">
+		                        <div class="col-md-6 col-sm-6 col-xs-12">
+		                        	<p>应用首页的应用性能总览，能够让你迅速感知应用的健康程度和总体性能状态与问题。以总览为入口，可以轻松追溯至地理信息、关键事务、错误统计等性能度量点，完成应用性能管理工作。在应用性能总览中，包括以下信息： </p>
+		                        </div>
+		                        <div class="col-md-6 col-sm-6 col-xs-12">
+		                        	<ul>
+		                        		<li class="first-li">响应时间</li>
+										<li>性能指数</li>
+										<li>吞吐量（单位：rpm 每分钟请求数）</li>
+										<li>关键事务</li>
+		                        		<li>错误率</li>
+										<li>近期事件</li>
+										<li>服务器信息</li>
+			                        </ul>
+		                        </div>
+		                    </div>
+		                </div>
+	        		</div>
+	        		<div class="row item">
+	        			<div class="col-md-12 col-sm-12 col-xs-12">
+		                    <h3 class="title">详悉错误报告</h3>
+		                    <div class="row desc">
+		                        <div class="col-md-6 col-sm-6 col-xs-12">
+		                        	<p>无论是私人数据中心，还是公共云，亦或是 Hybrid-Cloud，OneAPM 同样适用。</p>
+		                        	<p>按照浏览器和地理信息 2 种分类方式，对真实用户的页面加载时间等性能数据进行查看，快速区隔出需要优化性能的浏览器类型和区域用户。 </p>
+		                        	<p>关键事务 Top 5，平均响应时间、吞吐量这些性能查看方式，帮助你快速定位性能瓶颈；事务的深度 Traces 记录，协助你完成应用性能管理从抽象到具象的追溯过程。 </p>
+		                        	<p>智能的报警机制，在性能瓶颈出现前，修复性能问题，防止性能问题导致用户流失。 </p>
+		                        </div>
+		                        <div class="col-md-6 col-sm-6 col-xs-12">
+		                        	<ul>
+		                        		<li class="first-li">跨应用性能问题跟踪</li>
+										<li>代码级别的应用性能可见性</li>
+										<li>详悉应用性能来取代传统测试</li>
+		                        		<li>自定义 Metrics</li>
+										<li>报警机制</li>
+		                        	</ul>
+		                        </div>
+		                    </div>
+		                </div>
+	        		</div>
+	        		<div class="row item">
+	        			<div class="col-md-12 col-sm-12 col-xs-12">
+		                    <h3 class="title">深度追溯细节</h3>
+		                    <div class="row desc">
+		                    	<div class="col-md-12 col-sm-12 col-xs-12">
+		                    		<p>OneAPM 提供整齐划一的界面，让你能够无障碍地完成从真实用户体验，到应用服务器，直至应用代码的端到端应用性能管理。 </p>
+		                        	<p>OneAPM 支持团队协助，能够帮助一个团队完成应用性能管理工作，包括：事务的深度性能剖析、浏览器 Traces 记录查看、关键事务性能分析、事务 Traces 记录查看。</p>
+		                    	</div>
+		                    </div>
+		                </div>
+	        		</div>
+	        		
+	        		<div class="row item">
+	        			<div class="col-md-12 col-sm-12 col-xs-12">
+		                    <h3 class="title">Why OneAPM ？</h3>
+		                    <div class="row desc">
+		                    	<div class="col-md-12 col-sm-12 col-xs-12">
+		                    		<p>OneAPM 是国内首家支持 PHP 的应用性能管理云解决方案，通过 Saas 向用户提供统一的入口、友好的界面、便捷的流程，来管理和监控应用程序的性能，并完成从前端、到网络、直至应用代码的端到端应用性能管理，让你随时随地变身运维专家。 </p>
+		                    		<p>OneAPM 面向开发者和中小型企业，无需企业级的花费，就可以达到企业级的应用性能管理效果。基础设施监控、多语言支持、真实用户体验监控、事务深度追溯和分析，只在 OneAPM ！</p>
+		                    	</div>
+		                    </div>
+		                </div>
+	        		</div>
+	        		<div class="row item">
+	        			<div class="col-md-12 col-sm-12 col-xs-12">
+		                    <h3 class="title">主流框架/平台支持</h3>
+		                    <div class="row desc">
+		                    	<div class="col-md-12 col-sm-12 col-xs-12">
+		                    		<p>每一款框架/平台，我们都悉心照顾：</p>
+			                        <div class="col-md-4 col-sm-4 col-xs-12">
+			                        	<ul>
+			                        		<li>Wordpress</li>
+			                        		<li>Drupal</li>
+			                        		<li>Magento</li>
+			                        		<li>Zend</li>
+			                        	</ul>
+			                        </div>
+			                        <div class="col-md-4 col-sm-4 col-xs-12">
+			                        	<ul>
+			                        		<li>CakePHP</li>
+			                        		<li>Codelgniter</li>
+			                        		<li>Symfony</li>
+			                        		<li>Laravel</li>
+			                        	</ul>
+			                        </div>
+			                        <div class="col-md-4 col-sm-4 col-xs-12">
+			                        	<ul>
+			                        		<li>ThinkPHP</li>
+			                        		<li>Discuz</li>
+			                        		<li>Yii</li>
+			                        	</ul>
+			                        </div>
+		                    	</div>
+		                    </div>
+		                </div>
+	        		</div>
+	        		
+	        		<div class="row item last-item">
+	        			<div class="col-md-12 col-sm-12 col-xs-12">
+		                    <h3 class="title">如何安装 OneAPM ？</h3>
+		                    <div class="row desc">
+		                    	<div class="col-md-12 col-sm-12 col-xs-12">
+		                    		<p>很开心听到这个问题！<br/>以下是 PHP Agent 安装指南。具体安装过程可能会因为 IDE 环境不同而有所偏差。</p>
+		                    		<div class="setup-box">
+			                        	<h2>1. <a href="">创建 OneAPM 账号</a></h2>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>2. 下载 OneAPM PHP Agent 安装包 </h2>
+			                        	<div class="command-box">
+			                        		oneapm-php5-linux-install-script.tar.gz
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>3. 解压并安装 OneAPM PHP Agent</h2>
+			                        	<div class="command-box">
+			                        		tar -xzf oneapm-php5-linux-install-script
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>4. 安装 OneAPM PHP Agent</h2>
+			                        	<p>定位路径至您的安装包所在文件夹</p>
+			                        	<div class="command-box">
+			                        		cd oneapm-php5-linux-install-script
+			                        	</div>
+			                        	<p>执行安装命令</p>
+			                        	<div class="command-box">
+			                        		sudo ./oneapm-install install
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>5. 输入 License Key</h2>
+			                        	<p>根据提示，输入License Key</p>
+			                        	<p>重启 Apache，等待安装成功</p>
+			                        	<div class="command-box">
+			                        		OneAPM is now installed on your system. <br/>Congratulations!
+			                        	</div>
+			                        	<p>启动 Daemon</p>
+			                        	<div class="command-box">
+			                        		sudo /usr/bin/oneapm-daemon
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>6. 见证奇迹的时刻！</h2>
+			                        	<p>几分钟后，你的应用就会开始向 OneAPM 发送数据。<br/>我们收到数据后，你的应用就会列在 OneAPM 应用列表中。</p>
+			                        </div>
+			                    </div>
+		                    </div>
+		                </div>
+	        		</div>
+	        	</div>
+	        	<div class="content col-md-4 col-sm-4 col-xs-12">
+        			<div class="col-md-12 col-sm-12 col-xs-12">
+        				<h4 class="frame-title">关键优势</h4>
+		        		<div class="key-advan">
+		        			<ul>
+								<li>免费基础设施监控</li>
+								<li>真实用户体验监控</li>
+								<li>应用架构自动建模</li>
+								<li>代码级别的性能诊断</li>
+								<li>关键事务 Traces 记录</li>
+								<li>Apdex: 度量用户满意度</li>
+								<li>含地理信息的 Traces 记录</li>
+							</ul>
+		        		</div>
+        			</div>
+	        	</div>
+	        </div><!--//item-->
+    	</div>
+ 
+    </section><!--//why-->
+</div><!--//section-wrapper-->
+
+{% endblock %}
+
+{% block scripts %}
+
+    {% parent %}
+    <!-- build:js(.) /scripts/apm-feature.js -->
+    <script type="text/javascript" src="/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="/vendors/back-to-top.js"></script>
+    <script type="text/javascript" src="/vendors/jquery.placeholder/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+    <script type="text/javascript" src="/scripts/show-function.js"></script>
+    <!-- endbuild -->
 
 {% endblock %}
