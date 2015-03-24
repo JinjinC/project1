@@ -34,14 +34,10 @@
 	        			<div class="col-md-12 col-sm-12 col-xs-12">
 		                    <h3 class="title">全面优化 Android App 性能</h3>
 		                    <div class="row desc">
-		                        <div class="col-md-6 col-sm-6 col-xs-12">
+		                        <div class="col-md-12 col-sm-12 col-xs-12">
 		                        	<p>用户的所有交互，每一次会话，甚至是划屏解锁，OneAPM 都能实时监控其性能表现。而这一切，都是为了确保你的 Android App 能够给予用户最棒的性能体验。</p>
 		                        	<p>OneAPM 详悉 Android Apps 性能信息，协助你快速定位性能瓶颈，旨在帮助你创造最伟大的 Android App。</p>
-		                        	<p>快速捕捉性能表现差的应用代码，发现错误并随时向你发送警报，这一切只需下载并安装 OneAPM Android SDK，然后更新你的应用。OneAPM 保证这一切只需 3 分钟！</p>
-		                        	<p>*目前 OneAPM Android SDK 支持 2 种 IDE：Eclipse、Ant、Gradle，随后会支持 Maven 等等。</p>
-		                        </div>
-		                        <div class="col-md-6 col-sm-6 col-xs-12">
-		                        	<ul>
+		                        	<ul class="ul-indep">
 		                        		<li class="first-li">追踪响应时间，优化产品性能</li>
 										<li>详悉错误信息，轻松定位根源问题</li>
 										<li>建立业务和性能的联系，方便感知业务增幅</li>
@@ -52,6 +48,8 @@
 										<li>识别设备类型（手机/平板、操作系统版本），分类设备性能</li>
 										<li>OneAPM Android SDK* 3 分钟快速部署，应用性能管理从未如此简单</li>
 			                        </ul>
+		                        	<p>快速捕捉性能表现差的应用代码，发现错误并随时向你发送警报，这一切只需下载并安装 OneAPM Android SDK，然后更新你的应用。OneAPM 保证这一切只需 3 分钟！</p>
+		                        	<p>*目前 OneAPM Android SDK 支持 2 种 IDE：Eclipse、Ant、Gradle，随后会支持 Maven 等等。</p>
 		                        </div>
 		                    </div>
 		                </div>
@@ -71,7 +69,7 @@
 			                        	<div class="command-box">
 			                        		A CHEESY NAME
 			                        	</div>
-			                        	<p>不喜欢？没关系，你随时都可以修改</p>
+			                        	<p>不喜欢？没关系，你随时都可以修改。</p>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>3. 选择开发环境</h2>
@@ -91,9 +89,9 @@
 				                        	<div class="command-box">
 				                        		OneAPM_Android_Agent_1.0.5.zip
 				                        	</div>
-				                        	<p>添加 OneAPM 至你的 App</p>
+				                        	<p>添加 OneAPM 至你的 App。</p>
 				                        	<p>复制文件 lib/oneapm.agent.jar 到你的App 目录 libs 下。</p>
-				                        	<p>更改 ANT_OPTS</p>
+				                        	<p>更改 ANT_OPTS。</p>
 				                        	<p>通过更改 ANT_OPTS 环境变量，将 OneAPM 添加至 Ant 加载选项中。</p>
 				                        	<div class="command-box" style="margin-top:10px">
 				                        		export ANT_OPTS="-javaagent:/path/to/oneapm-android-1.0.5/lib/class.rewriter.jar"
@@ -104,10 +102,10 @@
 			                        	<h2>4. 配置授权信息</h2>
 			                        	<p>确保应用程序的 AndroidManifest.xml 配置文件中，引入了 INTERNET 和 ACCESS_NETWORK_STATE 两个授权请求</p>
 			                        	<div class="command-box">
-			                        		<pre><code><uses-permission android:name="android.permission.INTERNET" /></code></pre>
+			                        		&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
 			                        	</div>
 			                        	<div class="command-box">
-			                        		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			                        		&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;
 			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
@@ -118,7 +116,7 @@
 			                        	</div>
 			                        	<p>在 onCreate() 方法中加入如下 call 来初始化 OneAPM</p>
 			                        	<div class="command-box">
-			                        		BlueWare.withApplicationToken("<generate app token by creating a name above>").start(this.getApplication());
+			                        		BlueWare.withApplicationToken("&lt;generate app token by creating a name above&gt;").start(this.getApplication());
 			                        	</div>
 			                        </div>
 			                        <div class="setup-box">

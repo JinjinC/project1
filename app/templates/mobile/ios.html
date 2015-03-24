@@ -1,4 +1,4 @@
-{% extends '../base/_layout.html' %}
+﻿{% extends '../base/_layout.html' %}
 
 {% block content %}
 <section class="features-video section section-on-bg">
@@ -34,13 +34,10 @@
 	        			<div class="col-md-12 col-sm-12 col-xs-12">
 		                    <h3 class="title">全面优化 iOS App 性能</h3>
 		                    <div class="row desc">
-		                        <div class="col-md-6 col-sm-6 col-xs-12">
+		                        <div class="col-md-12 col-sm-12 col-xs-12">
 		                        	<p>用户的所有交互，每一次会话，甚至是划屏解锁，OneAPM 都能实时监控其性能表现。而这一切，都是为了确保你的 iOS App 能够给予用户最棒的性能体验。</p>
 		                        	<p>OneAPM 作为 iOS 应用性能管理最佳的解决方案，也将协助你的应用成为 App Store 同类产品中最棒的。</p>
-		                        	<p>从现在开始使用 OneAPM 吧！快速捕捉性能表现差的应用代码，发现错误并随时向你发送警报，这一切只需下载并安装 OneAPM iOS SDK，然后更新你的应用。OneAPM 保证这一切只需 3 分钟。</p>
-		                        </div>
-		                        <div class="col-md-6 col-sm-6 col-xs-12">
-		                        	<ul>
+		                        	<ul class="ul-indep">
 		                        		<li class="first-li">追踪响应时间，优化产品性能</li>
 										<li>详悉错误信息，轻松定位根源问题</li>
 										<li>建立业务和性能的联系，方便感知业务增幅</li>
@@ -51,6 +48,7 @@
 										<li>识别设备类型（iPhone/iPad/iPod、操作系统版本、运营商类型），分类设备性能</li>
 										<li>OneAPM Android SDK 3 分钟快速部署，应用性能管理从未如此简单</li>
 			                        </ul>
+		                        	<p>从现在开始使用 OneAPM 吧！快速捕捉性能表现差的应用代码，发现错误并随时向你发送警报，这一切只需下载并安装 OneAPM iOS SDK，然后更新你的应用。OneAPM 保证这一切只需 3 分钟。</p>
 		                        </div>
 		                    </div>
 		                </div>
@@ -75,7 +73,7 @@
 			                        <div class="setup-box">
 			                        	<h2>3. 下载 OneAPM iOS SDK</h2>
 			                        	<p>OneAPM_iOS_Agent_1.x.zip</p>
-			                        	<p>注：OneAPM iOS Agent 目前支持 iOS 6.0 及以上版本；Agent也能放心安装至 iOS 6.0 中，只是无法查阅该部分设备的数据信息。</p>
+			                        	<p><small>注：OneAPM iOS Agent 目前支持 iOS 6.0 及以上版本；Agent 也能放心安装至 iOS 6.0 中，只是无法查阅该部分设备的数据信息。</small></p>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>4. 解压 OneAPM iOS SDK</h2>
@@ -86,17 +84,17 @@
 			                        	<h2>5. 在 Linker Settings 中添加以下 3 个 Libraries</h2>
 			                        	<p>在项目导航窗口内点击你的 Project，并选中你的 App，然后选择 “Build Phases" 选项卡。</p>
 			                        	<p>打开 "Link Binary with Libraries" 列表。点击添加：</p>
-			                        	<div class="command-box">
-			                        		CoreTelephony.framework
-											SystemConfiguration.framework
+			                        	<p>
+			                        		CoreTelephony.framework<br/>
+											SystemConfiguration.framework<br/>
 											libz.dylib
-			                        	</div>
+			                        	</p>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>6. 在 AppDelegate上 启动 Agent</h2>
 			                        	<p>在 AppDelegate.m 文件头部引入 OneAPM Agent</p>
 			                        	<div class="command-box">
-			                        		#import <OneAPM/OneAPM.h>
+			                        		#import&lt;OneAPM/OneAPM.h&gt;
 			                        	</div>
 			                        	<p>在 application:didFinishLaunchingWithOptions: 方法的第一行，添加如下代码</p>
 			                        	<div class="command-box">
