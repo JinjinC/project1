@@ -100,5 +100,11 @@ $(document).ready(function() {
 		
 	});
 
+    //点击查看详情
+    $('#read-more').click(function  () {
+        var offset_top = $('section.ca').offset().top;
+        $('body').animate({scrollTop:offset_top},600);
+    });
+
 
 });

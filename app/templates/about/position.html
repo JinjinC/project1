@@ -1,4 +1,37 @@
 {% extends '../base/_layout.html' %}
 {% block content %}
+<section class="jobs section section-on-bg">
+    <div class="container text-center">
+    	<div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
+    		<h2 class="title">和我们一起工作</h2>
+    		<p class="text-center">平等、自由、坚定、共勉是我们公司一向秉持的工作态度和氛围。<br/>从投资人的眼光看，我们已经是一个完成 C 轮投资的公司；<br/>从同业人的角度来看，我们是一家力求创新和突破，努力打造中国应用性能管理领导品牌的公司；<br/>从雇员的体会中，我们知道平等交流、相互学习是做事最核心的原则。我们相信每一个有潜力的人。<br/>我们愿意给每一个对互联网有兴趣、对生活有热情、对世界有想法的年轻人，实现自己的机会。</p>
+    	</div>     
+    </div>
+</section>
+<section class="joblist section">
+	<div class="container">
+		<h2 class="title text-center">职位列表</h2>
+		<div class="row">
+		{% for row in position %}
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+			    <div class="panel">
+			        <div class="panel-heading">
+			            <h4 class="panel-title"><a data-parent="#accordion"
+			            data-toggle="collapse" class="panel-toggle" href="#faq1"><i class="fa fa-plus-square"></i><p>如何部署 OneAPM BROWSER？</p></a></h4>
+			        </div>
+			
+			        <div class="panel-collapse collapse" id="faq1">
+			            <div class="panel-body">
+			                <p>部署 OneAPM BROWSER 前，您需先部署 OneAPM APM。确保 APM Agent 在服务器端的正常运行；此时，OneAPM 会自动为您部署 OneAPM BROWSER。</p>
+			                <p>OneAPM BROWSER 也支持手动部署方式，但不推荐使用此种模式。</p>
+			                <p class="panel-small">具体事宜，请邮件联系 OneAPM 支持人员：support@oneapm.com</p>
+			            </div>
+			        </div>
+			    </div><!--//panel-->
+			</div>
+		{% endfor %}
+		</div>
+	</div>
+</section>
 
 {% endblock %}
