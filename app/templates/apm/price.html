@@ -1,11 +1,7 @@
 {% extends '../base/_layout.html' %}
 
 {% block content %}
-<<<<<<< HEAD
-<section class="pricing section section-on-bg">  
-=======
 <section class="pricing section section-on-bg">
->>>>>>> 3df08359b6ee733dafef5a118b832381af0a0034
     <div class="container">
         <h2 class="title text-center">Ai 报价</h2>
         <p class="intro text-center">新注册用户，<strong>免费使用专业版 15 天</strong></span>。免费版，永久免费。</p>
@@ -178,7 +174,6 @@
                                 {% if row.epr %}
                                     <td><i class="fa fa-check"></i></td>
                                 {% else %}
-<<<<<<< HEAD
                                     <td></td>
                                 {% endif %} 
                             {% endif %}   
@@ -186,30 +181,7 @@
                         {% endfor %}
                     </tbody>
                 </table>
-=======
-                                    <td>{{row.title}}</td>
-                                    {% if row.free %}
-                                        <td><i class="fa fa-check"></i></td>
-                                    {% else %}
-                                        <td></td>
-                                    {% endif %}
-                                    {% if row.pro %}
-                                        <td><i class="fa fa-check"></i></td>
-                                    {% else %}
-                                        <td></td>
-                                    {% endif %}
-                                    {% if row.epr %}
-                                        <td><i class="fa fa-check"></i></td>
-                                    {% else %}
-                                        <td></td>
-                                    {% endif %}
-                                {% endif %}
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
             </div>
->>>>>>> 3df08359b6ee733dafef5a118b832381af0a0034
         </div>
     </div>
 </section>
