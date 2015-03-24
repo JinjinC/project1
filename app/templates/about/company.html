@@ -1,9 +1,9 @@
 {% extends '../base/_layout.html' %}
 {% block content %}
-<section class="about-us section section-on-bg">
+<section class="features-video section section-on-bg">
 	<h2 class="title text-center">About OneAPM</h2>
 	<div class="article-container container">
-		<article>
+		<article class="article">
 			<p>北京蓝海讯通科技有限公司，即 OneAPM，是中国基础软件领域的新兴领军企业。<br/>专注于提供新一代应用性能管理软件和服务，帮助用户降低 IT 成本，提高业务生产力。<br/>产品适用于复杂的现代应用程序生产环境，提供端到端应用性能管理、<br/>移动端和浏览器真实用户体验分析、业务交易实时分析。</p>
 			<p>经过 7 年的技术与产品积累与沉淀，OneAPM 能够提供本地化部署模式和 SaaS 模式，<br/>支持所有主流编程语言和框架，帮助企业用户和开发者轻松实现：<br/>缓慢的程序代码和 SQL 语句的实时抓取。</p>
 			<p>OneAPM 也是全球首家可以同时从系统服务层、应用层、<br/>用户体验层、业务交易层提供性能管理产品的公司。</p>
@@ -28,4 +28,13 @@
 		</div>
 	</div>
 </section>
+{% endblock %}
+
+{% block scripts %}
+
+    {% parent %}
+    <!-- build:js(.) /scripts/apm-price.js -->
+    <script type="text/javascript" src="../../scripts/main.js"></script>
+    <!-- endbuild -->
+
 {% endblock %}

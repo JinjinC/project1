@@ -83,6 +83,9 @@ module.exports = function(grunt) {
         f.src.filter(srcExists).forEach(function(filepath) {
           var context,contextPath = filepath.substring(0,filepath.lastIndexOf('.'))+'.json';
           try{
+            if(contextPath.indexOf('about/position.json')>-1){
+              console.log(contextPath)
+            }
             context = grunt.file.readJSON(contextPath)
           }catch(err){
             context = {}
