@@ -18,7 +18,7 @@ STATIC_ZIPNAME="oneapmcomstatic.zip"
 BUILD_ZIPNAME="oneapmcombuild.zip"
 TMPDIR="../.tmp"
 
-# grunt dist
+grunt dist
 rc=$?
 if [ $rc = 0 ] ; then
   cd dist/
