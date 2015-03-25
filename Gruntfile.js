@@ -326,7 +326,12 @@ module.exports = function(grunt) {
     cdnify: {
       dist: {
         options: {
-          base: '//static.oneapm.com/assets/sites/'
+          // base: '//static.oneapm.com/assets/sites',
+          css:false,
+          rewriter:function(url){
+            // console.log(url);
+            return '//static.oneapm.com/assets/sites'+url
+          }
         },
         files: [{
           expand: true,

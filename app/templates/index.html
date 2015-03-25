@@ -1,119 +1,175 @@
 {% extends 'base/_layout.html' %}
 
 {% block content %}
-<div class="bg-index">
+<!-- <div class="bg-index">
 	<img src="/images/index/index.png">
-</div>      
+</div>       -->
+<div class="headline-bg index-bg"></div><!-- headline-bg -->
     
 <section class="promo section section-on-bg">
     <div class="container text-center">                
         <h2 class="title">无需任何改动<br/>实时抓取缓慢的程序代码和 SQL 语句</h2>
-        <p class="intro">首次注册 OneAPM 应用性能管理云解决方式 <br /> 可以免费试用 APM BROSWER MOBILE 全线产品15天</p>
-        <p class="text-center btn-part">
+        <p class="text-center btn-part btn-part-index">
 	        <a href="#" class="btn btn-large btn-demo">查看 DEMO</a>
 	        <span class="btn-index-span">or</span>
 	        <a href="signup.html" class="btn btn-large btn-signup">立即注册</a>
-	    </p>
+	    </p>   
         <button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" ><i class="fa fa-youtube-play"></i> Watch the video</button>
     </div><!--//container-->
 </section><!--//promo-->
 
-<div class="sections-wrapper">
-	<!-- ******Features Section****** -->  
-	<section class="features-tabbed section features-tabbed-index">
+<!-- ******Features Section****** -->  
+<section class="features-tabbed section features-tabbed-index">
+    <div class="container">
+        <div class="row">
+            <div class=" text-center col-md-10 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
+                <div class="features-content">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs text-center" role="tablist">
+                        <li class="active first">
+                            <a href="#feature-1" role="tab" data-toggle="tab">
+                                <i class="iconfont icon-tab icon-ai">&#xe608;</i> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#feature-2" role="tab" data-toggle="tab">
+                                <i class="iconfont icon-tab icon-bi">&#xe609;</i> 
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="#feature-3" role="tab" data-toggle="tab">
+                                <i class="iconfont icon-tab icon-mi">&#xe60a;</i>
+                            </a>
+                        </li>
+                    </ul><!--//nav-tabs-->
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="feature-1">
+                            <h3 class="tab-title">Application Insight</h3>
+                            <h4 class="tab-subtitle">端到端的分布式性能可视化</h4>                      
+                                <figure class="figure text-center">
+                                <img class="img-responsive" src="/images/index/ai.png" alt="" />
+                            </figure>
+                        </div><!--//tab-pane-->
+                        <div class="tab-pane" id="feature-2">
+                            <h3 class="tab-title">Broswer Insight</h3>
+                            <h4 class="tab-subtitle">真实用户体验管理</h4>                                    
+                            <figure class="figure text-center">
+                                <img class="img-responsive" src="/images/index/bi.png" alt="" />
+                            </figure>
+                        </div><!--//tab-pane-->
+                        <div class="tab-pane" id="feature-3">
+                            <h3 class="tab-title">Mobile Insight<h3/>
+                            <h4 class="tab-subtitle">崩溃分析</h4>
+                            <figure class="figure text-center">
+                                <img class="img-responsive" src="/images/index/mi.png" alt="" />
+                            </figure>
+                        </div><!--//tab-pane-->
+                    </div><!--//tab-content-->
+                </div>
+                <p class="text-center btn-part btn-part-index">
+                    <a href="#" class="btn btn-large btn-knowmore">观看影片</a>
+                    <span class="btn-index-span">or</span>
+                    <a href="signup.html" class="btn btn-large btn-sign">查看 DEMO</a>
+                </p>   
+            </div><!--//col-md-x-->
+        </div><!--//item-->
+    </div>
+</section>
+
+<section class="section why index-why">	
+	<div class="item" style="background:#f2f2f2;">
+		<div class="container">
+			<div class="row">
+				<figure class="figure col-md-7 col-sm-12 col-xs-12 ">
+	           		<img class="img-responsive img-cells" src="/images/index/lang-cells.png" alt="" />
+	            </figure>
+	    		<div class="content col-md-5 col-sm-12 col-xs-12" style="padding-top: 6%;">
+	                <h3 class="title">OneAPM 一站式解决方式</h3>
+	                <div class="desc">
+	                    <p>OneAPM 提供全语言和全平台的应用性能监控，无需改动代码，就可以抓取到「性能消耗大的代码」和「缓慢的 SQL 语句」。</p>
+	                    <p>OneAPM 取代传统监控工具；帮助您，预先发现性能问题；使得运维和开发，不再依赖个人的经验；从而，提高运维开发的效率。</p>
+                        <p class="small lang-link">
+                          <a href="/java">Java</a> |
+                          <a href="/ruby">Ruby</a> |
+                          <a href="/dotnet">.Net</a> |
+                          <a href="/php">PHP</a> |
+                          <a href="/nodejs">Node.js</a> |
+                          <a href="/python">Python</a> |
+                          <a href="/php">Broswer</a> |
+                          <a href="/nodejs">iOS</a> |
+                          <a href="/python">Android</a>
+                        </p>
+	                </div>
+                    <div></div>
+	            </div><!--//content-->
+	        </div>
+    	</div>
+    </div><!--//item-->
+    <div class="row item mobile-item">
         <div class="container">
-            <div class="row">
-	        	<div class="container">
-	                <div class=" text-center col-md-10 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
-	                    <!-- Nav tabs -->
-	                    <ul class="nav nav-tabs text-center" role="tablist">
-	                        <li class="active">
-	                        	<a href="#feature-1" role="tab" data-toggle="tab">
-	                        		<i class="iconfont icon-nav">&#xe604;</i> 
-	                        	</a>
-	                        </li>
-	                        <li>
-	                        	<a href="#feature-2" role="tab" data-toggle="tab">
-	                        		<i class="iconfont icon-nav">&#xe605;</i> 
-	                        	</a>
-	                        </li>
-	                        <li class="last">
-	                        	<a href="#feature-3" role="tab" data-toggle="tab">
-	                        		<i class="iconfont icon-nav">&#xe606;</i>
-	                        	</a>
-	                        </li>
-	                    </ul><!--//nav-tabs-->
-	                    
-	                    <!-- Tab panes -->
-	                    <div class="tab-content">
-
-	                        <div class="tab-pane fade in active" id="feature-1">
-	                            <h3 class="tab-title">
-	                            	Application Insight<br/>
-	                            	端到端的分布式性能可视化
-	                            </h3>                  	 
-	                            	<figure class="figure text-center">
-	                                <img class="img-responsive" src="/images/index/ai.png" alt="" />
-	                            </figure>
-	                        </div><!--//tab-pane-->
-	                        <div class="tab-pane" id="feature-2">
-	                            <h3 class="tab-title">
-	                            	Broswer Insight<br/> 
-	                            	端到端的分布式性能可视化
-	                            </h3>                                    
-	                            <figure class="figure text-center">
-	                                <img class="img-responsive" src="/images/index/bi.png" alt="" />
-	                            </figure>
-	                        </div><!--//tab-pane-->
-	                        <div class="tab-pane" id="feature-3">
-	                            <h3 class="tab-title">
-	                            	Mobile Insight<br/>
-	                            	端到端的分布式性能可视化
-	                            </h3>                                    
-	                            <figure class="figure text-center">
-	                                <img class="img-responsive" src="/images/index/mi.png" alt="" />
-	                            </figure>
-	                        </div><!--//tab-pane-->
-	                    </div><!--//tab-content-->
-	                </div><!--//col-md-x-->
-	        	</div>
-	        </div><!--//item-->
-        </div>
-    </section>
-
-    <!-- ******Why Section****** -->
-    <section id="why" class="section why">
-        <div class="row item" style="background:#f2f2f2;">
-        	<div class="container">
-        		<div class="content col-md-5 col-sm-5 col-xs-12">
-                    <h3 class="title">更广视野</h3>
-                    <div class="desc">
-                        <p>页面 Trace 给你更广视野，针对不同 URL 建立页面的 Trace，记录 TCP、DNS、DOM 加载、渲染等时间， 让你能够了解整个加载过程。</p>
-                        <p>页面 Trace 就是一次前端页面加载的快照，快照信息具体到：浏览器类型、IP 地址等，并包括 TCP 传输性能和 DNS 时间。</p>
+            <div class="content col-md-5 col-sm-12 col-xs-12 col-md-offset-2">
+                <div class="mobile-text">
+                    <div class="text-item">
+                        <img src="/images/index/mo1.svg">
+                        <span>不在夜不能寐</span>
                     </div>
-                </div><!--//content-->
-              	<figure class="figure col-md-7 col-sm-7 col-xs-12">
-                    <img class="img-responsive" src="/images/index/lang-cells.png" alt="" />
-                </figure>
-                
-        	</div>
-        </div><!--//item-->
+                    <div class="text-item">
+                        <img src="/images/index/mo2.svg">
+                        <span>降低 50% 平均修复时间</span>
+                    </div>
+                    <div class="text-item">
+                        <img src="/images/index/mo3.svg">
+                        <span>减少 90% 的售后工作量</span>
+                    </div>
+                </div>
+            </div><!--//content-->
+            <figure class="figure col-md-5 col-sm-12 col-xs-12">
+                <img class="img-responsive img-mobile" src="/images/index/mobile.png" alt="" />
+            </figure>
+        </div>
+    </div>
+</section><!--//why-->
 
-        <div class="row item ">
-        	<div class="container">
-    		  	
-        	</div>
-        </div><!--//item-->
 
-        <div class="row item last-item" style="background:#f2f2f2">
-        	<div class="container">
-        		
-        	</div>
-        </div><!--//item-->
+<!-- ******Press Section****** -->
+<section class="section press index-press">
+    <div class="container text-center">
+        <!-- <h4 class="new-title">新气象 新方向</h4> -->
+        <div id="news-section-bottom">
+            <a class="news-item" href="http://v.youku.com/v_show/id_XODcyNDUyOTMy.html" target="_blank">
+              <img src="/images/index/press/oneapmweb.png" alt="">
+              <span class="news-title"><span class="text">观赏「OneAPM for Web 功能介绍」影片</span></span>
+            </a>
+            <a class="news-item" href="http://oneapm.com/features/play.html" target="_blank">
+              <img src="/images/index/press/news_0.png" alt="">
+              <span class="news-title"><span class="text">Java Agent 现已支持 Play 框架</span></span>
+            </a>
+            <a class="news-item" href="http://oneapm.udesk.cn/hc/articles/190" target="_blank">
+              <img src="/images/index/press/news_1.png" alt="">
+              <span class="news-title"><span class="text">Android SDK 现已支持 Gradle</span></span>
+            </a>
+            <a class="news-item" href="http://market.aliyun.com/product/12-122338006-cmgj000251.html?spm=0.0.0.0.J7t3je" target="_blank">
+              <img src="/images/index/press/news_3.png" alt="">
+              <span class="news-title"><span class="text">OneAPM 入驻阿里云平台</span></span>
+            </a>
+        </div>
+    </div><!--//container-->
+</section><!--//press-->
 
-    </section><!--//why-->
-
-</div><!--//section-wrapper-->
+<!-- ******CTA Section****** -->
+<section id="cta-section" class="section cta-section text-center pricing-cta-section cta-section-index">
+    <div class="container">
+        <div class="partner">
+            <img src="/images/index/partner.png">
+        </div>
+        <h2 class="title">超过 10 万全球开发者选择 OneAPM！</h2>
+        <p>
+            <a class="btn btn-cta btn-cta-download" href="#" target="_blank">立即注册</a>
+        </p>
+    </div><!--//container-->
+</section><!--//cta-section-->
 
 <!-- Video Modal -->
     <div class="modal modal-video" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
@@ -121,7 +177,8 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 id="videoModalLabel" class="modal-title sr-only">Video Tour</h4>
+                    <h4 id="videoModalLabel" cla.
+                    ss="modal-title sr-only">Video Tour</h4>
                 </div>
                 <div class="modal-body">
                     <div class="video-container">
