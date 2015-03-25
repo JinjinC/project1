@@ -1,3 +1,22 @@
+span.icon {
+	  width: 90px;
+	  height: 90px;
+	  display: block;
+	  text-align: center;
+	  margin: 0 auto;
+	  font-weight: bold;
+	  img.svg {
+	  	margin-top: 20px;
+	  }
+}
+span.text {
+	font-size: 16px;
+	color: #000;
+}
+p.intro-text {
+	color: #aaa;
+}
+
 .mobilepic-wrap {
 	background: #fff;
 	border: 1px solid #eee;
@@ -5,51 +24,62 @@
 	border-radius: 6px;
 }
 
+.new-feature {
+	font-size: 14px;
+	color: #fff;
+}
+
+section.mobfeatures-tabbed {
+	background: #eee;
+	padding: 90px 0;
+	ul {
+		width: 500px;
+	}
+
+	@media(max-width: 540px){
+		ul {
+			width: 100%;
+			li a span{
+				line-height: 2;
+			}
+		}
+	}
+	img {
+		width: 70%;
+		margin: auto;
+	}
+	
+}
 
 section.ca {
 	padding-top: 80px;
 	padding-bottom: 80px;
-
-	span.icon {
-	  width: 90px;
-	  height: 90px;
-	  display: block;
-	  -webkit-border-radius: 50%;
-	  -moz-border-radius: 50%;
-	  -ms-border-radius: 50%;
-	  -o-border-radius: 50%;
-	  border-radius: 50%;
-	  -moz-background-clip: padding;
-	  -webkit-background-clip: padding-box;
-	  background-clip: padding-box;
-	  text-align: center;
-	  background: #006ec3;
-	  border: 5px solid #6FADDA;
-	  color: #fff;
-	  margin: 0 auto;
-	  padding-top: 25px;
-	  font-size: 26px;
-	  font-weight: bold;
-	}
-	span.text {
-		font-size: 14px;
-		color: #006ec3;
-		line-height: 2;
-	}
 	figure {
 		h3.title {
-		margin-bottom: 30px;
+		margin-bottom: 55px;
+		}
+		img{
+			margin: auto;
 		}
 		@media(min-width: 992px) {
 			img {
-				width: 67%;
+				width: 78%;
 			}
 		}
 		@media(min-width: 1200px) {
 			img {
-				width: 56%;
+				width: 64%;
 			}
 		}
+	}
+	span.icon {
+		height: 90px;
+	}
+	span.text {
+		font-size: 14px;
+	}
+	img.svg {
+		width: 80%
 	}
 }
 
@@ -59,34 +89,13 @@ section.trouble {
 	padding-bottom: 80px;
 	min-height: 700px;
 	ul {
-		width: 50%
+		width: 470px;
 	}
-
+	img{
+			margin: auto;
+	}
 	span.icon {
-	  width: 90px;
-	  height: 90px;
-	  display: block;
-	  -webkit-border-radius: 50%;
-	  -moz-border-radius: 50%;
-	  -ms-border-radius: 50%;
-	  -o-border-radius: 50%;
-	  border-radius: 50%;
-	  -moz-background-clip: padding;
-	  -webkit-background-clip: padding-box;
-	  background-clip: padding-box;
-	  text-align: center;
-	  background: #006ec3;
-	  border: 5px solid #6FADDA;
-	  color: #fff;
-	  margin: 0 auto;
-	  padding-top: 25px;
-	  font-size: 26px;
-	  font-weight: bold;
-	}
-	span.text {
-		font-size: 14px;
-		color: #006ec3;
-		line-height: 2;
+		height: 100px;
 	}
 }
 
@@ -309,6 +318,27 @@ section.client {
 	h2.title {
 		font-size: 29px;
 		font-weight: normal;
+	}
+}
+
+/*** apm feature 页面 ****/
+.video-dwld {
+	text-align: center;
+}
+
+section.features-apm {
+	text-align: center;
+	padding: 80px 0;
+
+	.desp {
+		color: #aaa;
+	}
+
+	figure {
+		margin: 50px 0 40px;
+	}
+	a:hover {
+		text-decoration: none;
 	}
 }
 

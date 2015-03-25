@@ -82,23 +82,23 @@ module.exports = function(grunt) {
       }
     },
     //favicons
-    favicons: {
-      options: {
-        trueColor: true,
-        precomposed: true,
-        appleTouchBackgroundColor: "#e2b2c2",
-        coast: true,
-        windowsTile: true,
-        tileBlackWhite: false,
-        tileColor: "auto",
-        html: '<%= config.dist %>/index.html',
-        HTMLPrefix: "/"
-      },
-      dist: {
-        src: 'src/logo.png',
-        dest: '<%= config.dist %>'
-      }
-    },
+    // favicons: {
+    //   options: {
+    //     trueColor: true,
+    //     precomposed: true,
+    //     appleTouchBackgroundColor: "#e2b2c2",
+    //     coast: true,
+    //     windowsTile: true,
+    //     tileBlackWhite: false,
+    //     tileColor: "auto",
+    //     html: '<%= config.dist %>/index.html',
+    //     HTMLPrefix: "/"
+    //   },
+    //   dist: {
+    //     src: 'src/logo.png',
+    //     dest: '<%= config.dist %>'
+    //   }
+    // },
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       html:{
@@ -360,7 +360,7 @@ module.exports = function(grunt) {
   'clean:server',
   'swigstatic:dist',
   'less:dist',
-  'favicons:dist',
+  // 'favicons:dist',
   'static-min:dist'
   ]);
 
@@ -378,7 +378,7 @@ module.exports = function(grunt) {
     'clean:server',
     'swigstatic:test',
     'less:dist',
-    'favicons:dist',
+    // 'favicons:dist',
     'static-min:dist',
     'connect:dist'
   ]);

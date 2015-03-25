@@ -207,6 +207,50 @@ select {
   max-width: 100%;
 }
 
+/* ======= video ======= */
+video {
+  max-width: 100%;
+}
+video.box-video {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin: auto;
+  padding: 10px;
+  box-shadow: 0 4px 1px 1px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+.play-btn{
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  font-size: 150px;
+  cursor: pointer;
+  z-index: 10;
+  i {
+    color: #bbb;
+  }
+}
+
+.download-btn{
+  position: absolute;
+  top: 280px;
+  left: 334px;
+  font-size: 16px;
+  z-index: 10;
+  a:hover {
+    text-decoration: none;
+  }
+
+}
+#scan-code-img {
+  display: none;
+  position: absolute;
+  top: 180px;
+  left: 560px;
+  z-index: 10;
+}
+
 
 /* ======= sections-wrapper ======= */
 .sections-wrapper {
@@ -230,6 +274,10 @@ select {
   -webkit-opacity: 0.8;
   -moz-opacity: 0.8;
   opacity: 0.8;
+}
+section h2.title,
+section h3.title {
+  font-weight: normal;
 }
 
 /* ======= Why ======= */

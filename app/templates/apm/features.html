@@ -1,155 +1,77 @@
 {% extends '../base/_layout.html' %}
 
 {% block content %}
-<div class="headline-bg pricing-headline-bg"></div><!-- headline-bg -->
+<div class="headline-bg bg-apm"></div><!-- headline-bg -->
 <section class="features-video section section-on-bg">
     <div class="container text-center">
-        <h2 class="title">OneAPM for Web 详悉实时性能问题</h2>
-        <p class="intro text-center">从用户体验到网络服务 直至应用代码</p>
+        <h2 class="title">从用户体验到网络服务，直至应用代码</h2>
+        <p class="intro text-center">OneAPM 帮助您完成：端到端的应用性能管理</p>
         <div class="video-container">
-            <img src="/images/bro-features.png" style="width:100%">
+            <div class="fluid-width-video-wrapper">
+                <p class="play-btn"><a href="#" class="play-trigger btn-link"><i class="fa fa-play-circle-o"></i></a></p>
+                <!-- <button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" ><i class="fa fa-youtube-play"></i> Watch the video</button> -->
+               <video preload controls poster="/images/trace-page2.png" class="box-video" id="apm-video">
+                   <source src="http://oneapm-com-public-file.qiniudn.com/what-is-oneapm-v0.0.2.mp4" type="video/mp4">
+               </video>
+            </div>
         </div>
     </div>
 </section>
 
 <div class="sections-wrapper">
-    <!-- ******Why Section****** -->
-    <section id="why" class="section why" style="padding-top:50px;">
-        <div class="row item" id="apm-features-item1">
-        	<div class="index-blue">
-        		<div class="container">
-        			<p class="num num1"></p>
-					<p class="tz"><img src="/images/num/1zi.png" alt="真实用户体验管理"></p>
-				</div>
-        	</div>
-        	<div class="container">
-        		<div class="section-content">
-        			<div class="content col-md-4 col-sm-4 col-xs-12">
-        				<p class="img-p">
-        					<img src="/images/num/f31.png" alt="按浏览器和操作系统类型、页面渲染阶段，分段检查应用性能。">
-        				</p>
-	                    <div class="img-desc">
-	                        <p>按浏览器和操作系统类型、页面渲染阶段，分段检查应用性能。</p>
-	                    </div>
-	                </div><!--//content-->
-	                <div class="content col-md-4 col-sm-4 col-xs-12">
-	                    <p class="img-p"><img src="/images/num/f33.png" alt="按浏览器和操作系统类型、页面渲染阶段，分段检查应用性能。"></p>
-	                    <div class="desc">
-	                        <p>按浏览器和操作系统类型、页面渲染阶段，分段检查应用性能。</p>
-	                    </div>
-	                </div><!--//content-->
-                    <div class="content col-md-4 col-sm-4 col-xs-12">
-                        <p class="img-p"><img src="/images/num/f31.png" alt="结合后端代码和网络环境性能，综合分析应用性能问题。"></p>
-                        <div class="desc">
-                            <p>按浏览器和操作系统类型、页面渲染阶段，分段检查应用性能。</p>
-                        </div>
-                    </div><!--//content-->
-        		</div>
-        	</div>
-        </div><!--//item-->
+<!-- ******真实用户体验 Section****** -->
+    <section class="section features-apm">
+        <div class="container">
+            <h2 class="title">真实用户体验监控</h2>
+            <p class="desp">根据真实用户体验，发觉问题影响范围</p>
+            <figure class="figure">
+                <img src="/images/apm-imgs/a.png" class="img-responsive">
+            </figure>
+            <p>「总览」页面概括应用整体性能，通过 Apdex、报警、错误率，并结合<a href="#">「Browser Insight」</a>；<br/>了解应用性能对用户使用体验的影响，从而挖掘应用可优化的范围。</p>
+        </div>
+    </section>
+<!-- ******分布式事务追踪 Section****** -->
+    <section class="section features-apm" style="background:#eee;">
+        <div class="container">
+            <h2 class="title">分布式事务追踪</h2>
+            <p class="desp">在分布式环境中，定位事务的性能瓶颈</p>
+            <figure class="figure">
+                <img src="/images/apm-imgs/b.png" class="img-responsive">
+            </figure>
+            <p>「端到端拓扑」，解析事务整个过程。「事务 Trace」为应用建立全过程快照，关注最慢组件，<br/>挖掘性能消耗热点。OneAPM 剥离出与后端性能相关的「后台任务」，关注服务器资源消耗。<br/><a href="#">查看「事务」更多信息</a></p>
+        </div>
+    </section>
+<!-- ******代码级别深度追踪 Section****** -->
+    <section class="section features-apm">
+        <div class="container">
+            <h2 class="title">代码级别深度追踪</h2>
+            <p class="desp">深入至代码层面，轻松地解决性能问题</p>
+            <figure class="figure">
+                <img src="/images/apm-imgs/c.png" class="img-responsive">
+            </figure>
+            <p>轻量 OneAPM Agent 以小于 2% 的性能消耗，定位至代码层的性能指标；采集 JVM 性能指标，<br/>为应用建立 「Thread Profiler」，并分析 SQL 语句性能；给予您最科学的性能优化参考。<br/><a href="#">查看「Thread Profiler」更多信息</a></p>
+        </div>
+    </section>
 
-        <div class="row item" style="background:#f2f2f2; padding-top:0">
-            <div class="index-blue">
-                <div class="container">
-                    <p class="num num1"></p>
-                    <p class="tz"><img src="/images/num/1zi.png" alt="真实用户体验管理"></p>
-                </div>
+
+
+<!-- ******Android downloader Section****** -->
+    <section class="section video-dwld">
+        <div class="video-container">
+            <div class="fluid-width-video-wrapper" style="position: relative">
+                <img src="/images/apm-imgs/code.png" id="scan-code-img">
+                <video autoplay loop poster=""http://oneapm-com-public-file.qiniudn.com/app-bg.png"">
+                    <p class="download-btn">
+                        <a href="http://oneapm-com-public-file.qiniudn.com/oneapm.v0.0.1.apk">下载安卓版&nbsp;APK&nbsp;&nbsp;</a>
+                        <a href="#" id="scan-code">
+                            <span><i class="fa fa-barcode"></i>&nbsp;扫码下载</span>
+                        </a>
+                    </p>
+                    <source src="http://oneapm-com-public-file.qiniudn.com/app-bg.mp4" type="video/mp4">
+                </video>
             </div>
-        	<div class="container">
-        		<div class="content col-md-4 col-sm-12 col-xs-12 col-md-push-8 col-sm-push-0 col-xs-push-0" style="margin-top: 7%;">
-                    <h3 class="title">更广视野</h3>
-                    <div class="desc">
-                        <p>页面 Trace 给你更广视野，针对不同 URL 建立页面的 Trace，记录 TCP、DNS、DOM 加载、渲染等时间， 让你能够了解整个加载过程。</p>
-                        <p>页面 Trace 就是一次前端页面加载的快照，快照信息具体到：浏览器类型、IP 地址等，并包括 TCP 传输性能和 DNS 时间。</p>
-                    </div>
-                </div><!--//content-->
-                <figure class="figure col-md-7 col-sm-12 col-xs-12 col-md-pull-4 col-sm-pull-0 col-xs-pull-0">
-                    <ul class="nav nav-tabs text-center" role="tablist" style="width:210px;">
-                        <li class="active feature-img">
-                            <a href="#location" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
-                                <span>事务总览</span>
-                            </a>
-                        </li>
-                        <li class="feature-img">
-                            <a href="#broswer" role="tab" data-toggle="tab" class="img-title">
-                                <span>Trace 详情</span>
-                            </a>
-                        </li>
-                    </ul><!--//nav-tabs-->
-
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="location">
-                            <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/trace-page1.png" alt="" />
-                            </figure>
-                        </div><!--//tab-pane-->
-
-                        <div class="tab-pane" id="broswer">
-                            <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/trace-page2.png" alt="" />
-                            </figure>
-                        </div><!--//tab-pane-->
-                    </div><!--//tab-content-->
-                </figure>
-        	</div>
-        </div><!--//item-->
-
-        <div class="row item ">
-        	<div class="container">
-    		  	<div class="content col-md-4 col-sm-12 col-xs-12" style="margin-top: 6%;">
-                    <h3 class="title">归类错误</h3>
-                    <div class="desc">
-                        <p>从错误类型、URL、浏览器 3 个角度，归类错误的发生。</p>
-                        <p>OneAPM 统计错误发生的次数，并可以跟踪到单次错误的 URL、发生时间，和与之关联的浏览器类型；以及更为底层的信息：错误信息、相关参数和 Stack Trace。</p>
-                    </div>
-                </div><!--//content-->
-                <figure class="figure col-md-7 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
-                    <ul class="nav nav-tabs text-center" role="tablist" style="width:210px;">
-                        <li class="active feature-img">
-                            <a href="#error1" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
-                                <span>错误总览</span>
-                            </a>
-                        </li>
-                        <li class="feature-img">
-                            <a href="#error2" role="tab" data-toggle="tab" class="img-title">
-                                <span>错误详情</span>
-                            </a>
-                        </li>
-                    </ul><!--//nav-tabs-->
-
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="error1">
-                            <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/error1.png" alt="" />
-                            </figure>
-                        </div><!--//tab-pane-->
-
-                        <div class="tab-pane" id="error2">
-                            <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/error2.png" alt="" />
-                            </figure>
-                        </div><!--//tab-pane-->
-                    </div><!--//tab-content-->
-                </figure>
-        	</div>
-        </div><!--//item-->
-
-        <div class="row item last-item" style="background:#f2f2f2">
-        	<div class="container">
-        		<div class="content col-md-4 col-sm-12 col-xs-12 col-md-push-8 col-sm-push-0 col-xs-push-0" style="margin-top: 5%">
-                    <h3 class="title">深入至 AJAX</h3>
-                    <div class="desc">
-                        <p>单页面 Web 应用往往通过 AJAX 进行前后端交互，所以「页面 Trace」不再适用于 AJAX 性能监控。</p>
-                        <p>OneAPM 针对 AJAX 性能，特别增设响应时间、数据请求和接收、HTTP 状态的性能监控，完善 Browser Insight 功能。</p>
-                    </div>
-                </div><!--//content-->
-                <figure class="figure col-md-7 col-sm-12 col-xs-12 col-md-pull-4 col-sm-pull-0 col-xs-pull-0">
-                    <img class="img-responsive" src="/images/ajax.png" alt="" />
-                </figure>
-        	</div>
-        </div><!--//item-->
-
-    </section><!--//why-->
+        </div>
+    </section>
 
     <!-- ******CTA Section****** -->
     <section id="cta-section" class="section cta-section text-center pricing-cta-section">
@@ -195,7 +117,7 @@
                     <div style="margin-top: 35px; margin-bottom: 60px;">
                         <h2 class="title">超过 10 万全球开发者选择 OneAPM！</h2>
                         <p>
-                            <a class="btn btn-cta btn-cta-download" href="#" target="_blank">立即注册</a>
+                            <a class="btn btn-cta btn-cta-download" href="https://user.oneapm.com/account/register.do" target="_blank">立即注册</a>
                         </p>
                         <p><a href="/broswer/price.html"><span class="cta-link">查看完整报价 ></span></a></p>
                     </div>
@@ -206,6 +128,7 @@
     </section><!--//cta-section-->
 
 </div><!--//section-wrapper-->
+
 
 {% endblock %}
 
