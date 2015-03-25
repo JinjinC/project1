@@ -1,7 +1,8 @@
 {% extends '../base/_layout.html' %}
 
 {% block content %}
-<section class="pricing section section-on-bg">
+<div class="headline-bg pricing-headline-bg"></div><!-- headline-bg -->
+<section class="pricing section section-on-bg">  
     <div class="container">
         <h2 class="title text-center">Ai 报价</h2>
         <p class="intro text-center">新注册用户，<strong>免费使用专业版 15 天</strong></span>。免费版，永久免费。</p>
@@ -25,8 +26,8 @@
 
                         </div><!--//content-->
                     </div><!--//item-inner-->
-                </div><!--//item-->
-
+                </div><!--//item--> 
+                
                 <div class="item price-2 col-md-4 col-sm-4 col-xs-12 text-center best-buy">
                     <div class="item-inner">
                         <div class="heading">
@@ -39,8 +40,8 @@
                                 <li>实时 SQL Tracing</li>
                                 <li>实时事务 Tracing</li>
                                 <li>支持分布式应用</li>
-                                <li>7 x 24 小时<br/>电话 & 邮件 & 远程支持</li>
-
+                                <li>7 x 24 小时<br/>电话 &amp; 邮件 &amp; 远程支持</li>
+                                                                    
                             </ul>
                             <a class="btn btn-cta btn-cta-primary" href="signup.html">马上试用</a>
                         </div><!--//content-->
@@ -48,8 +49,8 @@
                             <div class="text">Popular</div>
                         </div><!--//ribbon-->
                     </div><!--//item-inner-->
-                </div><!--//item-->
-
+                </div><!--//item-->  
+                
                 <div class="item price-3 col-md-4 col-sm-4 col-xs-12 text-center">
                     <div class="item-inner">
                         <div class="heading">
@@ -62,14 +63,14 @@
                                 <li>支持大型企业级技术框架</li>
                                 <li>技术支持团队协助</li>
                                 <li>Service SLA</li>
-                                <li>7 x 24 小时<br/>电话 & 邮件 & 远程支持 & 现场服务</li>
+                                <li>7 x 24 小时<br/>电话 &amp; 邮件 &amp; 远程支持 &amp; 现场服务</li>          
                             </ul>
                             <a class="btn btn-cta btn-cta-primary" href="signup.html">400-659-1230</a>
-
+                            
                         </div><!--//content-->
                     </div><!--//item-inner-->
-                </div><!--//item-->
-            </div><!--//items-wrapper-->
+                </div><!--//item-->  
+            </div><!--//items-wrapper-->                   
         </div><!--//row-->
     </div><!--//container-->
 </section><!--//pricing-->
@@ -122,65 +123,65 @@
                 </table>
             </div>
         </div>
-        <p class="text-center btn-part">
-            <a href="#" class="btn btn-knowmore">查看功能对比</a>
-            <span class="btn-span">or</span>
-            <a href="signup.html" class="btn btn-sign">立即注册</a>
-        </p>
     </div>
+    <p class="text-center btn-part">
+        <a href="#" class="btn btn-knowmore">查看功能对比</a>
+        <span class="btn-span">or</span>
+        <a href="signup.html" class="btn btn-sign">立即注册</a>
+    </p>
 </section>
 
     <!-- ***** Function Table Section***** -->
-    <section class="function section has-bg-color">
-        <div class="container">
-            <h2 class="title text-center">功能对比</h2>
-            <div class="row">
-                <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                    <table class="table table-stable">
-                        <thead>
-                            <tr>
-                                <th class="empty"></th>
-                                <th>
-                                    <h4>免费版</h4>
-                                </th>
-                                <th>
-                                    <h4>专业版</h4>
-                                </th>
-                                <th>
-                                    <h4>企业版</h4>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for row in apm_price %}
-                            <tr>
-                                {% if row.epr === "" %}
-                                    <td class="title">{{row.title}}</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+<section class="function section has-bg-color">
+    <div class="container">
+        <h2 class="title text-center">功能对比</h2>
+        <div class="row">
+            <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+                <table class="table table-stable">
+                    <thead>
+                        <tr>
+                            <th class="empty"></th>
+                            <th>
+                                <h4>免费版</h4>
+                            </th>
+                            <th>
+                                <h4>专业版</h4>
+                            </th>
+                            <th>
+                                <h4>企业版</h4>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in apm_price %}
+                        <tr>
+                            {% if row.epr === "" %}
+                                <td class="title">{{row.title}}</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            {% else %}
+                                <td>{{row.title}}</td>
+                                {% if row.free %}
+                                    <td><i class="fa fa-check"></i></td>
                                 {% else %}
-                                    <td>{{row.title}}</td>
-                                    {% if row.free %}
-                                        <td><i class="fa fa-check"></i></td>
-                                    {% else %}
-                                        <td></td>
-                                    {% endif %}
-                                    {% if row.pro %}
-                                        <td><i class="fa fa-check"></i></td>
-                                    {% else %}
-                                        <td></td>
-                                    {% endif %}
-                                    {% if row.epr %}
-                                        <td><i class="fa fa-check"></i></td>
-                                    {% else %}
-                                        <td></td>
-                                    {% endif %}
+                                    <td></td>
                                 {% endif %}
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
+                                {% if row.pro %}
+                                    <td><i class="fa fa-check"></i></td>
+                                {% else %}
+                                    <td></td>
+                                {% endif %} 
+                                {% if row.epr %}
+                                    <td><i class="fa fa-check"></i></td>
+                                {% else %}
+                                    <td></td>
+                                {% endif %} 
+                            {% endif %}   
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

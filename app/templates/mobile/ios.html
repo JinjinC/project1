@@ -1,4 +1,155 @@
-{% extends '../base/_layout.html' %}
+﻿{% extends '../base/_layout.html' %}
+
 {% block content %}
+<section class="features-video section section-on-bg">
+    <div class="container text-center">
+        <h2 class="title">OneAPM for iOS</h2>
+        <div class="text-container">
+            <div class="about">
+            	<div class="row">
+            		<div class="col-md-4 col-sm-4 col-xs-12">
+            			<div class="lang-logo">
+							<img src="/images/lang/logo_ios.png" alt="android">
+						</div>
+            		</div>
+            		<div class="col-md-8 col-sm-8 col-xs-12">
+            			<p>OneAPM。真的笑，笑出声。</p>
+                		<div class="lang-button">
+							<a href="signup.html" class="btn btn-knowmore" style="width:20%">安装指南</a>
+						</div>
+            		</div>
+            	</div>
+            </div><!--//about-->
+        </div>
+    </div>
+</section>
+
+<div class="sections-wrapper">
+    <!-- ******Why Section****** -->
+    <section class="section why">
+    	<div class="container">
+    		<div class="row">
+	        	<div class="lang-content col-md-8 col-sm-8 col-xs-12">
+	        		<div class="row item" style="padding-top:40px;">
+	        			<div class="col-md-12 col-sm-12 col-xs-12">
+		                    <h3 class="title">全面优化 iOS App 性能</h3>
+		                    <div class="row desc">
+		                        <div class="col-md-12 col-sm-12 col-xs-12">
+		                        	<p>用户的所有交互，每一次会话，甚至是划屏解锁，OneAPM 都能实时监控其性能表现。而这一切，都是为了确保你的 iOS App 能够给予用户最棒的性能体验。</p>
+		                        	<p>OneAPM 作为 iOS 应用性能管理最佳的解决方案，也将协助你的应用成为 App Store 同类产品中最棒的。</p>
+		                        	<ul class="ul-indep">
+		                        		<li class="first-li">追踪响应时间，优化产品性能</li>
+										<li>详悉错误信息，轻松定位根源问题</li>
+										<li>建立业务和性能的联系，方便感知业务增幅</li>
+										<li>以单个设备为单位度量应用性能</li>
+		                        		<li>以数据库、CPU、内存性能度量设备性能表现</li>
+										<li>端到端的交互甘特图，给予各个事件的性能可见性</li>
+										<li>不同事件的性能区隔，方便快速定位性能优化点</li>
+										<li>识别设备类型（iPhone/iPad/iPod、操作系统版本、运营商类型），分类设备性能</li>
+										<li>OneAPM Android SDK 3 分钟快速部署，应用性能管理从未如此简单</li>
+			                        </ul>
+		                        	<p>从现在开始使用 OneAPM 吧！快速捕捉性能表现差的应用代码，发现错误并随时向你发送警报，这一切只需下载并安装 OneAPM iOS SDK，然后更新你的应用。OneAPM 保证这一切只需 3 分钟。</p>
+		                        </div>
+		                    </div>
+		                </div>
+	        		</div>
+	        		
+	        		<div class="row item last-item">
+	        			<div class="col-md-12 col-sm-12 col-xs-12">
+		                    <h3 class="title">如何安装 OneAPM ？</h3>
+		                    <div class="row desc">
+		                    	<div class="col-md-12 col-sm-12 col-xs-12">
+		                    		<p>很开心听到这个问题！<br/>以下是 iOS Agent 安装指南。</p>
+		                    		<div class="setup-box">
+			                        	<h2>1. <a href="">创建 OneAPM 账号</a></h2>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>2. 点击 iOS 按钮，然后为你的应用命名 </h2>
+			                        	<div class="command-box">
+			                        		A CHEESY NAME
+			                        	</div>
+			                        	<p>不喜欢？没关系，你随时都可以修改</p>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>3. 下载 OneAPM iOS SDK</h2>
+			                        	<p>OneAPM_iOS_Agent_1.x.zip</p>
+			                        	<p><small>注：OneAPM iOS Agent 目前支持 iOS 6.0 及以上版本；Agent 也能放心安装至 iOS 6.0 中，只是无法查阅该部分设备的数据信息。</small></p>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>4. 解压 OneAPM iOS SDK</h2>
+			                        	<p>解压 SDK，然后将 “OneAPMAgent.framework” 从 Finder 拖至要添加的 Xcode project 中（放在 Project Navigator 窗口的 Project 上）。</p>
+			                        	<p>收到提示后，选择 “Copy items into destination” 和 “Create folder references...“。</p>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>5. 在 Linker Settings 中添加以下 3 个 Libraries</h2>
+			                        	<p>在项目导航窗口内点击你的 Project，并选中你的 App，然后选择 “Build Phases" 选项卡。</p>
+			                        	<p>打开 "Link Binary with Libraries" 列表。点击添加：</p>
+			                        	<p>
+			                        		CoreTelephony.framework<br/>
+											SystemConfiguration.framework<br/>
+											libz.dylib
+			                        	</p>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>6. 在 AppDelegate上 启动 Agent</h2>
+			                        	<p>在 AppDelegate.m 文件头部引入 OneAPM Agent</p>
+			                        	<div class="command-box">
+			                        		#import&lt;OneAPM/OneAPM.h&gt;
+			                        	</div>
+			                        	<p>在 application:didFinishLaunchingWithOptions: 方法的第一行，添加如下代码</p>
+			                        	<div class="command-box">
+			                        		[OneAPM startWithApplicationToken:@"generate app token by creating an app name"];
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>7. 运行应用程序</h2>
+			                        	<p>清除 Project，并重新在模拟器或设备中启动应用程序，开始应用性能管理</p>
+			                        	<p>在 application:didFinishLaunchingWithOptions: 方法的第一行，添加如下代码</p>
+			                        	<div class="command-box">
+			                        		[OneAPM startWithApplicationToken:@"generate app token by creating an app name"];
+			                        	</div>
+			                        </div>
+			                    </div>
+		                    </div>
+		                </div>
+	        		</div>
+	        	</div>
+	        	<div class="content col-md-4 col-sm-4 col-xs-12">
+        			<div class="col-md-12 col-sm-12 col-xs-12">
+        				<h4 class="frame-title">关键优势</h4>
+		        		<div class="key-advan">
+		        			<ul>
+								<li>交互甘特图</li>
+								<li>Web Service 监控</li>
+								<li>API Calls 监控</li>
+								<li>错误信息抓取和分析</li>
+								<li>设备级别的深度监控</li>
+								<li>自定义 Metrics</li>
+								<li>操作系统 &amp; 设备类型分析</li>
+								<li>版本性能分析</li>
+								<li>报警机制</li>
+								<li>地理信息抓取和分析</li>
+							</ul>
+		        		</div>
+        			</div>
+	        	</div>
+	        </div>
+    	</div>
+ 
+    </section><!--//why-->
+</div><!--//section-wrapper-->
+
+{% endblock %}
+
+{% block scripts %}
+
+    {% parent %}
+    <!-- build:js(.) /scripts/apm-feature.js -->
+    <script type="text/javascript" src="/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="/vendors/back-to-top.js"></script>
+    <script type="text/javascript" src="/vendors/jquery.placeholder/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+    <script type="text/javascript" src="/scripts/show-function.js"></script>
+    <!-- endbuild -->
 
 {% endblock %}
