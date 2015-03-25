@@ -1,14 +1,15 @@
 {% extends '../base/_layout.html' %}
 {% block content %}
+<div class="headline-bg pricing-headline-bg"></div>
 <section class="features-video section section-on-bg">
     <div class="container text-center">
     	<div class="col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3">
     		<h2 class="title"> OneAPM for Mobile</h2>
     		<p class="intro text-center">以用户真实使用感受为度量标准，检测每次崩溃的发生；OneAPM协助您，监控移动应用性能</p>
     		<p>
-                <a class="btn btn-cta btn-cta-download" href="#" target="_blank">立即注册</a>
+                <a class="btn btn-cta btn-cta-download" href="https://user.oneapm.com/account/register.do" target="_blank">立即注册</a>
             </p>
-            <p>
+            <p class="new-feature">
             	<span style="font-weight:600;">新特性</span>
             	<span>Crash分析功能</span>
             	<a href="#" id="read-more">查看详情</a>
@@ -21,17 +22,17 @@
 <section class="steps section" style="padding-bottom: 50px;margin-top: 40px;">
     <div class="container">
         <div class="row">
-             <div class="step text-center col-md-4 col-sm-4 col-xs-12">
-                 <h3 class="title"><span class="number" style="margin-bottom: 0;">1</span><br /><span class="text">永久免费</span></h3>
-                 <p>新注册用户免费试用企业版15天，并承诺免费版永久免费使用</p>
+             <div class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                 <h3 class="title"><span class="text">永久免费</span><span class="icon"><img src="/images/mobile-imgs/svg/free.svg" class="svg"></span></h3>
+                 <p class="intro-text">新注册用户免费试用企业版15天，并承诺免费版永久免费使用</p>
              </div><!--//step-->
-             <div class="step text-center col-md-4 col-sm-4 col-xs-12">
-                 <h3 class="title"><span class="number" style="margin-bottom: 0;">2</span><br /><span class="text">无需代码改动</span></h3>
-                 <p>3分钟极速部署，过程中无需代码改动。轻松上手，简单易学。</p>
+             <div class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                 <h3 class="title"><span class="text">无需代码改动</span><span class="icon"><img src="/images/mobile-imgs/svg/unchange.svg" class="svg"></span></h3>
+                 <p class="intro-text">3分钟极速部署，过程中无需代码改动。<br/>轻松上手，简单易学。</p>
              </div><!--//step-->
-             <div class="step text-center col-md-4 col-sm-4 col-xs-12">
-                 <h3 class="title"><span class="number" style="margin-bottom: 0;">3</span><br /><span class="text">全平台支持</span></h3>
-                 <p>iOS Android 双平台支持最新Android框架Gradle等。</p>
+             <div class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                 <h3 class="title"><span class="text">全平台支持</span><span class="icon"><img src="/images/mobile-imgs/svg/platform.svg" class="svg"></span></h3>
+                 <p class="intro-text">iOS Android 双平台支持最新Android框架Gradle等。</p>
              </div><!--//step-->
         </div><!--//row-->
         <!-- <div class="text-center"><a class="btn btn-cta btn-cta-primary" href="signup.html">Get Started - It's Free</a></div> -->
@@ -58,21 +59,16 @@
 					</li>
 					<li class="feature-img">
 						<a href="#feature-3" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
-						    <span>设备型号</span>
-						</a>
-					</li>
-					<li class="feature-img">
-						<a href="#feature-4" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
 						    <span>地理位置</span>
 						</a>
 					</li>
 					<li class="feature-img">
-						<a href="#feature-5" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
+						<a href="#feature-4" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
 						    <span>运营商</span>
 						</a>
 					</li>
 					<li class="feature-img">
-						<a href="#feature-6" role="tab" data-toggle="tab" class="img-title">
+						<a href="#feature-5" role="tab" data-toggle="tab" class="img-title">
 						    <span>App版本位置</span>
 						</a>
 					</li>
@@ -80,32 +76,27 @@
 				<div class="tab-content">
 					<div class="tab-pane fade in active" id="feature-1">
 					    <figure class="figure text-center">
-					        <img class="img-responsive" src="/images/mobile-imgs/all-device.png" alt="" />
+					        <img class="img-responsive" src="/images/mobile-imgs/device_type.png" alt="" />
 					    </figure>
 					</div><!--//tab-pane-->
 					<div class="tab-pane" id="feature-2">
 					    <figure class="figure text-center">
-					        <img class="img-responsive" src="/images/mobile-imgs/all-device.png" alt="" />
+					        <img class="img-responsive" src="/images/mobile-imgs/os.png" alt="" />
 					    </figure>
 					</div><!--//tab-pane-->
 					<div class="tab-pane" id="feature-3">
 					    <figure class="figure text-center">
-					        <img class="img-responsive" src="/images/mobile-imgs/all-device.png" alt="" />
+					        <img class="img-responsive" src="/images/mobile-imgs/geo.png" alt="" />
 					    </figure>
 					</div><!--//tab-pane-->
 					<div class="tab-pane" id="feature-4">
 					    <figure class="figure text-center">
-					        <img class="img-responsive" src="/images/mobile-imgs/arc-map.png" alt="" />
+					        <img class="img-responsive" src="/images/mobile-imgs/oo.png" alt="" />
 					    </figure>
 					</div><!--//tab-pane-->
 					<div class="tab-pane" id="feature-5">
 					    <figure class="figure text-center">
-					        <img class="img-responsive" src="/images/mobile-imgs/all-device.png" alt="" />
-					    </figure>
-					</div><!--//tab-pane-->
-					<div class="tab-pane" id="feature-6">
-					    <figure class="figure text-center">
-					        <img class="img-responsive" src="/images/mobile-imgs/all-device.png" alt="" />
+					        <img class="img-responsive" src="/images/mobile-imgs/AppV.png" alt="" />
 					    </figure>
 					</div><!--//tab-pane-->
 				</div>
@@ -125,21 +116,22 @@
 		<div class="row">
 				<div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-lg-offset-2 col-md-offset-2 col-sm-6 col-xs-6">
 					<figure class="figure text-center">
-						<h3 class="title"><span class="icon"><i class="fa fa-star-o"></i></span><span class="text">统计分析</span></h3>
-						<h3 class="title"><span class="icon"><i class="fa fa-star-o"></i></span><span class="text">精确至代码</span></h3>
-						<h3 class="title"><span class="icon"><i class="fa fa-star-o"></i></span><span class="text">影响范围</span></h3>
+						<h3 class="title"><span class="icon"><img src="/images/mobile-imgs/svg/statistic.svg" class="svg"></span><span class="text">统计分析</span></h3>
+
+						<h3 class="title"><span class="icon"><img src="/images/mobile-imgs/svg/code.svg" class="svg"></span><span class="text">精确至代码</span></h3>
+						<h3 class="title"><span class="icon"><img src="/images/mobile-imgs/svg/range.svg" class="svg"></span><span class="text">影响范围</span></h3>
 					</figure>
 				</div>
 				<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
 					<figure class="figure" style="text-align:center;margin-top: 40px;">
-						<img src="/images/mobile-imgs/phone-case.png">
+						<img src="/images/mobile-imgs/phone-case.png" class="img-responsive">
 					</figure>
 				</div>
 				<div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
 					<figure class="figure text-center">
-						<h3 class="title"><span class="icon"><i class="fa fa-star-o"></i></span><span class="text">重现场景</span></h3>
-						<h3 class="title"><span class="icon"><i class="fa fa-star-o"></i></span><span class="text">追踪修复</span></h3>
-						<h3 class="title"><span class="icon"><i class="fa fa-star-o"></i></span><span class="text">崩溃详情</span></h3>
+						<h3 class="title"><span class="icon"><img src="/images/mobile-imgs/svg/scene.svg" class="svg"></span><span class="text">重现场景</span></h3>
+						<h3 class="title"><span class="icon"><img src="/images/mobile-imgs/svg/chase.svg" class="svg"></span><span class="text">追踪修复</span></h3>
+						<h3 class="title"><span class="icon"><img src="/images/mobile-imgs/svg/crash.svg" class="svg"></span><span class="text">崩溃详情</span></h3>
 					</figure>
 				</div>
 			</div>
@@ -152,50 +144,50 @@
 <section class="trouble section">
 	<div class="container">
 		<div class="row">
-			<h2 class="title text-center">有些问题很难预料</h2>
-			<div class="step text-center col-lg-2 col-md-2 col-sm-4 col-xs-12 col-lg-offset-2  col-md-offset-2">
-			    <h3 class="title"><span class="icon"><i class="fa fa-thumbs-o-down"></i></span><span class="text">运营商不给力</span></h3>
+			<h3 class="title text-center">有些问题很难预料</h3>
+			<div class="text-center col-lg-2 col-md-2 col-sm-4 col-xs-12 col-lg-offset-2  col-md-offset-2">
+			    <h3 class="title"><span class="icon"><img src="/images/mobile-imgs/svg/operator.svg" class="svg"></span><span class="text">运营商不给力</span></h3>
 			</div><!--//step-->
-			<div class="step text-center col-md-4 col-sm-4 col-xs-12">
-			    <h3 class="title"><span class="icon"><i class="fa fa-thumbs-o-down"></i></span><span class="text">HTTP404</span></h3>
+			<div class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			    <h3 class="title"><span class="icon"><img src="/images/mobile-imgs/svg/http404.svg" class="svg"></span><span class="text">HTTP 404</span></h3>
 			</div><!--//step-->
-			<div class="step text-center col-lg-2 col-md-2 col-sm-4 col-xs-12">
-			    <h3 class="title"><span class="icon"><i class="fa fa-thumbs-o-down"></i></span><span class="text">外部调用失效了</span></h3>
+			<div class="text-center col-lg-2 col-md-2 col-sm-4 col-xs-12">
+			    <h3 class="title"><span class="icon"><img src="/images/mobile-imgs/svg/uneffective.svg" class="svg"></span><span class="text">外部调用失效了</span></h3>
 			</div><!--//step-->
 		</div>
 		<div class="row">
 			<figure class="figure col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-0 col-xs-offset-0" style="margin-top: 70px;">
 				<ul class="nav nav-tabs text-center" role="tablist">
 					<li class="active feature-img">
-						<a href="#feature-1" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
+						<a href="#feature-7" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
 						    <span>Interaction Trace</span>
 						</a>
 					</li>
 					<li class="feature-img">
-						<a href="#feature-2" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
+						<a href="#feature-8" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
 						    <span>HTTP 错误</span>
 						</a>
 					</li>
 					<li class="feature-img">
-						<a href="#feature-3" role="tab" data-toggle="tab" class="img-title" >
+						<a href="#feature-9" role="tab" data-toggle="tab" class="img-title" >
 						    <span>外部调用</span>
 						</a>
 					</li>
 				</ul>
 				<div class="tab-content">
-				    <div class="tab-pane fade in active" id="feature-1">
+				    <div class="tab-pane fade in active" id="feature-7">
 				    	<figure class="figure text-center">
-				    		<img src="/images/location.png">
+				    		<img src="/images/mobile-imgs/InteractionTrace.png" class="img-responsive">
 				    	</figure>
 				    </div>
-				    <div class="tab-pane" id="feature-2">
+				    <div class="tab-pane" id="feature-8">
 				    	<figure class="figure text-center">
-				    		<img src="/images/location.png">
+				    		<img src="/images/mobile-imgs/HTTPError.png" class="img-responsive">
 				    	</figure>
 				    </div>
-				    <div class="tab-pane" id="feature-3">
+				    <div class="tab-pane" id="feature-9">
 				    	<figure class="figure text-center">
-				    		<img src="/images/location.png">
+				    		<img src="/images/mobile-imgs/exuse.png" class="img-responsive">
 				    	</figure>
 				    </div>
 				</div>
@@ -212,7 +204,7 @@
                 <div style="margin-top: 35px; margin-bottom: 60px;">
                     <h2 class="title">超过 10 万全球开发者选择 OneAPM！</h2>
                     <p>
-                        <a class="btn btn-cta btn-cta-download" href="#" target="_blank">立即注册</a>
+                        <a class="btn btn-cta btn-cta-download btn-large" href="https://user.oneapm.com/account/register.do" target="_blank">立即注册</a>
                     </p>
                     <p><a href="/broswer/price.html"><span class="cta-link">查看完整报价 ></span></a></p>
                 </div>

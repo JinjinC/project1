@@ -131,5 +131,30 @@ $(document).ready(function() {
     });
 
 
+    //视频播放控制
+    $('.play-btn').click(function  () {
+        $('.play-btn').hide();
+        var video = $('#apm-video');
+        video[0].play();
+    });
+
+    // $('#apm-video').click(function  () {
+    //     var video = $('#apm-video');
+    //     if (video[0].pause) {
+    //         $('.play-btn').show();
+    //     }
+    // })
+
+    //scan code 悬浮
+    $('#scan-code').mouseover(function () {
+        $('#scan-code-img').show();
+    });
+
+    $('#scan-code').mouseleave(function () {
+        $('#scan-code-img').hide();
+    });
+    
+
+
 
 });
