@@ -23,7 +23,7 @@
   margin-bottom: 10px;
 }
 .footer .footer-col.connect .social {
-  margin-bottom: 15px;
+  margin-bottom: 0;
   overflow: hidden;
 }
 .footer .footer-col.connect .social li {
@@ -122,4 +122,35 @@
 }
 .footer .bottom-bar .copyright {
   line-height: 1.6;
+}
+
+
+.icon-connect{
+  font-size: 24px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.qrcode {
+  display: none;
+  position: absolute;
+  top: -214px;
+  left: -140px;
+}
+
+
+.footer .footer-col .social a:hover, 
+.footer .footer-col .social a:focus {
+  text-decoration: none;
+  .qrcode{
+    display: block;
+  }
+} 
+.footer-col.connect .intro{
+  font-size: 12px;
+  margin-bottom: 36px;
+}
+.street-address {
+  font-size: 12px;
 }
