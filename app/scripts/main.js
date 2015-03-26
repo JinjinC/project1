@@ -171,6 +171,10 @@ $(document).ready(function() {
         var offset_top = $('.lang-content .last-item').offset().top-header_height;
         $('body').animate({scrollTop:offset_top},600);
     });
+
+    // $(window).resize(function  () {
+    //     $()
+    // });
     
 
 
