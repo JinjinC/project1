@@ -5,7 +5,7 @@
 <div class="headline-bg mi-headline-bg"></div><!-- headline-bg -->
 <section class="pricing section section-on-bg">
     <div class="container">
-        <h2 class="title text-center">Mi 报价</h2>
+        <h2 class="title text-center">Mobile Insight 报价</h2>
         <p class="intro text-center">新注册用户，<strong>免费使用专业版 15 天</strong></span>。免费版，永久免费。</p>
          <div class="price-cols row">
             <div class="items-wrapper col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
@@ -22,7 +22,7 @@
                                 <li class="disabled"><i class="fa fa-times" style="color: transparent;"></i></li>
                                 <li class="disabled"><i class="fa fa-times" style="color: transparent;"></i></li>
                                 <li>数据存储 24 小时</li>
-                                <li>5 x 8 小时<br/>电话 & 邮件 & 远程支持</li>
+                                <li>5 x 8 小时<br/>电话 &amp; 邮件 &amp; 远程支持</li>
                             </ul>
                             <a class="btn btn-cta btn-cta-primary" href="signup.html">马上试用</a>
 
@@ -66,7 +66,7 @@
                                 <li class="disabled"><i class="fa fa-times" style="color: transparent;"></i></li>
                                 <li class="disabled"><i class="fa fa-times" style="color: transparent;"></i></li>
                                 <li>永久数据存储</li>
-                                <li>7 x 24 小时<br/>电话 & 邮件 & 远程支持 & 现场服务</li>
+                                <li>7 x 24 小时<br/>电话 &amp; 邮件 &amp; 远程支持 &amp; 现场服务</li>          
                             </ul>
                             <a class="btn btn-cta btn-cta-primary" href="signup.html">400-659-1230</a>
 
@@ -184,7 +184,7 @@
                         <div class="panel-body">
                             <p>免费版永久免费。</p>
                             <p>专业版按照「月活跃用户数」进行收费；月活跃用户数是指单个应用在一个自然月内，活跃用户数的数量；OneAPM 定义用户为：若一台设备连接到您的应用，则被定义为一个用户，用户数的唯一标识是通过设备号进行标识的。</p>
-                            <p>相关的优惠和限制，请查看 优惠 & 限制。</p>
+                            <p>相关的优惠和限制，请查看 优惠 &amp; 限制。</p>
                             <p class="panel-small">企业版的收费情况，请电话联系 OneAPM 销售人员：400 – 659 – 1230。</p>
                         </div>
                     </div>
@@ -330,5 +330,19 @@
     <script type="text/javascript" src="/scripts/show-function.js"></script>
     <script type="text/javascript" src="/scripts/jquery.stickyheader.js"></script>
     <!-- endbuild -->
-
+    {% if env == 'production' %}
+    <script src="https://meiqia.com/js/mechat.js?unitid=6232" charset="UTF-8" async="async"></script>
+    <script type="text/javascript">
+    (function(){
+      var inter = setInterval(function(){
+        if(window.mechatMetadata){
+          clearInterval(inter);
+          window.mechatMetadata({
+                  comment:window.location.href,
+          });
+        }
+      },500);
+    }());
+    </script>
+    {% endif %}
 {% endblock %}

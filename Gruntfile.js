@@ -306,7 +306,7 @@ module.exports = function(grunt) {
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
           src: [
-            './*.{ico,png,txt}'
+            './*.{ico,png,txt,html,xml}'
           ]
         }, {
           expand: true,
@@ -335,7 +335,10 @@ module.exports = function(grunt) {
           // base: '//static.oneapm.com/assets/sites',
           css:false,
           rewriter:function(url){
-            // console.log(url);
+            // console.log('cdnify',url);
+            if(!url){
+              return url
+            }
             if(/^(http|\/\/)/.test(url)){
               return url
             }
