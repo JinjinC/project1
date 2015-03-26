@@ -98,17 +98,14 @@
     <script src="/vendors/bootstrap/js/scrollspy.js"></script>
     <script src="/vendors/bootstrap/js/collapse.js"></script>
     <script src="/vendors/bootstrap/js/tab.js"></script>
-    <script type="text/javascript" src="/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
-    <script type="text/javascript" src="/vendors/back-to-top.js"></script>
-    <script type="text/javascript" src="/vendors/jquery.placeholder/jquery.placeholder.js"></script>
-    <script type="text/javascript" src="/scripts/main.js"></script>
-    <!-- endbuild -->
+    <script src="/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+    <script src="/vendors/back-to-top.js"></script>
+    <script src="/vendors/jquery.placeholder/jquery.placeholder.js"></script>
 
-    {% if pageName %}
-    <!-- build:js({app,.tmp}) /scripts/{{pageName}}.js -->
-    <script src="/scripts/{{pageName}}.js"></script>
     <!-- endbuild -->
-    {% endif %}
+    <!-- build:js /scripts/utils.js -->
+    <script src="/scripts/main.js"></script>
+    <!-- endbuild -->
 
     {% endblock %}
     {% if env == 'production' %}
