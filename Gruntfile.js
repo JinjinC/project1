@@ -335,7 +335,10 @@ module.exports = function(grunt) {
           // base: '//static.oneapm.com/assets/sites',
           css:false,
           rewriter:function(url){
-            // console.log(url);
+            // console.log('cdnify',url);
+            if(!url){
+              return url
+            }
             if(/^(http|\/\/)/.test(url)){
               return url
             }
