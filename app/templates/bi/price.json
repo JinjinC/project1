@@ -19,13 +19,13 @@
 			"epr": 1
 		},
 		{
-			"title": "Ajax 响应时间",
+			"title": "AJAX 响应时间",
 			"free": 1,
 			"pro": 1,
 			"epr": 1
 		},
 		{
-			"title": "Ajax 吞吐量",
+			"title": "AJAX 吞吐量",
 			"free": 1,
 			"pro": 1,
 			"epr": 1
@@ -115,7 +115,7 @@
 			"epr": 1
 		},
 		{
-			"title": "Ajax 监控",
+			"title": "AJAX 监控",
 			"free": "",
 			"pro": "",
 			"epr": ""
