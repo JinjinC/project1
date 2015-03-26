@@ -1,7 +1,7 @@
 {% extends '../base/_layout.html' %}
 
 {% block content %}
-<div class="headline-bg bg-apm"></div><!-- headline-bg -->
+<div class="headline-bg ai-headline-bg"></div><!-- headline-bg -->
 <section class="features-video section section-on-bg">
     <div class="container text-center">
         <h2 class="title">从用户体验到网络服务，直至应用代码</h2>
@@ -31,7 +31,7 @@
         </div>
     </section>
 <!-- ******分布式事务追踪 Section****** -->
-    <section class="section features-apm" style="background:#eee;">
+    <section class="section features-apm" style="background:#F7F7F7;">
         <div class="container">
             <h2 class="title">分布式事务追踪</h2>
             <p class="desp">在分布式环境中，定位事务的性能瓶颈</p>
@@ -136,11 +136,6 @@
 
     {% parent %}
     <!-- build:js(.) /scripts/apm-feature.js -->
-    <script type="text/javascript" src="/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
-    <script type="text/javascript" src="/vendors/back-to-top.js"></script>
-    <script type="text/javascript" src="/vendors/jquery.placeholder/jquery.placeholder.min.js"></script>
-    <script type="text/javascript" src="/scripts/main.js"></script>
-    <script type="text/javascript" src="/scripts/show-function.js"></script>
     <!-- endbuild -->
 
 {% endblock %}
