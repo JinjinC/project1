@@ -10,13 +10,13 @@
   }
   .header.navbar-fixed-top {
     position: fixed;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     z-index: 1000;
     height: 80px;
     top: 0;
-    webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    // webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    // -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    // box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     transition: 0.5s ease-in-out;
   }
   .blog-slider {
@@ -101,6 +101,11 @@
   .access-page .navbar-collapse.collapse .navbar-nav {
     display: none;
   }
+
+  .play-btn{
+    top: 51%;
+    left: 46%;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {  //此处为nav的响应，将992px->768；可能会出现问题！注意审查！
@@ -112,13 +117,13 @@
   }
   .header.navbar-fixed-top {
     position: fixed;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     z-index: 1000;
     height: 80px;
     top: 0;
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    // -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    // -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    // box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     transition: 0.5s ease-in-out;
   }
   .header.navbar-fixed-top h1.logo a {
@@ -254,6 +259,10 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .play-btn{
+    top: 51%;
+    left: 47%;
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
 
@@ -336,6 +345,7 @@
   }
   .section .title {
     font-size: 29px;
+    line-height: 40px;
   }
   .section .intro {
     font-size: 16px;
@@ -506,6 +516,11 @@
   .why .item .desc {
     margin-bottom: 0;
   }
+  .play-btn {
+    font-size: 110px;
+    top: 48%;
+    left: 43%
+  }
 }
 @media (max-width: 480px) {
   .promo {
@@ -560,5 +575,12 @@
       }
     }
   }
+  .play-btn {
+    top: 48%;
+    left: 42%;
 
+    .icon-play {
+      font-size: 60px;
+    }
+  }
 }
