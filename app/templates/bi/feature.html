@@ -7,7 +7,7 @@
         <h2 class="title">Broswer Insight</h2>
         <p class="intro text-center">为你的 HTML5 应用增色，从页面加载、AJAX 加载，页面 Trace、地理位置等多个角度，度量应用性能</p>
         <div class="video-container">
-            <img src="/images/bro-features.png" style="width:100%">
+            <img src="/images/bi/bro-features.png" style="width:100%" alt="OneAPM Browser Insight">
         </div>
     </div>
 </section>
@@ -51,19 +51,19 @@
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="feature-1">
                             <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/location.png" alt="" />
+                                <img class="img-responsive" src="/images/bi/location.png" alt="地理位置" />
                             </figure>
                         </div><!--//tab-pane-->
 
                         <div class="tab-pane" id="feature-2">
                             <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/broswer.png" alt="" />
+                                <img class="img-responsive" src="/images/bi/broswer.png" alt="浏览器类型" />
                             </figure>
                         </div><!--//tab-pane-->
 
                         <div class="tab-pane" id="feature-3">
                             <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/device.png" alt="" />
+                                <img class="img-responsive" src="/images/bi/device.png" alt="设备类型" />
                             </figure>
                         </div><!--//tab-pane-->
                     </div><!--//tab-content-->                 
@@ -88,13 +88,13 @@
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="location">
                             <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/trace-page1.png" alt="" />
+                                <img class="img-responsive" src="/images/bi/trace-page1.png" alt="事务总览" />
                             </figure>
                         </div><!--//tab-pane-->
 
                         <div class="tab-pane" id="broswer">
                             <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/trace-page2.png" alt="" />
+                                <img class="img-responsive" src="/images/bi/trace-page2.png" alt="Trace 详情" />
                             </figure>
                         </div><!--//tab-pane-->
                     </div><!--//tab-content-->                        
@@ -134,13 +134,13 @@
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="error1">
                             <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/error1.png" alt="" />
+                                <img class="img-responsive" src="/images/bi/error1.png" alt="错误总览" />
                             </figure>
                         </div><!--//tab-pane-->
 
                         <div class="tab-pane" id="error2">
                             <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/error2.png" alt="" />
+                                <img class="img-responsive" src="/images/bi/error2.png" alt="错误详情" />
                             </figure>
                         </div><!--//tab-pane-->
                     </div><!--//tab-content-->  
@@ -148,8 +148,8 @@
             </div><!--//item-->
             
             <div class="row item last-item">
-                <figure class="figure col-md-7 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
-                    <img class="img-responsive" src="/images/ajax.png" alt="" />
+                <figure class="col-md-7 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
+                    <img class="img-responsive" src="/images/bi/ajax.png" alt="AJAX 性能" />
                 </figure>
                 <div class="content col-md-4 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="margin-top: 5%">
                     <h3 class="title">深入至 AJAX</h3>
@@ -221,11 +221,3 @@
 
 {% endblock %}
 
-{% block scripts %}
-
-    {% parent %}
-    <!-- build:js(.) scripts/broswer-feature.js -->
-    <script type="text/javascript" src="../../scripts/main.js"></script>
-    <!-- endbuild -->
-   
-{% endblock %}

@@ -145,6 +145,7 @@ $(document).ready(function() {
         $('.play-btn').hide();
         var video = $('#apm-video');
         video[0].play();
+        video.attr("controls","controls");
     });
 
     // $('#apm-video').click(function  () {
@@ -161,6 +162,14 @@ $(document).ready(function() {
 
     $('#scan-code').mouseleave(function () {
         $('#scan-code-img').hide();
+    });
+
+    //点击查看各个语言安装步骤
+
+    $('.lang-button a').click(function  () {
+        var header_height = $('#header').height();
+        var offset_top = $('.lang-content .last-item').offset().top-header_height;
+        $('body').animate({scrollTop:offset_top},600);
     });
     
 
