@@ -12,15 +12,24 @@ $(document).ready(function() {
         var header = $('#header');
         var header_height = header.height();
         var section = header.parent().find('section').first();
-         
-         if ($(window).scrollTop() > 0) {
-             $('#header').addClass('navbar-fixed-top');
-             section.css('margin-top',header_height);
-         }
-         else {
-             $('#header').removeClass('navbar-fixed-top');
-             section.css('margin-top',0);         
-         }
+        var mediaWidth = $(document).width();
+        if(mediaWidth > 768){
+            if ($(window).scrollTop() > 0) {
+               $('#header').addClass('navbar-fixed-top');
+               section.css('margin-top',header_height);
+            }
+            else {
+                $('#header').removeClass('navbar-fixed-top');
+                section.css('margin-top',0);
+            }
+        }else{
+            if ($(window).scrollTop() > 0) {
+               $('#header').addClass('navbar-fixed-top');
+            }
+            else {
+                $('#header').removeClass('navbar-fixed-top');
+            }     
+        }
     });
     
     /* ======= jQuery Placeholder ======= */
