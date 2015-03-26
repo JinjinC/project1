@@ -30,7 +30,8 @@ p.intro-text {
 }
 
 section.mobfeatures-tabbed {
-	background: #eee;
+	background: #F7F7F7;
+	// background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(rgb(255, 255, 255)));
 	padding: 90px 0;
 	ul {
 		width: 500px;
@@ -63,12 +64,12 @@ section.ca {
 		}
 		@media(min-width: 992px) {
 			img {
-				width: 78%;
+				width: 93%;
 			}
 		}
 		@media(min-width: 1200px) {
 			img {
-				width: 64%;
+				width: 79%;
 			}
 		}
 	}
@@ -84,18 +85,29 @@ section.ca {
 }
 
 section.trouble {
-	background: #eee;
+	background: #F7F7F7;
+	// background-image:  -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#eee));
 	padding-top: 80px;
 	padding-bottom: 80px;
 	min-height: 700px;
 	ul {
 		width: 470px;
 	}
+	@media(max-width: 470px) {
+		ul {
+			width: 100%;
+			li a span{
+				line-height: 2;
+			}
+		}
+	}
 	img{
-			margin: auto;
+		margin: auto;
+		width: 80%;
 	}
 	span.icon {
-		height: 100px;
+		height: 130px;
+		width: 140px;
 	}
 }
 
