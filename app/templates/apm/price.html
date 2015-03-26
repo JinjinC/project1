@@ -317,5 +317,19 @@
     <script type="text/javascript" src="/scripts/show-function.js"></script>
     <script type="text/javascript" src="/scripts/jquery.stickyheader.js"></script>
     <!-- endbuild -->
-
+    {% if env == 'production' %}
+    <script src="https://meiqia.com/js/mechat.js?unitid=6232" charset="UTF-8" async="async"></script>
+    <script type="text/javascript">
+    (function(){
+      var inter = setInterval(function(){
+        if(window.mechatMetadata){
+          clearInterval(inter);
+          window.mechatMetadata({
+                  comment:window.location.href,
+          });
+        }
+      },500);
+    }());
+    </script>
+    {% endif %}
 {% endblock %}
