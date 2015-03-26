@@ -12,8 +12,8 @@
     <!-- 国产双核浏览器用 end -->
 
     {% block seotag %}
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="keywords" content="{{keywords}}" />
+    <meta name="description" content="{{description}}" />
     {% endblock %}
 
     <meta name="viewport" content="width=device-width">
@@ -100,6 +100,7 @@
     <script type="text/javascript" src="/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
     <script type="text/javascript" src="/vendors/back-to-top.js"></script>
     <script type="text/javascript" src="/vendors/jquery.placeholder/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="../../scripts/main.js"></script>
     <!-- endbuild -->
 
     {% if pageName %}
