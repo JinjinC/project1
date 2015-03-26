@@ -229,14 +229,22 @@
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .config-wrapper {
-    display: none;
-  }
+  // .config-wrapper {
+  //   display: none;
+  // }
   .header {
-    height: inherit;
+    height: 80px;
   }
   .header.navbar-fixed-top {
-    position: relative;
+    position: fixed;
+    background: #fff;
+    z-index: 1000;
+    height: 80px;
+    top: 0;
+    webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
   }
   .blog-slider {
     margin-top: 0;
@@ -245,7 +253,8 @@
     margin-top: 0;
   }
   .header h1.logo {
-    float: none;
+    float: left;
+    margin: inherit;
     text-align: center;
   }
   .header h1.logo a {
@@ -255,13 +264,15 @@
     margin-right: 10px;
   }
   .main-nav.navbar-right {
-    float: none !important;
+    float: right !important;
   }
   .blog-page .main-nav.navbar-right {
     float: right !important;
   }
   .navbar-collapse.collapse {
     text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .navbar-collapse.collapse .navbar-nav {
     float: none;
@@ -273,7 +284,7 @@
     margin: inherit;
   }
   .promo {
-    height: 466px;
+    height: 532px;
     padding-top: 80px;
   }
   .promo.section .intro {
@@ -316,10 +327,10 @@
   }
 }
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .config-wrapper {
-    display: block;
-  }
+@media (min-width: 992px) {  //此处为nav的响应，将992px->768；可能会出现问题！注意审查！
+  // .config-wrapper {
+  //   display: block;
+  // }
   .header {
     height: 80px;
   }
