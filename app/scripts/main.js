@@ -145,6 +145,7 @@ $(document).ready(function() {
         $('.play-btn').hide();
         var video = $('#apm-video');
         video[0].play();
+        video.attr("controls","controls");
     });
 
     // $('#apm-video').click(function  () {
