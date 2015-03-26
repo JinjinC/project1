@@ -6,7 +6,12 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
 
   // Load grunt tasks automatically
-  require('load-grunt-tasks')(grunt);
+  try{
+    require('load-grunt-tasks')(grunt);
+  }catch(e){
+    console.log(e)
+  }
+
 
   // Configurable paths
   var config = {
@@ -81,24 +86,23 @@ module.exports = function(grunt) {
         }]
       }
     },
-    //favicons
-    // favicons: {
-    //   options: {
-    //     trueColor: true,
-    //     precomposed: true,
-    //     appleTouchBackgroundColor: "#e2b2c2",
-    //     coast: true,
-    //     windowsTile: true,
-    //     tileBlackWhite: false,
-    //     tileColor: "auto",
-    //     html: '<%= config.dist %>/index.html',
-    //     HTMLPrefix: "/"
-    //   },
-    //   dist: {
-    //     src: 'src/logo.png',
-    //     dest: '<%= config.dist %>'
-    //   }
-    // },
+    favicons: {
+      options: {
+        trueColor: true,
+        precomposed: true,
+        appleTouchBackgroundColor: "#e2b2c2",
+        coast: true,
+        windowsTile: true,
+        tileBlackWhite: false,
+        tileColor: "auto",
+        html: '<%= config.dist %>/index.html',
+        HTMLPrefix: "/"
+      },
+      dist: {
+        src: 'src/logo.png',
+        dest: '<%= config.dist %>'
+      }
+    },
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       html:{
@@ -228,7 +232,8 @@ module.exports = function(grunt) {
     // additional tasks can operate on them
     useminPrepare: {
       options: {
-        dest: '<%= config.dist %>'
+        dest: '<%= config.dist %>',
+        root:'<%= config.app %>'
       },
       html: '<%= config.dist %>/{,*/}*.html'
     },
@@ -239,7 +244,8 @@ module.exports = function(grunt) {
         assetsDirs: [
           '<%= config.dist %>',
           '<%= config.dist %>/images',
-          '<%= config.dist %>/styles'
+          '<%= config.dist %>/styles',
+          '<%= config.dist %>/scripts'
         ]
       },
       html: ['<%= config.dist %>/{,*/}*.html'],
@@ -330,6 +336,9 @@ module.exports = function(grunt) {
           css:false,
           rewriter:function(url){
             // console.log(url);
+            if(/^(http|\/\/)/.test(url)){
+              return url
+            }
             return '//static.oneapm.com/assets/sites'+url
           }
         },
@@ -353,22 +362,16 @@ module.exports = function(grunt) {
     'watch'
   ]);
 
-  grunt.registerTask('build'
-  , 'Generate dist sitefiles'
-  , [
-  'clean:dist',
-  'clean:server',
-  'swigstatic:dist',
-  'less:dist',
-  // 'favicons:dist',
-  'static-min:dist'
-  ]);
-
   grunt.registerTask('dist'
   , 'Generate dist sitefiles with cdn'
   , [
-  'build',
-  'cdnify:dist'
+    'clean:dist',
+    'clean:server',
+    'swigstatic:dist',
+    'less:dist',
+    'favicons:dist',
+    'static-min:dist',
+    'cdnify:dist'
   ]);
 
   grunt.registerTask('test'
@@ -378,7 +381,7 @@ module.exports = function(grunt) {
     'clean:server',
     'swigstatic:test',
     'less:dist',
-    // 'favicons:dist',
+    'favicons:dist',
     'static-min:dist',
     'connect:dist'
   ]);
