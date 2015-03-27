@@ -384,7 +384,7 @@ module.exports = function(grunt) {
     'clean:server',
     'swigstatic:test',
     'less:dist',
-    'favicons:dist',
+    // 'favicons:dist',
     'static-min:dist',
     'connect:dist'
   ]);
