@@ -8,6 +8,6 @@ $(document).ready(function() {
 		}, 0);
 		setTimeout(function (){
 			$('section.function table').stickyheader();
-		},2000);
+		},600);
 	});
 });
