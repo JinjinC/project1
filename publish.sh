@@ -8,7 +8,7 @@ fi
 
 git fetch origin master
 git merge FETCH_HEAD
-
+npm install
 REMOTE_SSHURI="deploy@119.29.58.96"
 REMOTE_BUILD_PATH="/oneapm/local/tengine-2.0.3/html/"
 # REMOTE_BUILD_PATH="/var/www/oneapmstatic/assets/html/"
