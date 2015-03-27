@@ -342,7 +342,7 @@ module.exports = function(grunt) {
             if(/^(http|\/\/)/.test(url)){
               return url
             }
-            return '//static.oneapm.com/assets/sites'+url
+            return '//static.oneapm.com/assets/sites2'+url
           }
         },
         files: [{
