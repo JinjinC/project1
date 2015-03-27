@@ -12,7 +12,7 @@ git merge FETCH_HEAD
 REMOTE_SSHURI="deploy@119.29.58.96"
 REMOTE_BUILD_PATH="/oneapm/local/tengine-2.0.3/html/"
 # REMOTE_BUILD_PATH="/var/www/oneapmstatic/assets/html/"
-REMOTE_STATIC_PATH="/var/www/oneapmstatic/assets/sites"
+REMOTE_STATIC_PATH="/var/www/oneapmstatic/assets/sites2"
 STATIC_FILES="fonts/ images/ scripts/ styles/ ./*.png ./*.ico"
 STATIC_ZIPNAME="oneapmcomstatic.zip"
 BUILD_ZIPNAME="oneapmcombuild.zip"
