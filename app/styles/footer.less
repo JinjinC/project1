@@ -132,7 +132,7 @@
 .qrcode {
   display: none;
   position: absolute;
-  top: -214px;
+  top: -30px;
   left: -140px;
 }
 
@@ -150,4 +150,28 @@
 }
 .street-address {
   font-size: 12px;
+}
+
+@media (max-width:1200px) {
+  .qrcode {
+    top: 15px;
+  }
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+  .qrcode {
+    top: 60px;
+  }
+}
+
+@media (max-width:767px) {
+  .qrcode {
+    display: none;
+  }
+  .footer .footer-col.connect .social {
+    margin-top: 20px;
+  }
+  .footer .footer-col p {
+    margin-bottom: 4px;
+  }
 }
