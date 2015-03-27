@@ -1,5 +1,5 @@
 {
-	"broswer_price":[
+	"browser_price":[
 		{
 			"title": "性能指标",
 			"free": "",
@@ -20,7 +20,7 @@
 		},
 		{
 			"title": "AJAX 响应时间",
-			"free": 1,
+		 	"free": 1,
 			"pro": 1,
 			"epr": 1
 		},

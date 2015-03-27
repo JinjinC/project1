@@ -20,7 +20,7 @@
 	<h2 class="title text-center">如何找到我们</h2>
 	<div class="container">
 		<div class="row">
-			<ul class="other-info list-unstyled col-md-6 col-sm-10 col-xs-12 col-md-offset-3 col-sm-offset-1 xs-offset-0">
+			<ul class="other-info list-unstyled col-lg-8 col-md-10 col-sm-12 col-xs-12  col-lg-offset-2 col-md-offset-1 xs-offset-0">
 				<li>
 					<i class="fa fa-envelope-o"></i>
 					<a href="#">support@oneapm.com</a>
@@ -30,7 +30,7 @@
 					<span>400-0669-109</span>
 				</li>
 				<li class="map-item">
-					<i class="fa fa-map-marker"></i>
+					<i class="fa fa-map-marker" style="padding-top: 210px;"></i>
 					<span>北京市海淀区西小口66号东升科技园A区5号楼3层/4层</span>
 					<div style="width:auto;height:400px;border:#ccc solid 1px;font-size:12px;margin-top: 30px;" id="map"></div>
 				</li>
@@ -58,11 +58,10 @@
 {% endblock %}
 
 {% block scripts %}
-
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=C13c98650aa84efc4279c4fd5ac4bac6"></script>
     {% parent %}
-    <!-- build:js /scripts/about.js -->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=C13c98650aa84efc4279c4fd5ac4bac6"></script>
-  </head>
+    <!-- build:js /scripts/about.js -->  
     <script type="text/javascript" src="/scripts/map.js"></script>
     <!-- endbuild -->
+
 {% endblock %}
