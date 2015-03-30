@@ -1,10 +1,5 @@
-
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  // .config-wrapper {
-  //   display: none;
-  // }
   .header {
     height: 80px;
   }
@@ -14,32 +9,20 @@
     z-index: 1000;
     height: 80px;
     top: 0;
-    // webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    // -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    // box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     transition: 0.5s ease-in-out;
-  }
-  .blog-slider {
-    margin-top: 0;
-  }
-  .blog {
-    margin-top: 0;
-  }
-  .header h1.logo {
-    float: left;
-    margin: inherit;
-    text-align: center;
-  }
-  .header h1.logo a {
-    margin: 0 auto;
-  }
+  } 
+  // .header h1.logo {
+  //   float: left;
+  //   margin: inherit;
+  //   text-align: center;
+  // }
+  // .header h1.logo a {
+  //   margin: 0 auto;
+  // }
   .header .main-nav .nav .nav-item {
     margin-right: 10px;
   }
   .main-nav.navbar-right {
-    float: right !important;
-  }
-  .blog-page .main-nav.navbar-right {
     float: right !important;
   }
   .navbar-collapse.collapse {
@@ -51,10 +34,6 @@
     float: none;
     margin: 0 auto;
     display: inline-block;
-  }
-  .blog-page .header h1.logo {
-    float: left;
-    margin: inherit;
   }
   .promo {
     height: 536px;
@@ -80,16 +59,6 @@
     margin-bottom: 30px;
     text-align: center;
   }
-  .apps-section .phone-holder {
-    -webkit-background-size: 280px auto;
-    -moz-background-size: 280px auto;
-    -o-background-size: 280px auto;
-    background-size: 280px auto;
-  }
-  .apps-section .phone-holder .screenshot {
-    width: 242px;
-    top: 66px;
-  }
   .footer-col {
     margin-bottom: 30px;
   }
@@ -98,20 +67,14 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .access-page .navbar-collapse.collapse .navbar-nav {
-    display: none;
-  }
-
   .play-btn{
     top: 51%;
     left: 46%;
   }
 }
+
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {  //此处为nav的响应，将992px->768；可能会出现问题！注意审查！
-  // .config-wrapper {
-  //   display: block;
-  // }
+@media (min-width: 992px) {  
   .header {
     height: 80px;
   }
@@ -121,9 +84,6 @@
     z-index: 1000;
     height: 80px;
     top: 0;
-    // -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    // -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    // box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     transition: 0.5s ease-in-out;
   }
   .header.navbar-fixed-top h1.logo a {
@@ -179,82 +139,12 @@
     padding-right: 0;
     margin-top: 15%;
   }
-  .access-page .navbar-collapse.collapse .navbar-nav {
-    display: none;
-  }
-  .access-section .divider {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #999999;
-    text-transform: uppercase;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-  }
-  .access-section .divider span {
-    background: #fff;
-    display: inline-block;
-    padding: 10px 0;
-    position: relative;
-    top: 80px;
-    margin-left: -10px;
-  }
-  .access-section .divider:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #e5e5e5;
-    height: 100%;
-    width: 1px;
-  }
-  .access-section .social-btns {
-    padding-left: 65px;
-  }
-  .access-section .social-btns .note {
-    text-align: left;
-  }
-  .blog-slider {
-    margin-top: 80px;
-  }
   .why .item .title {
     margin-bottom: 20px;
     text-align: left;
   }
   .why .figure {
     text-align: left;
-  }
-  .blog-page .blog-category,
-  .blog-page .blog-archive {
-    margin-top: 80px;
-  }
-  .blog-entry-wrapper {
-    margin-top: 80px;
-  }
-  /* Only show QR code for desktop */
-  .download-area {
-    overflow: hidden;
-  }
-  .download-area .download-list {
-    float: left;
-  }
-  .download-area .qrcode-holder {
-    float: left;
-    margin-left: 45px;
-    text-align: center;
-  }
-  .download-area .qrcode-holder .qrcode {
-    max-width: 140px;
-    margin: 0 auto;
-  }
-  .download-area .qrcode-holder .qrcode .caption {
-    font-size: 12px;
-    background: #fff;
-    padding: 0 15px;
-    padding-bottom: 15px;
-    color: #253340;
-    font-family: arial, sans-serif;
   }
   .navbar-fixed-top .navbar-collapse {
     padding-left: 15px;
@@ -265,25 +155,24 @@
     left: 47%;
   }
 }
-/* Large devices (large desktops, 1200px and up) */
-
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
-  .config-wrapper {
-    display: none;
+    #topcontrol {
+      display: none !important;
+    }
+  .logo-img {
+    height: 70px;
+    background-size: 75px auto;
   }
-  #topcontrol {
-    display: none !important;
-  }
-  .header h1.logo {
-    float: none;
-    margin: inherit;
-    text-align: center;
-  }
-  .header h1.logo a {
-    margin: 0 auto;
-  }
+  // .header h1.logo {
+  //   float: none;
+  //   margin: inherit;
+  //   text-align: center;
+  // }
+  // .header h1.logo a {
+  //   margin: 0 auto;
+  // }
   .header.navbar-fixed-top {
     position: relative;
   }
@@ -302,7 +191,6 @@
   .navbar-collapse .nav {
     margin: 0;
   }
-
   .header .main-nav .nav .dropdown-menu:before {
     display: none;
   }
@@ -314,14 +202,7 @@
   .headline-bg.index-bg{
     height: 600px !important;
   }
-  .has-full-screen-bg.access-page .upper-wrapper {
-    background: #384d60;
-  }
-  .access-section {
-    padding-top: 15px;
-  }
-  .headline-bg + .section,
-  .bg-slider-wrapper + .section {
+  .headline-bg + .section {
     padding-top: 75px;
   }
   .pricing .intro {
@@ -330,19 +211,8 @@
   .features-video iframe {
     padding: 5px;
   }
-  .access-section {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 60px;
-  }
-  .signup-page .form-box .intro {
-    margin-bottom: 45px;
-  }
-  .login-page .form-box .title {
-    margin-bottom: 45px;
-  }
   .section .title {
-    font-size: 29px;
+    font-size: 29px !important;
     line-height: 40px;
   }
   .section .intro {
@@ -375,18 +245,6 @@
     margin-bottom: 30px;
     text-align: center;
   }
-  .testimonials .item .profile {
-    position: static;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .testimonials .item .content {
-    padding-left: 60px;
-  }
-  .testimonials .item blockquote {
-    font-size: 18px;
-  }
   .pricing .item.best-buy {
     position: static;
     z-index: inherit;
@@ -394,85 +252,12 @@
   .nav-tabs > li > a {
     padding: 10px 5px;
   }
-  .apps-section .phone-holder {
-    -webkit-background-size: 280px auto;
-    -moz-background-size: 280px auto;
-    -o-background-size: 280px auto;
-    background-size: 280px auto;
-  }
-  .apps-section .phone-holder .screenshot {
-    width: 242px;
-    top: 66px;
-  }
-  .searchbox-container .searchbox {
-    width: 100%;
-    top: inherit;
-    float: none;
-    margin-bottom: 30px;
-  }
-  .searchbox-icon {
-    display: none;
-  }
-  .searchbox-icon,
-  .searchbox-submit {
-    background: #ec6952;
-    color: #fff;
-    -webkit-border-top-right-radius: 4px;
-    -webkit-border-bottom-right-radius: 4px;
-    -webkit-border-bottom-left-radius: 0;
-    -webkit-border-top-left-radius: 0;
-    -moz-border-radius-topright: 4px;
-    -moz-border-radius-bottomright: 4px;
-    -moz-border-radius-bottomleft: 0;
-    -moz-border-radius-topleft: 0;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-  }
-  .searchbox-icon:hover,
-  .searchbox-submit:hover {
-    color: #fff;
-  }
+  
   .main-nav .navbar-collapse .navbar-nav {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .blog-page .header h1.logo {
-    float: left;
-    margin: inherit;
-  }
-  .blog-page .header .main-nav .navbar-toggle {
-    margin-bottom: 0;
-    top: 20px;
-  }
-  .blog-page .header .main-nav .navbar-toggle .icon-bar {
-    background-color: #384d60;
-  }
-  .blog-page .header .main-nav .navbar-toggle:hover .icon-bar {
-    background-color: #253340;
-  }
-  .blog-page .flexslider {
-    margin-top: 0;
-  }
-  .blog-category {
-    margin-top: 0;
-  }
-  .blog-page .navbar-collapse {
-    top: 80px;
-  }
-  .blog-page .header.navbar-fixed-top .main-nav .nav .nav-item a {
-    color: #fff;
-  }
-  .blog-slider .flex-caption .title {
-    font-size: 36px;
-  }
-  .searchbox-container .searchbox .searchbox-input {
-    position: static;
-  }
+ 
   .footer-col {
     margin-bottom: 30px;
   }
@@ -494,20 +279,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .download-page .headline-bg {
-    height: 1600px;
-  }
-  .story-section .about {
-    padding: 0;
-  }
-  .story-section .belife {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .story-section .team {
-    padding: 0;
-  }
-
+  
   .index-why .mobile-item .mobile-text {
      margin-top: 0; 
   }
@@ -627,12 +399,54 @@
     }
   }
   .play-btn {
-    top: 48%;
+    top: 40%;
     left: 42%;
 
     .icon-play {
       font-size: 60px;
     }
   }
+  #news-section-bottom .news-item {
+    margin: 30px 5px;
+  }
+  .headline-bg {
+    height: 370px;
+  }
+  .headline-bg + .section {
+    padding-top: 30px;
+  }
+  .features-video .lang-title {
+    margin-bottom: 30px;
+  }
+  .section .intro {
+    margin-bottom: 30px;
+  }
+  section.features-apm {
+    padding: 45px 0;
+  }
+
+  //jobs.html
+  .headline-bg.about-headline-bg {
+    height: 560px;
+  }
+  .jobs.section-on-bg {
+      padding-top: 10px;
+      padding-bottom: 40px;
+
+    }
+  section.joblist {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+//customers.html
+
+.mail-info {
+  height: 125px;
+  img {
+    float: left;
+    padding: 8px 20px;
+  }
+}
 
 }
