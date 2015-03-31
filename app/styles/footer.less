@@ -159,6 +159,14 @@
     color: #999;
   }
 }
+.tel {
+  font-size: 13px;
+}
+.email-addr {
+  font-size: 13px;
+  // word-wrap:break-word;
+  // word-break:break-all;
+}
 
 @media (max-width:1200px) {
   .qrcode {
@@ -169,6 +177,10 @@
 @media screen and (max-width:991px) and (min-width:768px) {
   .qrcode {
     top: 60px;
+  }
+  .email-addr {
+    word-wrap:break-word;
+    word-break:break-all;
   }
 }
 
@@ -184,5 +196,9 @@
   }
   .footer .footer-col p {
     margin-bottom: 4px;
+  }
+  .email-addr {
+  word-wrap:break-word;
+  word-break:break-all;
   }
 }

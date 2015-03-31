@@ -189,7 +189,7 @@ $(document).ready(function() {
 
     $(window).resize(function  () {
         var mediaWidth = $(document).width();
-        if (mediaWidth > 768){
+        if (mediaWidth > 1024){
             $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","");
         }else{
             $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","dropdown");
