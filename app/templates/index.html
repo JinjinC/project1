@@ -1,9 +1,7 @@
 {% extends 'base/_layout.html' %}
 
 {% block content %}
-<!-- <div class="bg-index">
-	<img src="/images/index/index.png">
-</div>       -->
+
 <div class="headline-bg index-bg"></div><!-- headline-bg -->
 
 <section class="promo section section-on-bg">
@@ -14,7 +12,7 @@
 	        <span class="btn-index-span">or</span>
 	        <a href="https://user.oneapm.com/account/register.do" target="_blank" class="btn btn-large btn-sign-ye">免费注册</a>
 	    </p>
-        <button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" ><i class="fa fa-youtube-play"></i> 观赏 OneAPM 介绍影片</button>
+        <button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" id="video-btn"><i class="fa fa-youtube-play"></i> 观赏 OneAPM 介绍影片</button>
     </div><!--//container-->
 </section><!--//promo-->
 
@@ -49,7 +47,7 @@
                             <h3 class="tab-title">Application Insight</h3>
                             <h4 class="tab-subtitle">端到端的分布式性能可视化</h4>
                             <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/index/ai.png" alt="端到端的性能可见" />
+                                <a href="/ai/feature.html"><img class="img-responsive" src="/images/index/ai.png" alt="端到端的性能可见" /></a>
                             </figure>
                             <p class="text-center btn-part btn-part-index">
                                 <a href="../ai/feature.html" class="btn btn-large btn-knowmore">查看 Ai 特性</a>
@@ -61,7 +59,7 @@
                             <h3 class="tab-title">Browser Insight</h3>
                             <h4 class="tab-subtitle">真实用户体验管理</h4>
                             <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/index/bi.png" alt="真实用户体验管理" />
+                                <a href="/bi/feature.html"><img class="img-responsive" src="/images/index/bi.png" alt="真实用户体验管理" /></a>
                             </figure>
                             <p class="text-center btn-part btn-part-index">
                                 <a href="../bi/feature.html" class="btn btn-large btn-knowmore" >查看 Bi 特性</a>
@@ -73,7 +71,7 @@
                             <h3 class="tab-title">Mobile Insight<h3/>
                             <h4 class="tab-subtitle">移动应用 Crash 分析</h4>
                             <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/index/mi.png" alt="移动应用 Crash 分析" />
+                                <a href="/mi/feature.html"><img class="img-responsive" src="/images/index/mi.png" alt="移动应用 Crash 分析" /></a>
                             </figure>
                             <p class="text-center btn-part btn-part-index">
                                 <a href="../mi/feature.html" class="btn btn-large btn-knowmore">查看 Mi 特性</a>
@@ -147,24 +145,23 @@
 
 
 <!-- ******Press Section****** -->
-<section class="section press index-press">
+<section class="section index-press">
     <div class="container text-center">
-        <!-- <h4 class="new-title">新气象 新方向</h4> -->
         <div id="news-section-bottom">
             <a class="news-item" href="http://v.youku.com/v_show/id_XODcyNDUyOTMy.html" target="_blank">
-              <img src="/images/index/press/oneapmweb.png" alt="">
+              <img class="img-responsive" src="/images/index/press/oneapmweb.png" alt="">
               <span class="news-title"><span class="text">观赏「OneAPM for Web 功能介绍」影片</span></span>
             </a>
             <a class="news-item" href="http://oneapm.udesk.cn/hc/articles/233" target="_blank">
-              <img src="/images/index/press/news_0.png" alt="">
+              <img class="img-responsive" src="/images/index/press/news_0.png" alt="">
               <span class="news-title"><span class="text">Java Agent 现已支持 Play 框架</span></span>
             </a>
             <a class="news-item" href="http://oneapm.udesk.cn/hc/articles/190" target="_blank">
-              <img src="/images/index/press/news_1.png" alt="">
+              <img class="img-responsive" src="/images/index/press/news_1.png" alt="">
               <span class="news-title"><span class="text">Android SDK 现已支持 Gradle</span></span>
             </a>
             <a class="news-item" href="http://market.aliyun.com/product/12-122338006-cmgj000251.html?spm=0.0.0.0.J7t3je" target="_blank">
-              <img src="/images/index/press/news_3.png" alt="">
+              <img class="img-responsive" src="/images/index/press/news_3.png" alt="">
               <span class="news-title"><span class="text">OneAPM 入驻阿里云平台</span></span>
             </a>
         </div>

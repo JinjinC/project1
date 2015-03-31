@@ -148,18 +148,20 @@ $(document).ready(function() {
         video.attr("controls","controls");
     });
 
-    //视频关闭控制
+
+    //视频关闭控制(index页)
     $('.modal.modal-video button.close').click(function  () {
          var video = $('#index-video');
         video[0].pause();
     });
 
-    // $('#apm-video').click(function  () {
-    //     var video = $('#apm-video');
-    //     if (video[0].pause) {
-    //         $('.play-btn').show();
-    //     }
-    // })
+    //视频自动控制(index页)
+    $('#video-btn').click(function  () {
+        console.log('12');
+        var video = $('#index-video');
+        video[0].play();
+    })
+
 
     //scan code 悬浮
     $('#scan-code').mouseover(function () {
@@ -179,7 +181,7 @@ $(document).ready(function() {
     });
 
     var mediaWidth = $(document).width();
-    if (mediaWidth > 768){
+    if (mediaWidth > 1024){
         $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","");
     }else{
         $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","dropdown");
@@ -192,7 +194,6 @@ $(document).ready(function() {
         }else{
             $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","dropdown");
         }
-        
     });
     
 });
