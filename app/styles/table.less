@@ -83,14 +83,18 @@
   th.empty {
     background: transparent;
   }
+  th .th-title{
+    font-size: 17px;
+  }
   td {
       background: #fff;
       border-top: 1px solid #e9e9e9 !important;
       color: rgba(51,51,51,0.8);
       font-size: 14px;
   }
-  td.title {
-      font-weight: bolder;
+  td.td-title {
+    font-size: 15px;
+      font-weight: bold;
       color: rgb(51,51,51);
   }
 
@@ -177,3 +181,18 @@ td.user-name {
   }
 }
 
+@media (max-width:480px) {
+  .table-contrast p.text-center {
+    font-size: 13px;
+  }
+  .table-contrast {
+    th {
+      font-size: 14px;
+      font-weight: bold;
+      .th-title{
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+}
