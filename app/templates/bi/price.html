@@ -79,7 +79,7 @@
     <section class="table-contrast section has-bg-color">
         <div class="container">
             <h2 class="title text-center">功能对比</h2>
-            <h3 class="title text-center" style="font-size: 16px;">新注册用户，免费试用专业版 15 天。免费版，永久免费。</h3>
+            <p class="text-center" style="font-size: 16px;">新注册用户，免费试用专业版 15 天。免费版，永久免费。</p>
             <div class="row">
                 <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
                     <table class="table">
@@ -87,13 +87,13 @@
                             <tr>
                                 <th class="empty"></th>
                                 <th>
-                                    <h4>免费版</h4>
+                                    <span class="th-title">免费版</span>
                                 </th>
                                 <th>
-                                    <h4>专业版</h4>
+                                    <span>专业版</span>
                                 </th>
                                 <th>
-                                    <h4>企业版</h4>
+                                    <span>企业版</span>
                                 </th>
                             </tr>
                         </thead>
@@ -101,7 +101,7 @@
                             {% for row in browser_price %}
                             <tr>
                                 {% if row.epr === "" %}
-                                    <td class="title">{{row.title}}</td>
+                                    <td class="td-title">{{row.title}}</td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
