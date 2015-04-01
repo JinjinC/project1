@@ -13,7 +13,7 @@ $(document).ready(function() {
         var header_height = header.height();
         var section = header.parent().find('section').first();
         var mediaWidth = $(document).width();
-        if(mediaWidth > 768){
+        if(mediaWidth > 767){
             if ($(window).scrollTop() > 0) {
                $('#header').addClass('navbar-fixed-top');
                section.css('margin-top',header_height);
@@ -22,14 +22,15 @@ $(document).ready(function() {
                 $('#header').removeClass('navbar-fixed-top');
                 section.css('margin-top',0);
             }
-        }else{
-            if ($(window).scrollTop() > 0) {
-               $('#header').addClass('navbar-fixed-top');
-            }
-            else {
-                $('#header').removeClass('navbar-fixed-top');
-            }     
         }
+        // else{
+        //     if ($(window).scrollTop() > 0) {
+        //        $('#header').addClass('navbar-fixed-top');
+        //     }
+        //     else {
+        //         $('#header').removeClass('navbar-fixed-top');
+        //     }     
+        // }
     });
     
     /* ======= jQuery Placeholder ======= */
@@ -196,6 +197,32 @@ $(document).ready(function() {
         }
     });
 
-    
-    
+    //小于 767px 时导航样式
+    var ai = "<p>Application Insight</p>";
+    var bi = "<p>Browser Insight</p>";
+    var mi = "<p>Mobile Insight</p>";
+
+    if (mediaWidth < 768) {
+        $('#logo-ai').append(ai);
+        $('#logo-bi').append(bi);
+        $('#logo-mi').append(mi);
+        $('.navbar-toggle').click(function() {
+            $('.global-header-overlay').toggle();    
+            
+        });
+
+        // $(document).click(function(e){
+        //     var e_id = $(e.target).attr('id'); 
+        //     if ($('#navbar-collapse').css('display')!='none') {
+        //         if (e_id!='navbar-toggle-btn') {
+        //             $('#navbar-collapse').hide();
+        //             $('.global-header-overlay').hide();
+        //         };
+        //         e.stopPropagation();
+        //     };
+            
+        // })
+        
+    }
+            
 });
