@@ -211,18 +211,21 @@ $(document).ready(function() {
             
         });
 
-        // $(document).click(function(e){
-        //     var e_id = $(e.target).attr('id'); 
-        //     if ($('#navbar-collapse').css('display')!='none') {
-        //         if (e_id!='navbar-toggle-btn') {
+       
+        
+        // if ($('#navbar-collapse').css('display')!='none') {
+        //     $(document).click(function(e){
+        //         var e_id = $(e.target).attr('id'); 
+        //         alert(e_id);
+        //         if (e_id!='navbar-collapse') {
         //             $('#navbar-collapse').hide();
         //             $('.global-header-overlay').hide();
         //         };
         //         e.stopPropagation();
-        //     };
+        //     })
             
-        // })
-        
+        // };
+      
     }
             
 });
