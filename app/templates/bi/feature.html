@@ -3,11 +3,22 @@
 {% block content %}
 <div class="headline-bg bi-headline-bg"></div><!-- headline-bg -->
 <section class="features-video section section-on-bg">
-    <div class="container text-center">          
+    <div class="container text-center">
         <h2 class="title">Browser Insight</h2>
         <p class="intro text-center">为你的 HTML5 应用增色，从页面加载、AJAX 加载，页面 Trace、地理位置等多个角度，度量应用性能</p>
         <div class="video-container">
-            <img src="/images/bi/bro-features.png" style="width:100%" alt="OneAPM Browser Insight">
+            <div class="fluid-width-video-wrapper">
+                <p class="play-btn">
+                    <a href="#" class="play-trigger btn-link">
+                        <i class="iconfont icon-play">&#xe60b;</i>
+                    </a>
+                </p>
+                <!-- <button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" ><i class="fa fa-youtube-play"></i> Watch the video</button> -->
+               <video preload poster="http://oneapm-com-public-file.qiniudn.com/bi-introduce-poster-v0.1.jpg" class="box-video" id="apm-video">
+                   <source src="http://oneapm-com-public-file.qiniudn.com/bi-introduce-v0.1.webm" type="video/webm">
+                   <source src="http://oneapm-com-public-file.qiniudn.com/bi-introduce-v0.1.mp4" type="video/mp4">
+               </video>
+            </div>
         </div>
     </div>
 </section>
