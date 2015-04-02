@@ -197,6 +197,34 @@ $(document).ready(function() {
         }
     });
 
+    $('.prev-btn').click(function  () {
+        var imgslider_container = $(this).parentsUntil(".imgslider-container").parent();
+        var img_prev = imgslider_container.find('.img-prev');
+        var img_cur = imgslider_container.find('.img-current');
+        var img_next = imgslider_container.find('.img-next');
+        img_prev.removeClass("img-prev").addClass("img-current");
+        img_cur.removeClass("img-current").addClass("img-next");
+        img_next.removeClass("img-next").addClass("img-prev");
+    });
+
+    $('.next-btn').click(function  () {
+        var imgslider_container = $(this).parentsUntil(".imgslider-container").parent();
+        var img_prev = imgslider_container.find('.img-prev');
+        var img_cur = imgslider_container.find('.img-current');
+        var img_next = imgslider_container.find('.img-next');
+        img_prev.removeClass("img-prev").addClass("img-next");
+        img_cur.removeClass("img-current").addClass("img-prev");
+        img_next.removeClass("img-next").addClass("img-current");
+    });
+
+    $('.prev-btn,.next-btn').click(function  () {
+        var imgslider_container = $(this).parentsUntil(".imgslider-container").parent();
+        var img_cur = imgslider_container.find('.img-current');
+        var cur_img_text = img_cur.find('.img-text').clone();
+        var dest_img_text = $('.controller-wrap .img-text');
+        dest_img_text.replaceWith(cur_img_text);
+    });
+    
     //小于 767px 时导航样式
     var ai = "<p>Application Insight</p>";
     var bi = "<p>Browser Insight</p>";
@@ -228,5 +256,4 @@ $(document).ready(function() {
         // };
       
     }
-            
 });
