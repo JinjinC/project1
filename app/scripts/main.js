@@ -224,36 +224,24 @@ $(document).ready(function() {
         var dest_img_text = $('.controller-wrap .img-text');
         dest_img_text.replaceWith(cur_img_text);
     });
-    
-    //小于 767px 时导航样式
-    var ai = "<p>Application Insight</p>";
-    var bi = "<p>Browser Insight</p>";
-    var mi = "<p>Mobile Insight</p>";
 
-    if (mediaWidth < 768) {
-        // $('#logo-ai').css('background','none');
-        $('#logo-ai').append(ai);
-        $('#logo-bi').append(bi);
-        $('#logo-mi').append(mi);
-        $('.navbar-toggle').click(function() {
-            $('.global-header-overlay').toggle();    
-            
-        });
+    $('.imgslider').click(function  () {
+        if ($(this).hasClass("img-prev")){
+             $('.prev-btn').trigger("click");
+        }
+        if ($(this).hasClass("img-next")){
+             $('.next-btn').trigger("click");
+        }
+    })
 
-       
-        
-        // if ($('#navbar-collapse').css('display')!='none') {
-        //     $(document).click(function(e){
-        //         var e_id = $(e.target).attr('id'); 
-        //         alert(e_id);
-        //         if (e_id!='navbar-collapse') {
-        //             $('#navbar-collapse').hide();
-        //             $('.global-header-overlay').hide();
-        //         };
-        //         e.stopPropagation();
-        //     })
-            
-        // };
-      
-    }
+    //小于767下的，导航栏出现黑色遮罩的
+    $('.navbar-toggle').click(function() {
+        $('.global-header-overlay').toggleClass("overlay-show");
+    });
+
+    $('.global-header-overlay').click(function  () {
+        $('.navbar-toggle').trigger("click");
+    })
+
+
 });
