@@ -7,6 +7,7 @@ $(function(){
 				$t	   = $(this),
 				$thead = $t.find('thead').clone(),
 				$col   = $t.find('thead, tbody').clone();
+			var mediaWidth = $(document).width();
 
 			// Add class, remove margins, reset width and wrap table
 			$t
@@ -85,6 +86,7 @@ $(function(){
 						// Position sticky header based on viewport scrollTop
 						if($w.scrollTop() > $t.offset().top && $w.scrollTop() < $t.offset().top + $t.outerHeight() - allowance) {
 							// When top of viewport is in the table itself
+							
 							$stickyHead.add($stickyInsct).css({
 								opacity: 1,
 								top: $w.scrollTop() - $t.offset().top +80
