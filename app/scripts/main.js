@@ -203,6 +203,7 @@ $(document).ready(function() {
     var mi = "<p>Mobile Insight</p>";
 
     if (mediaWidth < 768) {
+        // $('#logo-ai').css('background','none');
         $('#logo-ai').append(ai);
         $('#logo-bi').append(bi);
         $('#logo-mi').append(mi);
