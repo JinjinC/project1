@@ -9,7 +9,7 @@
         </span><!--//logo-->
         <nav class="main-nav navbar-right" role="navigation">
             <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                <button id="navbar-toggle-btn" class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -19,8 +19,8 @@
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" data-delay="0" data-close-others="false" href="/ai/feature.html">
-                          <span class="logo-ai"></span> 
+                        <a class="dropdown-toggle dropdown-link" data-hover="dropdown" data-toggle="dropdown" data-delay="0" data-close-others="false" href="/ai/feature.html">
+                          <span class="logo-ai" id="logo-ai"></span> 
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="/ai/feature.html">特性</a></li>
@@ -30,40 +30,40 @@
                             <li><a href="/ai/python.html">Python</a></li>
                             <li><a href="/ai/nodejs.html">Node.js</a></li>
                             <li><a href="/ai/php.html">PHP</a></li>                   
-                            <li><a href="/ai/ruby.html">Ruby</a></li>                   
+                            <li class="last"><a href="/ai/ruby.html">Ruby</a></li>                   
                         </ul>                            
                     </li>     
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" data-delay="0" data-close-others="false" href="/bi/feature.html">
-                            <span class="logo-bi"></span> 
+                        <a class="dropdown-toggle dropdown-link" data-hover="dropdown" data-toggle="dropdown" data-delay="0" data-close-others="false" href="/bi/feature.html">
+                            <span class="logo-bi" id="logo-bi"></span> 
                           <!-- <i class="iconfont icon-nav">&#xe605;</i>  -->
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="/bi/feature.html">特性</a></li>
-                            <li><a href="/bi/price.html">报价</a></li>
+                            <li class="last"><a href="/bi/price.html">报价</a></li>
                         </ul>                            
                     </li>  
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" data-delay="0" data-close-others="false" href="/mi/feature.html">
-                            <span class="logo-mi"></span> 
+                        <a class="dropdown-toggle dropdown-link" data-hover="dropdown" data-toggle="dropdown" data-delay="0" data-close-others="false" href="/mi/feature.html">
+                            <span class="logo-mi" id="logo-mi"></span> 
                           <!-- <i class="iconfont icon-nav">&#xe606;</i> -->
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="/mi/feature.html">特性</a></li>
                             <li><a href="/mi/price.html">报价</a></li>
                             <li><a href="/mi/ios.html">iOS</a></li>
-                            <li><a href="/mi/android.html">Android</a></li>
+                            <li class="last"><a href="/mi/android.html">Android</a></li>
                             <!-- <li><a href="/mi/client.html">客户端</a></li> -->
                         </ul>                            
                     </li>  
                     <!-- <li class="nav-item"><a href="/EE.html">企业版</a></li> -->
                     <li class="nav-item"><a href="http://support.oneapm.com"><strong>帮助</strong> </a></li> 
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" data-delay="0" data-close-others="false" href="/info/about.html"><strong>关于</strong></a>
-                        <ul class="dropdown-menu">
+                        <a class="dropdown-toggle dropdown-link" data-hover="dropdown" data-toggle="dropdown" data-delay="0" data-close-others="false" href="/info/about.html"><strong>关于</strong></a>
+                        <ul class="dropdown-menu" style="top:107%; right:-9px;">
                             <li><a href="/info/about.html">公司</a></li>
                             <li><a href="/info/jobs.html">职位</a></li>
-                            <li><a href="/info/customers.html">客户</a></li>
+                            <li class="last"><a href="/info/customers.html">客户</a></li>
                             <!-- <li><a href="/info/partner.html">伙伴</a></li> -->
                         </ul>                            
                     </li>             
@@ -74,3 +74,4 @@
         </nav><!--//main-nav-->                     
     </div><!--//container-->
  </header><!--//header-->
+ <div class="global-header-overlay"></div>
