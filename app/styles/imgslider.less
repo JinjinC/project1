@@ -5,9 +5,9 @@
 	height: 500px;
 	margin: 0 auto;
 	transform-style: preserve-3d;
-	-webkit-transform-style: preserve-3d;
+	// -webkit-transform-style: preserve-3d;
 	perspective: 1000px;
-	-webkit-perspective: 1000px;
+	// -webkit-perspective: 1000px;
 	.img-text {
 		display: none;
 	}
@@ -30,6 +30,9 @@
 .img-prev{
 	transform: translateX(-350px) translateZ(-330px) rotateY(45deg);
 	-webkit-transform: translateX(-350px) translateZ(-330px) rotateY(45deg);
+	-moz-transform: translateX(-350px) translateZ(-330px) rotateY(45deg);
+	-ms-transform: translateX(-350px) translateZ(-330px) rotateY(45deg);
+	-o-transform: translateX(-350px) translateZ(-330px) rotateY(45deg);
 	transition: transform 0.5s ease-in-out;
 	-webkit-transition: -webkit-transform 0.5s ease-in-out;
 	cursor: pointer;
@@ -37,15 +40,23 @@
 .img-current{
 	transform: translateX(0px) translateZ(0px) rotateY(0deg);
 	-webkit-transform: translateX(0px) translateZ(0px) rotateY(0deg);
+	-moz-transform:  translateX(0px) translateZ(0px) rotateY(0deg);
+	-o-transform:  translateX(0px) translateZ(0px) rotateY(0deg);
+	-ms-transform:  translateX(0px) translateZ(0px) rotateY(0deg);
 	transition: transform 0.5s ease-in-out;
 	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	-webkit-transition: transform 0.5s ease-in-out;
 	z-index: 100;
 }
 .img-next{
 	transform: translateX(350px) translateZ(-330px) rotateY(-45deg);
 	-webkit-transform: translateX(350px) translateZ(-330px) rotateY(-45deg);
+	-moz-transform: translateX(350px) translateZ(-330px) rotateY(-45deg);
+	-o-transform: translateX(350px) translateZ(-330px) rotateY(-45deg);
+	-ms-transform: translateX(350px) translateZ(-330px) rotateY(-45deg);
 	transition: transform 0.5s ease-in-out;
 	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	-webkit-transition: transform 0.5s ease-in-out;
 	cursor: pointer;
 }
 
@@ -141,14 +152,6 @@
 	}
 	.imgslider-container{
 		padding-bottom: 0;
-	}
-	.img-prev{
-		visibility: hidden;
-		display: none;
-	}
-	.img-next{
-		visibility: hidden;
-		display: none;
 	}
 	.img-wrapper{
 		width:99%;

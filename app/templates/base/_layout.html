@@ -16,7 +16,8 @@
     <meta name="description" content="{{description}}" />
     {% endblock %}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5"> -->
+    <meta name="viewport" content="width=992, initial-scale=1, maximum-scale=1.5">
 
     <title>{{pageTitle}}</title>
 
@@ -73,17 +74,29 @@
       <img src="/images/logo.png" alt="logo">
     </div>
     <div id="root">
+    {% if pageName == "enterprise" %}
+      {% block header %}
+        {% include "_headerEtp.html" %}
+      {% endblock %}
+    {% else%}
       {% block header %}
         {% include "_header.html" %}
       {% endblock %}
+    {% endif %}
 
       {% block content %}
       <p>This is just an awesome page.</p>
       {% endblock %}
     </div>
+    {% if pageName == "enterprise" %}
+      {% block header %}
+        {% include "_footerEtp.html" %}
+      {% endblock %}
+    {% else%}
     {% block footer %}
       {% include "_footer.html" %}
     {% endblock %}
+    {% endif %}
 
     {% block scripts %}
     <!-- build:js(.) /scripts/vendors.js -->

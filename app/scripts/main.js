@@ -243,5 +243,4 @@ $(document).ready(function() {
         $('.navbar-toggle').trigger("click");
     })
 
-
 });
