@@ -805,12 +805,16 @@ section h3.title {
 }
 .pricing .item.best-buy .heading {
   padding-top: 45px;
+
+  .title {
+    padding-top: 0;
+  }
 }
 .pricing .item.best-buy .content {
   padding-bottom: 45px;
 }
 .pricing .item .item-inner {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -829,7 +833,8 @@ section h3.title {
 }
 .pricing .item .heading {
   margin-top: 0;
-  padding: 30px 15px;
+  // padding: 30px 15px;
+  padding: 0px;
   -webkit-border-top-right-radius: 4px;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -847,12 +852,14 @@ section h3.title {
   background-clip: padding-box;
 }
 .pricing .item .heading .title {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  margin-bottom: 0;
+  padding-top: 30px;
   padding-bottom: 30px;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 20px;
   border-bottom: 1px dashed #eeeeee;
-  color: #444444;
+  color: #fff;
 }
 .pricing .item .content {
   padding: 30px 15px;
@@ -860,11 +867,14 @@ section h3.title {
   font-size: 14px;
 }
 .pricing .item .price-figure {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  // -webkit-border-radius: 50%;
+  // -moz-border-radius: 50%;
+  // -ms-border-radius: 50%;
+  // -o-border-radius: 50%;
+  // border-radius: 50%;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
