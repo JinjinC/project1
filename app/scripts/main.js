@@ -248,10 +248,10 @@ $(document).ready(function() {
             flag = 1;
         }; 
     })
-    //每隔2分钟，将flag变为0；
+    //每隔1分钟，将flag变为0；
     setInterval(function(){
         flag = 0;
-    },1000*60*2);
+    },1000*60);
 
 
     //小于767下的，导航栏出现黑色遮罩的
