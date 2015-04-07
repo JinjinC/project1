@@ -90,7 +90,7 @@ module.exports = function(grunt) {
       options: {
         trueColor: true,
         precomposed: true,
-        appleTouchBackgroundColor: "#e2b2c2",
+        appleTouchBackgroundColor: "#fff",
         coast: true,
         windowsTile: true,
         tileBlackWhite: false,
