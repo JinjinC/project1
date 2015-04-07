@@ -181,6 +181,8 @@ $(document).ready(function() {
         $('body').animate({scrollTop:offset_top},600);
     });
 
+    //导航栏宽度的调整，悬浮与点击的变化
+
     var mediaWidth = $(document).width();
     if (mediaWidth > 1024){
         $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","");
@@ -196,6 +198,8 @@ $(document).ready(function() {
             $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","dropdown");
         }
     });
+
+    //image slider点击向前，向后
 
     $('.prev-btn').click(function  () {
         var imgslider_container = $(this).parentsUntil(".imgslider-container").parent();
@@ -233,6 +237,22 @@ $(document).ready(function() {
              $('.next-btn').trigger("click");
         }
     })
+
+
+    //鼠标悬浮，触发点击下一个图片
+    var flag = 0;
+
+    $('.imgslider-container').mouseenter(function  () {
+        if (flag == 0) {
+            $('.next-btn').trigger("click");
+            flag = 1;
+        }; 
+    })
+    //每隔2分钟，将flag变为0；
+    setInterval(function(){
+        flag = 0;
+    },1000*60*2);
+
 
     //小于767下的，导航栏出现黑色遮罩的
     $('.navbar-toggle').click(function() {

@@ -7,7 +7,6 @@ $(function(){
 				$t	   = $(this),
 				$thead = $t.find('thead').clone(),
 				$col   = $t.find('thead, tbody').clone();
-			var mediaWidth = $(document).width();
 
 			// Add class, remove margins, reset width and wrap table
 			$t
@@ -84,12 +83,19 @@ $(function(){
 					} else {
 						// If it is not overflowing (basic layout)
 						// Position sticky header based on viewport scrollTop
+
+						var header = $(' .navbar-fixed-top');
+						var headerHeight = 0;
+						if (header.css("position") == "fixed") {
+							headerHeight = header.height();
+						};
+						
 						if($w.scrollTop() > $t.offset().top && $w.scrollTop() < $t.offset().top + $t.outerHeight() - allowance) {
 							// When top of viewport is in the table itself
 							
 							$stickyHead.add($stickyInsct).css({
 								opacity: 1,
-								top: $w.scrollTop() - $t.offset().top +80
+								top: $w.scrollTop() - $t.offset().top + headerHeight
 							});
 						} else {
 							// When top of viewport is above or below table
