@@ -251,10 +251,8 @@ section.jobs {
 }
 
 .mail-box {
-	background: #fff;
 	border-radius: 6px;
-	border: 1px solid #eeeeee;
-	border-top-color: #dfdfdf;
+	border-bottom: 1px solid #eeeeee;
 	box-shadow: 0 4px 1px rgba(0, 0, 0, 0.05);
 	text-align: left;
 	display: none;
@@ -263,8 +261,15 @@ section.jobs {
 	display: block;
 }
 .mail-header{
-	background: url('../images/about/mail-head.png') #dfdfdf 0 0 no-repeat;
+	background: url('../images/about/mail-head.png') rgba(223, 223, 223, 0.48) 0 0 no-repeat;
 	height: 70px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.mail-body{
+	background: #fff;
+	border: 1px solid #eee;
+	border-top: none;
 }
 .mail-title {
 	margin: 0;

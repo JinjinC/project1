@@ -50,7 +50,7 @@
 							<div class="row contents">
 								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
 								{% for row in positions %}
-									{% if loop.index <= positionsNum/3 +1 %}
+									{% if loop.index%3 == 1 %}
 									    <div class="panel">
 									        <div class="panel-heading">
 									            <h4 class="panel-title">
@@ -91,7 +91,7 @@
 								</div>
 								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
 								{% for row in positions %}
-									{% if loop.index >7 && loop.index <=13 %}
+									{% if loop.index%3 == 2 %}
 									    <div class="panel">
 									        <div class="panel-heading">
 									            <h4 class="panel-title">
@@ -132,7 +132,7 @@
 								</div>
 								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
 								{% for row in positions %}
-									{% if loop.index >13 %}
+									{% if loop.index%3 == 0 %}
 									    <div class="panel">
 									        <div class="panel-heading">
 									            <h4 class="panel-title">
@@ -174,13 +174,385 @@
 							</div>
                         </div><!--//tab-pane-->
                         <div class="tab-pane" id="feature-2">
-                            
+                            <div class="row contents">
+                            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            	{% for row in positions2 %}
+                            		{% if loop.index%3 == 1 %}
+                            		    <div class="panel">
+                            		        <div class="panel-heading">
+                            		            <h4 class="panel-title">
+                            		            	<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq{{loop.index + positionsNum}}">
+                            		            		<i class="fa fa-plus-square"></i>
+                            		            		<p class="job-name">{{row.name}}</p>
+                            		            	</a>
+                            		            </h4>
+                            		        </div>
+                            		        <div class="panel-collapse collapse" id="faq{{loop.index + positionsNum}}">
+                            		            <div class="panel-body">
+                            		            	<h4 class="subtitle">岗位职责</h4>
+                            		            	<ul>
+                            		            		{% for d in row.duty %}
+                            		            		<li>{{d}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	<h4 class="subtitle">任职要求</h4>
+                            		            	<ul>
+                            		            		{% for r in row.require %}
+                            		            		<li>{{r}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% if row.bonus != "" %}
+                            		            	<h4 class="subtitle">加分项</h4>
+                            		            	<ul>
+                            		            		{% for b in row.bonus %}
+                            		            		<li>{{b}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% endif %}
+                            		                <p class="panel-small">对这个职位感兴趣？请发送简历到 hr@oneapm.com</p>
+                            		            </div>
+                            		        </div>
+                            		    </div><!--//panel-->
+                            		{% endif %}
+                            	{% endfor %}
+                            	</div>
+                            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            	{% for row in positions2 %}
+                            		{% if loop.index%3 == 2 %}
+                            		    <div class="panel">
+                            		        <div class="panel-heading">
+                            		            <h4 class="panel-title">
+                            		            	<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq{{loop.index + positionsNum}}">
+                            		            		<i class="fa fa-plus-square"></i>
+                            		            		<p class="job-name">{{row.name}}</p>
+                            		            	</a>
+                            		            </h4>
+                            		        </div>
+                            		        <div class="panel-collapse collapse" id="faq{{loop.index + positionsNum}}">
+                            		            <div class="panel-body">
+                            		            	<h4 class="subtitle">岗位职责</h4>
+                            		            	<ul>
+                            		            		{% for d in row.duty %}
+                            		            		<li>{{d}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	<h4 class="subtitle">任职要求</h4>
+                            		            	<ul>
+                            		            		{% for r in row.require %}
+                            		            		<li>{{r}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% if row.bonus != "" %}
+                            		            	<h4 class="subtitle">加分项</h4>
+                            		            	<ul>
+                            		            		{% for b in row.bonus %}
+                            		            		<li>{{b}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% endif %}
+                            		                <p class="panel-small">对这个职位感兴趣？请发送简历到 hr@oneapm.com</p>
+                            		            </div>
+                            		        </div>
+                            		    </div><!--//panel-->
+                            		{% endif %}
+                            	{% endfor %}
+                            	</div>
+                            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            	{% for row in positions2 %}
+                            		{% if loop.index%3 == 0 %}
+                            		    <div class="panel">
+                            		        <div class="panel-heading">
+                            		            <h4 class="panel-title">
+                            		            	<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq{{loop.index + positionsNum}}">
+                            		            		<i class="fa fa-plus-square"></i>
+                            		            		<p class="job-name">{{row.name}}</p>
+                            		            	</a>
+                            		            </h4>
+                            		        </div>
+                            		        <div class="panel-collapse collapse" id="faq{{loop.index + positionsNum}}">
+                            		            <div class="panel-body">
+                            		            	<h4 class="subtitle">岗位职责</h4>
+                            		            	<ul>
+                            		            		{% for d in row.duty %}
+                            		            		<li>{{d}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	<h4 class="subtitle">任职要求</h4>
+                            		            	<ul>
+                            		            		{% for r in row.require %}
+                            		            		<li>{{r}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% if row.bonus != "" %}
+                            		            	<h4 class="subtitle">加分项</h4>
+                            		            	<ul>
+                            		            		{% for b in row.bonus %}
+                            		            		<li>{{b}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% endif %}
+                            		                <p class="panel-small">对这个职位感兴趣？请发送简历到 hr@oneapm.com</p>
+                            		            </div>
+                            		        </div>
+                            		    </div><!--//panel-->
+                            		{% endif %}
+                            	{% endfor %}
+                            	</div>
+                            </div>
                         </div><!--//tab-pane-->
                         <div class="tab-pane" id="feature-3">
-                            
+                            <div class="row contents">
+                            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            	{% for row in positions3 %}
+                            		{% if loop.index%3 == 1 %}
+                            		    <div class="panel">
+                            		        <div class="panel-heading">
+                            		            <h4 class="panel-title">
+                            		            	<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq{{loop.index + positionsNum + positions2Num}}">
+                            		            		<i class="fa fa-plus-square"></i>
+                            		            		<p class="job-name">{{row.name}}</p>
+                            		            	</a>
+                            		            </h4>
+                            		        </div>
+                            		        <div class="panel-collapse collapse" id="faq{{loop.index + positionsNum + positions2Num}}">
+                            		            <div class="panel-body">
+                            		            	<h4 class="subtitle">岗位职责</h4>
+                            		            	<ul>
+                            		            		{% for d in row.duty %}
+                            		            		<li>{{d}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	<h4 class="subtitle">任职要求</h4>
+                            		            	<ul>
+                            		            		{% for r in row.require %}
+                            		            		<li>{{r}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% if row.bonus != "" %}
+                            		            	<h4 class="subtitle">加分项</h4>
+                            		            	<ul>
+                            		            		{% for b in row.bonus %}
+                            		            		<li>{{b}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% endif %}
+                            		                <p class="panel-small">对这个职位感兴趣？请发送简历到 hr@oneapm.com</p>
+                            		            </div>
+                            		        </div>
+                            		    </div><!--//panel-->
+                            		{% endif %}
+                            	{% endfor %}
+                            	</div>
+                            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            	{% for row in positions3 %}
+                            		{% if loop.index%3 == 2 %}
+                            		    <div class="panel">
+                            		        <div class="panel-heading">
+                            		            <h4 class="panel-title">
+                            		            	<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq{{loop.index + positionsNum + positions2Num}}">
+                            		            		<i class="fa fa-plus-square"></i>
+                            		            		<p class="job-name">{{row.name}}</p>
+                            		            	</a>
+                            		            </h4>
+                            		        </div>
+                            		        <div class="panel-collapse collapse" id="faq{{loop.index + positionsNum + positions2Num}}">
+                            		            <div class="panel-body">
+                            		            	<h4 class="subtitle">岗位职责</h4>
+                            		            	<ul>
+                            		            		{% for d in row.duty %}
+                            		            		<li>{{d}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	<h4 class="subtitle">任职要求</h4>
+                            		            	<ul>
+                            		            		{% for r in row.require %}
+                            		            		<li>{{r}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% if row.bonus != "" %}
+                            		            	<h4 class="subtitle">加分项</h4>
+                            		            	<ul>
+                            		            		{% for b in row.bonus %}
+                            		            		<li>{{b}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% endif %}
+                            		                <p class="panel-small">对这个职位感兴趣？请发送简历到 hr@oneapm.com</p>
+                            		            </div>
+                            		        </div>
+                            		    </div><!--//panel-->
+                            		{% endif %}
+                            	{% endfor %}
+                            	</div>
+                            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            	{% for row in positions3 %}
+                            		{% if loop.index%3 == 0 %}
+                            		    <div class="panel">
+                            		        <div class="panel-heading">
+                            		            <h4 class="panel-title">
+                            		            	<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq{{loop.index + positionsNum + positions2Num}}">
+                            		            		<i class="fa fa-plus-square"></i>
+                            		            		<p class="job-name">{{row.name}}</p>
+                            		            	</a>
+                            		            </h4>
+                            		        </div>
+                            		        <div class="panel-collapse collapse" id="faq{{loop.index + positionsNum + positions2Num}}">
+                            		            <div class="panel-body">
+                            		            	<h4 class="subtitle">岗位职责</h4>
+                            		            	<ul>
+                            		            		{% for d in row.duty %}
+                            		            		<li>{{d}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	<h4 class="subtitle">任职要求</h4>
+                            		            	<ul>
+                            		            		{% for r in row.require %}
+                            		            		<li>{{r}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% if row.bonus != "" %}
+                            		            	<h4 class="subtitle">加分项</h4>
+                            		            	<ul>
+                            		            		{% for b in row.bonus %}
+                            		            		<li>{{b}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% endif %}
+                            		                <p class="panel-small">对这个职位感兴趣？请发送简历到 hr@oneapm.com</p>
+                            		            </div>
+                            		        </div>
+                            		    </div><!--//panel-->
+                            		{% endif %}
+                            	{% endfor %}
+                            	</div>
+                            </div>
                         </div><!--//tab-pane-->
                         <div class="tab-pane" id="feature-4">
-                            
+                            <div class="row contents">
+                            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            	{% for row in positions1 %}
+                            		{% if loop.index%3 == 1 %}
+                            		    <div class="panel">
+                            		        <div class="panel-heading">
+                            		            <h4 class="panel-title">
+                            		            	<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq{{loop.index + positionsNum + positions2Num + positions3Num}}">
+                            		            		<i class="fa fa-plus-square"></i>
+                            		            		<p class="job-name">{{row.name}}</p>
+                            		            	</a>
+                            		            </h4>
+                            		        </div>
+                            		        <div class="panel-collapse collapse" id="faq{{loop.index + positionsNum + positions2Num + positions3Num}}">
+                            		            <div class="panel-body">
+                            		            	<h4 class="subtitle">岗位职责</h4>
+                            		            	<ul>
+                            		            		{% for d in row.duty %}
+                            		            		<li>{{d}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	<h4 class="subtitle">任职要求</h4>
+                            		            	<ul>
+                            		            		{% for r in row.require %}
+                            		            		<li>{{r}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% if row.bonus != "" %}
+                            		            	<h4 class="subtitle">加分项</h4>
+                            		            	<ul>
+                            		            		{% for b in row.bonus %}
+                            		            		<li>{{b}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% endif %}
+                            		                <p class="panel-small">对这个职位感兴趣？请发送简历到 hr@oneapm.com</p>
+                            		            </div>
+                            		        </div>
+                            		    </div><!--//panel-->
+                            		{% endif %}
+                            	{% endfor %}
+                            	</div>
+                            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            	{% for row in positions1 %}
+                            		{% if loop.index%3 == 2 %}
+                            		    <div class="panel">
+                            		        <div class="panel-heading">
+                            		            <h4 class="panel-title">
+                            		            	<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq{{loop.index + positionsNum + positions2Num + positions3Num}}">
+                            		            		<i class="fa fa-plus-square"></i>
+                            		            		<p class="job-name">{{row.name}}</p>
+                            		            	</a>
+                            		            </h4>
+                            		        </div>
+                            		        <div class="panel-collapse collapse" id="faq{{loop.index + positionsNum + positions2Num + positions3Num}}">
+                            		            <div class="panel-body">
+                            		            	<h4 class="subtitle">岗位职责</h4>
+                            		            	<ul>
+                            		            		{% for d in row.duty %}
+                            		            		<li>{{d}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	<h4 class="subtitle">任职要求</h4>
+                            		            	<ul>
+                            		            		{% for r in row.require %}
+                            		            		<li>{{r}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% if row.bonus != "" %}
+                            		            	<h4 class="subtitle">加分项</h4>
+                            		            	<ul>
+                            		            		{% for b in row.bonus %}
+                            		            		<li>{{b}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% endif %}
+                            		                <p class="panel-small">对这个职位感兴趣？请发送简历到 hr@oneapm.com</p>
+                            		            </div>
+                            		        </div>
+                            		    </div><!--//panel-->
+                            		{% endif %}
+                            	{% endfor %}
+                            	</div>
+                            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            	{% for row in positions1 %}
+                            		{% if loop.index%3 == 0 %}
+                            		    <div class="panel">
+                            		        <div class="panel-heading">
+                            		            <h4 class="panel-title">
+                            		            	<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq{{loop.index + positionsNum + positions2Num + positions3Num}}">
+                            		            		<i class="fa fa-plus-square"></i>
+                            		            		<p class="job-name">{{row.name}}</p>
+                            		            	</a>
+                            		            </h4>
+                            		        </div>
+                            		        <div class="panel-collapse collapse" id="faq{{loop.index + positionsNum + positions2Num + positions3Num}}">
+                            		            <div class="panel-body">
+                            		            	<h4 class="subtitle">岗位职责</h4>
+                            		            	<ul>
+                            		            		{% for d in row.duty %}
+                            		            		<li>{{d}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	<h4 class="subtitle">任职要求</h4>
+                            		            	<ul>
+                            		            		{% for r in row.require %}
+                            		            		<li>{{r}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% if row.bonus != "" %}
+                            		            	<h4 class="subtitle">加分项</h4>
+                            		            	<ul>
+                            		            		{% for b in row.bonus %}
+                            		            		<li>{{b}}</li>
+                            		            		{% endfor %}
+                            		            	</ul>
+                            		            	{% endif %}
+                            		                <p class="panel-small">对这个职位感兴趣？请发送简历到 hr@oneapm.com</p>
+                            		            </div>
+                            		        </div>
+                            		    </div><!--//panel-->
+                            		{% endif %}
+                            	{% endfor %}
+                            	</div>
+                            </div>
                         </div><!--//tab-pane-->
                     </div><!--//tab-content-->
                 </div>

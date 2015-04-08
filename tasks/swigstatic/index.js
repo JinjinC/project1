@@ -81,15 +81,19 @@ module.exports = function(grunt) {
     function handleFiles(files) {
       files.forEach(function(f) {
         f.src.filter(srcExists).forEach(function(filepath) {
-          var context,contextPath = filepath.substring(0,filepath.lastIndexOf('.'))+'.json';
+          var context
+            , contextPathJSON = filepath.substring(0,filepath.lastIndexOf('.'))+'.json'
+            , contextPathJs = filepath.substring(0,filepath.lastIndexOf('.'))+'.js';
           try{
-            if(contextPath.indexOf('about/position.json')>-1){
-              console.log(contextPath)
-            }
-            context = grunt.file.readJSON(contextPath)
+            context = grunt.file.readJSON(contextPathJSON)
           }catch(err){
             context = {}
-            grunt.log.warn('Source file "' + contextPath + '" not found.');
+            try{
+              context = require(contextPathJs)
+            }catch(err){
+              context = {}
+            }
+            // grunt.log.warn('Source file "' + contextPathJSON + '" not found.');
           }
           renderFile(f.dest, filepath, context);
         });
