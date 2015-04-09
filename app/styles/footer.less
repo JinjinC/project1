@@ -133,7 +133,7 @@
 .qrcode {
   display: none;
   position: absolute;
-  top: -30px;
+  top: -210px;
   left: -140px;
 }
 
@@ -151,6 +151,7 @@
 }
 .street-address {
   font-size: 12px;
+  padding-left: 5px;
 }
 .lang-selector {
   display: inline-block;
@@ -168,21 +169,24 @@
   // word-wrap:break-word;
   // word-break:break-all;
 }
+.adr, .email {
+  margin-bottom: 0;
+}
 
 @media (max-width:1200px) {
   .qrcode {
-    top: 15px;
+    top: -210px;
   }
 }
 
 @media screen and (max-width:991px) and (min-width:768px) {
   .qrcode {
-    top: 60px;
+    top: -210px;
   }
-  .email-addr {
-    word-wrap:break-word;
-    word-break:break-all;
-  }
+  // .email-addr {
+  //   word-wrap:break-word;
+  //   word-break:break-all;
+  // }
 }
 
 @media (max-width:767px) {
@@ -198,8 +202,8 @@
   .footer .footer-col p {
     margin-bottom: 4px;
   }
-  .email-addr {
-  word-wrap:break-word;
-  word-break:break-all;
-  }
+  // .email-addr {
+  // word-wrap:break-word;
+  // word-break:break-all;
+  // }
 }
