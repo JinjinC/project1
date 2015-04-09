@@ -98,6 +98,9 @@ section.trouble {
 		margin: auto;
 		width: 80%;
 	}
+	.tab-content img {
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+	}
 	span.icon {
 		height: 130px;
 		width: 140px;
@@ -149,26 +152,41 @@ section.partner {
 	}
 	a {
 		text-decoration: none;
-		.figure {
+		img {
+			margin: auto;
 			-webkit-filter: grayscale(100%) brightness(70%) contrast(75%);
 			-moz-filter: grayscale(100%) brightness(70%) contrast(75%);
 			-o-filter: grayscale(100%) brightness(70%) contrast(75%);
+			-ms-filter: grayscale(100%) brightness(70%) contrast(75%);
 			filter: grayscale(100%) brightness(70%) contrast(75%);
+			-webkit-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+			-ms-transition: all 0.4s ease-in-out;
 			transition: all 0.4s ease-in-out;
 		}
 		
 		p {
 			opacity: 0;
+			-webkit-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+			-ms-transition: all 0.4s ease-in-out;
 			transition: all 0.4s ease-in-out;
 		}
 	}
 	a:hover {
 		
-		.figure {
+		img {
 			-webkit-filter: none;
 			-moz-filter: none;
 			-o-filter: none;
+			-ms-filter: none;
 			filter: none;
+			-webkit-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+			-ms-transition: all 0.4s ease-in-out;
 			transition: all 0.4s ease-in-out;
 		}
 		p {
@@ -357,4 +375,58 @@ section.features-apm {
 		text-decoration: none;
 	}
 }
+
+
+/*** contact section 部分 ****/
+
+section.contact-section{
+	.container{
+		padding-bottom: 50px;
+	}
+
+	background: #f2f2f2;
+	padding-top: 50px;
+	figure{
+		text-align: center;
+		width: 80%;
+		.iconfont{
+			font-size: 68px;
+			color: rgba(0, 0, 0, 0.2);
+			line-height: 1.2;
+		}
+		.figure-title{
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		.figure-detail{
+			font-size: 12px;
+			color: rgba(0, 0, 0, 0.5);
+		}
+		.figure-link{
+			font-size: 12px;
+		}
+	}
+
+	@media(min-width: 992px){
+		.container{
+			width: 970px;
+		}
+	}
+
+	@media(max-width: 767px){
+		.container{
+			width: 450px;
+		}
+	}
+	@media(max-width: 480px){
+		.container{
+			width: 360px;
+		}
+	}
+	@media(max-width: 375px){
+		.container{
+			width: 299px;
+		}
+	}
+} 
 

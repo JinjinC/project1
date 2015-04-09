@@ -158,7 +158,6 @@ $(document).ready(function() {
 
     //视频自动控制(index页)
     $('#video-btn').click(function  () {
-        console.log('12');
         var video = $('#index-video');
         video[0].play();
     })
