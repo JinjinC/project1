@@ -200,6 +200,31 @@ section.partner {
 	.figure {
 		height: 70px;
 	}
+	.partner-box{
+		min-height: 100px;
+	}
+	@media(max-width: 375px){
+		.partner-box{
+		min-height: 70px;
+		height: 70px;
+		}
+	}
+}
+
+@media(max-width: 767px){
+	.partner-container{
+		width: 450px;
+	}
+}
+@media(max-width: 480px){
+	.partner-container{
+		width: 300px;
+	}
+}
+@media(max-width: 375px){
+	.partner-container{
+		width: 250px;
+	}
 }
 
 section.jobs {
@@ -380,23 +405,33 @@ section.features-apm {
 /*** contact section 部分 ****/
 
 section.contact-section{
+
+	background: #f2f2f2;
+	padding-top: 40px;
 	.container{
 		padding-bottom: 50px;
 	}
-
-	background: #f2f2f2;
-	padding-top: 50px;
+	a{
+		text-decoration: none;
+	}
+	a:hover{
+		.figure-link{
+			text-decoration: underline;
+		}
+	}
 	figure{
 		text-align: center;
 		width: 80%;
+		margin: auto;
 		.iconfont{
 			font-size: 68px;
 			color: rgba(0, 0, 0, 0.2);
-			line-height: 1.2;
+			line-height: 1.1;
 		}
 		.figure-title{
 			font-size: 16px;
 			margin-bottom: 10px;
+			color: #333;
 		}
 		.figure-detail{
 			font-size: 12px;
@@ -404,12 +439,29 @@ section.contact-section{
 		}
 		.figure-link{
 			font-size: 12px;
+			&:hover{
+				text-decoration: underline;
+			}	
+		}
+		.phone{
+			font-size: 12px;
+		}
+	}
+	figure.row1{
+		@media(max-width: 767px){
+			margin-bottom: 30px;
 		}
 	}
 
 	@media(min-width: 992px){
 		.container{
 			width: 970px;
+		}
+	}
+
+	@media(min-width: 1200px){
+		.container{
+			width: 1170px;
 		}
 	}
 
@@ -429,4 +481,32 @@ section.contact-section{
 		}
 	}
 } 
+
+section.contact-section.about{
+	background: #fff;
+	figure{
+		 .iconfont{
+				font-size: 100px;
+				color: #006ec3;
+				-webkit-text-stroke-width: 0;
+			}
+			.figure-title{
+				font-size: 16px;
+				color: rgba(0, 0, 0, 0.3);
+			}
+			.figure-info{
+				font-size: 16px;
+			}
+			@media(max-width: 480px){
+				.figure-info{
+					font-size: 12px;
+				}
+			}
+
+		}
+}
+
+section.map{
+
+}
 

@@ -86,10 +86,12 @@
       {% block content %}
       <p>This is just an awesome page.</p>
       {% endblock %}
-
-      {% block contact %}
-        {% include "_contact.html" %}
-      {% endblock %}
+      
+      {% if pageName != "enterprise" %}
+        {% block contact %}
+          {% include "_contact.html" %}
+        {% endblock %}
+      {% endif %}
     </div>
     {% if pageName == "enterprise" %}
       {% block header %}
