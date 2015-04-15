@@ -74,9 +74,9 @@
     }
     //向地图添加控件
     function addMapControl(){
-      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
-      map.addControl(scaleControl);
+      // var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      // scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      // map.addControl(scaleControl);
       var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_RIGHT,type:BMAP_NAVIGATION_CONTROL_LARGE});
       map.addControl(navControl);
     }
