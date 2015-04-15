@@ -274,6 +274,7 @@ video.box-video {
 .section-on-bg .title {
   color: #fff;
 }
+
 .section-on-bg .intro {
   color: #fff;
   // -webkit-opacity: 0.8;
@@ -509,6 +510,14 @@ section h3.title {
   margin-top: 0;
   color: #fff;
   font-weight: 600;
+}
+.features-video .about-title {
+  margin-bottom: 60px;
+}
+@media(max-width: 480px){
+  .features-video .about-title {
+    margin-bottom: 60px;
+  }
 }
 .features-video .lang-title {
   margin-bottom: 50px;
@@ -1313,5 +1322,37 @@ section h3.title {
   padding-top:50px;
   padding-bottom:0;
   border-bottom: 1px solid #eee;
+}
+
+//******* 一些基础样式 **********//
+
+.btmbdr-container{
+  border-bottom: 1px solid #eee;
+}
+
+.onlyshow-xxxs{
+  display: none;
+}
+
+.onlyshow-xxs{
+  display: none;
+}
+
+@media(max-width: 375px){
+  .onlyshow-xxxs{
+    display: block;
+  }
+  .hidden-xxxs{
+    display: none;
+  }
+  .col-xxxs-12{
+    width: 100%;
+  }
+}
+
+@media(max-width: 480px){
+  .onlyshow-xxs{
+    display: block;
+  }
 }
 
