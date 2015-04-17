@@ -1204,6 +1204,7 @@
     "positions1Num": 12,
     "positions2Num": 16,
     "positions3Num": 5,
+    "tabIndexGap": 1000,
     "pageTitle": "加入 OneAPM - 北京蓝海讯通科技有限公司",
     "description": "OneAPM是中国的应用性能管理服务提供商,协助技术人员,优化应用性能,快速定位性能问题,抓取相关的代码和SQL语句以及方法调用栈信息.",
     "keywords": "OneAPM,应用性能管理,蓝海讯通,blueware,性能优化,代码性能,移动应用性能,北京蓝海讯通科技有限公司,蓝海讯通."
