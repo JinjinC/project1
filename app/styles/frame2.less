@@ -560,16 +560,17 @@ section.contact-section.about{
 
 .text-feature-container{
 	margin-top: 40px;
-	padding: 20px 15px;
-	padding-top: 100px;
+	padding: 20px 0;
+	padding-top: 40px;
 }
 
 .new-list{
-	color: #fff;
+	color: rgba(0, 0, 0, 0.6);
 	list-style: none;
 	list-style-position: inside;
 	padding-left: 0;
 	margin-bottom: 30px;
+	font-size: 14px;
 	li:before{
 		content: "*";
 		font-weight: normal;
@@ -578,19 +579,23 @@ section.contact-section.about{
 }
 
 .downloadTitle{
-	font-size: 40px;
+	font-size: 50px;
 	font-weight: normal;
 	color: #fff;
 	margin-bottom: 30px;
 	text-align: left;
 }
 
+.android_phone_figure{
+	position: relative;
+}
+
 .inner_code{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -92px;
-	margin-top: -92px;
+	margin-left: -68px;
+	margin-top: -120px;
 	p{
 		margin-top: 10px;
 		color: #fff;
@@ -600,7 +605,8 @@ section.contact-section.about{
 .btn-android-download{
 	background: #fff;
 	color: #006ec3;
-	font-weight: normal;
+	cursor: pointer;
+	font-weight: normal !important;
 }
 
 .btn-android-download:hover{
@@ -612,21 +618,28 @@ section.contact-section.about{
 }
 
 .list-title{
-		font-size: 29px;
-		color: #fff;
-		font-weight: normal;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: normal;
+}
+.mobile-download{
+	padding-top: 6px;
+}
+a .icon-download{
+	font-size: 14px;
 }
 
-@media(max-width: 991px){
-	.text-feature-container{
-		padding-top: 60px;
+@media(min-width: 768px){
+	.android_phone{
+		margin-right: 0;
+		height: 600px;
 	}
 }
 
 @media(max-width: 767px){
 	.inner_code{
-		margin-left: -147px;
-		margin-top: -192px;
+		margin-left: -130px;
+		margin-top: -224px;
 	}
 	.new-list{
 		text-align: left;
@@ -634,25 +647,41 @@ section.contact-section.about{
 	.list-title{
 		text-align: left;
 	}
+	.mobile-download{
+		padding-top: 0;
+	}
+	.android_phone{
+		width: 440px;
+	}
+	.android_phone_figure{
+		padding-top: 0;
+	}
+	.downloadTitle{
+		font-size: 40px;
+	}
 }
+
 
 @media(max-width: 480px){
 	.downloadTitle{
 		font-size: 30px;
 	}
 	.inner_code{
-		margin-left: -110px;
-		margin-top: -192px;
+		margin-left: -100px;
+		margin-top: -200px;
 	}
 }
 
-@media(max-width: 375px){
+@media(max-width: 374px){
 	.downloadTitle{
-		font-size: 30px;
+		font-size: 25px;
+	}
+	.list-title{
+		font-size: 25px;
 	}
 	.inner_code{
-		margin-left: -105px;
-		margin-top: -192px;
+		margin-left: -80px;
+		margin-top: -180px;
 	}	
 }
 
