@@ -1,4 +1,4 @@
-{% extends 'base/_layout.html' %}
+{% extends '../base/_layout.html' %}
 
 
 {% block content %}
@@ -7,10 +7,10 @@
     <div id="output"></div>
   </div>
 
-  <section class="features-video section section-on-bg mobile-download">
+  <section class="features-video section section-on-bg">
     <div class="container">
       <div class="row hidden-xs">
-        <div class="col-lg-4 col-md-5 col-sm-6 col-lg-offset-2 col-md-offset-1">
+        <div class="col-lg-4 col-md-4 col-sm-5 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
           <div class="text-feature-container">
             <h2 class="downloadTitle">随时，随地<br/>OneAPM 一下</h2>
             <h3 class="list-title">版本更新：</h3>
@@ -22,13 +22,11 @@
               <li>新增错误信息的查看</li>
               <li>新增错误信息的分享</li>
             </ul>
-            <a class="btn btn-android-download" href="https://dn-oneapm.qbox.me/oneapm.v0.0.2.apk" target="_blank">
-              <i class="iconfont icon-download">&#xe638;</i> | 下载安卓版 APK
-            </a>
+            <button class="btn btn-android-download">| 下载安卓版 APK</button>
           </div>
         </div>
         <div class="col-lg-4 col-md-5 col-sm-6">
-          <figure class="figure android_phone_figure">
+          <figure class="figure" style="text-align:center;margin-top: 40px;">
             <img src="/images/mobile-imgs/android_phone.png" class="img-responsive android_phone" alt="下载安卓版APK">
             <div class="inner_code">
               <img src="/images/mobile-imgs/code.png" class="img-responsive android_phone_code" alt="下载安卓版APK">
@@ -37,23 +35,25 @@
           </figure>
         </div>
       </div>
-      <div class="hidden-sm hidden-md hidden-lg">
-        <figure class="figure android_phone_figure" style="text-align:center;">
-          <img src="/images/mobile-imgs/android_phone.png" class="img-responsive android_phone" alt="下载安卓版APK">
-          <div class="inner_code">
-              <h2 class="downloadTitle">随时，随地<br/>OneAPM 一下</h2>
-              <h3 class="list-title">版本更新：</h3>
-              <ul class="new-list">
-                v 0.0.2
-                <li>新增报警推送功能</li>
-                <li>新增关键事务查看</li>
-                <li>新增事务的查看</li>
-                <li>新增错误信息的查看</li>
-                <li>新增错误信息的分享</li>
-              </ul>
-              <a class="btn btn-android-download" href="https://dn-oneapm.qbox.me/oneapm.v0.0.2.apk" target="_blank"><i class="iconfont icon-download">&#xe638;</i>| 下载安卓版 APK</a>
-          </div>
-        </figure>
+      <div class="row hidden-sm hidden-md hidden-lg">
+        <div class="col-xs-8 col-xs-offset-2 col-xxs-12 col-xxs-offset-0 col-xxxs-12 col-xxxs-offset-0">
+          <figure class="figure relative_pos" style="text-align:center;margin-top: 40px;">
+            <img src="/images/mobile-imgs/android_phone.png" class="img-responsive android_phone" alt="下载安卓版APK">
+            <div class="inner_code">
+                <h2 class="downloadTitle">随时，随地<br/>OneAPM 一下</h2>
+                <h3 class="list-title">版本更新：</h3>
+                <ul class="new-list">
+                  v 0.0.2
+                  <li>新增报警推送功能</li>
+                  <li>新增关键事务查看</li>
+                  <li>新增事务的查看</li>
+                  <li>新增错误信息的查看</li>
+                  <li>新增错误信息的分享</li>
+                </ul>
+                <button class="btn btn-android-download">| 下载安卓版 APK</button>
+            </div>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
