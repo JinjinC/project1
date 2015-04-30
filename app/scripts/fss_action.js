@@ -35,9 +35,9 @@
   LIGHT = {
     count: 2,
     xyScalar: 1,
-    zOffset: 100,
-    ambient: "#247fcf",
-    diffuse: "#3162bb",
+    zOffset: 40,
+    ambient: "#006ec3",
+    diffuse: "#006ec3",
     speed: 0.001,
     gravity: 1200,
     dampening: 0.95,
@@ -473,10 +473,10 @@
   //   return autopilotController.updateDisplay();
   // };
 
-  onMouseMove = function(event) {
-    FSS.Vector3.set(attractor, event.x, renderer.height - event.y);
-    return FSS.Vector3.subtract(attractor, center);
-  };
+  // onMouseMove = function(event) {
+  //   FSS.Vector3.set(attractor, event.x, renderer.height - event.y);
+  //   return FSS.Vector3.subtract(attractor, center);
+  // };
 
   onWindowResize = function(event) {
     resize(container.offsetWidth, container.offsetHeight);
