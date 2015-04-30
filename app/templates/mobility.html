@@ -1,0 +1,68 @@
+{% extends 'base/_layout.html' %}
+
+
+{% block content %}
+
+  <div id="container">
+    <div id="output"></div>
+  </div>
+
+  <section class="features-video section section-on-bg mobile-download">
+    <div class="container">
+      <div class="hidden-xs download-box">
+        <div class="text-feature-container">
+          <h2 class="downloadTitle">随时，随地<br/>OneAPM 一下</h2>
+          <a class="btn btn-sign-ye btn-android-download" href="https://dn-oneapm.qbox.me/oneapm.v0.0.2.apk" target="_blank">
+             <i class="fa fa-android"></i>下载安卓版 APK
+          </a>
+          <h3 class="list-title">版本更新：</h3>
+          <ul class="new-list">
+            v 0.0.2
+            <li>新增报警推送功能</li>
+            <li>新增关键事务查看</li>
+            <li>新增事务的查看</li>
+            <li>新增错误信息的查看</li>
+            <li>新增错误信息的分享</li>
+          </ul>
+        </div>
+        <div class="figure-wapper">
+          <figure class="figure android_phone_figure">
+            <img src="/images/download/phone_code.png" class="img-responsive android_phone" alt="下载安卓版APK">
+          </figure>
+        </div>
+      </div>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <figure class="figure android_phone_figure" style="text-align:center;">
+          <img src="/images/download/phone.png" class="img-responsive android_phone" alt="下载安卓版APK">
+          <div class="inner_code">
+              <h2 class="downloadTitle">随时，随地<br/>OneAPM 一下</h2>
+              <a class="btn btn-sign-ye btn-android-download" href="https://dn-oneapm.qbox.me/oneapm.v0.0.2.apk" target="_blank">
+                <i class="fa fa-android"></i>下载安卓版 APK
+              </a>
+              <h3 class="list-title">版本更新：</h3>
+              <ul class="new-list">
+                v 0.0.2
+                <li>新增报警推送功能</li>
+                <li>新增关键事务查看</li>
+                <li>新增事务的查看</li>
+                <li>新增错误信息的查看</li>
+                <li>新增错误信息的分享</li>
+              </ul>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
+
+{% block scripts %}
+
+    {% parent %}
+    <!-- build:js /scripts/mobile-download.js -->
+    <script type="text/javascript" src="/scripts/show-function.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.stickyheader.js"></script>
+    <script type="text/javascript" src="/scripts/fss.min.js"></script>
+    <script type="text/javascript" src="/scripts/fss_action.js"></script>
+    <!-- endbuild -->
+{% endblock %}

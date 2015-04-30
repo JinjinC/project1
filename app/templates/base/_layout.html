@@ -93,9 +93,11 @@
       {% endblock %}
       
       {% if pageName != "enterprise" %}
-        {% block contact %}
-          {% include "_contact.html" %}
-        {% endblock %}
+        {% if pageName != "mobility" %}
+          {% block contact %}
+            {% include "_contact.html" %}
+          {% endblock %}
+        {% endif %}
       {% endif %}
     </div>
     {% if pageName == "enterprise" %}

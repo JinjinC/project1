@@ -547,6 +547,7 @@ section.contact-section.about{
 
 //flat surface shader & mobile download
 
+
 #container,
 #output {
   position: absolute;
@@ -558,12 +559,26 @@ section.contact-section.about{
   height: 100%;
 }
 
+.download-box{
+	width: 765px;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 8%;
+}
+
 
 .text-feature-container{
 	margin-top: 40px;
 	padding: 20px 0;
 	padding-top: 40px;
+	display: inline-block;
+	vertical-align: top;
 }
+
+.figure-wapper{
+	display: inline-block;
+}
+
 
 .new-list{
 	color: rgba(0, 0, 0, 0.6);
@@ -572,15 +587,19 @@ section.contact-section.about{
 	padding-left: 0;
 	margin-bottom: 30px;
 	font-size: 14px;
+	li{
+		font-size: 12px;
+	}
 	li:before{
 		content: "*";
 		font-weight: normal;
 		padding-right: 10px;
+		font-size: 12px;
 	}
 }
 
 .downloadTitle{
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: normal;
 	color: #fff;
 	margin-bottom: 30px;
@@ -604,14 +623,9 @@ section.contact-section.about{
 }
 
 .btn-android-download{
-	background: #fff;
-	color: #006ec3;
 	cursor: pointer;
 	font-weight: normal !important;
-}
-
-.btn-android-download:hover{
-	color: #006ec3;
+	font-size: 20px;
 }
 
 .android_phone{
@@ -622,6 +636,7 @@ section.contact-section.about{
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.6);
 	font-weight: normal;
+	margin-top: 60px;
 }
 .mobile-download{
 	padding-top: 6px;
@@ -630,10 +645,24 @@ a .icon-download{
 	font-size: 14px;
 }
 
+@media(min-width: 992px){
+	.download-box{
+		width: 800px;
+		margin: auto;
+		margin-top: 2%;
+		margin-bottom: 8%;
+	}
+
+	.figure-wapper{
+		display: inline-block;
+		margin-left: 59px;
+	}
+}
+
 @media(min-width: 768px){
 	.android_phone{
 		margin-right: 0;
-		height: 600px;
+		height: 650px;
 	}
 }
 
@@ -652,7 +681,8 @@ a .icon-download{
 		padding-top: 0;
 	}
 	.android_phone{
-		width: 440px;
+		max-height: 650px;
+		max-width: 90%;
 	}
 	.android_phone_figure{
 		padding-top: 0;
@@ -661,7 +691,7 @@ a .icon-download{
 		font-size: 40px;
 	}
 	#output {
-		height: 150%;
+		height: 200%;
 	}
 }
 
@@ -680,12 +710,12 @@ a .icon-download{
 	.downloadTitle{
 		font-size: 25px;
 	}
-	.list-title{
-		font-size: 25px;
-	}
 	.inner_code{
-		margin-left: -80px;
+		margin-left: -82px;
 		margin-top: -180px;
+	}
+	.btn-android-download{
+		font-size: 14px;
 	}	
 }
 

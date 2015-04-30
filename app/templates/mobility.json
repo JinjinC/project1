@@ -1,5 +1,6 @@
 {
 	"pageTitle": "OneAPM - 移动客户端",
 	"description": "OneAPM 移动客户端，随时随地 OneAPM 一下",
-	"keywords": "android 应用，APM，应用性能管理，Android App"
+	"keywords": "android 应用，APM，应用性能管理，Android App",
+	"pageName": "mobility"
 }
