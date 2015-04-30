@@ -12,8 +12,8 @@
       xRange: 0.8,
       yRange: 0.2,
       zRange: 1.0,
-      ambient: "#555555",
-      diffuse: "#FFFFFF",
+      ambient: "#666666",
+      diffuse: "#AAAAAA",
       speed: 0.0005
     };
   }else{
@@ -26,8 +26,8 @@
       xRange: 0.8,
       yRange: 0.2,
       zRange: 1.0,
-      ambient: "#555555",
-      diffuse: "#FFFFFF",
+      ambient: "#666666",
+      diffuse: "#AAAAAA",
       speed: 0.0005
     };
   }
