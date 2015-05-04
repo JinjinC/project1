@@ -1,29 +1,33 @@
 /* ======= IE9 Fix ======= */
-.ie9 .pricing .item .ribbon,
-.ie8 .pricing .item .ribbon {
+.lt-ie10 .pricing .item .ribbon,
+.lt-ie9 .pricing .item .ribbon,
+.lt-ie8 .pricing .item .ribbon {
   top: 0px;
   right: 0px;
   height: 60px;
 }
-.ie9 .pricing .item .ribbon .text,
-.ie8 .pricing .item .ribbon .text {
+.lt-ie10 .pricing .item .ribbon .text,
+.lt-ie9 .pricing .item .ribbon .text,
+.lt-ie8 .pricing .item .ribbon .text {
   position: static;
   font-size: 13px;
   width: auto;
   padding: 5px;
 }
-.ie9 .pricing .item .ribbon .text:before,
-.ie8 .pricing .item .ribbon .text:before,
-.ie9 .pricing .item .ribbon .text:after,
-.ie8 .pricing .item .ribbon .text:after {
+
+.lt-ie10 .pricing .item .ribbon .text:before,
+.lt-ie10 .pricing .item .ribbon .text:after,
+.lt-ie9 .pricing .item .ribbon .text:before,
+.lt-ie9 .pricing .item .ribbon .text:after,
+.lt-ie8 .pricing .item .ribbon .text:before,
+.lt-ie8 .pricing .item .ribbon .text:after{
   display: none;
 }
 
 
 .lt-ie7,
 .lt-ie8,
-.lt-ie9,
-.lt-ie10{
+.lt-ie9{
 	body{
 		background: #006ec3;
 	}
@@ -80,13 +84,14 @@
 }
 
 
+
 .explorer-list{
-	width: 800px;
+	width: 1000px;
 	margin: auto;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -400px;
+	margin-left: -500px;
 	margin-top: -320px;
 }
 .oneapm-logo{
@@ -123,6 +128,7 @@
 	text-align: center;
 	vertical-align: top;
 	color: #fff;
+	float: left;
 }
 
 .explorer-link{
