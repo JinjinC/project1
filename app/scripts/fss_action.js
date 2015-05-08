@@ -6,28 +6,28 @@
     MESH = {
       width: 1.2,
       height: 1.2,
-      depth: 20,
+      depth: 10,
       segments: 16,
       slices: 8,
       xRange: 0.8,
       yRange: 0.2,
       zRange: 1.0,
       ambient: "#666666",
-      diffuse: "#AAAAAA",
+      diffuse: "#666666",
       speed: 0.0005
     };
   }else{
     MESH = {
-      width: 1.2,
+      width: 1.3,
       height: 1.2,
-      depth: 20,
+      depth: 10,
       segments: 8,
       slices: 8,
       xRange: 0.8,
       yRange: 0.2,
       zRange: 1.0,
       ambient: "#666666",
-      diffuse: "#AAAAAA",
+      diffuse: "#666666",
       speed: 0.0005
     };
   }
@@ -35,7 +35,7 @@
   LIGHT = {
     count: 2,
     xyScalar: 1,
-    zOffset: 40,
+    zOffset: 100,
     ambient: "#006ec3",
     diffuse: "#006ec3",
     speed: 0.001,
