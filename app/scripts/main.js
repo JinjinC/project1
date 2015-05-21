@@ -262,4 +262,10 @@ $(document).ready(function() {
         $('.navbar-toggle').trigger("click");
     })
 
+    //点击常见问题中灰色字，可回到顶部
+    $('.panel-totop').click(function () {
+        $('html,body').animate({scrollTop:0},1000);
+        return false;
+    });
+
 });
