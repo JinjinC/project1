@@ -21,17 +21,17 @@
 		"epr": true
 	}, {
 		"title": "执行时间",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "时间占比",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "组件调用次数",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
@@ -51,78 +51,78 @@
 		"epr": true
 	}, {
 		"title": "最慢事务的抓取",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "事务 Tracing",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "事务路径的自动捕获",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "堆栈信息的抓取",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "相关参数的抓取",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "相关 SQL 的分析",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "依赖包信息获取",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "错误信息的自动捕获",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "Stack Trace 信息抓取",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "Thread Profiler",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "外部服务性能监控",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "关键事务深度监控",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "后台任务性能监控",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "企业级应用组件支持",
-		"free": false,
-		"pro": false,
+		"free": true,
+		"pro": true,
 		"epr": true
 	}, {
 		"title": "企业级应用框架支持",
-		"free": false,
-		"pro": false,
+		"free": true,
+		"pro": true,
 		"epr": true
 	}, {
 		"title": "数据库监控",
@@ -131,37 +131,37 @@
 		"epr": ""
 	}, {
 		"title": "SQL 语句分类",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "SQL 语句性能",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "最慢 SQL 性能分析",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "数据库请求的负载与耗时",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "执行时间和次数",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "执行计划捕获",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "相关事务分析",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
@@ -176,7 +176,7 @@
 		"epr": true
 	}, {
 		"title": "JVM 性能监控",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
@@ -216,12 +216,12 @@
 		"epr": true
 	}, {
 		"title": "报表导出",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}, {
 		"title": "数据对比",
-		"free": false,
+		"free": true,
 		"pro": true,
 		"epr": true
 	}],
