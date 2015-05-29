@@ -125,33 +125,39 @@
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>2. 下载 oneapm.yml </h2>
-			                        	<p>将文件放入应用的配置目录下，替换已有文件</p>
-			                        	<div class="command-box">
-			                        		oneapm.yml
+			                        	<div class="setup-content">
+			                        		<p>将文件放入应用的配置目录下，替换已有文件</p>
+				                        	<code>
+				                        		oneapm.yml
+				                        	</code>
 			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>3. 以 gem 形式安装 OneAPM Ruby agent</h2>
-			                        	<p>在Gemfile中添加以下gem source:</p>
-			                        	<div class="command-box">
-			                        		source 'http://rubygems.org'<br/>
-											source 'http://rubygems.oneapm.com'<br/>
-											gem 'your_gem0'<br/>
-											gem 'your_gem1'<br/>
-											gem 'your_gem2'<br/>
-											gem 'oneapm_rpm'
-			                        	</div>
-			                        	<p>在应用所属目录中执行bundle命令:</p>
-			                        	<div class="command-box">
-			                        		$ bundle install
-											Updating files in vendor/cache
-											Your bundle is complete!
-											Use 'bundle show [gemname]' to see where a bundled gem is installed.
+			                        	<div class="setup-content">
+			                        		<p>在Gemfile中添加以下gem source:</p>
+				                        	<code>
+				                        		source 'http://rubygems.org'<br/>
+												source 'http://rubygems.oneapm.com'<br/>
+												gem 'your_gem0'<br/>
+												gem 'your_gem1'<br/>
+												gem 'your_gem2'<br/>
+												gem 'oneapm_rpm'
+				                        	</code>
+				                        	<p>在应用所属目录中执行bundle命令:</p>
+				                        	<code>
+				                        		$ bundle install
+												Updating files in vendor/cache
+												Your bundle is complete!
+												Use 'bundle show [gemname]' to see where a bundled gem is installed.
+				                        	</code>
 			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>4. 见证奇迹的时刻！</h2>
-			                        	<p>几分钟后，你的应用就会开始向 OneAPM 发送数据。<br/>我们收到数据后，你的应用就会列在 OneAPM 应用列表中。</p>
+			                        	<div class="setup-content">
+			                        		<p>几分钟后，你的应用就会开始向 OneAPM 发送数据。<br/>我们收到数据后，你的应用就会列在 OneAPM 应用列表中。</p>
+			                        	</div>
 			                        </div>
 			                    </div>
 		                    </div>

@@ -128,34 +128,42 @@
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>2. 下载 OneAPM Python Agent </h2>
+			                        	<div class="setup-content">
 			                        	<p>oneapm.zip</p>
+			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>3. 解压并安装 OneAPM Python Agent</h2>
-			                        	<p>解压 OneAPM Python Agent 至应用程序根目录下运行以下安装指令</p>
-			                        	<div class="command-box">
-			                        		python setup.py install
+			                        	<div class="setup-content">
+			                        		<p>解压 OneAPM Python Agent 至应用程序根目录下运行以下安装指令</p>
+				                        	<code>
+				                        		python setup.py install
+				                        	</code>
 			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>4. 使用产品授权码生成配置文件</h2>
-			                        	<div class="command-box">
-			                        		blueware-admin generate-config LICENSE_KEY blueware.ini
+			                        	<div class="setup-content">
+			                        		<code>
+				                        		blueware-admin generate-config LICENSE_KEY blueware.ini
+				                        	</code>
 			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>5. 重启应用</h2>
-			                        	<p>在代码首行插入以下代码:</p>
-			                        	<div class="command-box">
-			                        		BLUEWARE_CONFIG_FILE=blueware.ini
-			                        	</div>
-			                        	<div class="command-box">
-			                        		blueware-admin run-program command options
+			                        	<div class="setup-content">
+			                        		<p>在代码首行插入以下代码:</p>
+				                        	<code>
+				                        		BLUEWARE_CONFIG_FILE=blueware.ini<br>
+				                        		blueware-admin run-program command options
+				                        	</code>
 			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>6. 见证奇迹的时刻！</h2>
-			                        	<p>几分钟后，你的应用就会开始向 OneAPM 发送数据。<br/>我们收到数据后，你的应用就会列在 OneAPM 应用列表中。</p>
+			                        	<div class="setup-content">
+			                        		<p>几分钟后，你的应用就会开始向 OneAPM 发送数据。<br/>我们收到数据后，你的应用就会列在 OneAPM 应用列表中。</p>
+			                        	</div>
 			                        </div>
 			                    </div>
 		                    </div>

@@ -67,47 +67,88 @@
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>2. 点击 iOS 按钮，然后为你的应用命名 </h2>
-			                        	<div class="command-box">
-			                        		A CHEESY NAME
+			                        	<div class="setup-content">
+			                        		<code>A CHEESY NAME</code>
+			                        		<p>不喜欢？没关系，你随时都可以修改</p>
 			                        	</div>
-			                        	<p>不喜欢？没关系，你随时都可以修改</p>
 			                        </div>
 			                        <div class="setup-box">
-			                        	<h2>3. 下载 OneAPM iOS SDK</h2>
-			                        	<p>OneAPM_iOS_Agent_1.x.zip</p>
-			                        	<p><small>注：OneAPM iOS Agent 目前支持 iOS 6.0 及以上版本；Agent 也能放心安装至 iOS 6.0 中，只是无法查阅该部分设备的数据信息。</small></p>
+			                        	<h2>3. 下载并解压 OneAPM iOS SDK</h2>
+			                        	<div class="setup-content">
+			                        		<p>OneAPM_iOS_Agent_1.x.zip</p>
+			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
-			                        	<h2>4. 解压 OneAPM iOS SDK</h2>
-			                        	<p>解压 SDK，然后将 “OneAPMAgent.framework” 从 Finder 拖至要添加的 Xcode project 中（放在 Project Navigator 窗口的 Project 上）。</p>
-			                        	<p>收到提示后，选择 “Copy items into destination” 和 “Create folder references...“。</p>
+			                        	<h2>4. 添加 OneAPM Framework 至 Xcode 项目中</h2>
+			                        	<div class="setup-content">
+			                        		<p>解压 SDK，并将「OneAPM.framework」文件夹从 Finder 中拖拽至 Xcode 项目中（悬停至导航窗口的项目中）。出现提示窗口时，选择「Copy items into destination...」和「Create folder references...」。</p>
+			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>5. 在 Linker Settings 中添加以下 3 个 Libraries</h2>
-			                        	<p>在项目导航窗口内点击你的 Project，并选中你的 App，然后选择 “Build Phases" 选项卡。</p>
-			                        	<p>打开 "Link Binary with Libraries" 列表。点击添加：</p>
-			                        	<p>
-			                        		CoreTelephony.framework<br/>
-											SystemConfiguration.framework<br/>
-											libz.dylib
-			                        	</p>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>6. 在 AppDelegate上 启动 Agent</h2>
-			                        	<p>在 AppDelegate.m 文件头部引入 OneAPM Agent</p>
-			                        	<div class="command-box">
-			                        		#import&lt;OneAPM/OneAPM.h&gt;
-			                        	</div>
-			                        	<p>在 application:didFinishLaunchingWithOptions: 方法的第一行，添加如下代码</p>
-			                        	<div class="command-box">
-			                        		[OneAPM startWithApplicationToken:@"generate app token by creating an app name"];
+			                        	<div class="setup-content">
+			                        		<p>在项目导航窗口内点击你的 Project，并选中你的 App，然后选择「Build Phases」选项卡。打开「Link Binary with Libraries」列表。点击添加：</p>
+			                        		<ul>
+			                        			<li>SystemConfiguration.framework</li>
+			                        			<li>CoreTelephony.framework</li>
+			                        			<li>CoreData.framework</li>
+			                        			<li>libz.dylib</li>
+			                        			<li>libstdc++.dylib</li>
+			                        		</ul>
 			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
-			                        	<h2>7. 运行应用程序</h2>
-			                        	<p>清除 Project，并重新在模拟器或设备中启动应用程序，开始应用性能管理</p>
-			                        	<p>几分钟后，你的应用就会开始向 OneAPM 发送数据。</p>
-			                        	<p>我们收到数据后，你的应用就会列在 OneAPM 应用列表中。</p>
+			                        	<h2>6. Build Settings 设置</h2>
+			                        	<div class="setup-content">
+			                        		<p>选择对应的 TARGET，在「Build Settings」中，为「Other Linker Flags」增加「-all_load」选项。</p>
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>7. Build Phases 设置</h2>
+			                        	<div class="setup-content">
+			                        		<ul>
+			                        			<li>
+			                        				<p>添加 OneAPM iOS Agent 文件夹下的 symbolUploading.sh 至工程根目录</p>
+			                        			</li>
+			                        			<li>
+			                        				<p>在弹出窗口中，勾选「Copy items if needed」</p>
+			                        			</li>
+			                        			<li>
+			                        				<p>选择对应 Target 的 Build Phases，并新建 <code>Run Script</code></p>
+			                        			</li>
+			                        			<li>
+			                        				<p>粘贴以下内容至文本框「Type a script or drag a script file from your workspace to insert its path」中</p>
+			                        				<code>SCRIPT=`/usr/bin/find "${SRCROOT}" -name symbolUploading.sh | head -n 1`/bin/sh "${SCRIPT}" "APPLICATION TOKEN"</code>
+			                        			</li>
+			                        		</ul>
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>8. 启动 Agent</h2>
+			                        	<div class="setup-content">
+			                        		<ul>
+			                        			<li>
+			                        				<p>在项目文件 [app_name]-Prefix.pch（通常在文件夹「Support Files」中）中，引入 OneAPM 头文件：</p>
+			                        				<code>#import &lt;OneAPM/OneAPM.h></code>
+			                        			</li>
+			                        			<li>
+			                        				<p>在文件 AppDelegate.m 中添加如下代码，并确保它在 <code>application:didFinishLaunchingWithOption</code> 的第一行中。</p>
+			                        				 <code>[OneAPM startWithApplicationToken:@"&lt;generate app token by creating a name above>"];</code>
+			                        			</li>
+			                        		</ul>
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>9. 运行应用程序</h2>
+			                        	<div class="setup-content">
+			                        		<p>Clean Project，并重新在模拟器或设备中启动应用程序，开始应用性能管理。</p>
+			                        	</div>
+			                        </div>
+			                        <div class="setup-box">
+			                        	<h2>10. 重启</h2>
+			                        	<div class="setup-content">
+			                        		<p>请静候 5 分钟，等待应用程序向 OneAPM 发送应用程序性能数据，即可开始使用 OneAPM 应用性能管理。</p>
+			                        	</div>
 			                        </div>
 			                    </div>
 		                    </div>

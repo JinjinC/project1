@@ -224,38 +224,45 @@
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>2. 下载 OneAPM Java Agent </h2>
-			                        	<p>oneapm_agent.zip</p>
+			                        	<div class="setup-content">
+			                        		<p>oneapm_agent.zip</p>
+			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>3. 安装于你的环境</h2>
 			                        	<div class="setup-content">
 			                        		<h4>Linux or Mac</h4>
-				                        	<p>解压文件至应用主目录中：</p>
-				                        	<div class="command-box">
-				                        		unzip oneapm_agent.zip –d /path/to/appserver/
-				                        	</div>
-				                        	<p>在 oneapm 目录中运行安装指令：</p>
-				                        	<div class="command-box">
-				                        		cd /path/to/appserver/oneapm
-				                        	</div>
-				                        	<div class="command-box" style="margin-top:10px">
-				                        		java –jar oneapm.jar install
-				                        	</div>
+			                        		<ul>
+			                        			<p>解压文件至应用主目录中：</p>
+					                        	<code>
+					                        		unzip oneapm_agent.zip –d /path/to/appserver/
+					                        	</code>
+					                        	<p>在 oneapm 目录中运行安装指令：</p>
+					                        	<code>
+					                        		cd /path/to/appserver/oneapm
+					                        		<br>
+					                        		java –jar oneapm.jar install
+					                        	</code>
+			                        		</ul>
+				                        	
 
 				                        	<h4>Windows</h4>
-				                        	<p>打开 oneapm_agent.zip<br/>复制 oneapm 文件夹至你的应用服务器主目录下<br/>打开 CMD，并定位至应用服务器主目录下<br/>在 oneapm 目录下，执行安装命令</p>
-				                        	<div class="command-box">
-				                        		cd oneapm
-				                        	</div>
-				                        	<div class="command-box" style="margin-top:10px">
-				                        		java –jar oneapm.jar install
-				                        	</div>
+				                        	<ul>
+					                        	<p>打开 oneapm_agent.zip<br/>复制 oneapm 文件夹至你的应用服务器主目录下<br/>打开 CMD，并定位至应用服务器主目录下<br/>在 oneapm 目录下，执行安装命令</p>
+					                        	<code>
+					                        		cd oneapm
+					                        		<br>
+					                        		java –jar oneapm.jar install
+					                        	</code>
+				                        	</ul>
 			                        	</div>
 			                        </div>
 			                        <div class="setup-box">
 			                        	<h2>4. 重启应用</h2>
-			                        	<p>几分钟后，你的应用就会开始向 OneAPM 发送数据。<br/>我们收到数据后，你的应用就会列在 OneAPM 应用列表中。</p>
-			                        </div>
+			                        	<div class="setup-content">
+			                        		<p>几分钟后，你的应用就会开始向 OneAPM 发送数据。<br/>我们收到数据后，你的应用就会列在 OneAPM 应用列表中。</p>
+			                        	</div>
+				                        </div>
 			                    </div>
 		                    </div>
 		                </div>
