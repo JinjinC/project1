@@ -135,19 +135,22 @@
 			                        <div class="setup-box">
 			                        	<h2>3. 以 gem 形式安装 OneAPM Ruby agent</h2>
 			                        	<div class="setup-content">
-			                        		<p>在Gemfile中添加以下gem source:</p>
+			                        		<p>在 Gemfile 中添加以下 gem source：</p>
 				                        	<code>
 				                        		source 'http://rubygems.org'<br/>
-												source 'http://rubygems.oneapm.com'<br/>
+												<br/>
 												gem 'your_gem0'<br/>
 												gem 'your_gem1'<br/>
 												gem 'your_gem2'<br/>
+												<br/>
 												gem 'oneapm_rpm'
 				                        	</code>
-				                        	<p>在应用所属目录中执行bundle命令:</p>
+				                        	<p>在应用目录内执行 bundle 命令：</p>
 				                        	<code>
 				                        		$ bundle install
-												Updating files in vendor/cache
+				                        	</code>
+				                        	<p>结果如下：</p>
+				                        	<code>
 												Your bundle is complete!
 												Use 'bundle show [gemname]' to see where a bundled gem is installed.
 				                        	</code>
