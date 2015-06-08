@@ -530,6 +530,46 @@
             "num": "",
             "on": "yes",
             "bonus": ""
+        },
+        {
+            "name": "HTML5 研发工程师",
+            "duty": [
+                "负责公司产品开发。",
+                "设计开发高效可复用的 UI 组件及大型 Web 应用。",
+                "配合设计师完成还原界面交互设计。",
+                "与团队成员分享最佳实践。",
+                "参与产品设计及 code review。"
+            ],
+            "require": [
+                "精通 HTML/CSS/JavaScript，两年以上web前端开发经验",
+                "了解Backbone或Angular.js或React等常见前端框架，有开发经验或志愿打造单页面应用",
+                "了解W3C标准，ECMAScript标准，HTTP协议",
+                "至少熟悉一种Web开发技术，如JavaEE，Node.js等",
+                "熟悉git、svn等常见版本控制工具",
+                " 对Web技术发展有强烈兴趣，有良好的学习能力和强烈的进取心",
+                " 具有良好的工作态度、沟通技巧和团队协作精神"
+            ],
+            "type": "研发",
+            "on": "yes",
+            "bonus": ""
+        },
+        {
+            "name": "NodeJS 研发工程师",
+            "duty": [
+                "NodeJS 应用性能监控系统的研发"
+            ],
+            "require": [
+                "JavaScript 基本功扎实，对闭包，事件和异步有独到的见解",
+                "熟练掌握 NodeJS 核心模块的和常见中间件 (如 Express) 的使用",
+                "具有 Python、Ruby、Java、PHP 等其中一种后端语言的开发经验",
+                " 熟悉 MongoDB，Redis，MySQL 一种或多种"
+            ],
+            "type": "研发",
+            "on": "yes",
+            "bonus": [
+                "拥有或参与过 Github 开源项目",
+                "熟悉 C/C++ 开发 NodeJS 的扩展的步骤"
+            ]
         }
     ],
     "positions3": [
@@ -1198,7 +1238,47 @@
             "num": "",
             "on": "yes",
             "bonus": ""
-        }  
+        },
+        {
+            "name": "HTML5 研发工程师",
+            "duty": [
+                "负责公司产品开发。",
+                "设计开发高效可复用的 UI 组件及大型 Web 应用。",
+                "配合设计师完成还原界面交互设计。",
+                "与团队成员分享最佳实践。",
+                "参与产品设计及 code review。"
+            ],
+            "require": [
+                "精通 HTML/CSS/JavaScript，两年以上web前端开发经验",
+                "了解Backbone或Angular.js或React等常见前端框架，有开发经验或志愿打造单页面应用",
+                "了解W3C标准，ECMAScript标准，HTTP协议",
+                "至少熟悉一种Web开发技术，如JavaEE，Node.js等",
+                "熟悉git、svn等常见版本控制工具",
+                " 对Web技术发展有强烈兴趣，有良好的学习能力和强烈的进取心",
+                " 具有良好的工作态度、沟通技巧和团队协作精神"
+            ],
+            "type": "研发",
+            "on": "yes",
+            "bonus": ""
+        },
+        {
+            "name": "NodeJS 研发工程师",
+            "duty": [
+                "NodeJS 应用性能监控系统的研发"
+            ],
+            "require": [
+                "JavaScript 基本功扎实，对闭包，事件和异步有独到的见解",
+                "熟练掌握 NodeJS 核心模块的和常见中间件 (如 Express) 的使用",
+                "具有 Python、Ruby、Java、PHP 等其中一种后端语言的开发经验",
+                " 熟悉 MongoDB，Redis，MySQL 一种或多种"
+            ],
+            "type": "研发",
+            "on": "yes",
+            "bonus": [
+                "拥有或参与过 Github 开源项目",
+                "熟悉 C/C++ 开发 NodeJS 的扩展的步骤"
+            ]
+        } 
     ],
     "positionsNum": 33,
     "positions1Num": 12,
