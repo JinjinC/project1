@@ -563,7 +563,9 @@
                 "JavaScript 基本功扎实，对闭包，事件和异步有独到的见解；",
                 "熟练掌握 Node.js 核心模块的和常见中间件 (如 Express) 的使用；",
                 "具有 Python、Ruby、Java、PHP 等其中一种后端语言的开发经验；",
-                " 熟悉 MongoDB，Redis，MySQL 一种或多种。"
+                " 熟悉 MongoDB，Redis，MySQL 一种或多种。",
+                "拥有或参与过 Github 开源项目者优先；",
+                "熟悉 C/C++ 开发 Node.js 的扩展的步骤者优先。"
             ],
             "type": "研发",
             "on": "yes",
@@ -1269,7 +1271,9 @@
                 "JavaScript 基本功扎实，对闭包，事件和异步有独到的见解；",
                 "熟练掌握 Node.js 核心模块的和常见中间件 (如 Express) 的使用；",
                 "具有 Python、Ruby、Java、PHP 等其中一种后端语言的开发经验；",
-                " 熟悉 MongoDB，Redis，MySQL 一种或多种。"
+                " 熟悉 MongoDB，Redis，MySQL 一种或多种；",
+                "拥有或参与过 Github 开源项目者优先；",
+                "熟悉 C/C++ 开发 Node.js 的扩展的步骤者优先。"
             ],
             "type": "研发",
             "on": "yes",
