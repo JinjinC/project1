@@ -75,15 +75,10 @@
       <img src="/images/logo.png" alt="logo">
     </div>
     <div id="root">
-    {% if pageName == "enterprise" %}
-      {% block header %}
-        {% include "_headerEtp.html" %}
-      {% endblock %}
-    {% else%}
+   
       {% block header %}
         {% include "_header.html" %}
       {% endblock %}
-    {% endif %}
 
       {% block content %}
       <p>This is just an awesome page.</p>
@@ -97,15 +92,11 @@
         {% endif %}
       {% endif %}
     </div>
-    {% if pageName == "enterprise" %}
-      {% block header %}
-        {% include "_footerEtp.html" %}
-      {% endblock %}
-    {% else%}
+   
     {% block footer %}
       {% include "_footer.html" %}
     {% endblock %}
-    {% endif %}
+    
 
     {% block scripts %}
     <!-- build:js(.) /scripts/vendors.js -->
