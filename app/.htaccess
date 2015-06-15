@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^oneapm.com [NC]     
+RewriteRule ^(.*)$ http://www.oneapm.com/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.oneapm.com/index.html [NC]     
+RewriteRule ^(.*)$ http://www.oneapm.com/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.oneapm.com/features/java.html [NC]     
+RewriteRule ^(.*)$ http://www.oneapm.com/ai/java.html$1 [L,R=301]
+
