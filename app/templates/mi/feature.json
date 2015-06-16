@@ -1,4 +1,5 @@
 {
+	"pageName": "mi",
 	"pageTitle": "Mobile Insight - 移动应用 Crash 分析",
 	"description": "以用户真实使用感受为度量标准，检测每次Crash的发生；OneAPM协助您，监控移动应用性能, 打造更灵动的应用.",
 	"keywords": "OneAPM, Mobile Insight, mi, 应用性能管理, 应用性能监控, APM, 免费试用, 永久免费, 无需代码改动, 全平台支持, iOS, android, 设备类型, 操作系统, 地理位置, 运营商, 版本, 代码, http, 外部调用."
