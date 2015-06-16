@@ -1,15 +1,17 @@
 {% extends '../base/_layout.html' %}
 
 {% block content %}
-<div class="headline-bg mi-headline-bg"></div><!-- headline-bg -->
+<div class="headline-bg mi-headline-bg">
+	<canvas id="waves" class="waves"></canvas>
+</div><!-- headline-bg -->
 <section class="features-video section section-on-bg feature-mi">
 	<div class="container"> 
         <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1 col-sm-offset-1">
                 <img class="milogo" src="/images/mi/milogo.svg">
                 <p class="intro">以用户真实使用感受为度量标准，<br>检测每次崩溃的发生；协助您监控移动应用性能</p>
                 <p class="more">
-                   <a href="">观看 Mi 介绍影片</a>
+                   <a class="play-trigger btn-link" data-toggle="modal" data-target="#modal-video" id="video-btn" data-source="#mi-video"><i class="fa fa-youtube-play"></i> 观看 Mi 介绍影片</a>
                    <a href="">查看 DEMO</a>
                 </p>
             </div>
@@ -326,4 +328,34 @@
     </div><!--//container-->
 </section><!--//cta-section-->
 
+<!-- Video Modal -->
+    <div class="modal modal-video" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 id="videoModalLabel" cla.
+                    ss="modal-title sr-only">Video Tour</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="video-container">
+                       <video preload poster="/images/mi-video.png" class="box-video" id="mi-video">
+                           <source src="https://dn-oneapm.qbox.me/mi-introduce-v0.1.webm" type="video/webm">
+                           <source src="https://dn-oneapm.qbox.me/mi-introduce-v0.1.mp4" type="video/mp4">
+                       </video>
+                    </div><!--//video-container-->
+                </div><!--//modal-body-->
+            </div><!--//modal-content-->
+        </div><!--//modal-dialog-->
+    </div><!--//modal-->
+
 {% endblock %}
+
+{% block scripts %}
+    {% parent %}
+    <!-- build:js /scripts/mobile-feature.js -->
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action.js"></script>
+    <!-- endbuild -->
+{% endblock %}
+

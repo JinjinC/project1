@@ -3,6 +3,9 @@ $(document).ready(function() {
     /* ======= Twitter Bootstrap hover dropdown ======= */   
     /* Ref: https://github.com/CWSpear/bootstrap-hover-dropdown */ 
     /* apply dropdownHover to all elements with the data-hover="dropdown" attribute */
+    var global ={
+        videoId: null
+    }
     
     $('[data-hover="dropdown"]').dropdownHover();
     
@@ -152,13 +155,15 @@ $(document).ready(function() {
 
     //视频关闭控制(index页)
     $('.modal.modal-video button.close').click(function  () {
-         var video = $('#index-video');
+         var video = $(global.videoId);
         video[0].pause();
     });
 
     //视频自动控制(index页)
     $('#video-btn').click(function  () {
-        var video = $('#index-video');
+        var id = $(this).attr("data-source");
+        global.videoId = id;
+        var video = $(id);
         video[0].play();
     })
 
