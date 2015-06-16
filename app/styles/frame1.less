@@ -128,25 +128,49 @@
 				font-weight: bold;
 				margin-top: 30px;
 			}
-			p {
-				margin-bottom: 0;
-				margin-top: 5px;
-				margin-left: 18px;
-			}
 			.setup-content{
 				margin-left: 18px;
+				code{
+					width: auto;
+					display: inline-block;
+					padding: 6px 14px;
+					margin-top: 10px;
+					font-size: 12px;
+				    background-color: #545454;
+				    color: #86b2f6;
+				    font-family: courier,monospace;
+				    word-wrap:break-word;
+				    word-break:break-all;
+				}
+
+				ul {
+					list-style: initial;
+					color: #858585;
+					padding-left: 36px;
+
+					li{
+						list-style-image: inherit;
+						padding: 0;
+						margin: 0;
+						p {
+
+						}
+					}
+				}
+				img {
+					margin-top: 10px;
+				}
 			}
-			.command-box{
-				padding: 8px;
-				margin-top: 10px;
-				margin-left: 18px;
+			p {
 				font-size: 14px;
-			    background-color: #545454;
-			    color: #86b2f6;
-			    font-family: courier,monospace;
-			    word-wrap:break-word;
-			    word-break:break-all;
+				margin-bottom: 0;
+				margin-top: 5px;
+				&.note {
+					font-size: 12px;
+					opacity: 0.8;
+				}
 			}
+
 		}
 	}
 
@@ -448,29 +472,34 @@
 	color: rgba(110, 110, 110, 0.8);
 }
 
-// //EE.html
-// @media (min-width:1200px){
-// 	.container-lg {
-// 		width: 1300px;
-// 	}
-	
-// }
-// @media (min-width:992px){
-// 	.container-lg {
-// 		width: 1100px;
-// 	}
-	
-// }
-
 .feature-ee {
+	width: 100%;
 	margin-top: 0;
 	padding-top: 100px;
 	padding-bottom: 0;
-	p.intro {
-		margin-bottom: 50px;
+	overflow: hidden;
+	h2.title {
+		font-size: 36px;
+		color: #1d1d1d;
+		font-weight: normal;
+		text-align: left;
+		span {
+			display: block;
+			font-size: 30px;
+			margin-bottom: 15px;
+		}
 	}
-	p{
+	p.intro {
+		font-size: 14px;
+		text-align: left;
+		color: rgba(29, 29, 29, 0.5);
+		margin-bottom: 30px;
+	}
+	p .btn{
+		font-size: 14px;
+		border-radius: 6px;
 		margin-bottom: 112px;
+		padding: 5px 12px;
 	}
 
 	.ee-partner {
@@ -485,26 +514,32 @@
 }
 .section-ee {
 	padding: 40px 0;
-	color: #fff;
-	background-color: black;
+	color: #474747;
+	background-color: #fff;
+	position: relative;
+	z-index: 10;
 	.icon-ee {
 		font-size: 70px;
 		font-weight: normal;
 		-webkit-text-stroke-width: 0.2px;
 	}
+	h4 {
+		color: #2b2b2b;
+		font-weight: normal;
+	}
 	p.intro-text {
 		font-size: 12px;
-		color: #626262;
+		color: rgba(43, 43, 43, 0.5);
 		white-space: nowrap;
 	}
 }
 .ee {
 	padding: 0;
-	color: #aaa;
-	background-color: #202020;
-	& > .container > .item > .figure > .row > div {
-		padding: 0 10px;
-	}
+	color: rgba(0, 0, 0, 0.7);
+	background-color: #fafafa;
+	// & > .container > .item > .figure > .row > div {
+	// 	padding: 0 10px;
+	// }
 	.item {
 		padding-top: 100px;
 		padding-bottom: 0;
@@ -517,12 +552,12 @@
 		}
 		h3.title {
 			font-size: 24px;
-			color: #fff;
+			color: rgba(0, 0, 0, 0.7);
 		}
 		.desc{
 			a {
 				font-size: 14px;
-				color: #40627f;
+				color: #3080c3;
 			}
 			ul li {
 				font-size: 14px;
@@ -531,15 +566,15 @@
 		.line {
 			height: 1px;
 			margin-top: 90px;
-			background-color: rgba(255, 255, 255, 0.2);
+			background-color: rgba(0, 0, 0, 0.1);
 		}
 	}
 	.fea-box {
 		width: 100%;
 		height: 170px;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		border-radius: 6px;
-		background-color: #1a1a1a;
+		background-color: #fff;
 		span {
 			display: block;
 			padding-top: 8px;
@@ -556,11 +591,20 @@
 				color: #00a0e9;
 			}
 			.si {
-				color: #B83AC0;
+				color: #7e308e;
+			}
+			.bi {
+				color: #00adba;
+			}
+			.ni {
+				color: #f6ab00;
+			}
+			.di {
+				color: #e8382f;
 			}
 		}
 		p {
-			color: #626262;
+			color: rgba(0, 0, 0, 0.6);
 			font-size: 12px;
 			text-align: center;
 			padding: 0 15px;
@@ -573,7 +617,7 @@
 			text-align: center;
 		}
 		img {
-			opacity: 0.3;
+			opacity: 0.5;
 			margin-top: 30px;
 			margin-bottom: 50px;
 		}
@@ -588,13 +632,16 @@
 		.partner-content {
 			min-height: 250px;
 			padding: 30px;
-			background-color: #2d2d2d;
+			background-color: #fff;
 			border-radius: 6px;
 			img {
 				max-height: 60px;
 				opacity: 1;
 				margin-top: 0;
 				margin-bottom: 30px;
+			}
+			p{
+				color: rgba(0, 0, 0, 0.6);
 			}
 		}
 	}	
