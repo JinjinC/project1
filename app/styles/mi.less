@@ -1,9 +1,11 @@
 
 
 .mi-headline-img {
-	width: 480px;
+	width: 450px;
 	display: block;
-	max-width: 480px;
+	max-width: 85%;
+	margin: auto;
+	margin-bottom: -30px;
 }
 .feature-mi {
 	width: 100%;
@@ -39,7 +41,7 @@
 .steps {
 	.title {
 		.text {
-			font-size: 22px;
+			font-size: 18px;
 			color: rgb(51, 51, 51);
 		}
 		.icon {
@@ -56,7 +58,8 @@
 		}
 	}
 	.intro-text {
-		color: #aaa;
+		color: rgba(43, 43, 43, 0.5);
+		font-size: 12px;
 	}
 }
 
@@ -189,6 +192,25 @@
 
 @media(max-width: 767px){
 	.feature-mi {
+		height: auto;
+		text-align: center;
+		padding-top: 40px!important;
+		p.intro {
+			text-align: center;
+		}
+		p.more {
+			text-align: center;
+		}
+		.milogo{
+			width: 130px;
+			margin-bottom: 30px;
+		}
+	}
+	.steps{
+		padding-top: 20px;
+	}
+
+	.headline-bg.mi-headline-bg {
 		height: 900px;
 	}
 }

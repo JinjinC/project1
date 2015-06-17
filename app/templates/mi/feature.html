@@ -9,10 +9,10 @@
         <div class="row">
             <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-md-offset-1 col-md-offset-0 col-sm-offset-0">
                 <img class="milogo" src="/images/mi/milogo.svg">
-                <p class="intro">以用户真实使用感受为度量标准，<br>检测每次崩溃的发生；协助您监控移动应用性能</p>
+                <p class="intro hidden-xs">以用户真实使用感受为度量标准，<br>检测每次崩溃的发生；协助您监控移动应用性能</p>
                 <p class="more">
                    <a class="play-trigger btn-link" data-toggle="modal" data-target="#modal-video" id="video-btn" data-source="#mi-video"><i class="fa fa-youtube-play"></i> 观看 Mi 介绍影片</a>
-                   <a href="">查看 DEMO</a>
+                   <a href="" class="hidden-xs">查看 DEMO</a>
                 </p>
             </div>
             <img class="mi-headline-img" src="/images/mi/mi.png">
@@ -43,20 +43,32 @@
 <section class="section steps">
     <div class="container">
         <div class="row">
-             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                 <h3 class="title"><span class="text">永久免费</span><span class="icon"><img src="/images/mi/free.svg"></span></h3>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                 <h3 class="title">
+                 	<span class="icon"><img src="/images/mi/free.svg"></span>
+                 	<span class="text">永久免费</span>
+                 </h3>
                  <p class="intro-text">新注册用户免费试用企业版 15 天，并承诺标准版永久免费使用</p>
              </div>
-             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                 <h3 class="title"><span class="text">无需代码改动</span><span class="icon"><img src="/images/mi/unchange.svg"></span></h3>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                 <h3 class="title">
+                 	<span class="icon"><img src="/images/mi/unchange.svg"></span>
+                 	<span class="text">无需代码改动</span>
+                 </h3>
                  <p class="intro-text">3 分钟极速部署，过程中无需代码改动。轻松上手，简单易学。</p>
              </div>
-             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                 <h3 class="title"><span class="text">简单易用</span><span class="icon"><img src="/images/mi/euse.svg"></span></h3>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                 <h3 class="title">
+                 	<span class="icon"><img src="/images/mi/euse.svg"></span>
+                 	<span class="text">简单易用</span>
+                 </h3>
                  <p class="intro-text">无需额外的学习时间，贴心周到的技术支持。</p>
              </div>
-             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                 <h3 class="title"><span class="text">全平台支持</span><span class="icon"><img src="/images/mi/platform.svg"></span></h3>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                 <h3 class="title">
+                 	<span class="icon"><img src="/images/mi/platform.svg"></span>
+                 	<span class="text">全平台支持</span>
+                 </h3>
                  <p class="intro-text">iOS Android 双平台支持最新 Android 框架 Gradle 等。</p>
              </div>
         </div>
@@ -327,7 +339,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="video-container">
-                       <video preload poster="/images/mi-video.png" class="box-video" id="mi-video">
+                       <video controls preload poster="/images/mi-video.png" class="box-video" id="mi-video" >
                            <source src="https://dn-oneapm.qbox.me/mi-introduce-v0.1.webm" type="video/webm">
                            <source src="https://dn-oneapm.qbox.me/mi-introduce-v0.1.mp4" type="video/mp4">
                        </video>
