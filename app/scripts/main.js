@@ -4,7 +4,8 @@ $(document).ready(function() {
     /* Ref: https://github.com/CWSpear/bootstrap-hover-dropdown */ 
     /* apply dropdownHover to all elements with the data-hover="dropdown" attribute */
     var global ={
-        videoId: null
+        videoId: null,
+        mi_header_bg__height: 791
     }
     
     $('[data-hover="dropdown"]').dropdownHover();
@@ -186,20 +187,8 @@ $(document).ready(function() {
     });
 
     //导航栏宽度的调整，悬浮与点击的变化
-    (function(){
-        var mediaWidth = $(document).width();
-        var param =((768 - mediaWidth)/768 +1);
-        if (mediaWidth > 1024){
-            $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","");
-        }else{
-            $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","dropdown");
-        }
-        if (mediaWidth < 768){
-            $(".mi-headline-bg").css("height", $('.feature-mi').height() + 35*param +"px");
-        }
-    })();
 
-    $(window).resize(function  () {
+    function localResize() {
         var mediaWidth = $(document).width();
         var param =((768 - mediaWidth)/768 +1);
         if (mediaWidth > 1024){
@@ -212,6 +201,12 @@ $(document).ready(function() {
         }else{
             $(".mi-headline-bg").removeAttr("style");
         }
+    }
+
+    localResize();
+
+    $(window).resize(function  () {
+        localResize();
     });
 
     //image slider点击向前，向后

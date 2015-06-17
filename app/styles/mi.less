@@ -24,18 +24,22 @@
 	p.intro {
 		text-align: left;
 		margin-bottom: 20px;
+		font-size: 14px;
 	}
 	p.more {
 		text-align: left;
 		font-size: 14px;
 		a {
-			color: #fff;
+			color: rgba(255, 255, 255, 0.7);
 			font-weight: bold;
 			text-transform: uppercase;
 			font-size: 14px;
 			text-decoration: none;
 			cursor: pointer;
 			margin-right: 15px;
+			&:hover{
+				color: #fff;
+			}
 		}
 	}
 
@@ -312,6 +316,7 @@
 	}
 	.steps{
 		padding-top: 20px;
+		padding-bottom: 60px;
 	}
 	.mi-tab .sign-up {
 		font-size: 20px;
@@ -436,6 +441,9 @@
 @media(max-width:375px) {
 	.steps {
 		padding-bottom: 20px;
+		.icon{
+			width: 145px;
+		}
 	}
 	.mi-tab {
 		h3.title {

@@ -118,8 +118,15 @@
  		{
  			"img": "/images/about/partner/jisuanke.png",
  			"link": "http://www.jisuanke.com/"
+ 		},
+ 		{
+ 			"img": "/images/about/partner/cocoachina.png",
+ 			"link": "http://www.cocoachina.com/"
+ 		},
+ 		{
+ 			"img": "/images/about/partner/oschina.png",
+ 			"link": "http://www.oschina.net/"
  		}
-
  	],
  	"pageTitle": "关于 OneAPM - 北京蓝海讯通科技有限公司",
  	"description": "OneAPM是中国的应用性能管理服务提供商,协助技术人员,优化应用性能,快速定位性能问题,抓取相关的代码和SQL语句以及方法调用栈信息.",
