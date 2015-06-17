@@ -186,20 +186,31 @@ $(document).ready(function() {
     });
 
     //导航栏宽度的调整，悬浮与点击的变化
-
-    var mediaWidth = $(document).width();
-    if (mediaWidth > 1024){
-        $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","");
-    }else{
-        $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","dropdown");
-    }
-
-    $(window).resize(function  () {
+    (function(){
         var mediaWidth = $(document).width();
+        var param =((768 - mediaWidth)/768 +1);
         if (mediaWidth > 1024){
             $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","");
         }else{
             $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","dropdown");
+        }
+        if (mediaWidth < 768){
+            $(".mi-headline-bg").css("height", $('.feature-mi').height() + 35*param +"px");
+        }
+    })();
+
+    $(window).resize(function  () {
+        var mediaWidth = $(document).width();
+        var param =((768 - mediaWidth)/768 +1);
+        if (mediaWidth > 1024){
+            $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","");
+        }else{
+            $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","dropdown");
+        }
+        if (mediaWidth < 768){
+            $(".mi-headline-bg").css("height", $('.feature-mi').height() + 35*param +"px");
+        }else{
+            $(".mi-headline-bg").removeAttr("style");
         }
     });
 
@@ -272,6 +283,8 @@ $(document).ready(function() {
         $('html,body').animate({scrollTop:0},1000);
         return false;
     });
+
+
 
 });
 
