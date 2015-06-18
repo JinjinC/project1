@@ -5,7 +5,7 @@ $(document).ready(function() {
     /* apply dropdownHover to all elements with the data-hover="dropdown" attribute */
     var global ={
         videoId: null,
-        mi_header_bg__height: 791
+        feature_mi_height: 641
     }
     
     $('[data-hover="dropdown"]').dropdownHover();
@@ -191,13 +191,20 @@ $(document).ready(function() {
     function localResize() {
         var mediaWidth = $(document).width();
         var param =((768 - mediaWidth)/768 +1);
+        var fmhParam = 1;
+        if ($('.feature-mi').height<641) {
+            fmhPara = 0;
+        }
+        else{
+            fmhPara = 1;
+        }
         if (mediaWidth > 1024){
             $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","");
         }else{
             $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","dropdown");
         }
         if (mediaWidth < 768){
-            $(".mi-headline-bg").css("height", $('.feature-mi').height() + 35*param +"px");
+            $(".mi-headline-bg").css("height", $('.feature-mi').height() + 28*param*fmhParam +"px");
         }else{
             $(".mi-headline-bg").removeAttr("style");
         }

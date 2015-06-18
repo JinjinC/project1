@@ -137,7 +137,7 @@ $(function(){
       {
         timeModifier: 0.5,
         lineWidth: 2,
-        amplitude: 150,
+        amplitude: 120,
         wavelength: 200,
         segmentLength: 1
       },
