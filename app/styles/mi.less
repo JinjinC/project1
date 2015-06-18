@@ -104,11 +104,13 @@
 		margin-bottom: 100px;
 	}
 	.sign-up {
-		font-size: 24px;
+		font-size: 28px;
 		color: #34b4ef;
 		margin-top: 60px;
 		.btn-sign {
-			margin-left: 15px;
+			font-size: 16px;
+			padding: 10px 30px;
+			margin-top: 20px;
 			background: #34b4ef;
 			border-color: #34b4ef;
 		}
@@ -174,49 +176,26 @@
 		font-size: 16px;
 		color: #7a7a7a;
 	}
-	// .img-left,.img-right {
-	// 	display: block;
-	// 	max-width: 100%;
-	// 	width: 90%;
-	// 	margin: 10px auto;
-	// }
 	img {
 		box-shadow: 0 6px 12px rgba(0,0,0,.175);
 	}
-	// .line {
-	// 	height: 1px;
-	// 	line-height: 1px;
-	// 	background-color: #eeeeee;
-	// 	margin-top: 120px;
-	// }
-
 }
-// .problem-l {
-// 	width: 100%;
-// 	overflow: hidden;
-// }
 
-// .problem-r {
-// 	width: 100%;
-// 	overflow: hidden;
-// }
 .cta-section.pricing-cta-section {
 	background: -webkit-linear-gradient(top, #0096da,#5bccff); 
     background: -moz-linear-gradient(top, #0096da,#5bccff); 
     background: -o-linear-gradient(top, #0096da,#5bccff); 
-
-    .table-basic {
-    	width: 70%;
-    	tbody td {
-    		text-align: left;
-    		padding-left: 15px;
-    	}
-    }
+    padding: 90px 0;
+    min-height: 200px;
     .title {
     	font-size: 34px;
-    	line-height: 44px;
-    	margin-top: 50px;
-    	margin-bottom: 35px;
+    	line-height: 55px;
+    	margin: 0;
+
+    }
+    .btn-sign-ye {
+    	margin-top: 20px;
+    	padding: 10px 30px;
     }
 }
 
@@ -241,21 +220,7 @@
 		}
 	}
 }
-// @media(min-width: 992px) {
-// 	.problem-l {
-// 		.img-right {
-// 			position: absolute;
-// 			left: 50%
-// 		}
-// 	}
-// 	.problem-r {
-// 		.img-left {
-// 			position: absolute;
-// 			right: 50%
-// 		}
-// 	}
 
-// }
 @media(min-width: 992px) and (max-width:1199px){
 	.crash-analysis {
 		h3.title {
@@ -318,6 +283,11 @@
 			text-align: center;
 		}
 	}
+	.cta-section.pricing-cta-section {
+	    .title {
+	    	font-size: 30px;
+	    }
+	}
 
 }
 
@@ -366,6 +336,11 @@
 	}
 	.cta-section.pricing-cta-section {
 		margin-top: 80px;
+		padding-top: 50px;
+		padding-bottom: 40px;
+		h2.title {
+			line-height: 40px;
+		}
 	}
 }
 
@@ -407,17 +382,19 @@
 	}
 	.mi-tab {
 		h3.title {
-			font-size: 23px !important;
+			// font-size: 23px !important;
 			margin-bottom: 20px;
 		}
 		p.intro {
 			margin-bottom: 50px;
 		}
 		.sign-up {
-			font-size: 16px;
-			margin-top: 30px;
+			font-size: 19px;
+			margin-top: 50px;
 			.btn-sign {
-				margin-left: 0;
+				font-size: 16px;
+				padding: 10px 20px; 
+				// margin-top: 20px;
 			}
 		}
 	}
@@ -430,17 +407,31 @@
 	}
 	.prob-descri {
 		padding-top: 60px;
-		// h3.title {
-		// 	font-size: 23px !important;
-		// }
+		h3.title {
+			text-align: left;
+			// font-size: 23px !important;
+		}
+		p {
+			text-align: left;
+		}
 	}
 	.problem {
 		padding-top: 40px;
 		h3.title {
+			text-align: left;
 			font-size: 23px !important;
 			margin-bottom: 10px;
 		}
+		p {
+			text-align: left;
+		}
 	}
+	.cta-section.pricing-cta-section {
+	    .title {
+	    	font-size: 24px !important;
+	    }
+	}
+
 }
 
 
