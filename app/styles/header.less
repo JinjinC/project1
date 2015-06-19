@@ -289,6 +289,7 @@
 }
 .headline-bg.mi-headline-bg {
   background: #0096da;
+  background: linear-gradient(top, #0096da,#5bccff); 
   background: -webkit-linear-gradient(top, #0096da,#5bccff); 
   background: -moz-linear-gradient(top, #0096da,#5bccff); 
   background: -o-linear-gradient(top, #0096da,#5bccff); 
@@ -479,4 +480,10 @@
 .waves{
   margin-left: -23%;
   height: inherit;
+}
+
+@media (max-width: 480px) {
+  .fixed-height-headline{
+    height: 370px!important;
+  }
 }
