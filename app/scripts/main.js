@@ -205,8 +205,10 @@ $(document).ready(function() {
         }
         if (mediaWidth < 768){
             $(".mi-headline-bg").css("height", $('.feature-mi').height() + 28*param*fmhParam +"px");
+            $(".ee-headline-bg").css("height", $('.feature-ee').height() + 50*param*fmhParam +"px");
         }else{
             $(".mi-headline-bg").removeAttr("style");
+            $(".ee-headline-bg").removeAttr("style");
         }
     }
 
