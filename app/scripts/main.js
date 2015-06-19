@@ -4,8 +4,7 @@ $(document).ready(function() {
     /* Ref: https://github.com/CWSpear/bootstrap-hover-dropdown */ 
     /* apply dropdownHover to all elements with the data-hover="dropdown" attribute */
     var global ={
-        videoId: null,
-        feature_mi_height: 641
+        videoId: null
     }
     
     $('[data-hover="dropdown"]').dropdownHover();
@@ -188,34 +187,20 @@ $(document).ready(function() {
 
     //导航栏宽度的调整，悬浮与点击的变化
 
-    function localResize() {
+    function sidebarResize() {
         var mediaWidth = $(document).width();
-        var param =((768 - mediaWidth)/768 +1);
-        var fmhParam = 1;
-        if ($('.feature-mi').height<641) {
-            fmhPara = 0;
-        }
-        else{
-            fmhPara = 1;
-        }
+
         if (mediaWidth > 1024){
             $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","");
         }else{
             $('header ul  li.dropdown a.dropdown-toggle').attr("data-toggle","dropdown");
         }
-        if (mediaWidth < 768){
-            $(".mi-headline-bg").css("height", $('.feature-mi').height() + 28*param*fmhParam +"px");
-            $(".ee-headline-bg").css("height", $('.feature-ee').height() + 50*param*fmhParam +"px");
-        }else{
-            $(".mi-headline-bg").removeAttr("style");
-            $(".ee-headline-bg").removeAttr("style");
-        }
     }
 
-    localResize();
+    sidebarResize();
 
     $(window).resize(function  () {
-        localResize();
+        sidebarResize();
     });
 
     //image slider点击向前，向后

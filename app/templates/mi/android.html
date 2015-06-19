@@ -1,7 +1,9 @@
 {% extends '../base/_layout.html' %}
 
 {% block content %}
-<div class="headline-bg mi-headline-bg"></div><!-- headline-bg -->
+<div class="headline-bg mi-headline-bg fixed-height-headline">
+	<canvas id="waves" class="waves"></canvas>
+</div><!-- headline-bg -->
 <section class="features-video section section-on-bg">
     <div class="container text-center">
         <h2 class="title lang-title">OneAPM for Android</h2>
@@ -229,4 +231,12 @@
 
 </div><!--//section-wrapper-->
 
+{% endblock %}
+
+{% block scripts %}
+    {% parent %}
+    <!-- build:js /scripts/mobile-android.js -->
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action.js"></script>
+    <!-- endbuild -->
 {% endblock %}
