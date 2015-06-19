@@ -19,7 +19,9 @@ $(document).ready(function(){
 	    }
 	}
 
-	headerResize();
+	setTimeout(function(){
+		headerResize();
+	}, 100);
 
 	$(window).resize(function  () {
 	    headerResize();
