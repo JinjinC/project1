@@ -2,7 +2,9 @@
 
 
 {% block content %}
-<div class="headline-bg mi-headline-bg"></div><!-- headline-bg -->
+<div class="headline-bg mi-headline-bg">
+  <canvas id="waves" class="waves"></canvas>
+</div><!-- headline-bg -->
 <section class="pricing section section-on-bg">
     <div class="container">
         <h2 class="title text-center">Mobile Insight 报价</h2>
@@ -299,17 +301,21 @@
 </section><!--//faq-->
 
 
-<!-- ******CTA Section****** -->
-   <section id="cta-section" class="section cta-section text-center pricing-cta-section extra-padding-more">
+<section class="section cta-section text-center pricing-cta-section extra-padding">
+  <div class="wavesWapper" style="margin-top: 3%;">
+    <canvas id="waves2" class="waves"></canvas>
+  </div>
     <div class="container">
-        <h2 class="title">超过 10 万全球开发者选择 OneAPM！</h2>
-        <p class="intro">现在注册，即可免费试用专业版 15 天</p>
-        <p>
-            <a class="btn btn-large btn-sign-ye" href="https://user.oneapm.com/account/register.do" target="_blank">免费注册</a>
-        </p>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
+            <h2 class="title">一个为程序员而生的产品<br>一次改变开发习惯的机遇</h2>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <p><a class="btn btn-large btn-sign-ye" href="https://user.oneapm.com/account/register.do" target="_blank">免费注册</a></p>
+            </div>
+        </div>   
     </div><!--//container-->
 </section><!--//cta-section-->
-<!-- ******FOOTER****** -->
 
 {% endblock %}
 
@@ -319,6 +325,8 @@
     <!-- build:js /scripts/mobile-price.js -->
     <script type="text/javascript" src="/scripts/show-function.js"></script>
     <script type="text/javascript" src="/scripts/jquery.stickyheader.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action.js"></script>
     <!-- endbuild -->
     {% if env == 'production' %}
     <script src="https://meiqia.com/js/mechat.js?unitid=6232" charset="UTF-8" async="async"></script>
