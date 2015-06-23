@@ -27,7 +27,7 @@ $(function(){
           return 2
         }
         else if(browser.versions.mobile){
-          return 4
+          return 2
         }
         else{
           return 1
