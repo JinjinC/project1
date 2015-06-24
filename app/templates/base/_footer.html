@@ -2,9 +2,10 @@
     <div class="footer-content">
         <div class="container">
             <div class="row">                    
-                <div class="footer-col links col-md-2 col-sm-2 col-xs-6" style="margin-bottom:25px;">
+                <div class="footer-col links col-md-2 col-sm-2 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title">Application Insight</h3>
+                        <input type="checkbox" id="application-insight">
+                        <label for="application-insight"><h3 class="title">Application Insight</h3></label>
                         <ul class="list-unstyled">
                             <li><a href="/ai/feature.html">特性</a></li>
                             <li><a href="/ai/price.html">报价</a></li>
@@ -17,18 +18,20 @@
                         </ul>
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col-->    
-                <div class="footer-col links col-md-2 col-sm-2 col-xs-6">
+                <div class="footer-col links col-md-2 col-sm-2 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title">Browser Insight</h3>
+                        <input type="checkbox" id="browser-insight">
+                        <label for="browser-insight"><h3 class="title">Browser Insight</h3></label>
                         <ul class="list-unstyled">
                             <li><a href="/bi/feature.html">特性</a></li>
                             <li><a href="/bi/price.html">报价</a></li>
                        </ul>
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col-->    
-                <div class="footer-col links col-md-2 col-sm-2 col-xs-6">
+                <div class="footer-col links col-md-2 col-sm-2 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title">Mobile Insight</h3>
+                        <input type="checkbox" id="mobile-insight">
+                        <label for="mobile-insight"><h3 class="title">Mobile Insight</h3></label>
                         <ul class="list-unstyled">
                             <li><a href="/mi/feature.html">特性</a></li>
                             <li><a href="/mi/price.html">报价</a></li>
@@ -37,18 +40,19 @@
                        </ul>
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col-->    
-                <div class="footer-col links col-md-2 col-sm-2 col-xs-6">
+                <div class="footer-col links col-md-2 col-sm-2 col-xs-12">
                     <div class="footer-col-inner">
-                       <h3 class="title">企业版</h3>
-                       <ul class="list-unstyled">
+                        <input type="checkbox" id="enterprise">
+                        <label for="enterprise"><h3 class="title">企业版</h3></label>
+                        <ul class="list-unstyled">
                             <li><a href="/enterprise.html">企业版介绍</a></li>
-                       </ul>
+                        </ul>
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col-->             
-                <div class="footer-col links col-md-2 col-sm-2 col-xs-6 sm-break">
+                <div class="footer-col links col-md-2 col-sm-2 col-xs-12 sm-break">
                     <div class="footer-col-inner">
-                        
-                        <h3 class="title">帮助</h3>
+                        <input type="checkbox" id="help-center">
+                        <label for="help-center"><h3 class="title">帮助</h3></label>
                         <ul class="list-unstyled">
                             <li><a href="http://oneapm.udesk.cn/hc">帮助中心</a></li>
                             <li><a href="http://oneapm.udesk.cn/hc/categories/1158">更新日志</a></li>
@@ -57,9 +61,10 @@
                         </ul>
                     </div><!--//footer-col-inner-->            
                 </div><!--//foooter-col-->   
-                <div class="footer-col links col-md-2 col-sm-2 col-xs-6 sm-break">
-                     <div class="footer-col-inner"> 
-                        <h3 class="title">关于</h3>
+                <div class="footer-col links col-md-2 col-sm-2 col-xs-12 sm-break">
+                    <div class="footer-col-inner"> 
+                        <input type="checkbox" id="about">
+                        <label for="about"><h3 class="title">关于</h3></label>
                         <ul class="list-unstyled">
                             <li><a href="/info/about.html">蓝海讯通</a></li>
                             <li><a href="/info/jobs.html">加入我们</a></li>
@@ -70,32 +75,18 @@
                     </div>
                 </div>
             </div>
-            <div class="row hidden-xxxs">
-                <div class="footer-col download col-lg-2 col-md-3 col-sm-3 col-xs-12 col-lg-push-6 col-md-push-8 col-sm-push-9">
-                    <div class="footer-col-inner">                                             
-                        <a href="/mobility.html" class="footer-download">
-                            <img src="/images/footer/icon.svg">                            
-                            <span class="d-text">
-                                <span class="d-text-title">手机客户端</span>
-                                <br>Android
-                            </span>
-                           
-                        </a>
-                    </div><!--//footer-col-inner-->
-                </div>
-                <div class="footer-col connect col-lg-4 col-md-5 col-sm-6 col-xs-6 col-lg-pull-2 col-md-pull-3 col-sm-pull-3">
+            <div class="row">
+                <div class="footer-col connect col-lg-4 col-md-5 col-sm-6 col-xs-12">
                     <div class="footer-col-inner">                            
-                        <h3 class="title">联系我们</h3>                          
+                        <h3>联系我们</h3>                          
                         <p class="adr clearfix">
                             <i class="fa fa-map-marker pull-left"></i>        
                             <span class="street-address"> 北京市海淀区西小口66号东升科技园A区5号楼3层/4层</span>
                         </p>
-                        <!-- <p class="tel"><i class="fa fa-phone"></i> 销售咨询 400-659-1230<br/>技术咨询 400-622-3101</p> -->
                         <p class="email"><i class="fa fa-envelope-o"></i><a href="mailto:support@oneapm.com" class="email-addr"> support@oneapm.com</a></p> 
-                        
-                    </div><!--//footer-col-inner-->
+                    </div>
                 </div>
-                <div class="footer-col connect col-lg-2 col-md-3 col-sm-3 col-xs-6 col-lg-pull-2 col-md-pull-3 col-sm-pull-3">
+                <div class="footer-col connect col-lg-2 col-md-3 col-sm-3 col-xs-12">
                     <div class="footer-col-inner">                                             
                         <ul class="social list-inline">
                             <li>
@@ -111,12 +102,22 @@
                         <div class="form-container">
                             <p class="intro">关注 OneAPM 最新资讯</p>
                         </div>
-                    </div><!--//footer-col-inner-->
+                    </div>
                 </div>
-                
+                <div class="footer-col download col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-col-inner">                                             
+                        <a href="/mobility.html" class="footer-download">
+                            <img src="/images/footer/icon.svg">                            
+                            <span class="d-text">
+                                <span class="d-text-title">手机客户端</span>
+                                <br>Android
+                            </span>
+                        </a>
+                    </div>
+                </div>
                 <div class="clearfix"></div> 
             </div>
-            <div class="row onlyshow-xxxs">
+            <!-- <div class="row onlyshow-xxxs">
                 <div class="footer-col download col-lg-2 col-md-3 col-sm-3 col-xs-3 col-xxxs-12">
                     <div class="footer-col-inner">                                             
                         <a href="/mobility.html" class="footer-download">
@@ -125,9 +126,8 @@
                                 <span class="d-text-title">手机客户端</span>
                                 <br>Android
                             </span>
-                           
                         </a>
-                    </div><!--//footer-col-inner-->
+                    </div>
                 </div>
                 <div class="footer-col connect col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxxs-12">
                     <div class="footer-col-inner">                                             
@@ -145,25 +145,23 @@
                         <div class="form-container">
                             <p class="intro">关注 OneAPM 最新资讯</p>
                         </div>
-                    </div><!--//footer-col-inner-->
+                    </div>
                 </div>
                 <div class="footer-col connect col-lg-4 col-md-5 col-sm-6 col-xs-6 col-xxxs-12">
                     <div class="footer-col-inner">                            
-                        <h3 class="title">联系我们</h3>                          
+                        <h3>联系我们</h3>                          
                         <p class="adr clearfix">
                             <i class="fa fa-map-marker pull-left"></i>        
                             <span class="street-address"> 北京市海淀区西小口66号东升科技园A区5号楼3层/4层</span>
                         </p>
-                        <!-- <p class="tel"><i class="fa fa-phone"></i> 销售咨询 400-659-1230<br/>技术咨询 400-622-3101</p> -->
                         <p class="email"><i class="fa fa-envelope-o"></i><a href="mailto:support@oneapm.com" class="email-addr"> support@oneapm.com</a></p> 
-                        
-                    </div><!--//footer-col-inner-->
+                    </div>
                 </div>
                 <div class="clearfix"></div> 
-            </div>
+            </div> -->
             <div class="row has-divider"></div>
-        </div><!--//container-->
-    </div><!--//footer-content-->
+        </div>
+    </div>
     
     <div class="bottom-bar">
         <div class="container">
