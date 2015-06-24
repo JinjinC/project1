@@ -237,6 +237,7 @@
   }
 
   .footer .footer-content .container {
+    border-top: none;
     padding-top: 20px;
   }
   .footer-col {
@@ -310,9 +311,20 @@
       }
       
   }
-  .footer .footer-col.connect h3 {
-    margin-top: 30px;
+  .footer .footer-col.connect {
+    .footer-col-inner {
+      padding-left: 0.333333em;
+      h3 {
+        font-size: 14px;
+        margin-top: 0;
+        border-top: 1px solid #e3e3e3;
+        padding: 10px 0 0;
+      }
+    }
+    
   }
+
+ 
 
   .footer-col .footer-col-inner input:checked ~ul{
       max-height: 100%;
