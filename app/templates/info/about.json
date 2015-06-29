@@ -130,6 +130,10 @@
  		{
  			"img": "/images/about/partner/apicloud.png",
  			"link": "http://www.apicloud.com/"
+ 		},
+ 		{
+ 			"img": "/images/about/partner/safedog.png",
+ 			"link": "http://www.safedog.cn/?from=oneapm"
  		}
  	],
  	"pageTitle": "关于OneAPM | OneAPM是什么 - 北京蓝海讯通科技有限公司",
