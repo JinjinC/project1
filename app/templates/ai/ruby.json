@@ -1,5 +1,5 @@
 {
-	"pageTitle": "Ruby 性能监控 - OneAPM",
-	"description": "OneAPM, 监控Ruby应用性能, 支持所有Ruby框架, 监控Ruby应用从前端到网络直到后端服务器的性能.",
-	"keywords": "OneAPM, Application Insight, ai, 免费试用, Ruby性能, HTTP错误, 数据库性能."
+	"pageTitle": "Ruby性能监控工具 | Ruby性能分析工具 | Ruby性能优化工具 – OneAPM",
+	"description": "OneAPM for Ruby性能监控工具能够深入到所有Ruby应用内部完成应用性能管理和监控，同时可以完成Ruby性能分析、测试的工作，OneAPM for Ruby性能监控工具能够监控性能表现差的 SQL 语句、第三方 API、Web Services、Caching Layers、后台任务等等性能监控。",
+	"keywords": "Ruby性能监控工具,Ruby性能测试工具,Ruby性能优化工具"
 }

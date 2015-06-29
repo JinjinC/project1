@@ -35,8 +35,7 @@ $(function(){
       }()
     }
 
-    if ($('#sawtooth').sineWavesControl()){
-      var sawtooth = new SineWaves({
+    var sawtooth = new SineWaves({
         el: document.getElementById('sawtooth'),
 
         speed: 8,
@@ -92,6 +91,27 @@ $(function(){
           length = void 0;
           gradient = void 0;
         }
-      });
+    });
+
+    var elmt = $('#sawtooth');    
+    var docScrollTop = $(document).scrollTop();
+    var docScrollBtm = $(document).scrollTop() + $(window).height();
+    var elmtBtmToDocTop = elmt.offset().top + elmt.height();
+    var elmtTopToDocTop = elmt.offset().top;
+    if (docScrollTop > elmtBtmToDocTop || docScrollBtm < elmtTopToDocTop){
+        sawtooth.running = false;
+        sawtooth.update();
     }
+    $(window).bind('scroll', function() {
+      docScrollTop = $(document).scrollTop();
+      docScrollBtm = $(document).scrollTop() + $(window).height();
+      if (docScrollTop > elmtBtmToDocTop || docScrollBtm < elmtTopToDocTop){
+        sawtooth.running = false;
+        sawtooth.update();
+      }else{
+        sawtooth.running = true;
+        sawtooth.update();
+      }
+    })
+
 });

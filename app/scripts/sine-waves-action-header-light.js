@@ -34,8 +34,8 @@ $(function(){
         };
       }()
     }
-    if ($('#waves').sineWavesControl()){
-      var waves = new SineWaves({
+
+    var waves = new SineWaves({
         el: document.getElementById('waves'),
 
         speed: 8,
@@ -102,6 +102,6 @@ $(function(){
           length = void 0;
           gradient = void 0;
         }
-      });
-    }
+    });
+
 });

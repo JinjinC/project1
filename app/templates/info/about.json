@@ -126,9 +126,13 @@
  		{
  			"img": "/images/about/partner/oschina.png",
  			"link": "http://www.oschina.net/"
+ 		},
+ 		{
+ 			"img": "/images/about/partner/apicloud.png",
+ 			"link": "http://www.apicloud.com/"
  		}
  	],
- 	"pageTitle": "关于 OneAPM - 北京蓝海讯通科技有限公司",
- 	"description": "OneAPM是中国的应用性能管理服务提供商,协助技术人员,优化应用性能,快速定位性能问题,抓取相关的代码和SQL语句以及方法调用栈信息.",
- 	"keywords": "OneAPM,应用性能管理,蓝海讯通,blueware,性能优化,代码性能,移动应用性能,北京蓝海讯通科技有限公司,蓝海讯通."
+ 	"pageTitle": "关于OneAPM | OneAPM是什么 - 北京蓝海讯通科技有限公司",
+ 	"description": "OneAPM是什么？OneAPM是北京蓝海讯通科技有限公司一款专注于提供新一代应用性能管理软件和服务，帮助用户降低IT成本，提高业务生产力，产品适用于复杂的现代应用程序生产环境，提供端到端应用性能管理、移动端和浏览器真实用户体验分析、业务交易实时分析。",
+ 	"keywords": "OneAPM是什么,关于OneAPM"
  }
