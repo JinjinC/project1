@@ -161,11 +161,17 @@
     margin: 0 auto;
     margin-bottom: 40px;
   }
+  .header .main-nav {
+    margin-top: 22px;
+  }
   .logo-img {
     width: 75px;
     height: 75px;
     background-size: 75px auto;
     margin-top: 3px;
+  }
+  .nav > li > a {
+    padding: 10px 10px;
   }
 }
 
@@ -516,6 +522,14 @@
     margin-bottom: 5px;
     float: none;
   }
+
+  .steps{
+    // padding-top: 30px;
+    // padding-bottom: 80px;
+    .icon img {
+      width: 85%;
+    }
+  }
 }
 @media (max-width: 480px) {
   .promo {
@@ -792,5 +806,10 @@
 @media (max-width: 375px) {
   .download {
     margin-bottom: 0;
+  }
+  .steps {
+    .icon{
+      width: 100%;
+    }
   }
 }

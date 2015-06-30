@@ -1,0 +1,82 @@
+{% extends '../base/_layout.html' %}
+
+{% block content %}
+<div class="headline-bg plugins-headline-bg wavesWapper">
+	<canvas id="waves" class="waves"></canvas>
+</div><!-- headline-bg -->
+<section class="features-video section section-on-bg feature-plugins">
+	<div class="container"> 
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0">
+                <img class="pluglogo" src="/images/plugins/pluglogo.svg">
+                <p class="intro">创建属于自己的平台监控系统，<br>就在 OneAPM Plugins</p>
+            </div>
+            <img class="plugins-headline-img hidden-xs" src="/images/plugins/plugins.png">
+            <img class="plugins-headline-img hidden-lg hidden-md hidden-sm" src="/images/plugins/plugins-small.png">
+        </div>         
+    </div>
+</section>
+
+<section class="section steps">
+    <div class="container">
+    	<div class="row">
+			<div class="text-center col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+				<h3 class="title">
+					<span>自定义专属监控系统</span>
+				</h3>
+				<p class="intro">如果您使用了 Application Insight 监控应用程序，<br class="hidden-xxs"/>使用了 OneAPM Servers 监控了服务器，你还需要 OneAPM Plugins！</p>
+			</div>
+		</div>
+        <div class="row">
+        	<div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+             	<span class="icon"><img src="/images/plugins/mysql.svg"></span>
+                 <h3 class="title"><span class="text">MySQL</span></h3>
+             </div>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+             	<span class="icon"><img src="/images/plugins/mongodb.svg"></span>
+                 <h3 class="title"><span class="text">MongoDB</span></h3>
+             </div>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+             	 <span class="icon"><img src="/images/plugins/redis.svg"></span>
+                 <h3 class="title"><span class="text">Redis</span></h3>
+             </div>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+             	<span class="icon"><img src="/images/plugins/memcachaed.svg"></span>
+                 <h3 class="title"><span class="text">Memcachaed</span></h3>
+             </div>
+             <div class="text-center col-lg-8 col-md-8 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
+             	<p class="intro-more">更多平台服务，敬请期待</p>
+             </div>
+        </div>
+    </div>        
+</section>
+<section class="section cta-section text-center pricing-cta-section extra-padding plugins">
+    <div class="container">
+        <div class="row">
+        	<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
+        		<h2 class="title">一个为程序员而生的产品<br>一次改变开发习惯的机遇</h2>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+            	<p><a class="btn btn-large btn-sign-ye" href="https://user.oneapm.com/account/register.do" target="_blank">免费注册</a></p>
+                <p>专业版 15 天免费试用</p>
+            </div>
+        </div>
+    </div><!--//container-->
+</section><!--//cta-section-->
+
+
+
+{% endblock %}
+
+{% block scripts %}
+    {% parent %}
+    <!-- build:js /scripts/mobile-feature.js -->
+    <script type="text/javascript" src="/scripts/headerResponse.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-control.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-header.js" ></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-sawtooth.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-sine.js"></script>
+    <!-- endbuild -->
+{% endblock %}
+
