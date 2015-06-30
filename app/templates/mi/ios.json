@@ -1,6 +1,6 @@
 {
-	"pageTitle": "iOS 应用性能监控 - OneAPM",
-	"description": "OneAPM,帮助iOS应用进行性能优化,从设备类型,操作系统,地理信息等维度出发,定位至代码级的性能问题,还包括针对崩溃进行分析的机制.",
-	"keywords": "OneAPM,iOS应用性能,iOS性能监控,iOS性能管理,崩溃分析,性能优化,版本性能.",
+	"pageTitle": "iOS应用性能监控工具 | iOS性能测试工具 – OneAPM",
+	"description": "OneAPM for iOS应用性能监控工具能够深入到所有iOS应用内部完成应用性能管理和监控，同时可以完成iOS性能测试、分析的工作，全面优化iOS App性能，3分钟快速部署，应用性能管理从未如此简单。",
+	"keywords": "iOS应用性能监控工具,iOS性能测试工具",
 	"pageName": "mi"
 }

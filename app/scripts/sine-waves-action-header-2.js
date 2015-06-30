@@ -27,7 +27,7 @@ $(function(){
           return 2
         }
         else if(browser.versions.mobile){
-          return 2
+          return 4
         }
         else{
           return 1
@@ -66,17 +66,10 @@ $(function(){
             segmentLength: 1
           },
           {
-            timeModifier: 0.5 * params.wave_timeModifier,
-            lineWidth: 2,
-            amplitude: 100,
-            wavelength: 150,
-            segmentLength: 1
-          },
-          {
-            timeModifier: 0.5 * params.wave_timeModifier,
+            timeModifier: 0.6 * params.wave_timeModifier,
             lineWidth: 2,
             amplitude: 50,
-            wavelength: 80,
+            wavelength: 100,
             segmentLength: 1
           }
         ],
@@ -87,9 +80,9 @@ $(function(){
 
         resizeEvent: function() {
           var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
-          gradient.addColorStop(0,"rgba(0, 0, 0, 0)");
-          gradient.addColorStop(0.5,"rgba(0, 0, 0, 0.08)");
-          gradient.addColorStop(1,"rgba(0, 0, 0, 0)");
+          gradient.addColorStop(0,"rgba(255, 255, 255, 0)");
+          gradient.addColorStop(0.5,"rgba(255, 255, 255, 0.2)");
+          gradient.addColorStop(1,"rgba(255, 255, 255, 0)");
 
           var index = -1;
           var length = this.waves.length;
@@ -104,4 +97,25 @@ $(function(){
         }
     });
 
+    var elmt = $('#waves');    
+    var docScrollTop = $(document).scrollTop();
+    var docScrollBtm = $(document).scrollTop() + $(window).height();
+    var elmtBtmToDocTop = elmt.offset().top + elmt.height();
+    var elmtTopToDocTop = elmt.offset().top;
+    if (docScrollTop > elmtBtmToDocTop || docScrollBtm < elmtTopToDocTop){
+        waves.running = false;
+        waves.update();
+    }
+    $(window).bind('scroll', function() {
+      docScrollTop = $(document).scrollTop();
+      docScrollBtm = $(document).scrollTop() + $(window).height();
+      if (docScrollTop > elmtBtmToDocTop || docScrollBtm < elmtTopToDocTop){
+        waves.running = false;
+        waves.update();
+      }else{
+        waves.running = true;
+        waves.update();
+      }
+    })
+    
 });

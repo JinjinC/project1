@@ -35,8 +35,7 @@ $(function(){
       }()
     }
 
-    if ($('#waves').sineWavesControl()){
-      var waves = new SineWaves({
+    var waves = new SineWaves({
         el: document.getElementById('waves'),
 
         speed: 8,
@@ -103,7 +102,27 @@ $(function(){
           length = void 0;
           gradient = void 0;
         }
-      });
+    });
+
+    var elmt = $('#waves');    
+    var docScrollTop = $(document).scrollTop();
+    var docScrollBtm = $(document).scrollTop() + $(window).height();
+    var elmtBtmToDocTop = elmt.offset().top + elmt.height();
+    var elmtTopToDocTop = elmt.offset().top;
+    if (docScrollTop > elmtBtmToDocTop || docScrollBtm < elmtTopToDocTop){
+        waves.running = false;
+        waves.update();
     }
+    $(window).bind('scroll', function() {
+      docScrollTop = $(document).scrollTop();
+      docScrollBtm = $(document).scrollTop() + $(window).height();
+      if (docScrollTop > elmtBtmToDocTop || docScrollBtm < elmtTopToDocTop){
+        waves.running = false;
+        waves.update();
+      }else{
+        waves.running = true;
+        waves.update();
+      }
+    })
     
 });

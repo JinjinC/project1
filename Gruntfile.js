@@ -45,7 +45,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/templates/',
-          dest: 'dist/',
+          dest: '<%= config.dist %>/',
           src: ['**/*.html','!base/*.html']
         }]
       },
@@ -372,7 +372,7 @@ module.exports = function(grunt) {
     'clean:server',
     'swigstatic:dist',
     'less:dist',
-    'favicons:dist',
+    // 'favicons:dist',
     'static-min:dist',
     'cdnify:dist'
   ]);

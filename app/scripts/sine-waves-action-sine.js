@@ -34,76 +34,96 @@ $(function(){
         };
       }()
     }
+    
+    var waves = new SineWaves({
+      el: document.getElementById('waves2'),
 
-    if($('#waves2').sineWavesControl()) {
-      var waves = new SineWaves({
-        el: document.getElementById('waves2'),
+      speed: 8,
 
-        speed: 8,
-
-        width: function() {
-          var mediaWidth = $(document).width();
-          if (mediaWidth < 768){
-            return $('#waves2').parent().width()*3;
-          }else{
-            return $('#waves2').parent().width()*1.4;
-          }
-        },
-
-        height: function() {
-          return $('#waves2').parent().height();
-        },
-
-        wavesWidth: '100%',
-
-        ease: 'SineInOut',
-
-        waves: [
-          {
-            timeModifier: 0.5 * params.wave_timeModifier,
-            lineWidth: 2,
-            amplitude: 120,
-            wavelength: 200,
-            segmentLength: 1
-          },
-          {
-            timeModifier: 0.5 * params.wave_timeModifier,
-            lineWidth: 2,
-            amplitude: 100,
-            wavelength: 150,
-            segmentLength: 1
-          },
-          {
-            timeModifier: 0.5 * params.wave_timeModifier,
-            lineWidth: 2,
-            amplitude: 50,
-            wavelength: 80,
-            segmentLength: 1
-          }
-        ],
-
-        initialize: function (){
-
-        },
-
-        resizeEvent: function() {
-          var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
-          gradient.addColorStop(0,"rgba(255, 255, 255, 0)");
-          gradient.addColorStop(0.5,"rgba(255, 255, 255, 0.2)");
-          gradient.addColorStop(1,"rgba(255, 255, 255, 0)");
-
-          var index = -1;
-          var length = this.waves.length;
-            while(++index < length){
-            this.waves[index].strokeStyle = gradient;
-          }
-
-          // Clean Up
-          index = void 0;
-          length = void 0;
-          gradient = void 0;
+      width: function() {
+        var mediaWidth = $(document).width();
+        if (mediaWidth < 768){
+          return $('#waves2').parent().width()*3;
+        }else{
+          return $('#waves2').parent().width()*1.4;
         }
-      });
+      },
+
+      height: function() {
+        return $('#waves2').parent().height();
+      },
+
+      wavesWidth: '100%',
+
+      ease: 'SineInOut',
+
+      waves: [
+        {
+          timeModifier: 0.5 * params.wave_timeModifier,
+          lineWidth: 2,
+          amplitude: 120,
+          wavelength: 200,
+          segmentLength: 1
+        },
+        {
+          timeModifier: 0.5 * params.wave_timeModifier,
+          lineWidth: 2,
+          amplitude: 100,
+          wavelength: 150,
+          segmentLength: 1
+        },
+        {
+          timeModifier: 0.5 * params.wave_timeModifier,
+          lineWidth: 2,
+          amplitude: 50,
+          wavelength: 80,
+          segmentLength: 1
+        }
+      ],
+
+      initialize: function (){
+
+      },
+
+      resizeEvent: function() {
+        var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
+        gradient.addColorStop(0,"rgba(255, 255, 255, 0)");
+        gradient.addColorStop(0.5,"rgba(255, 255, 255, 0.2)");
+        gradient.addColorStop(1,"rgba(255, 255, 255, 0)");
+
+        var index = -1;
+        var length = this.waves.length;
+          while(++index < length){
+          this.waves[index].strokeStyle = gradient;
+        }
+
+        // Clean Up
+        index = void 0;
+        length = void 0;
+        gradient = void 0;
+      }
+    });
+
+    
+    var elmt = $('#waves2');    
+    var docScrollTop = $(document).scrollTop();
+    var docScrollBtm = $(document).scrollTop() + $(window).height();
+    var elmtBtmToDocTop = elmt.offset().top + elmt.height();
+    var elmtTopToDocTop = elmt.offset().top;
+    if (docScrollTop > elmtBtmToDocTop || docScrollBtm < elmtTopToDocTop){
+        waves.running = false;
+        waves.update();
     }
+    $(window).bind('scroll', function() {
+      docScrollTop = $(document).scrollTop();
+      docScrollBtm = $(document).scrollTop() + $(window).height();
+      if (docScrollTop > elmtBtmToDocTop || docScrollBtm < elmtTopToDocTop){
+        waves.running = false;
+        waves.update();
+      }else{
+        waves.running = true;
+        waves.update();
+      }
+    })
     
 });
