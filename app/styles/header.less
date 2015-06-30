@@ -72,6 +72,7 @@
   padding: 8px 10px;
   margin-top: 5px;
   font-size: 13px;
+  height: auto;
 }
 .header .main-nav .nav .nav-item.nav-item-cta a.btn-cta-secondary:hover {
   border: 1px solid #fff;
@@ -81,10 +82,10 @@
 
 .header .main-nav .nav .nav-item a {
   color: rgba(255, 255, 255, 0.6);
-  /*color: rgba(255, 255, 255, 0.8);*/
-/*  padding: 8px 10px;
-  margin: 7px 5px;
-*/}
+}
+.header .main-nav .nav .nav-item > a {
+  height: 58px;
+}
 .header .main-nav .nav .nav-item a:hover {
   color:rgba(255, 255, 255, 1);
   background-color: transparent;
@@ -141,11 +142,11 @@
   margin: 0;
   border: none;
   text-transform: none;
-  min-width: 180px;
+  min-width: 160px;
   background: #fff;
   border: rgba(0,0,0,.2);
-  top: 100%;
-  right: 0px;
+  top: 90%;
+  left: -54px;
 }
 .header.navbar-fixed-top .main-nav .nav .dropdown-menu{
   // background: #E5E5E5;
@@ -154,7 +155,7 @@
 
 .header .main-nav .nav .dropdown-menu:before {
   content: "";
-  display: block;
+  display: none;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
