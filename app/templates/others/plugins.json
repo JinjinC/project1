@@ -1,6 +1,6 @@
 {
 	"pageName": "plugins",
-	"pageTitle": "",
-	"description": "",
-	"keywords": ""
+	"pageTitle": "OneAPM Plugins | 平台服务监控 | MySQL监控工具 | MongoDB性能监控工具 – OneAPM",
+	"description": "OneAPM Plugins 平台服务监控工具，能够为您提供各种服务监控平台，目前支持Mysql监控、MongoDB性能监控、Redis图形监控、Apache性能监控、Nginx性能监控、Rabbitmq性能测试等平台的性能监控，部署简单，轻松创建属于自己的平台监控系统。 ",
+	"keywords": "OneAPM Plugins,MySQL监控工具,MongoDB性能监控工具"
 }
