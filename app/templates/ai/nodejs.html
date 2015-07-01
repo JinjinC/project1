@@ -3,39 +3,19 @@
 {% block content %}
 <div class="headline-bg ai-headline-bg"></div><!-- headline-bg -->
 
-<section class="features-video section section-on-bg">
-    <div class="container text-center">
-        <h2 class="title lang-title">OneAPM for Node.js</h2>
-        <div class="text-container">
-            <div class="about">
-            	<div class="row">
-            		<div class="col-md-4 col-sm-4 col-xs-12">
-            			<div class="lang-logo">
-							<img src="/images/lang/logo_node.png" alt="node">
-						</div>
-            		</div>
-            		<div class="col-md-8 col-sm-8 col-xs-12">
-            			<p>OneAPM for Node.js 能够深入到所有 Node.js 应用内部完成应用性能管理和监控，包括代码级别性能问题的可见性、性能瓶颈的快速识别与追溯、真实用户体验监控、服务器监控和端到端的应用性能管理。</p> 
-                		<div class="lang-button">
-							<a href="javascript:;" class="btn btn-small btn-knowmore" style="width:20%">安装指南</a>
-						</div>
-            		</div>
-            	</div>
-            </div><!--//about-->
-        </div>
-            <div class="container">
-            	<div class="row">
-            		<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0">
-            			<img src="/images/mi/Mi_Android.svg" alt="" class="lang-title">
-        				<p>
-        					OneAPM for Node.js 能够深入到所有 Node.js 应用内部完成应用性能管理和监控，包括代码级别性能问题的可见性、性能瓶颈的快速识别与追溯、真实用户体验监控、服务器监控和端到端的应用性能管理。
-        				</p>
-            		</div>
-            		<div class="col-lg-5 col-lg-offset-2 col-md-5 col-sm-5">
-            			<img src="/images/mi/android.svg" class="lang-logo" alt="">
-            		</div>
-            	</div>
-            </div>
+<section class="features-video section section-on-bg lang-header">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0">
+    			<img src="/images/lang/nodejs.svg" alt="" class="lang-title">
+				<p>
+					OneAPM for Node.js 能够深入到所有 Node.js 应用内部完成应用性能管理和监控，包括代码级别性能问题的可见性、性能瓶颈的快速识别与追溯、真实用户体验监控、服务器监控和端到端的应用性能管理。
+				</p>
+    		</div>
+    		<div class="col-lg-5 col-lg-offset-2 col-md-5 col-sm-5">
+    			<img src="/images/lang/logo_nodejs.svg" class="lang-logo" alt="">
+    		</div>
+    	</div>
     </div>
 </section>
 
@@ -44,7 +24,7 @@
     <section class="section why">
     	<div class="container">
     		<div class="row">
-	        	<div class="lang-content col-md-8 col-sm-8 col-xs-12">
+	        	<div class="lang-content ai col-md-8 col-sm-8 col-xs-12">
 	        		<div class="row item" style="padding-top:40px;">
 	        			<div class="col-md-12 col-sm-12 col-xs-12">
 		                    <h3 class="title">快速定位瓶颈</h3>
@@ -148,59 +128,25 @@
 	        		<div class="row item last-item">
 	        			<div class="col-md-12 col-sm-12 col-xs-12">
 		                    <h3 class="title">如何安装 OneAPM ？</h3>
-		                    <div class="row desc">
-		                    	<div class="col-md-12 col-sm-12 col-xs-12">
-		                    		<p>很开心听到这个问题！<br/>以下是 Node.js Agent 安装指南。具体安装过程可能会因为 IDE 环境不同而有所偏差。</p>
-		                    		<div class="setup-box">
-			                        	<h2>1. <a href="https://user.oneapm.com/account/register.do" target="_blank">创建 OneAPM 账号</a></h2>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>2. OneAPM Node.js Agent </h2>
-			                        	<div class="setup-content">
-			                        		<code>
-				                        		OneAPM Node.js Agent
-				                        	</code>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>3. 安装 OneAPM Node.js Agent</h2>
-			                        	<div class="setup-content">
-			                        		<p>定位路径至你的应用程序根目录</p>
-				                        	<p>在你的应用程序根目录下，运行以下指令</p>
-				                        	<code>
-				                        		npm install &lt;LocationOfYourOneAPMAgent> /oneapm-x.x.x.tgz
-				                        	</code>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>4. 修改配置文件 oneapm.js</h2>
-			                        	<div class="setup-content">
-			                        		<p>将 node_modules/oneapm 目录下的 oneapm.js </p>
-			                        		<p>设置 app_name</p>
-			                        		<p>将 license_key 替换为 OneAPM 的产品授权码</p>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>5. 引入 OneAPM</h2>
-			                        	<div class="setup-content">
-			                        		<p>请将以下内容写到你应用程序主模块文件的第一行:</p>
-				                        	<code>
-				                        		require('oneapm');
-				                        	</code>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>6. 见证奇迹的时刻！</h2>
-			                        	<div class="setup-content">
-			                        		<p>几分钟后，你的应用就会开始向 OneAPM 发送数据。<br/>我们收到数据后，你的应用就会列在 OneAPM 应用列表中。</p>
-			                        	</div>
-			                        </div>
-			                    </div>
+		                    <div class="row">
+		                    	<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+		                    		<div class="video-wrapper">
+		                    			<h4 class="frame-title">Android SDK in Ant 安装方法</h4>
+		                    			<p class="play-btn">
+		                    			    <a href="javascript:;" class="play-trigger btn-link">
+		                    			        <i class="iconfont icon-play">&#xe60b;</i>
+		                    			    </a>
+		                    			</p>
+		                    			<video poster="http://7othr3.com1.z0.glb.clouddn.com/nodejs-agent-install-v0.2.jpg">
+		                    				<source src="http://7othr3.com1.z0.glb.clouddn.com/nodejs-agent-install-v0.2.mp4" type="video/mp4" />
+		                    			</video>
+		                    		</div>
+		                    	</div>
 		                    </div>
 		                </div>
 	        		</div>
 	        	</div>
-	        	<div class="content col-md-4 col-sm-4 col-xs-12">
+	        	<div class="content col-md-3 col-sm-3 col-xs-10 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
         			<div class="col-md-12 col-sm-12 col-xs-12">
         				<h4 class="frame-title-top">框架 &amp; 应用服务器支持</h4>
         				<div class="frameworks">
@@ -219,7 +165,7 @@
         			</div>	        		
         			<div class="col-md-12 col-sm-12 col-xs-12">
         				<h4 class="frame-title">关键优势</h4>
-		        		<div class="key-advan">
+		        		<div class="key-advan ai">
 		        			<ul>
 								<li>免费基础设施监控</li>
 								<li>应用架构自动建模</li>
