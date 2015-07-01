@@ -1,7 +1,9 @@
 {% extends '../base/_layout.html' %}
 
 {% block content %}
-<div class="headline-bg ai-headline-bg"></div><!-- headline-bg -->
+<div class="headline-bg ai-headline-bg">
+    <canvas id="waves" class="waves"></canvas>
+</div><!-- headline-bg -->
 <section class="features-video section section-on-bg">
     <div class="container text-center">
         <h2 class="title">Application Insight</h2>
@@ -142,5 +144,14 @@
 </div><!--//section-wrapper-->
 
 
+{% endblock %}
+
+{% block scripts %}
+    {% parent %}
+    <!-- build:js /scripts/ai-feature.js -->
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-header.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-sine.js"></script>
+    <!-- endbuild -->
 {% endblock %}
 

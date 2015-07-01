@@ -389,3 +389,12 @@
 
 {% endblock %}
 
+{% block scripts %}
+    {% parent %}
+    <!-- build:js /scripts/ai-java.js -->
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-header.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-sine.js"></script>
+    <!-- endbuild -->
+{% endblock %}
+
