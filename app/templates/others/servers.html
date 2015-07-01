@@ -1,0 +1,170 @@
+{% extends '../base/_layout.html' %}
+
+{% block content %}
+<div class="headline-bg servers-headline-bg wavesWapper">
+	<canvas id="waves" class="waves"></canvas>
+</div><!-- headline-bg -->
+<section class="features-video section section-on-bg feature-servers">
+	<div class="container"> 
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0">
+                <img class="servlogo" src="/images/servers/servlogo.svg">
+                <p class="intro">与 Application Insight 配合使用<br>从应用角度，查看服务器性能</p>
+                <p class="more">
+                   <a href="https://user.oneapm.com/account/demo.do" class="hidden-xs" target="_blank">查看 DEMO</a>
+                </p>
+            </div>
+            <img class="servers-headline-img" src="/images/servers/servers.png">
+        </div>         
+    </div>
+</section>
+
+<section class="section steps">
+    <div class="container">
+        <div class="row">
+        	<div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+             	<span class="icon"><img src="/images/servers/free.svg"></span>
+                 <h3 class="title"><span class="text">永久免费</span></h3>
+                 <p class="intro-text">面向所有人的性能监控，<br class="hidden-sm hidden-xs"/>永久免费。</p>
+             </div>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+             	<span class="icon"><img src="/images/servers/process.svg"></span>
+                 <h3 class="title"><span class="text">进程可见</span></h3>
+                 <p class="intro-text">细分到单个进程的资源消耗，<br class="hidden-sm hidden-xs"/>统计性能消耗热点。</p>
+             </div>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+             	 <span class="icon"><img src="/images/servers/ease.svg"></span>
+                 <h3 class="title"><span class="text">简单易用</span></h3>
+                 <p class="intro-text">无需重启，简单部署，<br class="hidden-sm hidden-xs"/>只需 3 分钟。</p>
+             </div>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+             	<span class="icon"><img src="/images/servers/DIY.svg"></span>
+                 <h3 class="title"><span class="text">D.I.Y</span></h3>
+                 <p class="intro-text">搭配 Ai 使用，也可自行添加 Plugins 搭建专属监控系统。</p>
+             </div>
+             <div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             	<div class="line"></div>
+             </div>
+        </div>
+    </div>        
+</section>
+
+<!-- ********* pic-tabs Section *********** -->
+<section class="section servers-tab">
+	<div class="container">
+		<div class="row">
+			<div class="figure col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+				<h3 class="title text-center">前所未有的 Severs <br class="hidden-lg hidden-md hidden-sm hidden-xs show-xxs">监控体验</h3>
+				<p class="intro text-center">还在使用 top 指令，或者打开任务管理器，查看 Servers 性能？<br class="hidden-xxs"/>如此直观的 Servers 监控，让您重新认识：「简单 • 易用」。</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<figure class="figure col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+				<ul class="nav nav-tabs text-center" role="tablist">
+					<li class="active feature-img">
+						<a href="#feature-1" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
+						    <span>总览</span>
+						</a>
+					</li>
+					<li class="feature-img">
+						<a href="#feature-2" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
+						    <span>磁盘</span>
+						</a>
+					</li>
+					<li class="feature-img">
+						<a href="#feature-3" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
+						    <span>网络</span>
+						</a>
+					</li>
+					<li class="feature-img">
+						<a href="#feature-4" role="tab" data-toggle="tab" class="img-title">
+						    <span>进程</span>
+						</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="feature-1">
+					    <figure class="figure text-center">
+					        <img class="img-responsive" src="/images/servers/overview.png" alt="总览" />
+					    </figure>
+					</div><!--//tab-pane-->
+					<div class="tab-pane" id="feature-2">
+					    <figure class="figure text-center">
+					        <img class="img-responsive" src="/images/servers/dist.png" alt="磁盘" />
+					    </figure>
+					</div><!--//tab-pane-->
+					<div class="tab-pane" id="feature-3">
+					    <figure class="figure text-center">
+					        <img class="img-responsive" src="/images/servers/network.png" alt="网络" />
+					    </figure>
+					</div><!--//tab-pane-->
+					<div class="tab-pane" id="feature-4">
+					    <figure class="figure text-center">
+					        <img class="img-responsive" src="/images/servers/process.png" alt="进程" />
+					    </figure>
+					</div><!--//tab-pane-->
+				</div>
+			</figure>
+		</div>
+		
+	</div>
+</section>
+
+<section class="section support servers">
+	<div class="wavesWapper" style="margin-top: -1%;">
+		<canvas id="waves2" class="waves"></canvas>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="text-center col-lg-8 col-md-8 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
+				<h3 class="title">
+					<span>OneAPM Servers <br class="hidden-lg hidden-md hidden-sm hidden-xs show-xxs">现已支持</span>
+				</h3>
+				<div class="row">
+					<div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+						<div class="fea">
+							<img src="/images/servers/ubuntu.svg" class="img-responsive">
+							<span>ubuntu</span>
+						</div>
+					</div>
+					<div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+						<div class="fea">
+							<img src="/images/servers/CentOS.svg" class="img-responsive">
+							<span>CentOS</span>
+						</div>
+					</div>
+					<div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+						<div class="fea">
+							<img src="/images/servers/redhat.svg" class="img-responsive">
+							<span>redhat</span>
+						</div>
+					</div>
+					<div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+						<div class="fea">
+							<img src="/images/servers/waiting.svg" class="img-responsive">
+							<span>敬请期待</span>
+						</div>
+					</div>
+				</div>
+				<p class="sign-up text-center">
+			        <a href="https://user.oneapm.com/account/register.do" class="btn btn-sign">马上注册</a>
+			    </p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+{% endblock %}
+
+{% block scripts %}
+    {% parent %}
+    <!-- build:js /scripts/servers.js -->
+    <script type="text/javascript" src="/scripts/headerResponse.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-header.js" ></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-sine.js"></script>
+    <!-- endbuild -->
+{% endblock %}
+
