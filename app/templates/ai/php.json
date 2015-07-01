@@ -1,4 +1,5 @@
 {
+	"pageName": "ai",
 	"pageTitle": "PHP性能监控工具 | PHP性能分析工具 | PHP性能测试工具 – OneAPM",
 	"description": "OneAPM for PHP性能监控工具能够深入到所有PHP应用内部完成应用性能管理和监控，同时可以完成PHP性能分析、测试的工作，OneAPM for PHP性能监控工具支持所有PHP框架，包括对Wordpress、Drupal、 Magento、Zend、CakePHP、Codelgniter、Symfony、Laravel、ThinkPHP、 Discuz、 Yii等性能监控。",
 	"keywords": "PHP性能监控工具,PHP性能测试工具"
