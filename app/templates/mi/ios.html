@@ -1,30 +1,20 @@
 ﻿{% extends '../base/_layout.html' %}
 
 {% block content %}
-<div class="headline-bg mi-headline-bg fixed-height-headline">
+<div class="headline-bg mi-headline-bg">
 	<canvas id="waves" class="waves"></canvas>
 </div><!-- headline-bg -->
-<section class="features-video section section-on-bg">
-    <div class="container text-center">
-        <h2 class="title lang-title">OneAPM for iOS</h2>
-        <div class="text-container">
-            <div class="about">
-            	<div class="row">
-            		<div class="col-md-4 col-sm-4 col-xs-12">
-            			<div class="lang-logo logo-ios">
-							<img src="/images/lang/logo_ios.png" alt="android">
-						</div>
-            		</div>
-            		<div class="col-md-8 col-sm-8 col-xs-12">
-            			<p>用户的所有交互，每一次会话，甚至是划屏解锁，OneAPM 都能实时监控其性能表现。而这一切，都是为了确保你的 iOS App 能够给予用户最棒的性能体验。</p>
-		                <p>OneAPM 作为 iOS 应用性能管理最佳的解决方案，也将协助你的应用成为 App Store 同类产品中最棒的。</p>
-                		<div class="lang-button">
-							<a href="javascript:;" class="btn btn-small btn-knowmore" style="width:20%">安装指南</a>
-						</div>
-            		</div>
-            	</div>
-            </div><!--//about-->
-        </div>
+<section class="features-video section section-on-bg lang-header">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-lg-offset-1 col-md-offset-0 col-sm-offset-0">
+    			<img src="/images/mi/Mi_iOS.svg" alt="" class="lang-title">
+				<p>
+					用户的所有交互，每一次会话，甚至是划屏解锁，OneAPM 都能实时监控其性能表现。而这一切，都是为了确保你的 iOS App 能够给予用户最棒的性能体验。<br/>
+					OneAPM 作为 iOS 应用性能管理最佳的解决方案，也将协助你的应用成为 App Store 同类产品中最棒的。
+				</p>
+    		</div>
+    	</div>
     </div>
 </section>
 
@@ -33,8 +23,8 @@
     <section class="section why">
     	<div class="container">
     		<div class="row">
-	        	<div class="lang-content col-md-8 col-sm-8 col-xs-12">
-	        		<div class="row item" style="padding-top:40px;">
+	        	<div class="lang-content col-md-7 col-sm-7 col-xs-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+	        		<div class="row item last-item" style="padding-top:40px;">
 	        			<div class="col-md-12 col-sm-12 col-xs-12">
 		                    <h3 class="title">全面优化 iOS App 性能</h3>
 		                    <div class="row desc">
@@ -57,107 +47,8 @@
 		                    </div>
 		                </div>
 	        		</div>
-	        		
-	        		<div class="row item last-item">
-	        			<div class="col-md-12 col-sm-12 col-xs-12">
-		                    <h3 class="title">如何安装 OneAPM ？</h3>
-		                    <div class="row desc">
-		                    	<div class="col-md-12 col-sm-12 col-xs-12">
-		                    		<p>很开心听到这个问题！<br/>以下是 iOS Agent 安装指南。</p>
-		                    		<div class="setup-box">
-			                        	<h2>1. <a href="https://user.oneapm.com/account/register.do" target="_blank">创建 OneAPM 账号</a></h2>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>2. 点击 iOS 按钮，然后为你的应用命名 </h2>
-			                        	<div class="setup-content">
-			                        		<code>A CHEESY NAME</code>
-			                        		<p>不喜欢？没关系，你随时都可以修改</p>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>3. 下载并解压 OneAPM iOS SDK</h2>
-			                        	<div class="setup-content">
-			                        		<p>OneAPM_iOS_Agent_1.x.zip</p>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>4. 添加 OneAPM Framework 至 Xcode 项目中</h2>
-			                        	<div class="setup-content">
-			                        		<p>解压 SDK，并将「OneAPM.framework」文件夹从 Finder 中拖拽至 Xcode 项目中（悬停至导航窗口的项目中）。出现提示窗口时，选择「Copy items into destination...」和「Create folder references...」。</p>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>5. 在 Linker Settings 中添加以下 3 个 Libraries</h2>
-			                        	<div class="setup-content">
-			                        		<p>在项目导航窗口内点击你的 Project，并选中你的 App，然后选择「Build Phases」选项卡。打开「Link Binary with Libraries」列表。点击添加：</p>
-			                        		<ul>
-			                        			<li>SystemConfiguration.framework</li>
-			                        			<li>CoreTelephony.framework</li>
-			                        			<li>CoreData.framework</li>
-			                        			<li>libz.dylib</li>
-			                        			<li>libstdc++.dylib</li>
-			                        		</ul>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>6. Build Settings 设置</h2>
-			                        	<div class="setup-content">
-			                        		<p>选择对应的 TARGET，在「Build Settings」中，为「Other Linker Flags」增加「-all_load」选项。</p>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>7. Build Phases 设置</h2>
-			                        	<div class="setup-content">
-			                        		<ul>
-			                        			<li>
-			                        				<p>添加 OneAPM iOS Agent 文件夹下的 symbolUploading.sh 至工程根目录</p>
-			                        			</li>
-			                        			<li>
-			                        				<p>在弹出窗口中，勾选「Copy items if needed」</p>
-			                        			</li>
-			                        			<li>
-			                        				<p>选择对应 Target 的 Build Phases，并新建 <code>Run Script</code></p>
-			                        			</li>
-			                        			<li>
-			                        				<p>粘贴以下内容至文本框「Type a script or drag a script file from your workspace to insert its path」中</p>
-			                        				<code>SCRIPT=`/usr/bin/find "${SRCROOT}" -name symbolUploading.sh | head -n 1`/bin/sh "${SCRIPT}" "APPLICATION TOKEN"</code>
-			                        			</li>
-			                        		</ul>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>8. 启动 Agent</h2>
-			                        	<div class="setup-content">
-			                        		<ul>
-			                        			<li>
-			                        				<p>在项目文件 [app_name]-Prefix.pch（通常在文件夹「Support Files」中）中，引入 OneAPM 头文件：</p>
-			                        				<code>#import &lt;OneAPM/OneAPM.h></code>
-			                        			</li>
-			                        			<li>
-			                        				<p>在文件 AppDelegate.m 中添加如下代码，并确保它在 <code>application:didFinishLaunchingWithOption</code> 的第一行中。</p>
-			                        				 <code>[OneAPM startWithApplicationToken:@"&lt;generate app token by creating a name above>"];</code>
-			                        			</li>
-			                        		</ul>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>9. 运行应用程序</h2>
-			                        	<div class="setup-content">
-			                        		<p>Clean Project，并重新在模拟器或设备中启动应用程序，开始应用性能管理。</p>
-			                        	</div>
-			                        </div>
-			                        <div class="setup-box">
-			                        	<h2>10. 重启</h2>
-			                        	<div class="setup-content">
-			                        		<p>请静候 5 分钟，等待应用程序向 OneAPM 发送应用程序性能数据，即可开始使用 OneAPM 应用性能管理。</p>
-			                        	</div>
-			                        </div>
-			                    </div>
-		                    </div>
-		                </div>
-	        		</div>
 	        	</div>
-	        	<div class="content col-md-4 col-sm-4 col-xs-12">
+	        	<div class="content col-md-3 col-sm-3 col-xs-12">
         			<div class="col-md-12 col-sm-12 col-xs-12">
         				<h4 class="frame-title">关键优势</h4>
 		        		<div class="key-advan">
@@ -173,6 +64,17 @@
 								<li>报警机制</li>
 								<li>地理信息抓取和分析</li>
 							</ul>
+		        		</div>
+		        		<div class="video-wrapper">
+		        			<h4 class="frame-title">iOS SDK 安装方法</h4>
+		        			<p class="play-btn">
+		        			    <a href="javascript:;" class="play-trigger btn-link">
+		        			        <i class="iconfont icon-play">&#xe60b;</i>
+		        			    </a>
+		        			</p>
+		        			<video poster="http://7othr3.com1.z0.glb.clouddn.com/ios-sdk-install-poster.v01.png">
+		        				<source src="http://7othr3.com1.z0.glb.clouddn.com/ios-sdk-install.v0.2.mp4" type="video/mp4" />
+		        			</video>
 		        		</div>
         			</div>
 	        	</div>

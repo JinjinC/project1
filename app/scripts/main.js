@@ -146,8 +146,8 @@ $(document).ready(function() {
 
     //视频播放控制
     $('.play-btn').click(function  () {
-        $('.play-btn').hide();
-        var video = $('#apm-video');
+        $(this).hide();
+        var video = $(this).parent().find("video");
         video[0].play();
         video.attr("controls","controls");
     });

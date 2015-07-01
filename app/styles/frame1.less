@@ -93,8 +93,10 @@
 .lang-content{
 	margin-bottom: 30px;
 	border-right: 1px solid #eeeeee;
+	padding-right: 4.15%;
+	margin-right: 4.15%;
 	.item {
-		padding: 60px 10px;
+		padding: 60px 0;
 	}
 	.item.last-item {
 		padding-bottom: 0;
@@ -537,8 +539,37 @@
 	height: 420px;
 	p{
 		color: #fff;
+		margin-top: 20px;
+	}
+	.lang-title{
+		height: 50px;
+		margin-bottom: 10px;
 	}
 	.lang-logo{
-		height: 100px;
+		display: inline-block;
+		width: 350px;
+		margin-left: 200px;
+		margin-top: -5%;
+		position: absolute;
+	}
+	@media(max-width: 767px){
+		.lang-logo{
+			margin-left: -130px;
+		}
+	}
+}
+.video-wrapper{
+	margin-top: 30px;
+	width: 120%;
+	position: relative;
+	ul{
+		padding-left: 0;
+		list-style: none;
+		li{
+			position: relative;
+		}
+	}
+	video{
+		border: 2px solid rgba(102, 102, 102, 0.1);
 	}
 }
