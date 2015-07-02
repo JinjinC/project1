@@ -169,13 +169,13 @@ $(document).ready(function() {
 
 
     //scan code 悬浮
-    $('#scan-code').mouseover(function () {
-        $('#scan-code-img').show();
-    });
+    // $('#scan-code').mouseover(function () {
+    //     $('#scan-code-img').show();
+    // });
 
-    $('#scan-code').mouseleave(function () {
-        $('#scan-code-img').hide();
-    });
+    // $('#scan-code').mouseleave(function () {
+    //     $('#scan-code-img').hide();
+    // });
 
     //点击查看各个语言安装步骤
 
