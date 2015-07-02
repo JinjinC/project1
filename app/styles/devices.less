@@ -165,6 +165,11 @@
   .nav > li > a {
     padding: 10px 10px;
   }
+  .cta-section.pricing-cta-section {
+        .title {
+            font-size: 30px;
+        }
+    }
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -475,6 +480,14 @@
   .lang-content .item{
     padding-right: 0;
   }
+  .cta-section.pricing-cta-section {
+      margin-top: 80px;
+      padding-top: 50px;
+      padding-bottom: 40px;
+      h2.title {
+          line-height: 40px;
+      }
+  }
 
 }
 @media (max-width: 480px) {
@@ -586,8 +599,8 @@
   section.features-apm {
     padding: 40px 0;
   }
-  //cta-section
 
+  //cta-section
   .cta-section {
     padding-top: 70px;
     min-height: 370px;
@@ -600,6 +613,7 @@
     padding-bottom: 0px;
     min-height: 310px;
   }
+
   //jobs.html
   .headline-bg.about-headline-bg {
     height: 360px;
@@ -636,74 +650,77 @@
       } 
     }
   }
-//customers.html
-
-.mail-info {
-  height: 125px;
-  img {
-    float: left;
-    padding: 8px 20px;
-  }
-}
-.mail-info2 {
-  height: 80px;
-}
-.mail-info3 {
-  height: 140px;
-}
-
-//price.html
-.pricing {
-  padding-bottom: 10px;
-}
-.pricing .item .heading {
-  .title {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .price-figure {
-    min-height: 70px;
-  }
-  span {
-    line-height: 1.5;
-  }
-}
-.pricing .item .feature-list li {
-  padding: 8px;
-}
-.btn-part {
-  margin-top: 20px;
-}
-.agent-counting {
-  padding-bottom: 30px;
-  h2.title {
-    margin-bottom: 20px;
-  }
-  .container {
-    padding-bottom: 0;
-    p {
-      font-size: 13px;
+  
+  //customers.html
+  .mail-info {
+    height: 125px;
+    img {
+      float: left;
+      padding: 8px 20px;
     }
   }
-}
-.faq {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  .mail-info2 {
+    height: 80px;
+  }
+  .mail-info3 {
+    height: 140px;
+  }
 
-  .title {
-    margin-bottom: 30px;
+  //price.html
+  .pricing {
+    padding-bottom: 10px;
   }
-  .panel .panel-heading {
-    padding: 10px 20px;
+  .pricing .item .heading {
+    .title {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .price-figure {
+      min-height: 70px;
+    }
+    span {
+      line-height: 1.5;
+    }
   }
-  
-}
-.faq .panel .panel-title .panel-toggle .fa {
-  margin-right: 5px;
-}
-.lang-content ul li {
-  margin-left: 10px;
-}
+  .pricing .item .feature-list li {
+    padding: 8px;
+  }
+  .btn-part {
+    margin-top: 20px;
+  }
+  .agent-counting {
+    padding-bottom: 30px;
+    h2.title {
+      margin-bottom: 20px;
+    }
+    .container {
+      padding-bottom: 0;
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+  .faq {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .title {
+      margin-bottom: 30px;
+    }
+    .panel .panel-heading {
+      padding: 10px 20px;
+    }
+    
+  }
+  .faq .panel .panel-title .panel-toggle .fa {
+    margin-right: 5px;
+  }
+  .lang-content ul li {
+    margin-left: 10px;
+  }
+  .cta-section.pricing-cta-section .btn-sign-ye {
+      padding: 8px 20px;
+  }
 
 }
 
@@ -718,5 +735,10 @@
   }
   .why .item .title {
     font-size: 24px !important;
+  }
+  .cta-section.pricing-cta-section {
+    .title {
+        font-size: 24px !important;
+    }
   }
 }
