@@ -105,6 +105,8 @@ $(function(){
     $(window).bind('scroll', function() {
       docScrollTop = $(document).scrollTop();
       docScrollBtm = $(document).scrollTop() + $(window).height();
+      elmtBtmToDocTop = elmt.offset().top + elmt.height();
+      elmtTopToDocTop = elmt.offset().top;
       if (docScrollTop > elmtBtmToDocTop || docScrollBtm < elmtTopToDocTop){
         sawtooth.running = false;
         sawtooth.update();
