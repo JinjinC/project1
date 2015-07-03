@@ -11,9 +11,13 @@
     // background: -o-linear-gradient(top, #fff,rgba(255,255,255,0)); 
     z-index: 1000;
     height: 86px;
-    top: 0;
-    transition: 0.2s ease-in-out;
-  } 
+    top: -86px;
+    transition: background 0.2s ease-in-out,top 0.5s ease-in-out;
+  }
+  .header.navbar-fixed-top-show{
+    top: 0!important;
+    transition:0.5s ease-in-out!important;
+  }
   
   .header .main-nav .nav .nav-item {
     margin-right: 10px;
@@ -85,8 +89,8 @@
     // background: -o-linear-gradient(top, #fff,rgba(255,255,255,0)); 
     z-index: 1000;
     height: 86px;
-    top: 0;
-    transition: 0.2s ease-in-out;
+    top: -86px;
+    transition: background 0.2s ease-in-out,top 0.5s ease-in-out;
   }
 
   .main-nav {

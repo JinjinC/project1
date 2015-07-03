@@ -20,10 +20,18 @@ $(document).ready(function() {
 
         if(mediaWidth > 767){
             // console.log(global.beforescroll, $(window).scrollTop());
-            if ($(window).scrollTop() > 0 && $(window).scrollTop() < global.beforescroll) {
-               $('#header').addClass('navbar-fixed-top');
-               section.css('margin-top',header_height);
-               global.beforescroll = $(window).scrollTop();
+            if ($(window).scrollTop() > 0) {              
+                if ( $(window).scrollTop() < global.beforescroll) {
+                    $('#header').addClass('navbar-fixed-top');
+                    section.css('margin-top',header_height);
+                    setTimeout(function(){
+                        $('#header').addClass('navbar-fixed-top-show');
+                    }, 200);
+                    global.beforescroll = $(window).scrollTop();
+                }else {
+                    $('#header').removeClass('navbar-fixed-top-show');
+                    global.beforescroll = $(window).scrollTop();
+                }
             }
             else {
                 $('#header').removeClass('navbar-fixed-top');
