@@ -145,6 +145,7 @@
   .headline-bg.about-headline-bg.jobs-headline-bg {
     height: 594px;
   }
+
 }
 @media (min-width: 1200px) {
   .headline-bg.about-headline-bg.jobs-headline-bg {
@@ -156,29 +157,32 @@
   .header .main-nav {
     margin-top: 22px;
   }
-  .logo-img {
-    width: 75px;
-    height: 75px;
-    background-size: 75px auto;
-    margin-top: 3px;
-  }
+  // .logo-img {
+  //   width: 75px;
+  //   height: 75px;
+  //   background-size: 75px auto;
+  //   margin-top: 3px;
+  // }
   .nav > li > a {
     padding: 10px 10px;
   }
   .cta-section.pricing-cta-section {
-        .title {
-            font-size: 30px;
-        }
-    }
+      .title {
+          font-size: 30px;
+      }
+  }
+  .lang-content .item .desc ul li {
+    margin-left: 10px;
+  }
 }
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .logo-img {
-    height: 70px;
+    // height: 70px;
     width: 100%;
-    background-position: top center;
-    background-size: 75px auto;
+    // background-position: top center;
+    // background-size: 75px auto;
   }
 
   .waves{
@@ -468,17 +472,21 @@
     }
     .lang-title{
       margin-top: 30px;
+      margin-left: 0;
+    }
+    p{
+      padding: 0;
     }
   } 
   .video-wrapper{
     width: 100%;
     margin: auto;
   }
-  .lang-content{
-    padding-right: 40px;
-  }
   .lang-content .item{
     padding-right: 0;
+  }
+  .frame-pos {
+    padding-left: 0;
   }
   .cta-section.pricing-cta-section {
       margin-top: 80px;
@@ -492,8 +500,14 @@
 }
 @media (max-width: 480px) {
 
-  .lang-header .lang-title{
-    height: 41px;
+  .lang-header {
+    .lang-title{
+      height: 41px;
+      margin-left: 20px;
+    }
+    p {
+      padding: 0 20px;
+    }
   }
   .lang-content{
     padding-right: 25px;
@@ -720,6 +734,10 @@
   }
   .lang-content ul li {
     margin-left: 10px;
+  }
+  .frame-pos {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .cta-section.pricing-cta-section .btn-sign-ye {
       padding: 8px 20px;
