@@ -4,7 +4,8 @@ $(document).ready(function() {
     /* Ref: https://github.com/CWSpear/bootstrap-hover-dropdown */ 
     /* apply dropdownHover to all elements with the data-hover="dropdown" attribute */
     var global ={
-        videoId: null
+        videoId: null,
+        beforescroll: 0
     }
     
     $('[data-hover="dropdown"]').dropdownHover();
@@ -16,24 +17,20 @@ $(document).ready(function() {
         var header_height = header.height();
         var section = header.parent().find('section').first();
         var mediaWidth = $(document).width();
+
         if(mediaWidth > 767){
-            if ($(window).scrollTop() > 0) {
+            // console.log(global.beforescroll, $(window).scrollTop());
+            if ($(window).scrollTop() > 0 && $(window).scrollTop() < global.beforescroll) {
                $('#header').addClass('navbar-fixed-top');
                section.css('margin-top',header_height);
+               global.beforescroll = $(window).scrollTop();
             }
             else {
                 $('#header').removeClass('navbar-fixed-top');
                 section.css('margin-top',0);
+                global.beforescroll = $(window).scrollTop();
             }
         }
-        // else{
-        //     if ($(window).scrollTop() > 0) {
-        //        $('#header').addClass('navbar-fixed-top');
-        //     }
-        //     else {
-        //         $('#header').removeClass('navbar-fixed-top');
-        //     }     
-        // }
     });
     
     /* ======= jQuery Placeholder ======= */
