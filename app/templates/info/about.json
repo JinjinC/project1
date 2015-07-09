@@ -134,6 +134,14 @@
  		{
  			"img": "/images/about/partner/safedog.png",
  			"link": "http://www.safedog.cn/?from=oneapm"
+ 		},
+ 		{
+ 			"img": "/images/about/partner/youmi.png",
+ 			"link": "http://www.youmi.net/"
+ 		},
+ 		{
+ 			"img": "/images/about/partner/tuiku.png",
+ 			"link": "http://www.tuicool.com/"
  		}
  	],
  	"pageTitle": "关于OneAPM | OneAPM是什么 - 北京蓝海讯通科技有限公司",
