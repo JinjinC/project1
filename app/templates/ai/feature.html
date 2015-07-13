@@ -4,37 +4,58 @@
 <div class="headline-bg ai-headline-bg">
     <canvas id="waves" class="waves"></canvas>
 </div><!-- headline-bg -->
-<section class="features-video section section-on-bg">
-    <div class="container text-center">
-        <h2 class="title">Application Insight</h2>
-        <p class="intro text-center">从用户体验到网络服务，直至应用代码, 帮助您完成：端到端的应用性能管理</p>
-        <div class="video-container">
-            <div class="fluid-width-video-wrapper">
-                <p class="play-btn">
-                    <a href="#" class="play-trigger btn-link">
-                        <i class="iconfont icon-play">&#xe60b;</i>
-                    </a>
+
+<section class="features-video section section-on-bg feature-ai">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0">
+                <img class="ailogo" src="/images/ai/ailogo.svg">
+                <p class="intro hidden-xs">从用户体验到网络服务，直至应用代码， <br/>帮助您完成，端到端的应用性能管理。</p>
+                <p class="more">
+                   <a class="play-trigger btn-link" data-toggle="modal" data-target="#modal-video" id="video-btn" data-source="#ai-video"><i class="fa fa-youtube-play"></i> 观赏 Ai 介绍影片</a>
+                   <a href="https://user.oneapm.com/account/demo.do" class="hidden-xs" target="_blank">查看 DEMO</a>
                 </p>
-               <video preload poster="/images/ai-video.png" class="box-video" id="apm-video">
-                   <source src="https://dn-oneapm.qbox.me/ai-introduce-v0.3.webm" type="video/webm">
-                   <source src="https://dn-oneapm.qbox.me/ai-introduce-v0.3.mp4" type="video/mp4">
-                   您的浏览器不支持 video 标签。
-               </video>
             </div>
-        </div>
+            <img class="ai-headline-img" src="/images/ai/ai.png">
+        </div>         
     </div>
 </section>
 
 <div class="sections-wrapper">
 <!-- ******真实用户体验 Section****** -->
     
-    <section id="why" class="section why btn-section">
-        <p class="intro text-center">
-            <span>现在注册，即可免费试用专业版 15 天</span> 
-            <a href="https://user.oneapm.com/account/register.do" class="btn btn small btn-sign">免费注册</a>
-        </p>
-    </section>
-    <section class="section features-apm">
+    <!-- ******3 features Section****** --> 
+    <section class="section steps">
+        <div class="container">
+            <div class="row">
+                 <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                     <span class="icon"><img src="/images/ai/free.svg"></span>
+                     <h3 class="title"><span class="text">永久免费</span></h3>
+                     <p class="intro-text">专业版免费试用 15 天，<br class=" hidden-md hidden-sm hidden-xxs"/> 标准版永久免费使用。</p>
+                 </div>
+                 <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <span class="icon"><img src="/images/ai/code.svg"></span>
+                     <h3 class="title"><span class="text">代码级</span></h3>
+                     <p class="intro-text">无需代码改动，实现代码级别的性能管理和监控。</p>
+                 </div>
+                 <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <span class="icon"><img src="/images/ai/ete.svg"></span>
+                     <h3 class="title"><span class="text">端到端</span></h3>
+                     <p class="intro-text">端到端应用性能管理，用户到网络，直至服务器性能监控。</p>
+                 </div>
+                 <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <span class="icon"><img src="/images/ai/ue.svg"></span>
+                     <h3 class="title"><span class="text">真实用户体验</span></h3>
+                     <p class="intro-text">实时从真实用户终端采集性能数据，度量应用性能表现。</p>
+                 </div>
+                 <div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="line"></div>
+                 </div>
+            </div>
+        </div>        
+    </section><!--//3 features-->
+
+    <section class="section features-apm" style="padding-top:0px;">
         <div class="container">
             <h2 class="title">真实用户体验监控</h2>
             <p class="desp">根据真实用户体验，发觉问题影响范围</p>
@@ -143,12 +164,34 @@
 
 </div><!--//section-wrapper-->
 
+<!-- Video Modal -->
+<div class="modal modal-video" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 id="videoModalLabel" cla.
+                ss="modal-title sr-only"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="video-container">
+                   <video controls preload poster="/images/ai-video.png" class="box-video" id="ai-video" >
+                       <source src="https://dn-oneapm.qbox.me/ai-introduce-v0.3.webm" type="video/webm">
+                   <source src="https://dn-oneapm.qbox.me/ai-introduce-v0.3.mp4" type="video/mp4">
+                   </video>
+                </div><!--//video-container-->
+            </div><!--//modal-body-->
+        </div><!--//modal-content-->
+    </div><!--//modal-dialog-->
+</div><!--//modal-->
+
 
 {% endblock %}
 
 {% block scripts %}
     {% parent %}
     <!-- build:js /scripts/ai-feature.js -->
+    <script type="text/javascript" src="/scripts/headerResponse.js"></script>
     <script type="text/javascript" src="/scripts/sine-waves.js"></script>
     <script type="text/javascript" src="/scripts/sine-waves-action-header.js"></script>
     <script type="text/javascript" src="/scripts/sine-waves-action-sine.js"></script>

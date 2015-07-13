@@ -1,5 +1,6 @@
 {
 	"pageTitle": "Browser Insight - 真实用户体验监控 | 前端性能监控 – OneAPM",
 	"description": "OneAPM Browser Insight是一个真实可见的前端性能监控系统，能够为您提供Web前端性能监控，OneAPM Bi从页面加载、AJAX 加载，页面 Trace、地理位置等多个角度，度量应用性能，为您前端性能优化、测试提供有力的数据支持。",
-	"keywords": "前端性能监控,Browser Insight"
+	"keywords": "前端性能监控,Browser Insight",
+	"pageName": "bi"
 }

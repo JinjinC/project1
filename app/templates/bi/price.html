@@ -2,8 +2,10 @@
 
 
 {% block content %}
-<div class="headline-bg bi-headline-bg"></div><!-- headline-bg -->
-<section class="pricing section section-on-bg">
+<div class="headline-bg bi-headline-bg">
+  <canvas id="waves" class="waves"></canvas>
+</div><!-- headline-bg -->
+<section class="pricing section section-on-bg bi-section">
         <div class="container">
             <h2 class="title text-center">Browser Insight 报价</h2>
             <p class="intro text-center">新注册用户，<strong>免费使用专业版 15 天</strong></span>。标准版，永久免费。</p>
@@ -82,7 +84,7 @@
     </section><!--//pricing-->
 
     <!-- ***** Contrast Table Section***** -->
-    <section class="table-contrast section has-bg-color">
+    <section class="table-contrast section has-bg-color bi-section">
         <div class="container">
             <h2 class="title text-center">功能对比</h2>
             <p class="text-center" style="font-size: 16px;">新注册用户，免费试用专业版 15 天。标准版，永久免费。</p>
@@ -140,7 +142,7 @@
     </section>
 
     <!-- ******FAQ Section****** -->
-    <section class="faq section has-bg-color">
+    <section class="faq section has-bg-color bi-section">
         <div class="container">
             <h2 class="title text-center">常见问题</h2>
             <div class="row">
@@ -247,17 +249,24 @@
         </div><!--//container-->
     </section><!--//faq-->
 
-
     <!-- ******CTA Section****** -->
-      <section id="cta-section" class="section cta-section text-center pricing-cta-section extra-padding-more">
+    <section class="section cta-section text-center pricing-cta-section extra-padding ai">
+        <div class="wavesWapper" style="margin-top: 3%;">
+            <canvas id="waves2" class="waves"></canvas>
+        </div>
         <div class="container">
-            <h2 class="title">超过 10 万全球开发者选择 OneAPM！</h2>
-            <p class="intro">现在注册，即可免费试用专业版 15 天</p>
-            <p>
-                <a class="btn btn-large btn-sign-ye" href="https://user.oneapm.com/account/register.do" target="_blank">免费注册</a>
-            </p>
-        </div><!--//container-->
-    </section><!--//cta-section-->
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
+                    <h2 class="title">一个为程序员而生的产品<br>一次改变开发习惯的机遇</h2>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p><a class="btn btn-large btn-sign-ye" href="https://user.oneapm.com/account/register.do" target="_blank">免费注册</a></p>
+                    <p><a href="/bi/price.html"><span class="cta-link">查看 Bi 完整报价 ></span></a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <!-- ******FOOTER****** -->
 
 {% endblock %}
@@ -268,6 +277,9 @@
     <!-- build:js /scripts/broswer-price.js -->
     <script type="text/javascript" src="/scripts/show-function.js"></script>
     <script type="text/javascript" src="/scripts/jquery.stickyheader.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-header-2.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-sine.js"></script>
     <!-- endbuild -->
     {% if env == 'production' %}
     <script src="https://meiqia.com/js/mechat.js?unitid=6232" charset="UTF-8" async="async"></script>
