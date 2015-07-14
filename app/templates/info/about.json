@@ -66,6 +66,10 @@
  			"p": "Worktile，让工作更简单"
  		},
  		{
+ 			"img": "/images/about/partner/meituancloud.png",
+ 			"link": "https://mos.meituan.com/"
+ 		},
+ 		{
  			"img": "/images/about/partner/fir.png",
  			"link": "http://fir.im/",
  			"p": "FIR.im，内测应用托管分发平台"
