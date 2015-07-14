@@ -1,23 +1,29 @@
 {% extends 'base/_layout.html' %}
 
 {% block content %}
-
-<div class="headline-bg index-bg"></div><!-- headline-bg -->
-
-<section class="promo section section-on-bg">
-    <div class="container text-center">
-        <h2 class="title">无需任何改动<br/>实时抓取缓慢的程序代码和 SQL 语句</h2>
-        <p class="text-center btn-part btn-part-index">
-	        <a href="https://user.oneapm.com/account/demo.do" target="_blank" class="btn btn-large btn-demo">查看 DEMO</a>
-	        <span class="btn-index-span">or</span>
-	        <a href="https://user.oneapm.com/account/register.do" target="_blank" class="btn btn-large btn-sign-ye">免费注册</a>
-	    </p>
-        <button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" data-source="#index-video" id="video-btn"><i class="fa fa-youtube-play" ></i> 观赏 OneAPM 介绍影片</button>
-    </div><!--//container-->
-</section><!--//promo-->
+<div class="headline-bg index-headline-bg wavesWapper">
+    <canvas id="waves" class="waves"></canvas>
+</div><!-- headline-bg -->
+<section class="features-video section section-on-bg feature-index">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h2 class="title"><span>无需任何改动</span>实时抓取缓慢的<br class="hidden-xxs"/>程序代码和 SQL 语句</h2>
+                <p class="p-btn hidden-xs">
+                    <a class="btn btn-large btn-sign" href="https://user.oneapm.com/account/register.do" target="_blank">免费注册</a>
+                    <a href="https://user.oneapm.com/account/demo.do" target="_blank" class="btn btn-large btn-demo">查看 DEMO</a>
+                </p>
+                <p class="more">
+                   <a class="play-trigger btn-link" data-toggle="modal" data-target="#modal-video" id="video-btn" data-source="#index-video"><i class="fa fa-youtube-play"></i> 观赏 OneAPM 介绍影片</a>
+                </p>
+            </div>
+            <img class="index-headline-img" src="/images/index/index.png">
+        </div>         
+    </div>
+</section>
 
 <!-- ******Features Section****** -->
-<section class="features-tabbed section features-tabbed-index">
+<!-- <section class="features-tabbed section features-tabbed-index">
     <div class="container imgslider-container">
         <div class="img-wrapper">
             <div href="#" class="imgslider img-prev">
@@ -71,10 +77,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="section why index-why">
-	<div class="item" style="background:#F7F7F7;">
+	<div class="item">
 		<div class="container">
 			<div class="row">
 				<figure class="figure col-md-7 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
@@ -190,4 +196,11 @@
 
 {% endblock %}
 
-
+{% block scripts %}
+    {% parent %}
+    <!-- build:js /scripts/mobile-feature.js -->
+    <script type="text/javascript" src="/scripts/headerResponse.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-header.js" ></script>
+    <!-- endbuild -->
+{% endblock %}
