@@ -70,15 +70,32 @@
 }
 .steps {
 	padding-top: 150px;
-	padding-bottom: 90px;
+	padding-bottom: 150px;
 	.title {
 		font-size: 48px;
-		margin: 0 0 30px;
+		margin: 0 0 20px;
 	}
 	.text {
-		font-size: 18px;
-		color: #999999;
-		margin-top: 0;
+		width: 80%;
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 24px;
+		margin-top: p: 0;
+	}
+	.intro {
+		font-size: 20px;
+	}
+	.intro-text {
+		width: 80%;
+		max-width: 300px;
+		margin-bottom: 40px;
+	}
+	.fea-img {
+		display: block;
+		width: 80%;
+		margin: 0 auto 20px;
+		max-width: 300px;
 	}
 	.single-img {
 		max-width: 500px;
@@ -90,9 +107,17 @@
 		margin-top: 70px;
 	}
 }
-.lang {
+.background {
 	background: #fafafa;
-	padding: 110px 0;
+}
+.lang {
+	padding: 140px 0;
+	.title {
+		font-size: 40px;
+	}
+	p.intro-more {
+		margin-top: 30px;
+	}
 	.icon {
 		max-width: 120px;
 		width: 100%;
@@ -101,10 +126,11 @@
 			max-width: 100%;
 		}
 		.text {
-			display: block;
 			font-size: 14px;
+			color: rgba(43, 43, 43, 0.5);
 			margin-top: -5px;
 			visibility: hidden;
+			text-align: center;
 		}
 		&:hover {
 			cursor: pointer;
@@ -118,23 +144,24 @@
 	}
 }
 .products {
+	padding: 120px 0 150px;
 	.pro {
 		width: 100%;
 		margin-bottom: 3px;
 		img {
 			float: left;
 			width: 33.33%;
-			&:nth-child(1) {
-				border-right: 2px solid #fff;
-			}
-			&:nth-child(2) {
-				border-left: 1px solid #fff;
-				border-right: 1px solid #fff;
-			}
-			&:nth-child(3) {
-				float: right;
-				border-left: 2px solid #fff;
-			}
+		}
+		a:nth-child(1) img{
+			border-right: 2px solid #fff;
+		}
+		a:nth-child(2) img{
+			border-left: 1px solid #fff;
+			border-right: 1px solid #fff;
+		}
+		a:nth-child(3) img{
+			float: right;
+			border-left: 2px solid #fff;
 		}
 	}
 }
@@ -144,13 +171,14 @@
     background: -moz-linear-gradient(top,#829ec7,#d5c9ce); 
     background: -o-linear-gradient(top,#829ec7,#d5c9ce); 
   	background: -ms-linear-gradient(top,#829ec7,#d5c9ce);
-  	padding: 70px 0 0;
+  	padding: 100px 0 0;
   	.title {
-  		margin: 0 auto 40px;
+  		margin: 0 auto 30px;
   		color: #fff;
   	}
   	p.intro {
-  		color: #fff;
+  		color: rgba(29, 29, 29, 0.5);
+  		margin-bottom: 120px;
   	}
   	& > img {
   		width: 80%;
@@ -160,15 +188,20 @@
 }
 .users {
 	background: #fff;
-	padding: 180px 0 80px;
+	padding: 150px 0 80px;
 	.num {
-		font-size: 60px;
-		color: #006ec3;
+		max-width: 400px;
+		width: 80%;
+		padding-bottom: 10px;
 	}
 	img {
 		width: 100%;
-		padding: 80px 0;
-;	}
+		padding: 30px 0;
+	}
+	.title {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
 }
 .cta-section.pricing-cta-section {
 	background: #0076d1;
@@ -200,8 +233,8 @@
 		}
 	}
 	.lang {
-		.text-center:first-child {
-			margin-top: 5%;
+		.title:first-child {
+			margin-top: 15%;
 		}
 	}
 }
@@ -233,6 +266,7 @@
 		}
 	}
 	.steps {
+		padding-top: 100px;
 		padding-bottom: 100px;
 	}
 	.lang {
@@ -243,6 +277,9 @@
 		.intro-more {
 			margin-top: 30px;
 		}
+	}
+	.products {
+		padding-top: 50px;
 	}
 	
 }
@@ -278,16 +315,41 @@
 	.steps{
 		padding-top: 150px;
 		padding-bottom: 100px;
+		.fea-img {
+			margin-left: 0;
+		}
 		.icon {
 			max-width: 110px;
 			width: 100%;
 		}
 		.text {
-			font-size: 16px;
+			margin-left: 0;
+			font-size: 20px;
+		}
+		.intro-text {
+			margin-left: 0;
+			width: 100%;
+			max-width: 100%;
+		}
+		.single-img {
+			margin-top: 30px;
 		}
 	}
 	.lang {
 		padding: 80px 0;
+		text-align: center;
+	}
+	.products {
+		padding-top: 60px;
+	}
+	.users {
+		padding: 80px 0 0;
+		img {
+			padding: 20px 0 20px;
+		}
+		.title {
+			font-size: 24px !important;
+		}
 	}
 }
 @media(max-width:480px){
@@ -309,23 +371,40 @@
 	.steps {
 		padding-top: 110px;
 		padding-bottom: 50px;
-		.intro {
-			margin-bottom:0; 
+		.title {
+			margin-bottom: 10px;
 		}
 		.intro-more {
 			margin-top: 30px;
+		}
+		.intro {
+			font-size: 16px;
 		}
 	}
 	.products {
 		.pro {
 			margin: 0;
-			img:nth-child(1), img:nth-child(2), img:nth-child(3){
+			a:nth-child(1) img, a:nth-child(2) img, a:nth-child(3) img{
 				display: block;
 				float: none;
 				border: 0;
 				width: 100%;
 				margin: 0 auto;
 			}
+		}
+	}
+	.ui {
+		padding-top: 60px;
+		& > img {
+			width: 90%;
+		}
+		p.intro {
+			margin-bottom: 70px;
+		}
+	}
+	.users {
+		.num {
+			font-size: 48px;
 		}
 	}
 	.hidden-xxs {
