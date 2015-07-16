@@ -12,22 +12,20 @@
 	.st6{opacity:0.33;fill:#FFFFFF;enable-background:new    ;}
 	.st7{opacity:0.5;fill:#FFFFFF;enable-background:new    ;}
 </style>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="190.8642" y1="30.1611" x2="247.8358" y2="128.8389">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="190.8713" y1="189.8266" x2="247.8287" y2="91.1734" gradientTransform="matrix(1 0 0 -1 0 220)">
 	<stop  offset="0" style="stop-color:#5DB8FF"/>
 	<stop  offset="1" style="stop-color:#0076D1"/>
 </linearGradient>
 <path class="st0" d="M254.5,124h-70.3c-3.5,0-6.4-2.9-6.4-6.4V41.4c0-3.5,2.9-6.4,6.4-6.4h70.3c3.5,0,6.4,2.9,6.4,6.4v76.2
 	C260.9,121.1,258,124,254.5,124z"/>
 <g>
-	
-		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="45.9587" y1="208.8142" x2="124.8507" y2="72.1694" gradientTransform="matrix(1 0 0 -1 0 220)">
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="45.9587" y1="11.1858" x2="124.8507" y2="147.8306">
 		<stop  offset="0" style="stop-color:#5DB8FF"/>
 		<stop  offset="1" style="stop-color:#0076D1"/>
 	</linearGradient>
 	<path class="st1" d="M164.4,124H6.4c-3.5,0-6.4-2.9-6.4-6.4V41.4C0,37.9,2.9,35,6.4,35h158c3.5,0,6.4,2.9,6.4,6.4v76.2
 		C170.8,121.2,167.9,124,164.4,124z"/>
-	
-		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="87.4627" y1="136.3196" x2="173.3444" y2="-12.4318" gradientTransform="matrix(1 0 0 -1 0 220)">
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="87.4627" y1="83.6804" x2="173.3444" y2="232.4318">
 		<stop  offset="0" style="stop-color:#5DB8FF"/>
 		<stop  offset="1" style="stop-color:#0076D1"/>
 	</linearGradient>
