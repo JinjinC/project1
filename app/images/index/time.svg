@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#XMLID_7_);}
+	.st2{fill:url(#XMLID_8_);}
+	.st3{fill:url(#XMLID_9_);}
+	.st4{fill:url(#XMLID_10_);}
+	.st5{fill:url(#XMLID_11_);}
+</style>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="500" y1="768" x2="500" y2="233.985" gradientTransform="matrix(1 0 0 -1 0 1000)">
+		<stop  offset="0" style="stop-color:#5DB8FF"/>
+		<stop  offset="1" style="stop-color:#0076D1"/>
+	</linearGradient>
+	<path class="st0" d="M689.5,310.5C638.9,259.9,571.6,232,500,232s-138.9,27.9-189.5,78.5S232,428.4,232,500s27.9,138.9,78.5,189.5
+		S428.4,768,500,768s138.9-27.9,189.5-78.5S768,571.6,768,500S740.1,361.1,689.5,310.5z M677.5,677.5C630.1,724.9,567,751,500,751
+		s-130.1-26.1-177.5-73.5S249,567,249,500s26.1-130.1,73.5-177.5S432.9,249,500,249c67,0,130.1,26.1,177.5,73.5l0,0
+		C724.9,369.9,751,433,751,500S724.9,630.1,677.5,677.5z"/>
+	
+		<linearGradient id="XMLID_7_" gradientUnits="userSpaceOnUse" x1="536.45" y1="767.9998" x2="536.45" y2="233.9848" gradientTransform="matrix(1 0 0 -1 0 1000)">
+		<stop  offset="0" style="stop-color:#5DB8FF"/>
+		<stop  offset="1" style="stop-color:#0076D1"/>
+	</linearGradient>
+	<polygon id="XMLID_5_" class="st1" points="508.5,332.6 491.5,332.6 491.5,503.5 569.3,581.4 581.4,569.3 508.5,496.5 	"/>
+	
+		<linearGradient id="XMLID_8_" gradientUnits="userSpaceOnUse" x1="282.35" y1="767.9998" x2="282.35" y2="233.9848" gradientTransform="matrix(1 0 0 -1 0 1000)">
+		<stop  offset="0" style="stop-color:#5DB8FF"/>
+		<stop  offset="1" style="stop-color:#0076D1"/>
+	</linearGradient>
+	<rect id="XMLID_4_" x="265.6" y="491.5" class="st2" width="33.5" height="17"/>
+	
+		<linearGradient id="XMLID_9_" gradientUnits="userSpaceOnUse" x1="717.65" y1="767.9998" x2="717.65" y2="233.9848" gradientTransform="matrix(1 0 0 -1 0 1000)">
+		<stop  offset="0" style="stop-color:#5DB8FF"/>
+		<stop  offset="1" style="stop-color:#0076D1"/>
+	</linearGradient>
+	<rect id="XMLID_3_" x="700.9" y="491.5" class="st3" width="33.5" height="17"/>
+	
+		<linearGradient id="XMLID_10_" gradientUnits="userSpaceOnUse" x1="500" y1="767.9998" x2="500" y2="233.9848" gradientTransform="matrix(1 0 0 -1 0 1000)">
+		<stop  offset="0" style="stop-color:#5DB8FF"/>
+		<stop  offset="1" style="stop-color:#0076D1"/>
+	</linearGradient>
+	<rect id="XMLID_2_" x="491.5" y="700.9" class="st4" width="17" height="33.5"/>
+	
+		<linearGradient id="XMLID_11_" gradientUnits="userSpaceOnUse" x1="500" y1="767.9998" x2="500" y2="233.9848" gradientTransform="matrix(1 0 0 -1 0 1000)">
+		<stop  offset="0" style="stop-color:#5DB8FF"/>
+		<stop  offset="1" style="stop-color:#0076D1"/>
+	</linearGradient>
+	<rect id="XMLID_1_" x="491.5" y="265.6" class="st5" width="17" height="33.5"/>
+</g>
+</svg>

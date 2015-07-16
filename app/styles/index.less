@@ -20,7 +20,7 @@
 	overflow: hidden;
 	height: 660px;
 	h2.title {
-		font-size: 38px;
+		font-size: 42px;
 		color: #fff;
 		font-weight: normal;
 		text-align: left;
@@ -52,7 +52,7 @@
 	p.more {
 		text-align: left;
 		font-size: 14px;
-		padding-top: 15px;
+		padding-top: 5px;
 		padding-left: 30px;
 		a {
 			color: rgba(0, 0, 0, 0.3);
@@ -67,6 +67,118 @@
 			}
 		}
 	}
+}
+.steps {
+	padding-top: 150px;
+	padding-bottom: 90px;
+	.title {
+		font-size: 48px;
+		margin: 0 0 30px;
+	}
+	.text {
+		font-size: 18px;
+		color: #999999;
+		margin-top: 0;
+	}
+	.single-img {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.intro-more {
+		font-size: 16px;
+		color: #7a7a7a;
+		margin-top: 70px;
+	}
+}
+.lang {
+	background: #fafafa;
+	padding: 110px 0;
+	.icon {
+		max-width: 120px;
+		width: 100%;
+		margin: 0 auto;
+		img{
+			max-width: 100%;
+		}
+		.text {
+			display: block;
+			font-size: 14px;
+			margin-top: -5px;
+			visibility: hidden;
+		}
+		&:hover {
+			cursor: pointer;
+			.text{
+				visibility: visible;
+			}
+		}
+		a:hover {
+			text-decoration: none;
+		}
+	}
+}
+.products {
+	.pro {
+		width: 100%;
+		margin-bottom: 3px;
+		img {
+			float: left;
+			width: 33.33%;
+			&:nth-child(1) {
+				border-right: 2px solid #fff;
+			}
+			&:nth-child(2) {
+				border-left: 1px solid #fff;
+				border-right: 1px solid #fff;
+			}
+			&:nth-child(3) {
+				float: right;
+				border-left: 2px solid #fff;
+			}
+		}
+	}
+}
+.ui {
+	background: #829ec7;
+    background: -webkit-linear-gradient(top,#829ec7,#d5c9ce); 
+    background: -moz-linear-gradient(top,#829ec7,#d5c9ce); 
+    background: -o-linear-gradient(top,#829ec7,#d5c9ce); 
+  	background: -ms-linear-gradient(top,#829ec7,#d5c9ce);
+  	padding: 70px 0 0;
+  	.title {
+  		margin: 0 auto 40px;
+  		color: #fff;
+  	}
+  	p.intro {
+  		color: #fff;
+  	}
+  	& > img {
+  		width: 80%;
+  		max-width: 100%;
+  		margin-bottom: -10%;
+  	}
+}
+.users {
+	background: #fff;
+	padding: 180px 0 80px;
+	.num {
+		font-size: 60px;
+		color: #006ec3;
+	}
+	img {
+		width: 100%;
+		padding: 80px 0;
+;	}
+}
+.cta-section.pricing-cta-section {
+	background: #0076d1;
+    background: -webkit-linear-gradient(top,#0076d1,#5db8ff); 
+    background: -moz-linear-gradient(top,#0076d1,#5db8ff); 
+    background: -o-linear-gradient(top,#0076d1,#5db8ff); 
+  	background: -ms-linear-gradient(top,#0076d1,#5db8ff);
+    .btn-sign-ye {
+    	color: #0076d1;
+    }
 }
 @media(min-width: 768px) {
 	.index-headline-img {
@@ -87,13 +199,13 @@
 			padding-left: 30px;
 		}
 	}
+	.lang {
+		.text-center:first-child {
+			margin-top: 5%;
+		}
+	}
 }
-// @media(min-width:1200px) {
-// 	.index-headline-img {
-// 		left: 42%;
-// 		width: 630px;
-// 	}
-// }
+
 @media (max-width: 991px) {
 	.headline-bg.index-headline-bg {
 		height: 575px;
@@ -120,7 +232,21 @@
 			padding-left: 20px;
 		}
 	}
+	.steps {
+		padding-bottom: 100px;
+	}
+	.lang {
+		.title {
+			font-size: 34px;
+			margin: 0;
+		}
+		.intro-more {
+			margin-top: 30px;
+		}
+	}
+	
 }
+
 @media(max-width: 767px){
 	.headline-bg.index-headline-bg {
 		height: 800px;
@@ -129,6 +255,7 @@
 		height: auto;
 		text-align: center;
 		overflow: visible;
+		padding-top: 40px !important;
 		.index-headline-img {
 			max-width: 85%;
 			margin-bottom: -6%;
@@ -137,9 +264,9 @@
 			padding-left: 0;
 			margin-bottom: 20px;
 			text-align: center;
-			font-size: 35px !important;
+			font-size: 36px !important;
 			span {
-				font-size: 30px;
+				font-size: 24px;
 				margin-bottom: 5px;
 			}
 		}
@@ -148,10 +275,19 @@
 			margin-bottom: 40px;
 		}
 	}
-	.index-why {
-		position: relative;
-		background-color: #fff;
-		// padding-top: 80px;
+	.steps{
+		padding-top: 150px;
+		padding-bottom: 100px;
+		.icon {
+			max-width: 110px;
+			width: 100%;
+		}
+		.text {
+			font-size: 16px;
+		}
+	}
+	.lang {
+		padding: 80px 0;
 	}
 }
 @media(max-width:480px){
@@ -162,12 +298,47 @@
 		max-width: 95%;
 	}
 	.feature-index {
+		padding-top: 30px !important;
 		h2.title {
-			font-size: 30px !important;
+			font-size: 26px !important;
 			span {
-				font-size: 24px;
+				font-size: 18px;
 			}
 		}
 	}
+	.steps {
+		padding-top: 110px;
+		padding-bottom: 50px;
+		.intro {
+			margin-bottom:0; 
+		}
+		.intro-more {
+			margin-top: 30px;
+		}
+	}
+	.products {
+		.pro {
+			margin: 0;
+			img:nth-child(1), img:nth-child(2), img:nth-child(3){
+				display: block;
+				float: none;
+				border: 0;
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+	}
+	.hidden-xxs {
+		display: none;
+	}
 }
+@media(max-width:375px) {
+	.steps {
+		padding-top: 90px;
+		h3.title {
+			font-size: 26px !important;
+		}
+	}
+}
+
 
