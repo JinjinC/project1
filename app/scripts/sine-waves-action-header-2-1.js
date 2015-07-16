@@ -61,14 +61,14 @@ $(function(){
           {
             timeModifier: 0.5,
             lineWidth: 2,
-            amplitude: 150,
-            wavelength: 200,
+            amplitude: 200,
+            wavelength: 150,
             segmentLength: 1
           },
           {
             timeModifier: 0.6 ,
             lineWidth: 2,
-            amplitude: 50,
+            amplitude: 100,
             wavelength: 100,
             segmentLength: 1
           }
