@@ -61,7 +61,7 @@ $(function(){
           {
             timeModifier: 0.5,
             lineWidth: 2,
-            amplitude: 200,
+            amplitude: 160,
             wavelength: 150,
             segmentLength: 1
           },
