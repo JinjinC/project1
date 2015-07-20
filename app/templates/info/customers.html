@@ -1,7 +1,9 @@
 {% extends '../base/_layout.html' %}
 {% block content %}
 
-<div class="headline-bg about-headline-bg"></div><!-- headline-bg -->
+<div class="headline-bg about-headline-bg">
+	<canvas id="waves" class="waves"></canvas>
+</div><!-- headline-bg -->
 <section class="features-video section section-on-bg">
 	<h2 class="title text-center">我们的客户</h2>
 	<div class="mail-container container">
@@ -147,14 +149,31 @@
 	</div>
 </section>
 <!-- ******CTA Section****** -->
-<section id="cta-section" class="section cta-section text-center pricing-cta-section extra-padding-more">
+<!-- ******CTA Section****** -->
+<section class="section cta-section text-center pricing-cta-section">
+    <div class="wavesWapper" >
+        <canvas id="waves2" class="waves"></canvas>
+    </div>
     <div class="container">
-        <h2 class="title">超过 10 万全球开发者选择 OneAPM！</h2>
-        <p class="intro">现在注册，即可免费试用专业版 15 天</p>
-        <p>
-            <a class="btn btn-large btn-sign-ye" href="https://user.oneapm.com/account/register.do" target="_blank">免费注册</a>
-        </p>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
+                <h2 class="title">一个为程序员而生的产品<br>一次改变开发习惯的机遇</h2>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <p><a class="btn btn-large btn-sign-ye" href="https://user.oneapm.com/account/register.do" target="_blank">免费注册</a></p>
+                <p><span class="cta-span">全部产品，专业版免费使用 15 天</span></p>
+            </div>
+        </div>
     </div><!--//container-->
 </section><!--//cta-section-->
    <!-- ******FOOTER****** --> 
+{% endblock %}
+
+{% block scripts %}
+    {% parent %}
+    <!-- build:js /scripts/customers.js -->
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-header-2.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-sine.js"></script>
+    <!-- endbuild -->
 {% endblock %}

@@ -1,6 +1,8 @@
 {% extends '../base/_layout.html' %}
 {% block content %}
-<div class="headline-bg about-headline-bg jobs-headline-bg"></div><!-- headline-bg -->
+<div class="headline-bg about-headline-bg jobs-headline-bg">
+    <canvas id="waves" class="waves"></canvas>
+</div><!-- headline-bg -->
 <section class="jobs section section-on-bg">
     <div class="container text-center">
     	<div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1">
@@ -899,4 +901,12 @@
     </div>
 </section>
 
+{% endblock %}
+
+{% block scripts %}
+    {% parent %}
+    <!-- build:js /scripts/customers.js -->
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-header-2.js"></script>
+    <!-- endbuild -->
 {% endblock %}

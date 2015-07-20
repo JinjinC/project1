@@ -1,7 +1,9 @@
 {% extends '../base/_layout.html' %}
 {% block content %}
 
-<div class="headline-bg about-headline-bg"></div><!-- headline-bg -->
+<div class="headline-bg about-headline-bg">
+	<canvas id="waves" class="waves"></canvas>
+</div><!-- headline-bg -->
 <section class="features-video section section-on-bg">
 	<div class="container text-center">
 		<h2 class="title text-center about-title">About OneAPM</h2>
@@ -99,6 +101,8 @@
     {% parent %}
     <!-- build:js /scripts/about.js -->  
     <script type="text/javascript" src="/scripts/map.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-header-2.js"></script>
     <!-- endbuild -->
-
 {% endblock %}
+
