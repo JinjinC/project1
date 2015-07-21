@@ -3,6 +3,8 @@ $(document).ready(function() {
     /* ======= Twitter Bootstrap hover dropdown ======= */   
     /* Ref: https://github.com/CWSpear/bootstrap-hover-dropdown */ 
     /* apply dropdownHover to all elements with the data-hover="dropdown" attribute */
+
+    //global varible about videoId,beforescroll
     var global ={
         videoId: null,
         beforescroll: 0
@@ -46,12 +48,8 @@ $(document).ready(function() {
     
     $('input, textarea').placeholder();    
     
-    /* ======= jQuery FitVids - Responsive Video ======= */
-    /* Ref: https://github.com/davatron5000/FitVids.js/blob/master/README.md */
     
-    // $(".video-container").fitVids();
-    
-    /* ======= FAQ accordion ======= */
+    /* ======= FAQ accordion ( + <====> - ) ======= */
     function toggleIcon(e) {
     $(e.target)
         .prev('.panel-heading')
@@ -63,65 +61,56 @@ $(document).ready(function() {
     $('.panel').on('hidden.bs.collapse', toggleIcon);
     $('.panel').on('shown.bs.collapse', toggleIcon);    
     
-    
-    /* ======= Header Background Slideshow - Flexslider ======= */    
-    /* Ref: https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties */
-    
-    // $('.bg-slider').flexslider({
-    //     animation: "fade",
-    //     directionNav: false, //remove the default direction-nav - https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties
-    //     controlNav: false, //remove the default control-nav
-    //     slideshowSpeed: 8000
-    // });
+
 	
-	/* ======= Stop Video Playing When Close the Modal Window ====== */
-    $("#modal-video .close").on("click", function() {
-        $("#modal-video iframe").attr("src", $("#modal-video iframe").attr("src"));        
-    });
+	// /* ======= Stop Video Playing When Close the Modal Window ====== */
+ //    $("#modal-video .close").on("click", function() {
+ //        $("#modal-video iframe").attr("src", $("#modal-video iframe").attr("src"));        
+ //    });
      
     
      /* ======= Testimonial Bootstrap Carousel ======= */
      /* Ref: http://getbootstrap.com/javascript/#carousel */
-    $('#testimonials-carousel').carousel({
-      interval: 8000 
-    });
+    // $('#testimonials-carousel').carousel({
+    //   interval: 8000 
+    // });
     
     
     /* ======= Style Switcher ======= */    
-    $('#config-trigger').on('click', function(e) {
-        var $panel = $('#config-panel');
-        var panelVisible = $('#config-panel').is(':visible');
-        if (panelVisible) {
-            $panel.hide();          
-        } else {
-            $panel.show();
-        }
-        e.preventDefault();
-    });
+ //    $('#config-trigger').on('click', function(e) {
+ //        var $panel = $('#config-panel');
+ //        var panelVisible = $('#config-panel').is(':visible');
+ //        if (panelVisible) {
+ //            $panel.hide();          
+ //        } else {
+ //            $panel.show();
+ //        }
+ //        e.preventDefault();
+ //    });
     
-    $('#config-close').on('click', function(e) {
-        e.preventDefault();
-        $('#config-panel').hide();
-    });
+ //    $('#config-close').on('click', function(e) {
+ //        e.preventDefault();
+ //        $('#config-panel').hide();
+ //    });
     
     
-    $('#color-options a').on('click', function(e) { 
-        var $styleSheet = $(this).attr('data-style');
-		$('#theme-style').attr('href', $styleSheet);	
+ //    $('#color-options a').on('click', function(e) { 
+ //        var $styleSheet = $(this).attr('data-style');
+	// 	$('#theme-style').attr('href', $styleSheet);	
 				
-		var $listItem = $(this).closest('li');
-		$listItem.addClass('active');
-		$listItem.siblings().removeClass('active');
+	// 	var $listItem = $(this).closest('li');
+	// 	$listItem.addClass('active');
+	// 	$listItem.siblings().removeClass('active');
 		
-		e.preventDefault();
+	// 	e.preventDefault();
 		
-	});
+	// });
 
     //点击查看详情
-    $('#read-more').click(function  () {
-        var offset_top = $('section.ca').offset().top;
-        $('body').animate({scrollTop:offset_top},600);
-    });
+    // $('#read-more').click(function  () {
+    //     var offset_top = $('section.ca').offset().top;
+    //     $('body').animate({scrollTop:offset_top},600);
+    // });
 
     //客户案例翻页
     $('.mail-box .next').click(function  () {
