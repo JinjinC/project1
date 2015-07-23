@@ -1,121 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<!-- Free Sitemap Generator http://www.sitemapx.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>http://oneapm.com/</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/</loc>
+<priority>1.0</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/index.html</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/enterprise.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-07-21T03:15:15+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/ai/feature.html</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/index.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/ai/price.html</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/mobility.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/ai/java.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/ai/dotnet.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:15+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/ai/dotnet.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/ai/feature.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:15+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/ai/python.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/ai/java.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:15+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/ai/nodejs.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/ai/nodejs.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:15+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/ai/php.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/ai/php.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:15+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/ai/ruby.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/ai/price.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:15+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/bi/feature.html</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/ai/python.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:15+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/bi/price.html</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/ai/ruby.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:15+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/mi/feature.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/bi/feature.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:15+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/mi/price.html</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/bi/price.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:15+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/mi/ios.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/info/about.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/mi/android.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/info/jobs.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/others/servers.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/mi/android.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/others/plugins.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/mi/feature.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/enterprise.html</loc>
-  <lastmod>2015-07-01T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/mi/ios.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.udesk.cn/hc</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/mi/price.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.udesk.cn/hc/categories/1158</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/others/plugins.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/info/about.html</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://www.oneapm.com/others/servers.html</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/info/jobs.html</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://news.oneapm.com</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 <url>
-  <loc>http://oneapm.com/info/customers.html</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
-</url>
-<url>
-  <loc>http://news.oneapm.com</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
-</url>
-<url>
-  <loc>http://code.oneapm.com</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
-</url>
-<url>
-  <loc>https://user.oneapm.com/account/login.do</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
-</url>
-<url>
-  <loc>https://user.oneapm.com/account/register.do</loc>
-  <lastmod>2015-06-25T13:08:39+08:00</lastmod>
+<loc>http://code.oneapm.com</loc>
+<priority>0.6</priority>
+<lastmod>2015-07-21T03:15:16+00:00</lastmod>
+<changefreq>Weekly</changefreq>
 </url>
 </urlset>

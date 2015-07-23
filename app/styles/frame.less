@@ -207,7 +207,7 @@ video.box-video {
 /* ======= sections-wrapper ======= */
 .sections-wrapper {
   background: #fff;
-  z-index: 20;
+  // z-index: 20;
   position: relative;
 }
 .section .intro {
@@ -574,7 +574,7 @@ section h3.title {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   margin: 0 auto;
-  min-height: 100px;
+  min-height: 160px;
 }
 .pricing .item .price-figure .number {
   font-size: 42px;
@@ -793,8 +793,10 @@ section h3.title {
 
 // 查看更多 和 立即注册 按钮样式
 .btn-part {
-  margin-top: 40px;
   margin-bottom: 20px;
+}
+.btn-part +p{
+  color: rgba(43, 43, 43, 0.5)
 }
 .btn-span {
   padding: 20px;
@@ -869,6 +871,25 @@ section h3.title {
 .onlyshow-xxs{
   display: none;
 }
+
+@media (min-width:1200px){
+  .col-lg-offset-half{
+    margin-left: 4.16666666667%;
+  }
+}
+
+@media (min-width:992px){
+  .col-md-offset-half{
+    margin-left: 4.16666666667%;
+  }
+}
+
+@media (min-width:768px){
+  .col-sm-offset-half{
+    margin-left: 4.16666666667%;
+  }
+}
+
 
 @media(max-width: 480px){
   .onlyshow-xxs{
@@ -1033,6 +1054,21 @@ section h3.title {
   .col-xxxs-offset-0 {
     margin-left: 0;
   }
+}
+
+/****** tooltip ***********/
+.tooltip{
+  font-family: "Hiragino Sans GB", "PingHei", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "Microsoft Yahei", "sans-serif";
+  .tooltip-inner{
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: left;
+  }
+
+  .tooltip-arrow{
+    opacity: 0.8;
+  }
+
 }
 
 

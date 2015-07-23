@@ -10,7 +10,10 @@ $(document).ready(function() {
         beforescroll: 0
     }
     
-    $('[data-hover="dropdown"]').dropdownHover();
+    $(function () {
+      $('[data-hover="dropdown"]').dropdownHover();
+      $('[data-toggle="tooltip"]').tooltip();
+    })
     
     /* ======= Fixed header when scrolled ======= */    
     $(window).bind('scroll', function() {
@@ -200,7 +203,7 @@ $(document).ready(function() {
     //image slider点击向前，向后
 
     $('.prev-btn').click(function  () {
-        var imgslider_container = $(this).parentsUntil(".imgslider-container").parent();
+        var imgslider_container = $(this).closest(".imgslider-container");
         var img_prev = imgslider_container.find('.img-prev');
         var img_cur = imgslider_container.find('.img-current');
         var img_next = imgslider_container.find('.img-next');
@@ -210,7 +213,7 @@ $(document).ready(function() {
     });
 
     $('.next-btn').click(function  () {
-        var imgslider_container = $(this).parentsUntil(".imgslider-container").parent();
+        var imgslider_container = $(this).closest(".imgslider-container");
         var img_prev = imgslider_container.find('.img-prev');
         var img_cur = imgslider_container.find('.img-current');
         var img_next = imgslider_container.find('.img-next');
@@ -220,7 +223,7 @@ $(document).ready(function() {
     });
 
     $('.prev-btn,.next-btn').click(function  () {
-        var imgslider_container = $(this).parentsUntil(".imgslider-container").parent();
+        var imgslider_container = $(this).closest(".imgslider-container");
         var img_cur = imgslider_container.find('.img-current');
         var cur_img_text = img_cur.find('.img-text').clone();
         var dest_img_text = $('.controller-wrap .img-text');
@@ -228,11 +231,12 @@ $(document).ready(function() {
     });
 
     $('.imgslider').click(function  () {
+        var imgslider_container = $(this).closest(".imgslider-container");
         if ($(this).hasClass("img-prev")){
-             $('.prev-btn').trigger("click");
+            imgslider_container.find('.prev-btn').trigger("click");
         }
         if ($(this).hasClass("img-next")){
-             $('.next-btn').trigger("click");
+            imgslider_container.find('.next-btn').trigger("click");
         }
     })
 
@@ -242,7 +246,7 @@ $(document).ready(function() {
 
     $('.imgslider-container').mouseenter(function  () {
         if (flag == 0) {
-            $('.next-btn').trigger("click");
+            $(this).find('.next-btn').trigger("click");
             flag = 1;
         }; 
     })

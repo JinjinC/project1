@@ -1,7 +1,7 @@
 {% extends '../base/_layout.html' %}
 
 {% block content %}
-<div class="headline-bg ai-headline-bg">
+<div class="headline-bg ai-headline-bg head-feature">
     <canvas id="waves" class="waves"></canvas>
 </div><!-- headline-bg -->
 
@@ -31,7 +31,7 @@
                  <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
                      <span class="icon"><img src="/images/ai/free.svg"></span>
                      <h3 class="title"><span class="text">永久免费</span></h3>
-                     <p class="intro-text">专业版免费试用 15 天，<br class=" hidden-md hidden-sm hidden-xxs"/> 标准版永久免费使用。</p>
+                     <p class="intro-text">企业版免费试用 15 天，<br class=" hidden-md hidden-sm hidden-xxs"/> 免费版永久免费使用。</p>
                  </div>
                  <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-6">
                     <span class="icon"><img src="/images/ai/code.svg"></span>
@@ -59,9 +59,32 @@
         <div class="container">
             <h2 class="title">真实用户体验监控</h2>
             <p class="desp">根据真实用户体验，发觉问题影响范围</p>
-            <figure class="figure">
-                <img src="/images/apm-imgs/a.png" class="img-responsive" alt="真实用户体验监控">
-            </figure>
+            <div class="imgslider-container">
+                <div class="img-wrapper">
+                    <div class="imgslider img-prev">
+                        <img src="/images/ai/imgslider/p1_1.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                    <div class="imgslider img-current">
+                        <img src="/images/ai/imgslider/p1_2.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                    <div class="imgslider img-next">
+                        <img src="/images/ai/imgslider/p1_3.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                </div>
+                <div class="controller-wrap" style="display:none;">
+                    <div class="prev-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe611;</i></p>
+                    </div>
+                    <div class="img-text">
+                    </div>
+                    <div class="next-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe610;</i></p>
+                    </div>
+                </div>
+            </div>
             <p>「总览」页面概括应用整体性能，通过 Apdex、报警、错误率，并结合<a href="/bi/feature.html">「Browser Insight」</a>；<br/>了解应用性能对用户使用体验的影响，从而挖掘应用可优化的范围。</p>
         </div>
     </section>
@@ -70,9 +93,32 @@
         <div class="container">
             <h2 class="title">分布式事务追踪</h2>
             <p class="desp">在分布式环境中，定位事务的性能瓶颈</p>
-            <figure class="figure">
-                <img src="/images/apm-imgs/b.png" class="img-responsive" alt="分布式事务追踪">
-            </figure>
+            <div class="imgslider-container">
+                <div class="img-wrapper">
+                    <div class="imgslider img-prev">
+                        <img src="/images/ai/imgslider/p2_1.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                    <div class="imgslider img-current">
+                        <img src="/images/ai/imgslider/p2_2.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                    <div class="imgslider img-next">
+                        <img src="/images/ai/imgslider/p2_3.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                </div>
+                <div class="controller-wrap" style="display:none;">
+                    <div class="prev-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe611;</i></p>
+                    </div>
+                    <div class="img-text">
+                    </div>
+                    <div class="next-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe610;</i></p>
+                    </div>
+                </div>
+            </div>
             <p>「端到端拓扑」，解析事务整个过程。「事务 Trace」为应用建立全过程快照，关注最慢组件，<br/>挖掘性能消耗热点。OneAPM 剥离出与后端性能相关的「后台任务」，关注服务器资源消耗。<br/><!-- <a href="#">查看「事务」更多信息</a> --></p>
         </div>
     </section>
@@ -81,9 +127,32 @@
         <div class="container">
             <h2 class="title">代码级别深度追踪</h2>
             <p class="desp">深入至代码层面，轻松地解决性能问题</p>
-            <figure class="figure">
-                <img src="/images/apm-imgs/c.png" class="img-responsive" alt="代码性能可见">
-            </figure>
+            <div class="imgslider-container">
+                <div class="img-wrapper">
+                    <div class="imgslider img-prev">
+                        <img src="/images/ai/imgslider/p3_1.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                    <div class="imgslider img-current">
+                        <img src="/images/ai/imgslider/p3_2.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                    <div class="imgslider img-next">
+                        <img src="/images/ai/imgslider/p3_3.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                </div>
+                <div class="controller-wrap" style="display:none;">
+                    <div class="prev-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe611;</i></p>
+                    </div>
+                    <div class="img-text">
+                    </div>
+                    <div class="next-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe610;</i></p>
+                    </div>
+                </div>
+            </div>
             <p>轻量 OneAPM Agent 以小于 2% 的性能消耗，定位至代码层的性能指标；采集 JVM 性能指标，<br/>为应用建立 「Thread Profiler」，并分析 SQL 语句性能；给予您最科学的性能优化参考。<br/><!-- <a href="#">查看「Thread Profiler」更多信息</a> --></p>
         </div>
     </section>
