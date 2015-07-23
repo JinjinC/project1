@@ -33,7 +33,7 @@
 	text-align: center;
 }
 .radius-border-img {
-	border-radius: 7px;
+	border-radius: 4px;
 	box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
 	width: 100%;
 }
@@ -81,6 +81,7 @@
 	text-align: center;
 	position: relative;
 	z-index: 0;
+	display: none;
 }
 .slider-icon{
 	font-size: 200px;
@@ -103,8 +104,8 @@
 	display: inline-block;
 	cursor: pointer;
 	vertical-align: top;
-	margin-left: -35px;
-	margin-right: -35px;
+	margin-left: -37px;
+	margin-right: -25px;
 	z-index: 20;
 	position: relative;
 }
@@ -116,13 +117,12 @@
 
 .img-text{
 	display: inline-block;
-	min-width: 350px;
+	// min-width: 350px;
 	a{
 		font-size: 12px;
 		margin: 0 10px;
 		font-weight: normal;
 	}
-
 	.text-inset{
 		color: #939393;
 	}
@@ -175,6 +175,18 @@
 		visibility: hidden;
 		display: none;
 	}
+	.controller-wrap{
+		display: none;
+	}
+	.prev-btn,.next-btn{
+		margin-left: -37px;
+		margin-right: -25px;
+		width: 5%;
+	}
+	.img-text{
+		// width: 90%;
+		margin-top: 30px;
+	}
 }
 
 @media(max-width: 767px){
@@ -192,7 +204,7 @@
 	}
 	.img-text{
 		min-width: 0;
-		width: 40%;
+		// width: 100%;
 	}
 	.imgslider{
 		position: static;
@@ -202,7 +214,7 @@
 		margin: 0;
 	}
 	.prev-btn,.next-btn{
-		width: 20%;
+		width: 5%;
 	}
 	.img-text a{
 		font-size: 14px;
@@ -211,7 +223,7 @@
 		margin: 0 -50px;
 	}
 	.icon-container{
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 	.slider-icon{
 		font-size: 170px;
@@ -229,9 +241,9 @@
 	.slider-icon{
 		font-size: 130px;
 	}
-	.img-text{
-		width: 40%;
-	}
+	// .img-text{
+	// 	width: 40%;
+	// }
 	.img-text a{
 		font-size: 12px;
 	}
@@ -239,18 +251,22 @@
 		font-size: 35px;
 	}
 	.icon-container{
-		margin-top: 55%;
+		margin-top: 30%;
 	}
-	.prev-btn{
-		margin-left: -120px;
-		margin-right: 40px;
-	}
-	.next-btn{
-		margin-left: 40px;
-		margin-right: -120px;
-	}
+	// .prev-btn{
+	// 	margin-left: -120px;
+	// 	margin-right: 40px;
+	// }
+	// .next-btn{
+	// 	margin-left: 40px;
+	// 	margin-right: -120px;
+	// }
 	 .btn-gray-bg{
 	 	margin-left: 0;
+	 }
+	 .prev-btn,.next-btn{
+	 	margin-left: -30px;
+	 	margin-right: -12px;
 	 }
 }
 
