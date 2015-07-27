@@ -132,12 +132,36 @@
 	margin-top: 30px;
 }
 
+.indicator{
+	display: block;
+	position: relative;
+	bottom: 0;
+	width: inherit;
+	padding: 0;
+	margin-bottom: 20px;
+	margin-top: -40px;
+	li{
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: rgba(51, 51, 51, 0.2);
+		cursor: pointer;
+		&.cur{
+			background: rgba(51, 51, 51, 0.4);
+		}
+	}
+}
+
 //关于响应
 
 @media(min-width: 1600px){
 	.img-wrapper{
 		width: 800px;
 		height: 580px
+	}
+	.indicator{
+		margin-top: -60px;
 	}
 }
 
@@ -162,7 +186,10 @@
 		-ms-transform: translateX(290px) translateZ(-330px) rotateY(-45deg);
 	}
 	.imgslider-container{
-		margin: 40px 0 40px;
+		margin: 40px 0 20px;
+	}
+	.indicator{
+		margin-top: 10px;
 	}
 }
 
@@ -190,6 +217,9 @@
 		// width: 90%;
 		margin-top: 30px;
 	}
+	.indicator{
+		margin-top: 15px;
+	}
 }
 
 @media(max-width: 767px){
@@ -198,7 +228,7 @@
 	}
 	.imgslider-container{
 		padding-bottom: 0;
-		margin: 40px 0 40px;
+		margin: 40px 0 20px;
 	}
 	.img-wrapper{
 		width:99%;
@@ -235,6 +265,7 @@
 	.arrow-icon{
 		font-size: 40px;
 	}
+
 }
 
 
