@@ -44,6 +44,15 @@ $(document).ready(function() {
                 global.beforescroll = $(window).scrollTop();
             }
         }
+        //img-slider随滚动展开
+        $('.imgslider-container').each(function(){
+            var docScrollTop = $(document).scrollTop();
+            var elmtTopToDocTop = $(this).offset().top;
+            if (docScrollTop > elmtTopToDocTop - $(window).height()/2) {
+                $(this).find('.img-wrapper').removeClass("folded");
+            }
+        })
+
     });
     
     /* ======= jQuery Placeholder ======= */
@@ -89,15 +98,6 @@ $(document).ready(function() {
         video[0].play();
     })
 
-
-    //scan code 悬浮
-    // $('#scan-code').mouseover(function () {
-    //     $('#scan-code-img').show();
-    // });
-
-    // $('#scan-code').mouseleave(function () {
-    //     $('#scan-code-img').hide();
-    // });
 
     //点击查看各个语言安装步骤
 
@@ -194,18 +194,6 @@ $(document).ready(function() {
             imgslider_container.find('.next-btn').trigger("click");
         }
     })
-
-    //随滚动展开
-    $(window).bind('scroll',function(){
-        $('.imgslider-container').each(function(){
-            var docScrollTop = $(document).scrollTop();
-            var elmtTopToDocTop = $(this).offset().top;
-            if (docScrollTop > elmtTopToDocTop - $(window).height()/1.5) {
-                $(this).find('.img-wrapper').removeClass("folded");
-            }
-        })
-    })
-
 
     //小于767下的，导航栏出现黑色遮罩的
     $('.navbar-toggle').click(function() {
