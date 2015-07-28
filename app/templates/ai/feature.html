@@ -59,8 +59,8 @@
         <div class="container">
             <h2 class="title">真实用户体验监控</h2>
             <p class="desp">根据真实用户体验，发觉问题影响范围</p>
-            <div class="imgslider-container">
-                <div class="img-wrapper">
+            <div class="imgslider-container" seq="0">
+                <div class="img-wrapper folded">
                     <div class="imgslider img-prev">
                         <img src="/images/ai/imgslider/p1_1.png" alt="" class="img-responsive radius-border-img">
                         <div class="img-text"></div>
@@ -74,6 +74,11 @@
                         <div class="img-text"></div>
                     </div>
                 </div>
+                <ol class="indicator">
+                    <li class="prev"></li>
+                    <li class="cur"></li>
+                    <li class="next"></li>
+                </ol>
                 <div class="controller-wrap" >
                     <div class="prev-btn" onselectstart="return false">
                         <p class="icon-container"><i class="iconfont arrow-icon">&#xe611;</i></p>
@@ -85,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <p >「总览」页面概括应用整体性能，通过 Apdex、报警、错误率，并结合<a href="/bi/feature.html">「Browser Insight」</a>；<br/>了解应用性能对用户使用体验的影响，从而挖掘应用可优化的范围。</p>
+            <p >「总览」页面概括应用整体性能，通过 Apdex、报警、错误率，并结合<a href="/bi/feature.html">「Browser Insight」</a>；<br class="hidden-xs" />了解应用性能对用户使用体验的影响，从而挖掘应用可优化的范围。</p>
         </div>
     </section>
     <!-- ******分布式事务追踪 Section****** -->
@@ -93,8 +98,8 @@
         <div class="container">
             <h2 class="title">分布式事务追踪</h2>
             <p class="desp">在分布式环境中，定位事务的性能瓶颈</p>
-            <div class="imgslider-container">
-                <div class="img-wrapper">
+            <div class="imgslider-container" seq="1">
+                <div class="img-wrapper folded">
                     <div class="imgslider img-prev">
                         <img src="/images/ai/imgslider/p2_1.png" alt="" class="img-responsive radius-border-img">
                         <div class="img-text"></div>
@@ -108,6 +113,11 @@
                         <div class="img-text"></div>
                     </div>
                 </div>
+                <ol class="indicator">
+                    <li class="prev"></li>
+                    <li class="cur"></li>
+                    <li class="next"></li>
+                </ol>
                 <div class="controller-wrap">
                     <div class="prev-btn" onselectstart="return false">
                         <p class="icon-container"><i class="iconfont arrow-icon">&#xe611;</i></p>
@@ -119,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <p>「端到端拓扑」，解析事务整个过程。「事务 Trace」为应用建立全过程快照，关注最慢组件，<br/>挖掘性能消耗热点。OneAPM 剥离出与后端性能相关的「后台任务」，关注服务器资源消耗。<br/><!-- <a href="#">查看「事务」更多信息</a> --></p>
+            <p>「端到端拓扑」，解析事务整个过程。「事务 Trace」为应用建立全过程快照，关注最慢组件，<br class="hidden-xs"/>挖掘性能消耗热点。OneAPM 剥离出与后端性能相关的「后台任务」，关注服务器资源消耗。<!-- <a href="#">查看「事务」更多信息</a> --></p>
         </div>
     </section>
     <!-- ******代码级别深度追踪 Section****** -->
@@ -127,8 +137,8 @@
         <div class="container">
             <h2 class="title">代码级别深度追踪</h2>
             <p class="desp">深入至代码层面，轻松地解决性能问题</p>
-            <div class="imgslider-container">
-                <div class="img-wrapper">
+            <div class="imgslider-container" seq="2">
+                <div class="img-wrapper folded">
                     <div class="imgslider img-prev">
                         <img src="/images/ai/imgslider/p3_1.png" alt="" class="img-responsive radius-border-img">
                         <div class="img-text"></div>
@@ -142,19 +152,23 @@
                         <div class="img-text"></div>
                     </div>
                 </div>
+                <ol class="indicator">
+                    <li class="prev"></li>
+                    <li class="cur"></li>
+                    <li class="next"></li>
+                </ol>
                 <div class="controller-wrap" >
                     <div class="prev-btn" onselectstart="return false">
                         <p class="icon-container"><i class="iconfont arrow-icon">&#xe611;</i></p>
                     </div>
                     <div class="img-text">
-
                     </div>
                     <div class="next-btn" onselectstart="return false">
                         <p class="icon-container"><i class="iconfont arrow-icon">&#xe610;</i></p>
                     </div>
                 </div>
             </div>
-            <p>轻量 OneAPM Agent 以小于 2% 的性能消耗，定位至代码层的性能指标；采集 JVM 性能指标，<br/>为应用建立 「Thread Profiler」，并分析 SQL 语句性能；给予您最科学的性能优化参考。<br/><!-- <a href="#">查看「Thread Profiler」更多信息</a> --></p>
+            <p>轻量 OneAPM Agent 以小于 2% 的性能消耗，定位至代码层的性能指标；采集 JVM 性能指标，<br class="hidden-xs"/>为应用建立 「Thread Profiler」，并分析 SQL 语句性能；给予您最科学的性能优化参考。<br/><!-- <a href="#">查看「Thread Profiler」更多信息</a> --></p>
         </div>
     </section>
 

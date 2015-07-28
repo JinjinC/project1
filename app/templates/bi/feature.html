@@ -56,150 +56,122 @@
         </div>        
     </section><!--//3 features-->
 
-    <section id="why" class="section why" >
+    <section class="section features-apm" style="padding-top:0;">
         <div class="container">
-            <div class="row item" style="padding-top:0px;">
-                <div class="content col-md-4 col-sm-10 col-xs-12 col-md-offset-0 col-sm-offset-1 col-xs-offset-0" style="margin-top: 4%;">
-                    <h3 class="title">围绕用户体验</h3>
-                    <div class="desc">
-                        <p>OneAPM 从地理位置、浏览器类型、设备类型 3 个类别，来划分真实用户体验； 方便你从不同角度查看应用的性能表现</p>
-                        <p>OneAPM 划分出性能表现差的具体范围，指导性能修复工作，从而减少工作量并提高效率。</p>
+            <h2 class="title">围绕用户体验</h2>
+            <div class="imgslider-container">
+                <div class="img-wrapper folded">
+                    <div class="imgslider img-prev">
+                        <img src="/images/bi/imgslider/p1_1.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
                     </div>
-                </div><!--//content-->
-                <figure class="figure col-md-7 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
-                    <!-- Tab panes -->
-                     <ul class="nav nav-tabs text-center" role="tablist" style="width:250px;">
-                        <li class="active feature-img">
-                            <a href="#feature-1" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
-                                <span>地理位置</span>
-                            </a>
-                        </li>
-                        <li class="feature-img">
-                            <a href="#feature-2" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
-                                <span>浏览器类型</span>
-                            </a>
-                        </li>
-                        <li class="feature-img">
-                            <a href="#feature-3" role="tab" data-toggle="tab" class="img-title">
-                                <span>设备类型</span>
-                            </a>
-                        </li>
-                    </ul><!--//nav-tabs-->
-
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="feature-1">
-                            <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/bi/location.png" alt="地理位置" />
-                            </figure>
-                        </div><!--//tab-pane-->
-
-                        <div class="tab-pane" id="feature-2">
-                            <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/bi/browser.png" alt="浏览器类型" />
-                            </figure>
-                        </div><!--//tab-pane-->
-
-                        <div class="tab-pane" id="feature-3">
-                            <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/bi/device.png" alt="设备类型" />
-                            </figure>
-                        </div><!--//tab-pane-->
-                    </div><!--//tab-content-->                 
-                </figure>
-            </div><!--//item-->
-            
-            <div class="row item">
-                
-                <div class="content col-md-4 col-sm-10 col-xs-12 col-md-push-8 col-sm-push-1 col-xs-push-0" style="margin-top: 7%;">
-                    <h3 class="title">更广视野</h3>
-                    <div class="desc">
-                        <p>页面 Trace 给你更广视野，针对不同 URL 建立页面的 Trace，记录 TCP、DNS、DOM 加载、渲染等时间， 让你能够了解整个加载过程。</p>
-                        <p>页面 Trace 就是一次前端页面加载的快照，快照信息具体到：浏览器类型、IP 地址等，并包括 TCP 传输性能和 DNS 时间。</p>
+                    <div class="imgslider img-current">
+                        <img src="/images/bi/imgslider/p1_2.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
                     </div>
-                </div><!--//content-->
-                <figure class="figure col-md-7 col-sm-10 col-xs-12 col-md-pull-4 col-md-push-0 col-sm-push-1 col-xs-push-0">
-                    <ul class="nav nav-tabs text-center" role="tablist" style="width:210px;">
-                        <li class="active feature-img">
-                            <a href="#location" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
-                                <span>事务总览</span>
-                            </a>
-                        </li>
-                        <li class="feature-img">
-                            <a href="#browser" role="tab" data-toggle="tab" class="img-title">
-                                <span>Trace 详情</span>
-                            </a>
-                        </li>
-                    </ul><!--//nav-tabs-->
-
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="location">
-                            <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/bi/trace-page1.png" alt="事务总览" />
-                            </figure>
-                        </div><!--//tab-pane-->
-
-                        <div class="tab-pane" id="browser">
-                            <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/bi/trace-page2.png" alt="Trace 详情" />
-                            </figure>
-                        </div><!--//tab-pane-->
-                    </div><!--//tab-content-->                        
-                </figure>
-            </div><!--//item-->
-            
-            <div class="row item ">
-                <div class="content col-md-4 col-sm-10 col-xs-12 col-md-offset-0 col-sm-offset-1 col-xs-offset-0" style="margin-top: 6%;">
-                    <h3 class="title">归类错误</h3>
-                    <div class="desc">
-                        <p>从错误类型、URL、浏览器 3 个角度，归类错误的发生。</p>
-                        <p>OneAPM 统计错误发生的次数，并可以跟踪到单次错误的 URL、发生时间，和与之关联的浏览器类型；以及更为底层的信息：错误信息、相关参数和 Stack Trace。</p>
+                    <div class="imgslider img-next">
+                        <img src="/images/bi/imgslider/p1_3.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
                     </div>
-                </div><!--//content-->
-                <figure class="figure col-md-7 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
-                    <ul class="nav nav-tabs text-center" role="tablist" style="width:210px;">
-                        <li class="active feature-img">
-                            <a href="#error1" role="tab" data-toggle="tab" class="img-title" style="border-right: 1px solid #999 !important;">
-                                <span>错误总览</span>
-                            </a>
-                        </li>
-                        <li class="feature-img">
-                            <a href="#error2" role="tab" data-toggle="tab" class="img-title">
-                                <span>错误详情</span>
-                            </a>
-                        </li>
-                    </ul><!--//nav-tabs-->
-
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="error1">
-                            <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/bi/error1.png" alt="错误总览" />
-                            </figure>
-                        </div><!--//tab-pane-->
-
-                        <div class="tab-pane" id="error2">
-                            <figure class="figure text-center">
-                                <img class="img-responsive" src="/images/bi/error2.png" alt="错误详情" />
-                            </figure>
-                        </div><!--//tab-pane-->
-                    </div><!--//tab-content-->  
-                </figure>
-            </div><!--//item-->
-            
-            <div class="row item last-item">
-                <div class="content col-md-4 col-sm-10 col-xs-12 col-md-push-8 col-sm-push-1 col-xs-push-0" style="margin-top: 5%">
-                    <h3 class="title">深入至 AJAX</h3>
-                    <div class="desc">
-                        <p>单页面 Web 应用往往通过 AJAX 进行前后端交互，所以「页面 Trace」不再适用于 AJAX 性能监控。</p>
-                        <p>OneAPM 针对 AJAX 性能，特别增设响应时间、数据请求和接收、HTTP 状态的性能监控，完善 Browser Insight 功能。</p>
+                </div>
+                <ol class="indicator">
+                    <li class="prev"></li>
+                    <li class="cur"></li>
+                    <li class="next"></li>
+                </ol>
+                <div class="controller-wrap" >
+                    <div class="prev-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe611;</i></p>
                     </div>
-                </div><!--//content-->
-                <figure class="figure col-md-7 col-sm-10 col-xs-12 col-md-pull-4 col-md-push-0 col-sm-push-1 col-xs-push-0">
-                    <img class="img-responsive" src="/images/bi/ajax.png" alt="AJAX 性能" />
-                </figure>
-                
-            </div><!--//item-->
+                    <div class="img-text">
+                    </div>
+                    <div class="next-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe610;</i></p>
+                    </div>
+                </div>
+            </div>
+            <p>OneAPM 从地理位置、浏览器类型、设备类型 3 个类别，来划分真实用户体验；方便从不同角度查看应用性能表现。
+            OneAPM 划分出性能表现差的具体范围，指导性能修复工作，从而减少工作量并提高效率。
+            </p>
+        </div>
+    </section><!--//why--> 
 
-        </div><!--//container-->
+    <section class="section features-apm" style="background:#F7F7F7;">
+        <div class="container">
+            <h2 class="title">更广视野</h2>
+            <div class="imgslider-container">
+                <div class="img-wrapper folded">
+                    <div class="imgslider img-prev">
+                        <img src="/images/bi/imgslider/p2_1.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                    <div class="imgslider img-current">
+                        <img src="/images/bi/imgslider/p2_2.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                    <div class="imgslider img-next">
+                        <img src="/images/bi/imgslider/p2_3.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                </div>
+                <ol class="indicator">
+                    <li class="prev"></li>
+                    <li class="cur"></li>
+                    <li class="next"></li>
+                </ol>
+                <div class="controller-wrap" >
+                    <div class="prev-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe611;</i></p>
+                    </div>
+                    <div class="img-text">
+                    </div>
+                    <div class="next-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe610;</i></p>
+                    </div>
+                </div>
+            </div>
+            <p>受访页面 Trace 给你更广视野，针对不同 URL 建立页面的 Trace，记录 TCP、DNS、DOM 加载、渲染等时间， 让你了解整个加载过程。
+            受访页面 Trace 就是一次前端页面加载的快照，快照信息具体到：浏览器类型、IP 地址等，并包括 TCP 传输性能和 DNS 时间。</p>
+        </div>
+    </section><!--//why--> 
+
+    <section class="section features-apm" >
+        <div class="container">
+            <h2 class="title">深入细节</h2>
+            <div class="imgslider-container">
+                <div class="img-wrapper folded">
+                    <div class="imgslider img-prev">
+                        <img src="/images/bi/imgslider/p3_1.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                    <div class="imgslider img-current">
+                        <img src="/images/bi/imgslider/p3_2.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                    <div class="imgslider img-next">
+                        <img src="/images/bi/imgslider/p3_3.png" alt="" class="img-responsive radius-border-img">
+                        <div class="img-text"></div>
+                    </div>
+                </div>
+                <ol class="indicator">
+                    <li class="prev"></li>
+                    <li class="cur"></li>
+                    <li class="next"></li>
+                </ol>
+                <div class="controller-wrap" >
+                    <div class="prev-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe611;</i></p>
+                    </div>
+                    <div class="img-text">
+                    </div>
+                    <div class="next-btn" onselectstart="return false">
+                        <p class="icon-container"><i class="iconfont arrow-icon">&#xe610;</i></p>
+                    </div>
+                </div>
+            </div>
+            <p>从错误类型、URL、浏览器 3 个角度，归类错误的发生。OneAPM 统计错误发生的次数，并可以跟踪到单次错误的 URL、发生时间，和与之关联的浏览器类型；以及更为底层的信息。
+            除此之外，OneAPM 还可以监控 AJAX 性能，包括响应时间、数据吞吐量等。</p>
+        </div>
     </section><!--//why--> 
      
     <!-- ******CTA Section****** -->
