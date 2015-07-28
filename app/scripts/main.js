@@ -273,8 +273,9 @@ $(document).ready(function() {
         $('.navbar-toggle').trigger("click");
     })
 
-
-
+    $('#product a').click(function(){
+        $('.product').toggleClass('open');
+    })
 });
 
 
