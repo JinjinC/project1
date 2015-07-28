@@ -195,43 +195,16 @@ $(document).ready(function() {
         }
     })
 
-    var indicator ={
-        elmts: $('.indicator li'),
-        curElmt: $('.indicator li.active'),
-        prev: function(){
-            if(this.curElmt.prev()){
-                this.elmts.removeClass("active");
-                this.curElmt.prev().addClass("active");
-            }else{
-               this.elmts.removeClass("active");
-               this.elmts.last().addClass("active");
+    //随滚动展开
+    $(window).bind('scroll',function(){
+        $('.imgslider-container').each(function(){
+            var docScrollTop = $(document).scrollTop();
+            var elmtTopToDocTop = $(this).offset().top;
+            if (docScrollTop > elmtTopToDocTop - $(window).height()/1.5) {
+                $(this).find('.img-wrapper').removeClass("folded");
             }
-        },
-        next: function(){
-            if(this.curElmt.next()){
-                this.elmts.removeClass("active");
-                this.curElmt.next().addClass("active");
-            }else{
-               this.elmts.removeClass("active");
-               this.elmts.last().addClass("active");
-            }
-        }
-    }
-
-
-    //鼠标悬浮，触发点击下一个图片
-    var flag = 0;
-
-    $('.imgslider-container').mouseenter(function  () {
-        if (flag == 0) {
-            $(this).find('.next-btn').trigger("click");
-            flag = 1;
-        }; 
+        })
     })
-    //每隔1分钟，将flag变为0；
-    setInterval(function(){
-        flag = 0;
-    },1000*60);
 
 
     //小于767下的，导航栏出现黑色遮罩的
