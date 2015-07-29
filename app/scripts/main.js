@@ -301,8 +301,9 @@ $(document).ready(function() {
                 }
             })
             $thisDropDown.find('.pro-content').toggle();
+            e.preventDefault();
         }
-        e.preventDefault();
+        
     })
 });
 
