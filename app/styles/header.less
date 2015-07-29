@@ -266,6 +266,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   color: #fff;
+  margin-top: 4px;
 }
 .subnav {
   width: 100%;
@@ -311,6 +312,7 @@
       }
       .pro-name {
         display: none;
+        margin-bottom: 0;
       }
       .pro-content {
         list-style: none;
@@ -350,6 +352,13 @@
 
   .subnav-container {
     background-color: #fff;
+    position: absolute;
+    left: 100%;
+    transition: left 0.5s ease-in-out;
+    -webkit-transition: left 0.5s ease-in-out;
+    -moz-transition: left 0.5s ease-in-out;
+    -ms-transition: left 0.5s ease-in-out;
+    -o-transition: left 0.5s ease-in-out;
   }
   .subnav {
     .subnav-products {
@@ -360,6 +369,7 @@
         float: none;
         width: 100%;
         padding: 15px;
+        border-bottom: 1px solid  #DADADB;
         img {
           display: none;
         }

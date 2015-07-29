@@ -274,14 +274,22 @@ $(document).ready(function() {
     })
 
     $('#product a').click(function(){
-        var mediaWidth = $(document).width();
+        var mediaWidth = $(window).width();
         if (mediaWidth>767) {
             $('.product').toggleClass('open');
+            console.log('close');
         }else{
             $('#navbar-collapse').css("left","-100%");
             $('.product').addClass('open');
+            $('.subnav-container').css("left","0");
         }
+    })
+
+    $('.subnav #back').click(function(){
+        $('#navbar-collapse').css("left","0");
         
+        $('.subnav-container').css("left","100%");
+
     })
 });
 
