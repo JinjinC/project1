@@ -289,7 +289,20 @@ $(document).ready(function() {
         $('#navbar-collapse').css("left","0");
         
         $('.subnav-container').css("left","100%");
+    })
 
+    $('.drop-down').click(function(e){
+        var mediaWidth = $(window).width();
+        if(mediaWidth<768){
+            var $thisDropDown = $(this);
+            $('.drop-down').each(function(){
+                if ($(this) !== $thisDropDown) {
+                    $(this).find('.pro-content').hide();
+                }
+            })
+            $thisDropDown.find('.pro-content').toggle();
+        }
+        e.preventDefault();
     })
 });
 
