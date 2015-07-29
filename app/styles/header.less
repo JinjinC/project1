@@ -335,7 +335,7 @@
         }
         li {
           display: inline-block;
-          width: 48%;
+          width: 47%;
           margin-bottom: 5px;
         }
       }
@@ -348,6 +348,32 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .subnav {
+    .subnav-products > li > a {
+      min-height: 80px;
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .subnav {
+    .subnav-products > li {
+      & > a {
+        min-height: 70px;
+        img {
+          width: 90%;
+        }
+      }
+      .pro-content {
+        font-size: 12px;
+      }
+    } 
+  }
+}
 @media (max-width: 767px){
   .header {
     .main-nav {
