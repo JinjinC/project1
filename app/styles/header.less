@@ -261,7 +261,7 @@
   height: inherit;
 }
 
-
+//²úÆ·µ¼º½
 .subnav-container {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -279,14 +279,21 @@
     }
   }
   .subnav-products {
-    padding: 30px 0;
-    margin: 0;
+    padding: 30px 0 0;
+    margin: 0 0 30px;
+    overflow: hidden;
 
     & > li {
       display: inline-block;
       float: left;
       width: 20%;
       padding: 0 30px;
+      border-right: 1px solid rgba(0, 0, 0, 0.4);
+      margin-bottom: -200px;
+      padding-bottom: 200px;
+      &:last-child {
+        border-right: none;
+      }
 
       img {
         display: block;
@@ -328,18 +335,18 @@
 
 @media (max-width: 767px){
   .header {
-  .main-nav {
-    .navbar-collapse {
-      .nav {
-        .nav-item {
-          .forward:after {
-            content: "\f106" !important;
+    .main-nav {
+      .navbar-collapse {
+        .nav {
+          .nav-item {
+            .forward:after {
+              content: "\f106" !important;
+            }
           }
         }
       }
     }
   }
-}
 
   .subnav-container {
     background-color: #fff;
