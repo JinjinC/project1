@@ -274,7 +274,14 @@ $(document).ready(function() {
     })
 
     $('#product a').click(function(){
-        $('.product').toggleClass('open');
+        var mediaWidth = $(document).width();
+        if (mediaWidth>767) {
+            $('.product').toggleClass('open');
+        }else{
+            $('#navbar-collapse').css("left","-100%");
+            $('.product').addClass('open');
+        }
+        
     })
 });
 
