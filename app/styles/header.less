@@ -281,51 +281,51 @@
   }
 }
 
-.logo-ai {
-  display: inline-block;
-  width: 40px;
-  height: 23px;
-  background: url('../images/header/aiwhite.svg') no-repeat top left;
-  background-size: 26px auto;
-  opacity: 0.6;
-  &:hover {
-    opacity: 1;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-  }
-}
-.logo-bi {
-  display: inline-block;
-  width: 40px;
-  height: 23px;
-  background: url('../images/header/biwhite.svg') no-repeat top left;
-  background-size: 26px auto;
-  opacity: 0.6;
-  &:hover {
-    opacity: 1;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-  }
-}
-.logo-mi {
-  display: inline-block;
-  width: 40px;
-  height: 23px;
-  background: url('../images/header/miwhite.svg') no-repeat top left;
-  background-size: 26px auto;
-  opacity: 0.6;
-  &:hover {
-    opacity: 1;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-  }
-}
+// .logo-ai {
+//   display: inline-block;
+//   width: 40px;
+//   height: 23px;
+//   background: url('../images/header/aiwhite.svg') no-repeat top left;
+//   background-size: 26px auto;
+//   opacity: 0.6;
+//   &:hover {
+//     opacity: 1;
+//     -webkit-transition: all 0.2s ease-in-out;
+//     -moz-transition: all 0.2s ease-in-out;
+//     -ms-transition: all 0.2s ease-in-out;
+//     -o-transition: all 0.2s ease-in-out;
+//   }
+// }
+// .logo-bi {
+//   display: inline-block;
+//   width: 40px;
+//   height: 23px;
+//   background: url('../images/header/biwhite.svg') no-repeat top left;
+//   background-size: 26px auto;
+//   opacity: 0.6;
+//   &:hover {
+//     opacity: 1;
+//     -webkit-transition: all 0.2s ease-in-out;
+//     -moz-transition: all 0.2s ease-in-out;
+//     -ms-transition: all 0.2s ease-in-out;
+//     -o-transition: all 0.2s ease-in-out;
+//   }
+// }
+// .logo-mi {
+//   display: inline-block;
+//   width: 40px;
+//   height: 23px;
+//   background: url('../images/header/miwhite.svg') no-repeat top left;
+//   background-size: 26px auto;
+//   opacity: 0.6;
+//   &:hover {
+//     opacity: 1;
+//     -webkit-transition: all 0.2s ease-in-out;
+//     -moz-transition: all 0.2s ease-in-out;
+//     -ms-transition: all 0.2s ease-in-out;
+//     -o-transition: all 0.2s ease-in-out;
+//   }
+// }
 .header.navbar-fixed-top {
   .logo .logo-img {
     opacity: 0.9;
@@ -333,27 +333,27 @@
       opacity: 0.65;
     }
   }
-  .logo-ai {
-    background-size: 26px auto;
-    opacity: 0.9;
-    &:hover {
-      opacity: 0.65;
-    }
-  }
-  .logo-bi {
-    background-size: 26px auto;
-    opacity: 0.9;
-    &:hover {
-      opacity: 0.65;
-    }
-  }
-  .logo-mi {
-    background-size: 26px auto;
-    opacity: 0.9;
-    &:hover {
-      opacity: 0.65;
-    }
-  }
+  // .logo-ai {
+  //   background-size: 26px auto;
+  //   opacity: 0.9;
+  //   &:hover {
+  //     opacity: 0.65;
+  //   }
+  // }
+  // .logo-bi {
+  //   background-size: 26px auto;
+  //   opacity: 0.9;
+  //   &:hover {
+  //     opacity: 0.65;
+  //   }
+  // }
+  // .logo-mi {
+  //   background-size: 26px auto;
+  //   opacity: 0.9;
+  //   &:hover {
+  //     opacity: 0.65;
+  //   }
+  // }
 
 } 
 .global-header-overlay {
@@ -411,13 +411,9 @@
 
       img {
         display: block;
-        // height: 72px;
         width: 60%;
         margin-bottom: 20px;
         opacity: 0.7;
-        // &:first-child {
-        //   height: 72px;
-        // }
 
         &:hover {
           opacity: 1;
@@ -426,6 +422,9 @@
           -ms-transition: all 0.2s ease-in-out;
           -o-transition: all 0.2s ease-in-out;
         }
+      }
+      .pro-name {
+        display: none;
       }
       .pro-content {
         list-style: none;
@@ -442,6 +441,35 @@
           display: inline-block;
           width: 48%;
           margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .subnav-container {
+    background-color: #fff;
+  }
+  .subnav {
+    .subnav-products {
+      padding: 0;
+
+      & > li {
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 15px;
+        img {
+          display: none;
+        }
+        .pro-name {
+          display: block;
+        }
+        .pro-content {
+          a {
+            color: #006ec3;
+          }
         }
       }
     }
