@@ -384,8 +384,9 @@
 
 
 .subnav-container {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
+  color: #fff;
 }
 .subnav {
   width: 100%;
@@ -399,7 +400,7 @@
     }
   }
   .subnav-products {
-    padding: 50px 0;
+    padding: 30px 0;
     margin: 0;
 
     & > li {
@@ -410,12 +411,38 @@
 
       img {
         display: block;
+        // height: 72px;
         width: 60%;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        opacity: 0.7;
+        // &:first-child {
+        //   height: 72px;
+        // }
+
+        &:hover {
+          opacity: 1;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -ms-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+        }
       }
       .pro-content {
-        font-size: 12px;
-        color: #333;
+        list-style: none;
+        padding: 0;
+        font-size: 14px;
+       
+        a{
+           color: rgba(255, 255, 255, 0.7);
+           &:hover {
+            color: #fff;
+           }
+        }
+        li {
+          display: inline-block;
+          width: 48%;
+          margin-bottom: 5px;
+        }
       }
     }
   }
