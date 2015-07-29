@@ -291,7 +291,7 @@ $(document).ready(function() {
         $('.subnav-container').css("left","100%");
     })
 
-    $('.drop-down').click(function(e){
+    $('.drop-down').on("click mouseenter",function(e){
         var mediaWidth = $(window).width();
         if(mediaWidth<768){
             var $thisDropDown = $(this);
@@ -301,6 +301,7 @@ $(document).ready(function() {
                 }
             })
             $thisDropDown.find('.pro-content').toggle();
+            $thisDropDown.addClass("open");
             e.preventDefault();
         }
         
