@@ -579,6 +579,11 @@
       }
     }
   }
+  .dropdown-menu{
+    margin: 0;
+    position: static;
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px){
@@ -607,15 +612,19 @@
     -o-transition: left 0.5s ease-in-out;
   }
   .subnav {
+    position: absolute;
     .subnav-products {
       padding: 0;
-
       & > li {
         display: block;
         float: none;
         width: 100%;
-        padding: 15px;
+        padding: 0;
         border-bottom: 1px solid  #DADADB;
+        a{
+          display: block;
+          padding: 15px;
+        }
         img {
           display: none;
         }
@@ -625,9 +634,12 @@
         .pro-content {
           a {
             color: #006ec3;
+            padding: 15px;
+            display: block;
           }
         }
       }
     }
   }
+
 }
