@@ -146,6 +146,10 @@
  		{
  			"img": "/images/about/partner/tuiku.png",
  			"link": "http://www.tuicool.com/"
+ 		},
+ 		{
+ 			"img": "/images/about/partner/rongcloud.png",
+ 			"link": "http://www.rongcloud.cn/"
  		}
  	],
  	"pageName": "info",
