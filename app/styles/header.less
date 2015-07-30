@@ -439,6 +439,9 @@
         padding: 0;
         border-bottom: 1px solid  #DADADB;
         margin-bottom: 0;
+        &:hover{
+          background-color: transparent;
+        }
         &:last-child {
           border-right: none;
           padding-top: 0;
@@ -446,7 +449,7 @@
         &:nth-child(5){
           padding-top: 0;
         }
-        &.drop-down >a:after{
+        &.drop-down .li-content>a:after{
           content: "\f105";
           display: inline-block;
           margin-left: 5px;
@@ -465,10 +468,14 @@
           -o-transition: all 0.2s ease-in-out;
           transform: rotate(90deg);
         }
-        &.drop-down.open {
+        &.drop-down.open .li-content {
+          a{
+            color: #fff;
+          }
 
-          &>a:after{
+           &>a:after{
             transform: rotate(270deg);
+            color: #fff;
           }
         }
         .li-content {
