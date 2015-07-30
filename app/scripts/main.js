@@ -277,12 +277,35 @@ $(document).ready(function() {
 
     })
 
-    $('#product a').click(function(){
+
+
+    $('#product a').mouseenter(function(){
         var mediaWidth = $(window).width();
         if (mediaWidth>767) {
-            $('.product').toggleClass('open');
-            console.log('close');
-        }else{
+            $('.product').addClass('open');
+        }
+    })
+
+    $('.nav-item').mouseenter(function(e){
+        var mediaWidth = $(window).width();
+        if (e.target!==$('.forward').get(0)) {
+            if (mediaWidth>767) {
+                $('.product').removeClass('open');
+            }
+        }
+    })
+
+    $('.subnav').mouseleave(function(){
+        var mediaWidth = $(window).width();
+        if (mediaWidth>767) {
+            $('.product').removeClass('open');
+        }
+    })
+
+
+    $('#product a').click(function(){
+        var mediaWidth = $(window).width();
+        if (mediaWidth<768) {
             $('#navbar-collapse').css("left","-100%");
             $('.product').addClass('open');
             $('.subnav-container').css("left","0");
