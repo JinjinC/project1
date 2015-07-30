@@ -309,6 +309,8 @@ $(document).ready(function() {
             $('#navbar-collapse').css("left","-100%");
             $('.product').addClass('open');
             $('.subnav-container').css("left","0");
+        }else{
+            $('.product').toggleClass('open');
         }
     })
 
@@ -327,7 +329,7 @@ $(document).ready(function() {
             $('.drop-down').each(function(){
                 if ($(this).get(0) !== $thisDropDown.get(0)) {
                      // console.log($(this).get(0),$thisDropDown.get(0));
-                    $(this).find('.pro-content').hide();
+                    $(this).find('.pro-content').removeAttr("style");
                     $(this).removeClass("open");
                 }
             })
