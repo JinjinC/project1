@@ -333,17 +333,18 @@ $(document).ready(function() {
         }, 500);
     })
 
-    $('.drop-down').on("click mouseover",function(e){
+    $('.drop-down').on("click mouseenter",function(e){
         var mediaWidth = $(window).width();
         if(mediaWidth<768){
             var $thisDropDown = $(this);
             $('.drop-down').each(function(){
                 if ($(this).get(0) !== $thisDropDown.get(0)) {
-                    $(this).find('.pro-content').removeAttr("style");
+                    // $(this).find('.pro-content').removeAttr("style");
+                    // console.log($(this).get(0));
                     $(this).removeClass("open");
                 }
             })
-            $thisDropDown.find('.pro-content').toggle();
+            // $thisDropDown.find('.pro-content').toggle();
             $thisDropDown.toggleClass("open");
             e.preventDefault();
         }
