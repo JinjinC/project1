@@ -366,6 +366,10 @@ $(document).ready(function() {
         }  
     })
 
+    $('.drop-down .pro-content a').click(function(e){
+        e.stopPropagation();
+    })
+
     if(!global.browser.mobile){
         $('.drop-down').on("mouseenter",function(e){
         var mediaWidth = $(window).width();
