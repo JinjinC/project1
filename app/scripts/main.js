@@ -318,7 +318,7 @@ $(document).ready(function() {
         }
     })
 
-    $('#product a,.subnav,.main-nav').mouseleave(function(e){
+    $('#product a,.subnav-container,.main-nav').mouseleave(function(e){
         var mediaWidth = $(window).width();
         if (e.target!==$('.forward').get(0)){
             if (mediaWidth>767) {
