@@ -264,9 +264,12 @@ $(document).ready(function() {
     $('#product a').click(function(){
         var mediaWidth = $(window).width();
         if (mediaWidth<768) {
-            $('#navbar-collapse').css("left","-100%");
-            $('.product').addClass('open');
-            $('.subnav-container').css("left","0");
+            $('.subnav-container').show();
+            setTimeout(function(){
+                $('#navbar-collapse').css("left","-100%");
+                $('.product').addClass('open');
+                $('.subnav-container').css("left","0");
+            }, 10);
         }else{
             $('.product').toggleClass('open');
         }
@@ -277,6 +280,7 @@ $(document).ready(function() {
         $('.subnav-container').css("left","100%");
         setTimeout(function(){
             $('.product').removeClass('open');
+            $('.subnav-container').hide();
         }, 500);
     })
 
