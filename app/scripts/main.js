@@ -24,7 +24,6 @@ $(document).ready(function() {
         var mediaWidth = $(document).width();
 
         if(mediaWidth > 767){
-            // console.log(global.beforescroll, $(window).scrollTop());
             if ($(window).scrollTop() > 0) {              
                 if ( $(window).scrollTop() < global.beforescroll) {
                     $('#header').addClass('navbar-fixed-top');
@@ -277,18 +276,25 @@ $(document).ready(function() {
 
     })
 
+    $('#navbar-toggle-btn').click(function(){
+        if ($('.product').hasClass("open")) {
+            $('.product').removeClass('open');
+            $('#navbar-collapse').css("left","0");
+            $('.subnav-container').css("left","100%");
+        }
+    })
 
 
-    $('#product a').mouseenter(function(){
+
+    $('#product a,.subnav').mouseenter(function(){
         var mediaWidth = $(window).width();
         if (mediaWidth>767) {
             $('.product').addClass('open');
         }
     })
 
-    $('.nav-item,header').mouseenter(function(e){
+    $('.nav-item').mouseenter(function(e){
         var mediaWidth = $(window).width();
-        console.log(e.target);
         if (e.target!==$('.forward').get(0)) {
             if (mediaWidth>767) {
                 $('.product').removeClass('open');
@@ -296,12 +302,16 @@ $(document).ready(function() {
         }
     })
 
-    $('.subnav').mouseleave(function(){
+    $('#product a,.subnav,#navbar-collapse').mouseleave(function(e){
         var mediaWidth = $(window).width();
-        if (mediaWidth>767) {
-            $('.product').removeClass('open');
+        if (e.target!==$('.forward').get(0)){
+            if (mediaWidth>767) {
+                $('.product').removeClass('open');
+            }
         }
     })
+
+
 
 
     $('#product a').click(function(){
@@ -323,7 +333,7 @@ $(document).ready(function() {
         }, 500);
     })
 
-    $('.drop-down').on("click",function(e){
+    $('.drop-down').on("click mouseover",function(e){
         var mediaWidth = $(window).width();
         if(mediaWidth<768){
             var $thisDropDown = $(this);

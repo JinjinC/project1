@@ -437,10 +437,27 @@
         float: none;
         width: 100%;
         padding: 0;
-        border-bottom: 1px solid  #DADADB;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
         margin-bottom: 0;
         &:hover{
           background-color: transparent;
+        }
+        &:first-child{
+          text-indent: 10px;
+          a:before{
+            content: "\f104";
+            display: inline-block;
+            margin-left: 5px;
+            margin-top: 12px;
+            position: absolute;
+            left: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            font-family: FontAwesome;
+            color: #939392;
+            line-height: 0;
+            margin-right: 10px;
+          }
         }
         &:last-child {
           border-right: none;
