@@ -1,14 +1,14 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .header {
-    height: 86px;
+    height: 80px;
   }
   .header.navbar-fixed-top {
     position: fixed;
     background: rgba(0,0,0,0.6);
     z-index: 1000;
-    height: 86px;
-    top: -86px;
+    height: 80px;
+    top: -80px;
     transition: background 0.2s ease-in-out,top 0.5s ease-in-out;
   }
   .header.navbar-fixed-top-show{
@@ -20,10 +20,11 @@
   }
   .main-nav.navbar-right {
     float: right !important;
+    padding-bottom: 0;
   }
   .navbar-collapse.collapse {
     text-align: center;
-    padding-left: 15px;
+    padding-left: 100px;
     padding-right: 15px;
   }
   .navbar-collapse.collapse .navbar-nav {
@@ -53,27 +54,20 @@
   .global-header-overlay {
     display: none;
   }
-  .nav-logo-text{
-    display: none;
-  }
-  .features-apm p{
-    width: 660px;
-    margin: auto;
-  }
 }
 
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {  
   .header {
-    height: 86px;
+    height: 80px;
   }
   .header.navbar-fixed-top {
     position: fixed;
     background: rgba(0,0,0,0.6);
     z-index: 1000;
-    height: 86px;
-    top: -86px;
+    height: 80px;
+    top: -80px;
     transition: background 0.2s ease-in-out,top 0.5s ease-in-out;
   }
   .main-nav {
@@ -104,10 +98,6 @@
     padding-left: 0;
     padding-right: 0;
     margin-top: 15%;
-  }
-  .pricing .item .feature-list .lastli-nopadding {
-    padding-left: 0 ;
-    padding-right: 0;
   }
   .headline-bg.about-headline-bg.jobs-headline-bg {
     height: 594px;
@@ -161,35 +151,39 @@
     left: 0;
     top: 80px;
     position: absolute;
-    background: #fff;
     z-index: 45;
     padding: 0;
+    transition: 0.5s left ease-in-out;
 
     .nav .nav-item {
       margin-right: 0;
       padding: 0px;
       border-bottom-width: 1px;
       border-bottom-style: solid;
-      border-color: #DADADB;
+      border-color: rgba(255, 255, 255, 0.4);
+      &.open{
+        a{
+          color: #fff;
+        }
+      }
 
       a {
         font-size: 15px;
         padding: 15px;
-        color: #006ec3;
-        
+        color: rgba(255, 255, 255, 0.7);  
         &:hover {
-          color: #006ec3;
+          color: #fff;
         }
       }
       
       a.btn-cta-secondary {
-        // border-color: #006ec3;
         color: #fff;
+        border:none;
         background-color: #006ec3;
         margin: 20px 10px 10px 10px;
         &:hover {
           color: #fff;
-        background-color: #006ec3;
+          background-color: #006ec3;
         }
       }
       .dropdown-link:after {
@@ -212,60 +206,22 @@
         
       }
       .dropdown-menu {
-        background-color: #f7f7f7;
-        border-top: 1px solid #DADADB;
+        background-color: transparent;
+        border-top: 1px solid rgba(0, 0, 0, 0.6);
         padding: 0;
 
         li {
-          border-bottom:1px solid #DADADB;;  
+          border-bottom:1px solid rgba(0, 0, 0, 0.6);  
         }
         li.last {
           border:none;
         }
       }
       .dropdown-menu li a {
-        color: #333;
         font-size: 14px;
         padding: 15px 15px;
+        text-indent: 20px;
       }
-      .logo-ai {
-        display: block;
-        box-sizing: border-box;
-        width: 100%;
-        background: none;
-
-        opacity: 1;
-        p{
-          font-size: 15px;
-          font-weight: bold;
-          margin-bottom: 0;
-        }
-      }
-      .logo-bi {
-        display: block;
-        box-sizing: border-box;
-        width: 100%;
-        background: none;
-        opacity: 1;
-        p{
-          font-size: 15px;
-          font-weight: bold;
-          margin-bottom: 0;
-        }
-      }
-      .logo-mi {
-        display: block;
-        box-sizing: border-box;
-        width: 100%;
-        background: none;
-        opacity: 1;
-        p{
-          font-size: 15px;
-          font-weight: bold;
-          margin-bottom: 0;
-        }
-      }
-
     }
     .nav-item.last {
       border: none;
@@ -316,10 +272,6 @@
   .features-tabbed-index .features-content .icon-tab {
     font-size: 45px;
   }
-  .features-tabbed-index .tab-subtitle {
-    font-size: 14px;
-    margin: -50px -75px 5px;
-  }
   .why{
     padding-top: 40px;
   }
@@ -329,10 +281,6 @@
   .why .item .title {
     margin-bottom: 30px;
     text-align: center;
-  }
-  .pricing .item.best-buy {
-    position: static;
-    z-index: inherit;
   }
   .nav-tabs > li > a {
     padding: 10px 5px;
@@ -349,12 +297,8 @@
   .why .item .desc {
     margin-bottom: 0;
   }
-
   .lang-content{
     border-right: none;
-  }
-  .nav-logo-text{
-    display: block;
   }
   .pricing .item .heading .title {
     color: #444444;
@@ -466,19 +410,12 @@
       -webkit-text-stroke-width: 0px;
     }
   }
-  .features-tabbed-index .tab-subtitle {
-    font-size: 12px;
-    margin: -40px -100px 15px;
-  }
   .why {
     padding-top: 40px;
     .item {
       padding: 40px 0;
       .title{
         font-size: 26px !important;
-      }
-      .img-cells {
-        margin-bottom: 0px;
       }
       .content {
         margin-bottom: 0px;
@@ -495,9 +432,6 @@
     .icon-play {
       font-size: 60px;
     }
-  }
-  #news-section-bottom .news-item{
-    height: 135px;
   }
   .headline-bg {
     height: 370px;
@@ -518,15 +452,9 @@
     padding: 40px 0;
   }
 
-  //cta-section
   .cta-section {
     padding-top: 70px;
     min-height: 370px;
-  }
-  .extra-padding-more {
-    padding-top: 60px;
-    padding-bottom: 0px;
-    min-height: 310px;
   }
 
   //jobs.html
@@ -565,21 +493,6 @@
     }
   }
   
-  //customers.html
-  .mail-info {
-    height: 125px;
-    img {
-      float: left;
-      padding: 8px 20px;
-    }
-  }
-  .mail-info2 {
-    height: 80px;
-  }
-  .mail-info3 {
-    height: 140px;
-  }
-
   //price.html
   .pricing {
     padding-bottom: 10px;
