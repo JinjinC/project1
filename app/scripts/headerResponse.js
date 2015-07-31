@@ -14,7 +14,6 @@ $(document).ready(function(){
 	        $(".mi-headline-bg").css("height", $('.feature-mi').height() + 28*param*fmhParam +"px");
 	        $(".ai-headline-bg").css("height", $('.feature-ai').height() + 28*param*fmhParam +"px");
 	        $(".bi-headline-bg").css("height", $('.feature-bi').height() + 28*param*fmhParam +"px");
-	        console.log('13');
 	        $(".ee-headline-bg").css("height", $('.feature-ee').height() + parseInt($('.feature-ee').css("padding-top")) + 20*param +"px");
 	    }else{
 	        $(".mi-headline-bg").removeAttr("style");

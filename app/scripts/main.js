@@ -280,7 +280,7 @@ $(document).ready(function() {
         $('.subnav-container').css("left","100%");
         setTimeout(function(){
             $('.product').removeClass('open');
-            $('.subnav-container').hide();
+            $('.subnav-container').removeAttr("style");
         }, 500);
     })
 
