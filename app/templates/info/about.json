@@ -150,6 +150,10 @@
  		{
  			"img": "/images/about/partner/rongcloud.png",
  			"link": "http://www.rongcloud.cn/"
+ 		},
+ 		{
+ 			"img": "/images/about/partner/appcan.png",
+ 			"link": "http://www.appcan.cn/"
  		}
  	],
  	"pageName": "info",
