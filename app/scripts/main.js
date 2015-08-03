@@ -214,7 +214,7 @@ $(document).ready(function() {
     $('.navbar-toggle').click(function() {
         $('.global-header-overlay').toggleClass("overlay-show");
     });
-
+    //点击黑色遮罩
     $('.global-header-overlay').click(function  () {
         $('.navbar-toggle').trigger("click");
         $('.product').removeClass('open');
@@ -222,7 +222,7 @@ $(document).ready(function() {
         $('.subnav-container').css("left","100%");
 
     })
-
+    //点击导航栏缩起按钮
     $('#navbar-toggle-btn').click(function(){
         if ($('.product').hasClass("open")) {
             $('.product').removeClass('open');
@@ -231,16 +231,8 @@ $(document).ready(function() {
         }
     })
 
-
-
-    $('#product a,.subnav').mouseenter(function(){
-        var mediaWidth = $(window).width();
-        if (mediaWidth>767) {
-            $('.product').addClass('open');
-        }
-    })
-
-    $('.nav-item').mouseenter(function(e){
+    //判断进入的标题，如果不是产品，则将子产品导航收起
+    $('.nav-item,.logo a').mouseenter(function(e){
         var mediaWidth = $(window).width();
         if (e.target!==$('.forward').get(0)) {
             if (mediaWidth>767) {
@@ -249,18 +241,8 @@ $(document).ready(function() {
         }
     })
 
-    $('#product a,.subnav-container,.main-nav').mouseleave(function(e){
-        var mediaWidth = $(window).width();
-        if (e.target!==$('.forward').get(0)){
-            if (mediaWidth>767) {
-                $('.product').removeClass('open');
-            }
-        }
-    })
 
-
-
-
+    //判断屏幕的分辨率，子导航的出现（收起）
     $('#product a').click(function(){
         var mediaWidth = $(window).width();
         if (mediaWidth<768) {
@@ -275,37 +257,40 @@ $(document).ready(function() {
         }
     })
 
+    //判断屏幕的分辨率，子导航的收起
     $('.subnav #back').click(function(){
         $('#navbar-collapse').css("left","0");
         $('.subnav-container').css("left","100%");
         setTimeout(function(){
             $('.product').removeClass('open');
-            $('.subnav-container').removeAttr("style");
+            $('.subnav-container').removeAttr("style");//用于消除白边
         }, 500);
     })
 
+    //小屏下的子导航的子标题菜单展开和收起，
     $('.drop-down').on("click",function(e){
         var mediaWidth = $(window).width();
         if(mediaWidth<768){
             var $thisDropDown = $(this);
             $('.drop-down').each(function(){
                 if ($(this).get(0) !== $thisDropDown.get(0)) {
-                    // $(this).find('.pro-content').removeAttr("style");
-                    // console.log($(this).get(0));
                     $(this).removeClass("open");
                 }
             })
-            // $thisDropDown.find('.pro-content').toggle();
             $thisDropDown.toggleClass("open");
             e.preventDefault();
         }  
     })
 
+    //让子标题菜单下的a标记的事件不要传播到上面的展开和收起
     $('.drop-down .pro-content a').click(function(e){
         e.stopPropagation();
     })
 
+    //只有pc端菜需要的事件
     if(!global.browser.mobile){
+
+        //子导航子标题菜单
         $('.drop-down').on("mouseenter",function(e){
         var mediaWidth = $(window).width();
         if(mediaWidth<768){
@@ -320,8 +305,25 @@ $(document).ready(function() {
             // $thisDropDown.find('.pro-content').toggle();
             $thisDropDown.toggleClass("open");
             e.preventDefault();
-        }  
-    })
+        }})
+
+
+        $('#product a,.subnav-container').mouseenter(function(){
+            var mediaWidth = $(window).width();
+            if (mediaWidth>767) {
+                $('.product').addClass('open');
+            }
+        })
+
+        //绑定在header上是因为不让子导航跳动
+        $('header,.main-nav').mouseleave(function(e){
+            var mediaWidth = $(window).width();
+            if (e.target!==$('.forward').get(0)){
+                if (mediaWidth>767) {
+                    $('.product').removeClass('open');
+                }
+            }
+        })
     }
 });
 
