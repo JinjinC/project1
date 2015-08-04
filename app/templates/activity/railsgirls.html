@@ -1,0 +1,93 @@
+{% extends '../base/_layout.html' %}
+
+{% block content %}
+<div class="headline-bg railsgirls-headline-bg wavesWapper">
+	<canvas id="waves" class="waves"></canvas>
+</div>
+<section class="features-video section section-on-bg feature-railsgirls">
+	<div class="container"> 
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0">
+                <img class="raislgirlslogo" src="/images/railsgirls/logo.svg">
+                <p class="intro">OneAPM 支持包括 Rails 在内的各种 Ruby Web 框架的性能监控，<br class="hidden-lg hidden-md hidden-sm hidden-xxs">赶快注册 OneAPM 看看你的第一个 Rails 应用性能表现吧！</p>
+                <p class="p-btn hidden-xs">
+                	<a class="btn btn-large btn-sign" href="https://user.oneapm.com/account/register.do?from=oprg" target="_blank">免费注册</a>
+                	<a class="play-trigger btn-link btn-movie" data-toggle="modal" data-target="#modal-video" id="video-btn" data-source="#index-video"><i class="fa fa-youtube-play"></i> 观赏 OneAPM 介绍影片</a>
+                </p>
+            </div>
+            <img src="/images/railsgirls/girls.png"  class="girl-img" alt="">
+        </div>         
+    </div>
+</section>
+
+<section class="section steps">
+    <div class="container">
+    	<div class="row">
+			<div class="text-center col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+				<h3 class="title">
+					<p class="title">随时随地，掌控性能</p>
+				</h3>
+			</div>
+		</div>
+        <div class="row">
+        	<div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+             	<span class="icon"><img src="/images/railsgirls/owl.png"></span>
+                 <h3 class="title"><span class="text">性能总览</span></h3>
+                 <p class="intro-text">服务端响应时间、吞吐量、Apdex、错误率。总览界面可以让你很方便查看当前应用的整体状态。</p>
+             </div>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+             	<span class="icon"><img src="/images/railsgirls/turtle.png"></span>
+                 <h3 class="title"><span class="text">慢事务追踪</span></h3>
+                 <p class="intro-text">该功能通过分析 Web 事务或后台任务中代码类的执行时间、数据库查询耗时、第三方服务耗时占比，准确定位应用性能瓶颈。</p>
+             </div>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+             	 <span class="icon"><img src="/images/railsgirls/bear.png"></span>
+                 <h3 class="title"><span class="text">慢 SQL 分析</span></h3>
+                 <p class="intro-text">记录发生缓慢 SQL，并可以查看相关的 URL ，执行计划、参数等详细信息。</p>
+             </div>
+             <div class="text-center col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xxs-6">
+             	<span class="icon"><img src="/images/railsgirls/hedgehog.png"></span>
+                 <h3 class="title"><span class="text">错误信息</span></h3>
+                 <p class="intro-text">每次发布新特性之后，就看看 「错误信息」功能抓取到的 HTTP 错误。无须等到用户出现问题之后，再通过查看 log 找被动查找原因。</p>
+             </div>
+             <div class="text-center col-lg-8 col-md-8 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
+             	<img src="/images/railsgirls/lion.png" class="bigicon">
+				<p class="title">完美性能，尽在OneAPM</p>
+				<p>
+					<a class="btn btn-large btn-sign" href="https://user.oneapm.com/account/register.do?from=oprg" target="_blank">免费注册</a>
+				</p>
+				<p><a href="https://oneapm.kf5.com/posts/view/58028/" target="_blank" style="font-size:12px">查看 Application Insight 用户手册</a></p>
+             </div>
+        </div>
+    </div>        
+</section>
+
+<!-- Video Modal -->
+<div class="modal modal-video" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="video-container">
+                   <video controls preload poster="/images/index/what-is-oneapm-poster-v0.0.2.jpg" id="index-video">
+                       <source src="https://dn-oneapm.qbox.me/what-is-oneapm-v1.1.webm" type="video/webm">
+                       <source src="https://dn-oneapm.qbox.me/what-is-oneapm-v1.1.mp4" type="video/mp4">
+                   </video>
+                </div><!--//video-container-->
+            </div><!--//modal-body-->
+        </div><!--//modal-content-->
+    </div><!--//modal-dialog-->
+</div><!--//modal-->
+
+{% endblock%}
+
+{% block scripts %}
+    {% parent %}
+    <!-- build:js /scripts/rails-girls.js -->
+    <script type="text/javascript" src="/scripts/headerResponse.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves.js"></script>
+    <script type="text/javascript" src="/scripts/sine-waves-action-header-2.js" ></script>
+    <!-- endbuild -->
+{% endblock %}

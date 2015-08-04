@@ -1,0 +1,126 @@
+@import "lesshat";
+.headline-bg.railsgirls-headline-bg{
+	height: 610px;
+	overflow: hidden;
+	.background-image(linear-gradient(top, #d3360b, #ff4b1a));
+}
+
+.feature-railsgirls{
+	height: 530px;
+	.girl-img{
+		margin: auto;
+		display: block;
+		max-width: 100%;
+	}
+
+	.p-btn a{
+		margin-right: 15px;
+	}
+	.btn-movie{
+			color: rgba(0, 0, 0, 0.3);
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 14px;
+			text-decoration: none;
+			cursor: pointer;
+			border: none;
+	}
+	.btn-sign{
+		font-size: 16px;
+		padding: 6px 16px;
+		font-weight: normal;
+		border: 1px solid #fff;
+		background: #fff;
+		color:  #d3360b;
+		&:hover{
+			opacity: 0.8;
+		}
+	}
+
+}
+
+.steps{
+	padding-top: 160px;
+	.title{
+		.title{
+			font-size: 44px;
+			margin-bottom: 80px;
+		}
+	}
+	.icon img{
+		width: 85%;
+		margin-bottom: 30px;
+	}
+	.bigicon{
+		width: 350px;
+		margin-top: 80px;
+		margin-bottom: 60px;
+		max-width: 100%;
+		&+p{
+			margin-bottom: 50px;
+		}
+	}
+	.btn-sign{
+		background: #d3360b;
+		color: #fff;
+		border: 1px solid #d3360b;
+		&:hover{
+			opacity: 0.8;
+		}
+	}
+}
+
+@media(min-width: 768px){
+	.feature-railsgirls{
+		.girl-img{
+			position: absolute;
+			left: 55%;
+			top: 0;
+		}
+		.raislgirlslogo{
+			margin-left: 40px;
+			margin-bottom: 40px;
+		}
+		p.intro{
+			text-align: left;
+			margin-bottom: 80px;
+			margin-left: 40px;
+			font-size: 14px;
+			color: rgba(255, 255, 255, 0.7);
+		}
+	}
+	.p-btn{
+		padding-left: 40px;
+	}
+
+}
+
+@media(max-width: 767px){
+	.feature-railsgirls{
+		height: auto;
+		.raislgirlslogo{
+			width: 220px;
+			margin: 0 auto 30px;
+			display: block;
+		}
+		p.intro{
+			font-size: 14px;
+			color: rgba(255, 255, 255, 0.7);
+			margin-bottom: -10px;
+			width: 90%;
+		}
+		.girl-img{
+			margin: auto;
+			width: 360px;
+			max-width: 90%;
+		}
+	}
+	.steps{
+		.title{
+			.title{
+				margin-bottom: 40px;
+			}
+		}
+	}
+	
+}
